@@ -1,6 +1,6 @@
 # OpenYAMM 简体中文补丁
 
-把 [OpenYAMM](https://github.com/OpenYAMM/OpenYAMM)（魔法门 6／7／8 的开源重制引擎）的文本系统从
+把 [OpenYAMM](https://github.com/pjasicek/openyamm)（魔法门 6／7／8 的开源重制引擎）的文本系统从
 「单字节 CP1252 + 256 个字形槽」改造成「UTF-8 + 按 Unicode 码点取字形」，再配上简体中文译文，
 让这三部二十多年前的老游戏能在现代分辨率下正常显示中文。
 
@@ -11,6 +11,9 @@
 > layer. Coverage is broad but not complete — see the status table below. Documentation is in Chinese;
 > the code comments are too.
 
+**当前适配 OpenYAMM 1.18**。引擎每次换版本都要重新移植一次（通常改动不大），做法见
+[docs/upgrading.md](docs/upgrading.md)；旧版本 1.17 的补丁包仍留在 [Releases](../../releases)。
+
 ---
 
 ## 现在能玩到什么程度
@@ -20,7 +23,7 @@
 
 | 部分 | 现状 | 还会看到英文的地方 |
 |---|---|---|
-| 界面文字（菜单、设置、角色创建、物品栏、法术书、炼金台、日志、队伍面板……） | 主要界面已译，覆盖表 4291 条 | 引擎源码里散落的硬编码文案还有约 620 处没清理（含误报），实际能看到的多集中在灵气／光环日志、对话控制器、队伍面板快捷提示等 |
+| 界面文字（菜单、设置、角色创建、物品栏、法术书、炼金台、日志、队伍面板……） | 主要界面已译，覆盖表 4317 条 | 引擎源码里散落的硬编码文案还有约 500 处没清理（含误报），实际能看到的多集中在灵气／光环日志、对话框、队伍面板快捷提示等 |
 | NPC 对话正文 | 已译 1512 条，约占全部台词九成 | 剩下约一成的台词仍是英文；话题菜单上的话题名（「Star Lake」之类）整块未译 |
 | 物品名／描述／词缀 | 名称与描述约八成半取自 MMMerge 官方简中包；词缀 260 条已全覆盖 | MMMerge 新增而官方语言包没收录的物品名，以及 `_misc191` 这类内部占位名 |
 | 怪物／NPC 名、屋名、地图名、技能、法术、书籍 | 大体已对齐：怪物名约 99%、NPC 名约 97%、地图名约 80% | 传送点描述约 59%（其余多为 `Placeholder Text`）；官方语言包未覆盖的记录保持英文 |
@@ -41,7 +44,8 @@ python tools/check_literals.py --show 60
 补丁由两部分组成：
 
 - `mods/engine/` —— 译文数据表与中文字体，引擎启动时叠加在自带资产之上；
-- `openyamm.exe` —— 按 1.17 源码重编的引擎，能光栅化 UTF-8、按码点排版、按中文规则断行。
+- `openyamm.exe` —— 按对应版本的源码重编的引擎，能光栅化 UTF-8、按码点排版、按中文规则断行。
+  exe 与 mods 必须同版本。
 
 **只换 mods 不换 exe 是没用的**：原版引擎拿到 UTF-8 字节会当成 CP1252 乱码渲染。
 
@@ -109,16 +113,18 @@ UiText::translateTemplate("{item} {suffix}", {{"{item}", baseName}, {"{suffix}",
 
 ## 自己构建
 
-需要 Python 3.10+、CMake、MinGW 或 MSVC，以及一份 OpenYAMM 1.17 源码树。
+需要 Python 3.10+、CMake、MinGW 或 MSVC，以及一份 OpenYAMM 源码树（当前用 1.18）。
 
 ```bash
 python tools/make_ui_text.py                      # 合成 corpus/overrides/ui_text.txt
-python tools/build_patch.py --openyamm ../openyamm-1.17 --out build/mods
-python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.17 \
+python tools/build_patch.py --openyamm ../openyamm-1.18 --out build/mods
+python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.18 \
        --out build/mods/engine/fonts/truetype
 python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf \
        --license assets/fonts/OFL.txt --out build/mods
 ```
+
+或者一行：`scripts/build.sh --openyamm ../openyamm-1.18`（Windows 用 `scripts\build.ps1`）。
 
 exe 要用「打包资产」方式构建（`-DOPENYAMM_DEV_ASSETS_DIR:STRING=assets`），否则运行时不会挂载 `mods/`。
 完整步骤、依赖与踩坑见 **[docs/build.md](docs/build.md)**；引擎侧改了哪些文件见
@@ -146,7 +152,7 @@ exe 要用「打包资产」方式构建（`-DOPENYAMM_DEV_ASSETS_DIR:STRING=ass
 
 ## 致谢
 
-- [OpenYAMM](https://github.com/OpenYAMM/OpenYAMM) —— 引擎本体（GPL-3.0-or-later）
+- [OpenYAMM](https://github.com/pjasicek/openyamm) —— 引擎本体（GPL-3.0-or-later）
 - MMMerge 与其官方简体中文语言包 —— 译文主体来源
 - [mm678-i18n](https://github.com/might-and-magic/mm678-i18n) —— 术语参考
 - [思源黑体 / Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) —— 中文字形（SIL OFL 1.1）

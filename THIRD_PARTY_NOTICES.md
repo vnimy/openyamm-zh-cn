@@ -29,7 +29,7 @@ Ubisoft Entertainment（原 New World Computing）所有。
 
 ## OpenYAMM
 
-- 仓库：<https://github.com/OpenYAMM/OpenYAMM>
+- 仓库：<https://github.com/pjasicek/openyamm>
 - 许可：GNU GPL v3.0 or later
 
 Release 中附带的 `openyamm.exe` 是 OpenYAMM 1.17 的**修改版本**（改动见

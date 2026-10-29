@@ -2,6 +2,22 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 1.18.0 — 2026-10-29
+
+跟进 OpenYAMM 1.18。升级流程沉淀成 [docs/upgrading.md](docs/upgrading.md)，新工具
+`tools/dev/detect_engine_changes.py` 按内容哈希找本地改动，不再依赖 `git status`。
+
+### 引擎
+
+- 上游 1.18 变更 75 个文件，与汉化重叠 6 个，全部三方合并（`MainMenuScreen::captureBinding`
+  一处上下文漂移，手工对齐）。
+- 新界面文案接入覆盖表：魔幻牌（Arcomage）日志页、读档界面按名称／时间排序、
+  存档类型（自动／快速／手动／新存档）、电影化调色开关、休息提示、更新器提示等。
+
+### 译文
+
+- `manual_zh.tsv` 新增约 25 条；覆盖表 4317 条（1.17 时 4291 条）。
+
 ## 1.17.0 — 2026-10-29
 
 首个公开版本，对应 OpenYAMM 1.17。

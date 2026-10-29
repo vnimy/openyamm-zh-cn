@@ -148,3 +148,17 @@ game/ui/screens/NewGameScreen.cpp
 - `FontAsset` 与 `MenuScreenBase` 的字形接口有没有再变；
 - 新增的 `game/ui/*.cpp` 里有没有新的硬编码文案 → 跑 `tools/check_literals.py` 就能知道；
 - `english/global.txt` 这类表名在新版本里可能改名（1.17 就从 `global.txt` 变成了 `Global.txt`）。
+
+## 附：1.17 → 1.18 的增量
+
+上游 1.18 改了 75 个文件，与汉化重叠 6 个，三方合并后新增接入覆盖表的面：
+
+| 文件 | 1.18 的新文案 |
+|---|---|
+| `game/ui/screens/MainMenuScreen.cpp` | 「Assign Key」弹窗、更新器倒计时与下载进度模板 |
+| `game/ui/screens/LoadGameScreen.cpp` | 排序按钮 `Name`/`Newest`、规则过滤 `All`、存档类型 `Automatic`/`Quick`/`Manual`/`New save` |
+| `game/gameplay/JournalArcomageRuntime.cpp` | 魔幻牌日志页：大陆统计、酒馆清单（模板） |
+| `game/gameplay/GameplayScreenRuntime.cpp` | 休息提示、敌情警告、回合制／即时制切换、施法失败 |
+| `game/ui/GameplayPartyOverlayRenderer.cpp` | 电影化调色开关、`(off)` 后缀、笔记搜索无结果提示 |
+
+升级全过程见 [upgrading.md](upgrading.md)。

@@ -4293,3 +4293,29 @@ active	已激活
 inactive	未激活
 Stolen	赃物
 Hardened	强化
+Newest	最新
+Arcomage	魔幻牌
+Elsewhere	别处
+{continent}: {won} of {total} taverns won.	{continent}：{total} 家酒馆中已胜 {won} 家。
+{tavern}, {town}	{tavern}，{town}
+{place}: won	{place}：已获胜
+{place}: not won yet	{place}：尚未获胜
+Cinematic grading: On	电影化调色：开启
+Turn-based mode	回合制模式
+Realtime mode	实时模式
+You can't rest here!	这里不能休息！
+There are hostile enemies near!	附近有敌对的敌人！
+Spell failed	施法失败
+ (off)	（关）
+No notes match "{search}".	没有匹配「{search}」的笔记。
+Reverting in {seconds} seconds.	{seconds} 秒后恢复。
+OpenYAMM {failed} did not start, so OpenYAMM {installed} was restored. Your saves are unchanged.	OpenYAMM {failed} 未能启动，已恢复为 OpenYAMM {installed}。你的存档未受影响。
+Unsaved progress in the current adventure will be lost.	当前冒险中未保存的进度将会丢失。
+Save name already exists.	存档名已存在。
+Quick Save	快速保存
+Quick Load	快速读取
+Autosave	自动存档
+{done} of {total} MB	已完成 {done} MB，共 {total} MB
+Automatic	自动存档
+Quick	快速存档
+Manual	手动存档
