@@ -1,0 +1,38 @@
+# GitHub Actions 校验工作流。
+#
+# 启用方式：把本文件复制到 .github/workflows/check.yml 并提交。
+# 注意推送含 workflow 的提交需要 token 带 workflow 权限（gh auth refresh -s workflow），
+# 所以它没有默认放进仓库。本地等价的检查是 scripts/check.sh。
+
+name: 校验
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  tables:
+    name: 译文表校验
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 语法检查
+        run: python -m compileall -q tools
+
+      - name: 覆盖表体检（漏 tab / 空译文 / 重复键 / 编码损坏）
+        run: python tools/check_tables.py
+
+      - name: 覆盖表可重现（ui_text.txt 必须与源表一致）
+        run: |
+          python tools/make_ui_text.py
+          if ! git diff --quiet -- corpus/overrides/ui_text.txt; then
+            echo "::error::corpus/overrides/ui_text.txt 与源表不一致。请本地跑 python tools/make_ui_text.py 并提交结果。"
+            git diff --stat -- corpus/overrides/ui_text.txt
+            exit 1
+          fi

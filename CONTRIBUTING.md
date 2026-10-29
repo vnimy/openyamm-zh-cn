@@ -48,10 +48,11 @@
 提交前至少跑一遍：
 
 ```bash
-python -m compileall -q tools
-python tools/make_ui_text.py
-python tools/check_literals.py --allow-missing
+scripts/check.sh
 ```
+
+它做四件事：`compileall` 语法检查、`check_tables.py` 译表体检、确认 `ui_text.txt` 与源表一致、
+打印当前缺口数。CI 里跑的是同一套（配置见 [docs/ci/check.yml](docs/ci/check.yml)）。
 
 改引擎侧（C++）的话，另外看一眼 [docs/engine-changes.md](docs/engine-changes.md)，
 确认没和现有改动打架——尤其是 `FontAsset` 的字形接口与 `UiText` 的查表时机（必须在测量之前）。
