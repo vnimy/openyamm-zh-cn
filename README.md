@@ -1,27 +1,33 @@
 # OpenYAMM 简体中文补丁
 
 把 [OpenYAMM](https://github.com/OpenYAMM/OpenYAMM)（魔法门 6／7／8 的开源重制引擎）的文本系统从
-「单字节 CP1252 + 256 个字形槽」改造成「UTF-8 + 按 Unicode 码点取字形」，再配上整套简体中文译文，
+「单字节 CP1252 + 256 个字形槽」改造成「UTF-8 + 按 Unicode 码点取字形」，再配上简体中文译文，
 让这三部二十多年前的老游戏能在现代分辨率下正常显示中文。
 
+译文覆盖了大部分界面与对话，但**还没做到 100%**，仍有一些地方会冒出英文，具体范围见下一节。
+
 > Simplified Chinese localization for OpenYAMM (an open-source reimplementation of Might and Magic VI/VII/VIII).
-> The engine's 8-bit text path is replaced by UTF-8 with per-codepoint glyph lookup, plus a full zh_CN translation
-> layer. Documentation is in Chinese; the code comments are too.
+> The engine's 8-bit text path is replaced by UTF-8 with per-codepoint glyph lookup, plus a zh_CN translation
+> layer. Coverage is broad but not complete — see the status table below. Documentation is in Chinese;
+> the code comments are too.
 
 ---
 
 ## 现在能玩到什么程度
 
-| 部分 | 状态 | 说明 |
-|---|---|---|
-| 界面文字（菜单、设置、角色创建、物品栏、法术书、炼金台、日志、队伍面板……） | 基本完成 | 覆盖表 4291 条，按原文整串／前缀／模板三种方式匹配 |
-| NPC 对话正文 | 完成 | 1512 条，正文其实不在数据表里，来自内容包 lua 的字面量 |
-| 物品名／描述／词缀 | 完成 | 6583 格译自 MMMerge 官方简中包，词缀 260 条走展示层，并反转了「青铜戒指 of 御土」的语序 |
-| 怪物／NPC 名、屋名、地图名、技能、法术、书籍 | 完成 | 30 张 MMMerge 表按记录 ID 对齐 |
-| 字形渲染 | 完成 | 思源黑体子集，只烘焙译文实际用到的汉字 |
-| 引擎源码里剩余的硬编码文案 | 进行中 | `tools/check_literals.py` 报告 620 条待译（含误报，见 [docs/progress.md](docs/progress.md)） |
+先把话说清楚：**主线流程基本是中文了，但并没有全部译完。** 下表给的是实测口径，每一项都写明
+「译了多少」和「还会在哪儿看到英文」。游戏里碰上英文属于已知缺口，不是补丁装错了。
 
-想自己看还差哪些，不用进游戏截图：
+| 部分 | 现状 | 还会看到英文的地方 |
+|---|---|---|
+| 界面文字（菜单、设置、角色创建、物品栏、法术书、炼金台、日志、队伍面板……） | 主要界面已译，覆盖表 4291 条 | 引擎源码里散落的硬编码文案还有约 620 处没清理（含误报），实际能看到的多集中在灵气／光环日志、对话控制器、队伍面板快捷提示等 |
+| NPC 对话正文 | 已译 1512 条，约占全部台词九成 | 剩下约一成的台词仍是英文；话题菜单上的话题名（「Star Lake」之类）整块未译 |
+| 物品名／描述／词缀 | 名称与描述约八成半取自 MMMerge 官方简中包；词缀 260 条已全覆盖 | MMMerge 新增而官方语言包没收录的物品名，以及 `_misc191` 这类内部占位名 |
+| 怪物／NPC 名、屋名、地图名、技能、法术、书籍 | 大体已对齐：怪物名约 99%、NPC 名约 97%、地图名约 80% | 传送点描述约 59%（其余多为 `Placeholder Text`）；官方语言包未覆盖的记录保持英文 |
+| 字形渲染 | 已可用 | 新增译文里若出现字体子集外的字会显示成空白，重跑 `tools/font_subset.py` 即可 |
+
+完整的缺口清单、按文件的条数分布、以及「哪些是误报」见 **[docs/progress.md](docs/progress.md)**。
+想自己扫一遍，不用进游戏截图：
 
 ```bash
 python tools/check_literals.py --show 60
@@ -130,6 +136,8 @@ exe 要用「打包资产」方式构建（`-DOPENYAMM_DEV_ASSETS_DIR:STRING=ass
 
 ## 已知限制
 
+- **不是 100% 汉化**。界面与对话都有已知缺口（见上面的状态表和 [docs/progress.md](docs/progress.md)），
+  碰到英文属于正常范围；想推动的话，把出现英文的面板名报 issue 就行，不用截图。
 - `stats.txt` / `skill_des.txt` / `class.txt` 的第一列是引擎查表用的英文键，必须保持英文，只翻描述列。
 - 带换行的文案在表里写作字面 `\n`，**不能写真实换行**——表是一行一条，真换行会把记录切断。
   （这个坑踩过一次：一条旅店台词把表拆成了 5 行。）
