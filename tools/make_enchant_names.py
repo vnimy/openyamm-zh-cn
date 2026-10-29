@@ -1,0 +1,419 @@
+"""生成物品词缀（附魔）译名表 corpus/enchant_names_zh.tsv。
+
+物品全名由「基础名 + 词缀」拼成（`ItemEnchantRuntime::displayName`），词缀名直接来自
+`standard_item_enchants.txt` 的第 0/1 列与 `special_item_enchants.txt` 的第 0/1/16 列。
+那两张表是带分组标题、表尾说明块的不规则 TSV，改表容易错位，所以走展示层覆盖：
+本脚本把词缀原文与译名写成「原文<TAB>译文」，由 make_ui_text.py 并入 ui_text.txt。
+
+词缀在英文里是 `of X` 的后置修饰，中文没有对应结构，一律译成可作前置定语的短词
+（`of Earth Resistance` → `御土`），所以「青铜戒指 of Earth Resistance」读作「御土青铜戒指」。
+"""
+
+from __future__ import annotations
+
+import argparse
+import io
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import paths
+
+OUTPUT = paths.OVERRIDES / "enchant_names_zh.tsv"
+
+# 引擎自带的词缀表只在 engine.core 资产包里，仓库不落地原始文件，直接从 zip 读。
+# 由 main() 按 --packs 或自动探测填充。
+PACK_GLOBS: list[str] = []
+
+# --- 标准词缀：Bonus Stat（展示在 Special: 后）与 of Name（物品名后缀） ---
+STANDARD_STAT = {
+    "Might": "力量",
+    "Intellect": "智力",
+    "Personality": "个性",
+    "Endurance": "耐力",
+    "Accuracy": "精准",
+    "Speed": "速度",
+    "Luck": "幸运",
+    "Hit Points": "生命值",
+    "Spell Points": "法术值",
+    "Armor Class": "护甲等级",
+    "Fire Resistance": "火系抗性",
+    "Air Resistance": "气系抗性",
+    "Water Resistance": "水系抗性",
+    "Earth Resistance": "土系抗性",
+    "Mind Resistance": "心智抗性",
+    "Body Resistance": "肢体抗性",
+    "Alchemy skill": "炼金术",
+    "Stealing skill": "偷窃术",
+    "Disarm skill": "解除陷阱",
+    "ID Item skill": "物品鉴定",
+    "ID Monster skill": "怪物鉴定",
+    "Armsmaster skill": "武器大师",
+    "Dodge skill": "闪避",
+    "Unarmed skill": "徒手格斗",
+    "Great might": "强大力量",
+}
+
+STANDARD_SUFFIX = {
+    "of Might": "力量",
+    "of Thought": "思维",
+    "of Charm": "魅力",
+    "of Vigor": "活力",
+    "of Precision": "精准",
+    "of Speed": "迅捷",
+    "of Luck": "幸运",
+    "of Health": "生命",
+    "of Magic": "魔力",
+    "of Defense": "防护",
+    "of Fire Resistance": "御火",
+    "of Air Resistance": "御风",
+    "of Water Resistance": "御水",
+    "of Earth Resistance": "御土",
+    "of Mind Resistance": "御心",
+    "of Body Resistance": "御体",
+    "of Alchemy": "炼金",
+    "of Stealing": "盗窃",
+    "of Disarming": "解陷",
+    "of Items": "鉴物",
+    "of Monsters": "识怪",
+    "of Arms": "兵刃",
+    "of Dodging": "闪避",
+    "of the Fist": "铁拳",
+    "of great Might": "巨力",
+}
+
+# --- 特殊词缀：描述句（Special: 后）/ Name Add（物品名）/ Description（详细说明） ---
+SPECIAL_STAT = {
+    '" +1 to Seven Stats, HP, SP, Armor, Resistances."': "七项属性、生命、法术、护甲、抗性各 +1。",
+    '" +10 Spell points, Speed, Intellect."': "法术值、速度、智力 +10。",
+    '" +10 to Endurance, Armor, Hit points."': "耐力、护甲、生命值 +10。",
+    "+10 Endurance and Accuracy.": "耐力、精准 +10。",
+    "+10 Hit points and Regenerate Hit points over time.": "生命值 +10，并持续回复生命。",
+    "+10 Intellect and Luck.": "智力、幸运 +10。",
+    "+10 Might and Personality.": "力量、个性 +10。",
+    "+10 Spell points and Regenerate Spell points over time.": "法术值 +10，并持续回复法术。",
+    "+10 Water Resistance and +2 Alchemy skill.": "水系抗性 +10，炼金术 +2。",
+    "+10 to all Resistances.": "所有抗性 +10。",
+    "+10 to all Seven Statistics.": "七项属性各 +10。",
+    "+15 Endurance and +5 Armor.": "耐力 +15，护甲 +5。",
+    "+15 Endurance and Regenerate Hit points over time.": "耐力 +15，并持续回复生命。",
+    "+15 Luck and Regenerate Spell points over time.": "幸运 +15，并持续回复法术。",
+    "+20 Air Resistance and Shielding.": "气系抗性 +20，并获得护盾。",
+    "+3 ID Item and ID Monster skills.": "物品鉴定、怪物鉴定 +3。",
+    "+3 Stealing and Disarm skills.": "偷窃术、解除陷阱 +3。",
+    "+3 Unarmed and Dodging skills.": "徒手格斗、闪避 +3。",
+    "+30 Fire Resistance and Regenerate Hit points over time.": "火系抗性 +30，并持续回复生命。",
+    "+5 Intellect and Personality.": "智力、个性 +5。",
+    "+5 Level.": "等级 +5。",
+    "+5 Might and Endurance.": "力量、耐力 +5。",
+    "+5 Speed and Accuracy.": "速度、精准 +5。",
+    "Adds 1-6 points of Fire damage.": "附加 1-6 点火焰伤害。",
+    "Adds 10-20 points of Fire damage and +25 Might.": "附加 10-20 点火焰伤害，力量 +25。",
+    "Adds 12 points of Body damage.": "附加 12 点肢体伤害。",
+    "Adds 2-12 points of Fire damage.": "附加 2-12 点火焰伤害。",
+    "Adds 2-5 points of Electrical damage.": "附加 2-5 点电击伤害。",
+    "Adds 3-18 points of Fire damage.": "附加 3-18 点火焰伤害。",
+    "Adds 3-4 points of Cold damage.": "附加 3-4 点寒冷伤害。",
+    "Adds 4-10 points of Electrical damage.": "附加 4-10 点电击伤害。",
+    "Adds 5 points of Body damage and +2 Disarm skill.": "附加 5 点肢体伤害，解除陷阱 +2。",
+    "Adds 5 points of Body damage.": "附加 5 点肢体伤害。",
+    "Adds 6-15 points of Electrical damage.": "附加 6-15 点电击伤害。",
+    "Adds 6-8 points of Cold damage and +5 Armor Class.": "附加 6-8 点寒冷伤害，护甲等级 +5。",
+    "Adds 6-8 points of Cold damage.": "附加 6-8 点寒冷伤害。",
+    "Adds 8 points of Body damage.": "附加 8 点肢体伤害。",
+    "Adds 9-12 points of Cold damage.": "附加 9-12 点寒冷伤害。",
+    "Double Damage vs. Elementals.": "对元素生物造成双倍伤害。",
+    "Double Damage vs. Ogres": "对食人魔造成双倍伤害。",
+    "Double Damage vs. Titans.": "对泰坦造成双倍伤害。",
+    "Double Damage vs. Undead.": "对亡灵造成双倍伤害。",
+    "Double damage vs Dragons": "对巨龙造成双倍伤害。",
+    "Drain Hit Points from target and Increased Weapon speed.": "吸取目标生命，并提升武器速度。",
+    "Drain Hit Points from target.": "吸取目标生命。",
+    "Explosive Impact!": "爆裂冲击！",
+    "Half damage from all missile attacks.": "受到的所有远程攻击伤害减半。",
+    "Increased Knockback.": "击退效果增强。",
+    "Increased Value.": "价值提升。",
+    "Increased Weapon speed.": "武器速度提升。",
+    "Increases chance of Disarming.": "提高解除陷阱的成功率。",
+    "Increases effect of all Air spells.": "增强所有气系法术的效果。",
+    "Increases effect of all Body spells.": "增强所有肢体法术的效果。",
+    "Increases effect of all Dark spells.": "增强所有黑暗法术的效果。",
+    "Increases effect of all Earth spells.": "增强所有土系法术的效果。",
+    "Increases effect of all Fire spells.": "增强所有火系法术的效果。",
+    "Increases effect of all Light spells.": "增强所有光明法术的效果。",
+    "Increases effect of all Mind spells.": "增强所有心智法术的效果。",
+    "Increases effect of all Spirit spells.": "增强所有灵魂法术的效果。",
+    "Increases effect of all Water spells.": "增强所有水系法术的效果。",
+    "Increases rate of Recovery.": "提高恢复速度。",
+    "Prevents damage from drowning.": "免疫溺水伤害。",
+    "Prevents damage from falling.": "免疫坠落伤害。",
+    "Regenerate Hit points over time.": "持续回复生命。",
+    "Regenerate Spell points and Hit points over time.": "持续回复法术与生命。",
+    "Regenerate Spell points over time.": "持续回复法术。",
+    "Throws sparks into enemy.": "向敌人抛出火花。",
+    "Wearer resistant to Diseases.": "佩戴者免疫疾病。",
+    "Wearer resistant to Insanity.": "佩戴者免疫疯狂。",
+    "Wearer resistant to Paralysis.": "佩戴者免疫麻痹。",
+    "Wearer resistant to Poison.": "佩戴者免疫中毒。",
+    "Wearer resistant to Sleep.": "佩戴者免疫睡眠。",
+    "Wearer resistant to Stone.": "佩戴者免疫石化。",
+}
+
+SPECIAL_SUFFIX = {
+    "Antique": "古董",
+    "Assassins'": "刺客",
+    "Barbarians'": "蛮族",
+    "Dragon Slaying": "屠龙",
+    "Elemental Slaying": "灭元素",
+    "Monks'": "武僧",
+    "Of David": "大卫",
+    "Ogre Slaying": "屠魔",
+    "Rogues'": "游荡者",
+    "Swift": "疾行",
+    "Thieves'": "盗贼",
+    "Undead Slaying": "灭亡灵",
+    "Vampiric": "吸血",
+    "Warriors'": "战士",
+    "Wizards'": "法师",
+    "of Acid": "强酸",
+    "of Air Magic": "气系法术",
+    "of Alarms": "警醒",
+    "of Antidotes": "解毒",
+    "of Body Magic": "肢体法术",
+    "of Carnage": "杀戮",
+    "of Cold": "寒冰",
+    "of Dark Magic": "黑暗法术",
+    "of Darkness": "幽暗",
+    "of Doom": "厄运",
+    "of Earth": "大地",
+    "of Earth Magic": "土系法术",
+    "of Feather Falling": "羽落",
+    "of Fire": "烈焰",
+    "of Fire Magic": "火系法术",
+    "of Flame": "炽焰",
+    "of Force": "原力",
+    "of Freedom": "自由",
+    "of Frost": "霜冻",
+    "of Ice": "寒冰",
+    "of Identifying": "鉴识",
+    "of Immunity": "免疫",
+    "of Infernos": "炼狱",
+    "of Life": "生命",
+    "of Light Magic": "光明法术",
+    "of Lightning": "闪电",
+    "of Mana": "法力",
+    "of Mind Magic": "心智法术",
+    "of Plenty": "丰饶",
+    "of Poison": "剧毒",
+    "of Power": "力量",
+    "of Protection": "庇护",
+    "of Recovery": "复元",
+    "of Regeneration": "再生",
+    "of Sanity": "清明",
+    "of Shielding": "护盾",
+    "of Sparking": "电花",
+    "of Sparks": "火花",
+    "of Spirit Magic": "灵魂法术",
+    "of The Dragon": "巨龙",
+    "of The Eclipse": "日蚀",
+    "of The Gods": "神祇",
+    "of The Golem": "魔像",
+    "of The Medusa": "美杜莎",
+    "of The Moon": "明月",
+    "of The Phoenix": "凤凰",
+    "of The Sky": "苍穹",
+    "of The Stars": "星辰",
+    "of The Sun": "烈日",
+    "of The Troll": "巨魔",
+    "of The Unicorn": "独角兽",
+    "of Thievery": "盗窃",
+    "of Thunderbolts": "雷霆",
+    "of Venom": "毒液",
+    "of Water Magic": "水系法术",
+    "of Water Walking": "水面行走",
+    "of the Ocean": "汪洋",
+    "of the Storm": "风暴",
+}
+
+# 特殊词缀的详细说明列（第 16 列），鉴定后显示在 Special: 行。
+# 表里这些值有的整体裹着双引号，必须按原样匹配，所以键都写成 repr 里的样子。
+SPECIAL_DESCRIPTION = {
+    "(+10) on all four resistances": "（全抗性 +10）",
+    "(+10) on all 7 stats": "（七项属性各 +10）",
+    '"projectile explodes (fireball radius,dmg=weapdmg)"': "（弹体爆炸：火球半径，伤害等于武器伤害）",
+    "(3-4) cold damage": "（3-4）寒冷伤害",
+    "(6-8) cold damage": "（6-8）寒冷伤害",
+    "(9-12) cold damage": "（9-12）寒冷伤害",
+    "(2-5) elec damage": "（2-5）电击伤害",
+    "(4-10) elec damage": "（4-10）电击伤害",
+    "(6-15) elec damage": "（6-15）电击伤害",
+    "(1-6) fire damage": "（1-6）火焰伤害",
+    "(2-12) fire damage": "（2-12）火焰伤害",
+    "(3-18) fire damage": "（3-18）火焰伤害",
+    "(5) pois damage": "（5）毒素伤害",
+    "(8) pois damage": "（8）毒素伤害",
+    "(12) pois damage": "（12）毒素伤害",
+    "Heal 20% of damage done on attack": "攻击时回复所造成伤害的 20%",
+    "(-10) pts on recovery from being hit": "被击中后的恢复（-10）",
+    "Immune to desease condition": "免疫疾病状态",
+    "immune to insanity condition": "免疫疯狂状态",
+    "immune to paralize condition": "免疫麻痹状态",
+    "immune to poison condition": "免疫中毒状态",
+    "immune to sleep condition": "免疫睡眠状态",
+    "immune to stone condition": "免疫石化状态",
+    "Increase knockback effect (X10)": "击退效果增强（10 倍）",
+    "(+5) char level": "角色等级（+5）",
+    "50% increase of spell effect and duration": "法术效果与持续时间 +50%",
+    "double chance to perform lockpick and steal skill": "开锁与偷窃的成功率翻倍",
+    "(1/2)dmg from all missle attacks (not cumulative)": "所有远程攻击伤害减半（不叠加）",
+    '"Regenerate 1hp/x while walking, etc"': "行走时每单位时间回复 1 点生命，等等",
+    '"Regenerate 1sp/x while walking, etc"': "行走时每单位时间回复 1 点法术，等等",
+    '"X 2 damage vs Ogres, Ogre Magi, Trolls, Troll Peasants, and Cyclops"':
+        "对食人魔、食人魔法师、巨魔、巨魔农夫和独眼巨人造成 2 倍伤害",
+    "X 2 damage vs all dragons": "对所有巨龙造成 2 倍伤害",
+    '"(-20) pts on weapon speed, Vampiric"': "武器速度（-20），吸血",
+    '"(+1) 7stats,hpts,spts,AC,4 resistances"': "七项属性、生命、法术、护甲、四系抗性各（+1）",
+    '"End (+10), AC (+10), HP (+10)"': "耐力（+10），护甲（+10），生命（+10）",
+    '"HP (+10), Regen hpts"': "生命（+10），持续回复生命",
+    '"Speed (+5), Acc (+5)"': "速度（+5），精准（+5）",
+    '"(10-20) Fire damage, Might (+25)"': "（10-20）火焰伤害，力量（+25）",
+    '"SP (+10), Regen spts"': "法术（+10），持续回复法术",
+    '"End (+15), AC (+5)"': "耐力（+15），护甲（+5）",
+    '"Luck (+10), Int (+10)"': "幸运（+10），智力（+10）",
+    '"Fire Res (+30), Regen hpts"': "火系抗性（+30），持续回复生命",
+    '"Int (+10), Spd (+10), SP (+10)"': "智力（+10），速度（+10），法术（+10）",
+    '"End (+10), Acc (+10)"': "耐力（+10），精准（+10）",
+    '"Might(+10), Per (+10)"': "力量（+10），个性（+10）",
+    '"End (+15), Regen hpts"': "耐力（+15），持续回复生命",
+    '"Luck (+15), Regen spts"': "幸运（+15），持续回复法术",
+    '"Might (+5), End (+5)"': "力量（+5），耐力（+5）",
+    '"Intelect (+5), Per (+5)"': "智力（+5），个性（+5）",
+    "Gold value increased": "金币价值提升",
+    "(-20) pts on weapon speed": "武器速度（-20）",
+    "+3 to Dodging and Unarmed skill": "闪避与徒手格斗 +3",
+    "+3 to Stealing and Disarm skill": "偷窃与解除陷阱 +3",
+    "+3 to ID Monster and ID Item skill": "怪物鉴定与物品鉴定 +3",
+    '"x2 damage vs Fire, Earth, Water, and Air elementals"': "对火、土、水、气四种元素造成 2 倍伤害",
+    '"x2 damage on Liches, Vampires, Zombies, Skeletons, Ghosts, and Wights"':
+        "对巫妖、吸血鬼、丧尸、骷髅、幽灵和尸鬼造成 2 倍伤害",
+    "UNUSED x2 damage on all Titans": "（未启用）对所有泰坦造成 2 倍伤害",
+    '"Regenerate 1 hp/x and 1 sp/x while walking, etc."': "行走时每单位时间回复 1 点生命与 1 点法术，等等",
+    "(5) pois damage and +2 Disarm skill": "（5）毒素伤害，解除陷阱 +2",
+    "(6-8) cold damage and +5 AC": "（6-8）寒冷伤害，护甲 +5",
+    "+20 Air Resistance and 1/2 damage from missile attacks": "气系抗性 +20，远程攻击伤害减半",
+    "+10 Water Resistance and +2 Alchemy skill": "水系抗性 +10，炼金术 +2",
+    "Character with item takes no damage from drowning": "携带者免疫溺水伤害",
+    "Character with item takes no damage from falling": "携带者免疫坠落伤害",
+    "Throws sparks into enemy.": "向敌人抛出火花。",
+}
+
+# 表尾的说明块（分组标题、取值行、宝箱等级规则），不是词缀，遇到即视为数据已结束。
+NOISE_PREFIXES = (
+    "Standard Bonuses",
+    "Special Bonuses",
+    "Bonus Stat",
+    "Description fo special",
+    "Bonus range",
+    "lvl",
+    "(note",
+    "Treasure Level",
+    "A=",
+    "B=",
+    "C=",
+    "D=",
+    "If treasure Level",
+)
+
+
+def read_rows(name: str) -> list[list[str]]:
+	import glob
+	import zipfile
+
+	archive = f"data_tables/{name}"
+	for pattern in PACK_GLOBS:
+		for path in sorted(glob.glob(pattern)):
+			with zipfile.ZipFile(path) as archive_file:
+				if archive not in archive_file.namelist():
+					continue
+				text = archive_file.read(archive).decode("utf-8", "replace")
+			rows = []
+			for line in text.splitlines():
+				if not line.strip():
+					continue
+				cells = line.split("\t")
+				if cells[0].strip().startswith(NOISE_PREFIXES):
+					continue
+				rows.append(cells)
+			return rows
+	raise SystemExit(f"在资产包里找不到 {name}，检查 --packs 指向的目录")
+
+
+def collect() -> tuple[dict[str, str], list[str]]:
+	pairs: dict[str, str] = {}
+
+	def put(original: str, translated: str) -> None:
+		original = original.strip()
+		if original and original not in pairs:
+			pairs[original] = translated
+
+	for key, value in STANDARD_STAT.items():
+		put(key, value)
+	for key, value in STANDARD_SUFFIX.items():
+		put(key, value)
+	for key, value in SPECIAL_STAT.items():
+		put(key, value)
+	for key, value in SPECIAL_SUFFIX.items():
+		put(key, value)
+	for key, value in SPECIAL_DESCRIPTION.items():
+		put(key, value)
+
+	# 抽查引擎表里还有哪些词缀没被上面的映射覆盖。
+	missing: list[str] = []
+	for row in read_rows("standard_item_enchants.txt"):
+		stat = row[0].strip()
+		suffix = row[1].strip() if len(row) > 1 else ""
+		if stat and stat not in pairs:
+			missing.append("standard stat: " + stat)
+		if suffix and suffix not in pairs:
+			missing.append("standard suffix: " + suffix)
+	for row in read_rows("special_item_enchants.txt"):
+		stat = row[0].strip()
+		suffix = row[1].strip() if len(row) > 1 else ""
+		description = row[16].strip() if len(row) > 16 else ""
+		if stat and stat not in pairs:
+			missing.append("special stat: " + stat)
+		if suffix and suffix not in pairs:
+			missing.append("special suffix: " + suffix)
+		if description and description not in pairs:
+			missing.append("special description: " + description)
+	return pairs, missing
+
+
+def main() -> None:
+	global PACK_GLOBS
+
+	parser = argparse.ArgumentParser(description=__doc__,
+									 formatter_class=argparse.RawDescriptionHelpFormatter)
+	parser.add_argument("--packs", type=Path, default=None,
+						help="原版安装的 assets/packs 目录（默认自动探测，或设 OPENYAMM_PACKS）")
+	parser.add_argument("--out", type=Path, default=OUTPUT, help="输出 tsv（默认 corpus/overrides/enchant_names_zh.tsv）")
+	arguments = parser.parse_args()
+
+	packs = paths.asset_packs(arguments.packs)
+	PACK_GLOBS = [str(packs / "engine.core-*.zip"), str(packs / "*.zip")]
+
+	pairs, missing = collect()
+	lines = ["# 物品词缀译名（展示层覆盖）：原文<TAB>译文", "# 由 tools/make_enchant_names.py 生成，勿手改。"]
+	lines += [f"{original}\t{translated}" for original, translated in pairs.items()]
+	arguments.out.parent.mkdir(parents=True, exist_ok=True)
+	io.open(arguments.out, "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
+	print(f"wrote {arguments.out} ({len(pairs)} entries)")
+	if missing:
+		print("未覆盖的引擎词缀：")
+		for item in missing:
+			print("  " + item)
+
+
+if __name__ == "__main__":
+	sys.exit(main())

@@ -1,0 +1,1608 @@
+#	Name	Proprieter Name	Title	Enter text
+1	 真勇	 克尔文	 铁匠	0
+2	 锐锋	 利斧	 铁匠	0
+3	 磨钢	 卡修	 铁匠	0
+4	 蓝斯之矛	 蓝斯	 铁匠	0
+5	 沾血匕首与刀刃	 艾瑞其	 铁匠	0
+6	 爱煞之斧	 爱煞	 铁匠	0
+7	 定作匕首	 克理提雅斯	 铁匠	0
+8	 武士之刃	 托尔	 铁匠	0
+9	 百炼精钢	 赛达	 铁匠	0
+10	 皇家锻造场	 艾蒙德	 铁匠	0
+11	 猎人小屋	 加德	 铁匠	0
+12	 神圣之剑	 查尔斯	 铁匠	0
+13	 怨恨之剑	 斯伯特	 铁匠	0
+14	 嗜血之剑	 贺斯	 铁匠	0
+15	 汪尔达的宝剑和弓箭	 汪尔达	 铁匠	0
+16	 百发百中的弓箭	 罗宾	 铁匠	0
+17	 精良战斧	 阿尔塞	 铁匠	0
+18	 宝剑之屋	 罗伯特	 铁匠	0
+19	 精制武器	 忒林	 铁匠	0
+20	 防御之神	 麦德	 铁匠	0
+21	 铁木长矛	 斯麦泽	 铁匠	0
+22	 刀具店	 凯恩	 铁匠	
+23	 铁锤和钢钳	 布兰德	 铁匠	
+24	 利刃	 卢克	 铁匠	
+25	 鹰眼	 梅林	 铁匠	
+26	 武器长矛店	 兰登	 铁匠	
+27	 钝型武器	 马丁	 铁匠	
+28	 磨刀石	 科温	 铁匠	
+29	 羽毛和绳索	 杰特	 铁匠	
+30	 短兵刃	 布雷斯	 铁匠	
+31	 阿卜杜的廉价武器	 奥伯伦	 铁匠	
+32	 鸣铁	 本尼迪克特	 铁匠	
+33	 飞标和飞弹	 朱丽安	 铁匠	
+34	 粗棒和长矛	 杰拉德	 铁匠	
+35	 骑士乐园	 埃里克	 铁匠	
+36	 皮革店	 里斯那克	 盔甲工匠	0
+37	 打磨盾牌	 瓦维斯	 盔甲工匠	0
+38	 军械库	 其那尔	 盔甲工匠	0
+39	 钢甲防御	 巴尔佛	 盔甲工匠	0
+40	 超凡皮革	 波罗斯批罗	 盔甲工匠	0
+41	 连接锁甲	 戴李奥斯	 盔甲工匠	0
+42	 卡尔的战斗装备	 卡尔	 盔甲工匠	0
+43	 埃里克的铠甲店	 埃里克	 盔甲工匠	0
+44	 枯木城堡	Placeholder		0
+45	Placeholder	Placeholder		0
+46	Placeholder	Placeholder		0
+47	 农夫铠甲店	 彼得	 盔甲工匠	0
+48	Placeholder	Placeholder		0
+49	 皇家铠甲店	 戴维	 盔甲工匠	0
+50	Placeholder	Placeholder		0
+51	 鹿皮和盾牌	 赛伯	 盔甲工匠	0
+52	 荣誉铠甲店	 凯斯伯	 盔甲工匠	0
+53	 怨恨之盾	 麦莱斯	 盔甲工匠	0
+54	 皮革店	 凯斯	 盔甲工匠	0
+55	 迷幻之店	 布朗达	 盔甲工匠	0
+56	 防护之店	 泰伦斯	 盔甲工匠	0
+57	 精制肩甲	 亚瑟	 盔甲工匠	0
+58	 泰尔的铠甲和盾牌	 泰尔	 盔甲工匠	0
+59	 精制铠甲和盾牌	 埃尔莫	 盔甲工匠	0
+60	 绿林锻造场	 拉里克	 盔甲工匠	0
+61	 奇妙手套	 莫尔根	 盔甲工匠	0
+62	 常规防御	 哈里	 盔甲工匠	
+63	 铠甲零售市场	 卡尔文	 盔甲工匠	
+64	 铠甲修补店	 尤利西斯	 盔甲工匠	
+65	 亚伯拉罕的金属制品	 亚伯拉罕	 盔甲工匠	
+66	 盔甲之拳	 理查德	 盔甲工匠	
+67	 铠甲制造厂	 威廉	 盔甲工匠	
+68	 钢铁防御	 伍德罗	 盔甲工匠	
+69	 阿卜杜的廉价铠甲	 安德鲁	 盔甲工匠	
+70	 精良铠甲	 约翰	 盔甲工匠	
+71	 铠甲和护胫	 德怀特	 盔甲工匠	
+72	 步兵之友	 林登	 盔甲工匠	
+73	 铠甲作坊	 乔治	 盔甲工匠	
+74	 银质铠甲和盾牌	 富兰克林	 盔甲工匠	
+75	 迷幻锁子甲	 西奥多	 盔甲工匠	
+76	 恐怖魔法	 希斯	 魔术师	0
+77	 有用之物	 杰德	 魔术师	0
+78	 神秘宝物	 爱蓝雅	 魔术师	0
+79	 结界和饰品	 可尔萨斯	 魔术师	0
+80	 神秘大屠杀	 耐德	 魔术师	0
+81	 力量护身符	 梭尔	 魔术师	0
+82	 雷格那之礼物	 佛林恩	 魔术师	0
+83	 卡欧里的奇妙物品	 卡欧里	 魔术师	0
+84	 神奇的绿宝石	 莎斯顿	 魔术师	0
+85	 奥托的神奇宝物	 奥托	 魔术师	0
+86	 皇家魔法商店	 内森	 魔术师	0
+87	 自然魔法商店	 詹姆士	 魔术师	0
+88	 死亡之门	 瑞格	 魔术师	0
+89	 古代魔法商店	 赛耐尔	 魔术师	0
+90	 奇幻魔法商店	 波纳德	 魔术师	0
+91	 埃尔德斯的魔法商店	 埃尔德斯	 魔术师	0
+92	 神秘宝物	 拉丝诺	 魔术师	0
+93	 精致宝物	 多泽	 魔术师	0
+94	 神圣之物	 科比	 魔术师	0
+95	 神秘力量	 独眼	 魔术师	0
+96	 神秘之页	 赛伦特	 魔术师	0
+97	 透视眼	 威尔玛	 炼金术士	
+98	 巫师药剂	 琳达	 炼金术士	
+99	 小魔法店	 沃尔夫冈	 炼金术士	
+100	 阿卜杜的廉价魔法器具 	 刚达巴	 炼金术士	
+101	 蝾螈之眼	 奥斯里克	 炼金术士	
+102	 烟雾和镜子	 凯勒布理鹏	 炼金术士	
+103	 苹果、荆棘和魔药	 弗吉尼亚	 炼金术士	
+104	 超常魔法	 诺亚	 炼金术士	
+105	 巫师店铺	 布伦达	 炼金术士	
+106	 泰的小首饰	 泰	 炼金术士	
+107	 炼金术和咒语	 艾萨克	 炼金术士	
+108	 小幻术	 布伦希尔德	 炼金术士	
+109	 强力魔法	 阿拉斯泰尔	 炼金术士	
+110	 草药灵药	 夏尔文	 炼金术士	0
+111	 药剂师	 崔丝坦	 炼金术士	0
+112	 完工的药剂	 那瓦瑞	 炼金术士	0
+113	 恶狼克星	 米兰沙	 炼金术士	0
+114	 治病灵药	 欧丽霞	 炼金术士	0
+115	 派瑞呃斯的药粉	 派瑞呃斯	 炼金术士	0
+116	 蓝瓶	 凯斯瑞	 炼金术士	0
+117	 灵丹妙药	 杰西卡	 炼金术士	0
+118	 梦幻之瓶	 马格莉特	 炼金术士	0
+119	 神奇药剂	 舒曼迪克	 炼金术士	0
+120	 黑色药瓶	 阿什	 炼金术士	0
+121	 埃德蒙德的圣瓶	 埃德蒙德	 炼金术士	0
+122	 忠诚法师	 茱丽安	 炼金术士	0
+123	 地狱的诱惑	 诺加德	 炼金术士	0
+124	 强力药剂	 迪格	 炼金术士	0
+125	 魔法之瓶	 塞恩德	 炼金术士	0
+126	 芳香之屋	 卡西里恩	 炼金术士	0
+127	 紧急援助	 阿格塔	 炼金术士	0
+128	 初级火系魔法行会	 赛斯里克	 行会首领	0
+129	 高级火系魔法行会	 佳尼	 行会首领	0
+130	 高级火系魔法行会	 艾力恩	 行会首领	0
+131	 顶级火系魔法行会	 罗哈	 行会首领	0
+132	 初级火系魔法行会	 马顿	 行会首领	
+133	 高级火系魔法行会	 丹尼斯	 行会首领	
+134	 初级空气魔法行会	 珍尼	 行会首领	0
+135	 高级空气魔法行会	 帕妮	 行会首领	0
+136	 高级空气魔法行会	 布里斯	 行会首领	0
+137	 顶级空气魔法行会	 萨莫	 行会首领	0
+138	 初级空气魔法行会	 阿尔迪恩	 行会首领	
+139	 高级空气魔法行会	 莫里斯	 行会首领	
+140	 初级水系魔法行会	 拉伦	 行会首领	0
+141	 高级水系魔法行会	 阿萨纳	 行会首领	0
+142	 高级水系魔法行会	 伦德	 行会首领	0
+143	 顶级水系魔法行会	 范奥伦	 行会首领	0
+144	 初级水系魔法行会	 埃利斯	 行会首领	
+145	 高级水系魔法行会	 特伦斯	 行会首领	
+146	 初级土系魔法行会	 帕伯	 行会首领	0
+147	 高级土系魔法行会	 赛力奥	 行会首领	0
+148	 高级土系魔法行会	 艾里贺斯	 行会首领	0
+149	 顶级土系魔法行会	 贝尔德	 行会首领	0
+150	 初级土系魔法行会	 劳伦斯	 行会首领	
+151	 高级土系魔法行会	 卡崔利姆	 行会首领	
+152	 初级灵魂魔法行会	 菲艾特	 行会首领	0
+153	 高级灵魂魔法行会	 维利	 行会首领	0
+154	 高级灵魂魔法行会	 斯莱尼特	 行会首领	0
+155	 顶级灵魂魔法行会	 莫兰德	 行会首领	0
+156	 初级灵魂魔法行会	 罗莎琳	 行会首领	
+157	 高级灵魂魔法行会	 格兰娜	 行会首领	
+158	 初级心智魔法行会	 莱里克	 行会首领	0
+159	 高级心智魔法行会	 阿格塔	 行会首领	0
+160	 高级心智魔法行会	 赛富林	 行会首领	0
+161	 顶级心智魔法行会	 雷吉娜	 行会首领	0
+162	 初级心智魔法行会	 克劳德	 行会首领	
+163	 高级心智魔法行会	 佩内洛普	 行会首领	
+164	 初级肢体魔法行会	 斯坦迪斯	 行会首领	0
+165	 高级肢体魔法行会	 吉伦德	 行会首领	0
+166	 高级肢体魔法行会	 恩伯斯特	 行会首领	0
+167	 顶级肢体魔法行会	 阿拉密斯	 行会首领	0
+168	 初级肢体魔法行会	 卡拉	 行会首领	
+169	 高级肢体魔法行会	 维罗尼卡	 行会首领	
+170	 光明魔法行会	 雪维	 抄写员	0
+171	 初级光明魔法行会	 莱维斯	 行会首领	0
+172	 高级光明魔法行会	 赛因	 行会首领	0
+173	 初级光明魔法行会	 安森	 行会首领	
+174	 高级光明魔法行会	 查姆	 行会首领	
+175	 暗黑魔法行会	 拉西亚	 抄写员	0
+176	 初级暗黑魔法行会	 普泽斯	 行会首领	0
+177	Placeholder	Placeholder	 行会首领	0
+178	 高级暗黑魔法行会	 安格维斯	 行会首领	0
+179	Placeholder	Placeholder	 行会首领	0
+180	 初级暗黑魔法行会	 杰梅因	 行会首领	
+181	 高级暗黑魔法行会	 塞布尔	 行会首领	
+182	 诅咒和治疗	 雅新	 抄写员	0
+183	 元素魔法行会	 雅迪雅	 抄写员	0
+184	 维克沙新的六角形	 维克沙新	 抄写员	0
+185	 防护性魔法	 逵雅纳	 抄写员	0
+186	 自我公会	 葛求	 抄写员	0
+187	 自我学习	 赖林	 抄写员	0
+188	 心智魔法行会	 迪多斯	 抄写员	0
+189	 初级自我魔法行会	 特丽安娜	 行会首领	
+190	 高级自我魔法行会	 阿玛丽	 行会首领	
+191	 海盗之巢	 隐士	 行会首领	
+192	 海盗之巢	 罗布	 行会首领	
+193	 保护服务	 圭多	 行会首领	
+194	 保护服务	 路易吉	 行会首领	
+195	 走私者行会	 蒂莫西	 行会首领	
+196	 走私者行会	 沃尔特	 行会首领	
+197	 终极利刃	 达丽玛	 行会首领	
+198	 双刃剑锋	 弗拉迪米尔	 行会首领	
+199	 雷霆震怒	 理查德	 行会首领	
+200	 双刃剑锋	 达米安	 行会首领	
+201	 终极利刃	 内森	 行会首领	
+202	 雷霆震怒	 罗伯特	 行会首领	
+203	 哈蒙代尔市政厅	 福瑞德里克	 公务员	0
+204	 斯坦德威克市政厅	 劳伦斯	 公务员	0
+205	 匹尔邦特市政厅	 斯丹芬尼	 公务员	0
+206	 黎明之厅	 阿卡勒斯	 公务员	0
+207	 午夜之厅	 科雷	 公务员	0
+208	 市政厅	 贾尼斯	 公务员	
+209	 高级议会			Enter
+210	 市政厅	 欧尼斯特	 公务员	
+211	 市政厅	 杰克	 公务员	
+212	 部落酋长厅堂	Placeholder	 布拉克许·单牙	0
+213	 山德罗/ 谭特的谒见室	Placeholder	 山德罗	0
+214	 太阳神庙领袖的房间	Placeholder	Placeholder	0
+215	 马克汉姆爵士的房间			
+216	 加冕殿			
+217	 加冕殿	Placeholder		0
+218	 加冕殿	Placeholder		0
+219	 加冕殿	Placeholder		0
+220	 加冕殿	Placeholder		0
+221	 加冕殿	Placeholder		0
+222	 加冕殿			
+223	 加冕殿			
+224	 加冕殿			
+225	 加冕殿			
+226	 加冕殿			
+227	 加冕殿			
+228	 葛卢格和葛卢伯	 土伯瑞克	 旅店老板	0
+229	 凯所的凯提纳	 凯所	 旅店老板	0
+230	 获利之屋	 坦尼林安	 旅店老板	0
+231	 干渴的喉咙	 瑞斯纳	 旅店老板	0
+232	 龙血旅店	 美乐地	 服务员	0
+233	 黑色伙伴	 费提许	 旅店老板	0
+234	 旅行者休息站	 瓦维斯	 旅店老板	0
+235	 牛眼旅店	 葛尔妮	 旅店老板	0
+236	 海盗休息站	 长胡	 旅店老板	0
+237	 跳舞食人妖	 崔西雅	 服务员	0
+238	 米和的休息站	 米和	 旅店老板	0
+239	 双叶旅店	 亚伦	 旅店老板	0
+240	 迎宾旅店	 科比	 旅店老板	0
+241	 狮鹫旅店	 安德鲁	 旅店老板	0
+242	 翡翠旅店	 艾米尔	 旅店老板	0
+243	 怪物旅店	 卡西亚	 旅店老板	0
+244	 宾至如归旅店	 比斯莫	 旅店老板	0
+245	 美酒佳肴旅店	 乔塞夫	 旅店老板	0
+246	 旅行之家	 保罗	 旅店老板	0
+247	 法师旅店	 温斯顿	 旅店老板	0
+248	 幸运旅店	 菲力	 旅店老板	0
+249	 矿工旅店	 欧弗恩	 旅店老板	0
+250	 忠诚佣兵旅店	 凯尔	 旅店老板	0
+251	 勇士旅店	 科诺	 旅店老板	0
+252	 克劳格旅店	 克劳格	 旅店老板	0
+253	 骑士旅店	 迈克尔	 旅店老板	0
+254	 美景旅店	 沙莫斯	 旅店老板	0
+255	 格里安旅店	 格里安	 旅店老板	0
+256	 舒适旅店	 艾拉雷	 旅店老板	0
+257	 英雄旅店	 豪伯特	 旅店老板	0
+258	 优雅旅店	 莫雷	 旅店老板	0
+259	 天堂鸟旅店	 泰里亚	 旅店老板	0
+260	 孤独骑士	 德克	 旅店老板	
+261	 掴掌旅店	 马丁	 旅店老板	
+262	 神箭穿梭	 斯蒂芬	 旅店老板	
+263	 巨石投掷	 格欧罗斯	 旅店老板	
+264	 国王冠冕	 佛朗哥	 旅店老板	
+265	 真心诚意	 罗杰	 旅店老板	
+266	 恶魔之牙	 卡古尔	 旅店老板	
+267	 断裂利刃	 埃里克	 旅店老板	
+268	 起锚	 彼得	 旅店老板	
+269	 丛林	 阿什	 旅店老板	
+270	 萦绕之地	 托尼	 旅店老板	
+271	 锈蚀之盾	 亚伦	 旅店老板	
+272	 维克多大厅	 维克多	 旅店老板	
+273	 余音绕梁	 凯蒂	 旅店老板	
+274	 洛克汉姆的骄傲	 查尔斯	 旅店老板	
+275	 诗歌与理性	 辛西娅	 旅店老板	
+276	 冰冻大酒杯	 斯坦	 旅店老板	
+277	 绿洲	 阿扎兹	 旅店老板	
+278	 鸣月	 乔治	 旅店老板	
+279	 毁诺	 罗伊斯	 旅店老板	
+280	 一线生机	 梅利莎	 旅店老板	
+281	 安全之处	 伊许	 银行家	0
+282	 史提尔的金库	 史提尔	 银行家	0
+283	 金融公会聚会所	 伊斯朗	 银行家	0
+284	 血之银行	 为杰	 银行家	0
+285	 巴尔萨煞之银行	 伊格纳斯	 银行家	0
+286	 信托银行	 达那尔	 银行家	0
+287	 埃拉西亚银行	 阿利斯	 银行家	0
+288	 大自然银行	 布里门	 银行家	0
+289	 富贵银行	 莱恩尔	 银行家	0
+290	 富豪银行	 格勒德	 银行家	0
+291	 存款处	 莎普	 银行家	0
+292	 信誉银行	 达夫	 银行家	0
+293	 实业银行	 莱奥特	 银行家	0
+294	Placeholder	Placeholder	 银行家	0
+295	Placeholder	Placeholder	 银行家	0
+296	Placeholder	Placeholder	 银行家	0
+297	 储蓄所	 施密迪	 银行家	
+298	 储备室	 斯坦利	 银行家	
+299	 恩洛斯第一银行	 詹姆士	 银行家	
+300	 外汇交易	 安德鲁	 银行家	
+301	 证券信托	 弗格斯	 银行家	
+302	 存款处	 温斯顿	 银行家	
+303	 秘药	 皮许	 医师	0
+304	 圣殿	 马西亚	 医师	0
+305	 疗伤所	 米格兰	 医师	0
+306	 神圣钢铁	 罗德拉	 医师	0
+307	 夜之教堂	 伊凡尼雅	 医师	0
+308	 萨满	 魏克斯	 医师	0
+309	 受祝福之海	 伊尼德	 医师	0
+310	 医师帐篷	 劳瑞恩	 医师	0
+311	 维尔宁大教堂	 林泽	 医师	0
+312	 抚慰之屋	 泰伯特	 医师	0
+313	 治疗之屋	 乔纳森	 医师	0
+314	 暗黑神庙	 阿莫汉	 医师	0
+315	 治疗之屋	 雷吉纳尔德	 医师	0
+316	 治疗之屋	 伯森	 医师	0
+317	 暗黑神庙	 泽文	 医师	0
+318	 祝福神庙	 穆雷	 医师	0
+319	 泰塔利亚神庙	 特蕾萨	 医师	0
+320	 镇定之庙	 西蒙	 医师	0
+321	 石之庙	 艾德文	 医师	0
+322	 避难所	 路斯纳	 医师	0
+323	 神圣之地	 贝尔	 医师	0
+324	 医师帐篷	 希瑟	 医师	0
+325	 新索匹格神庙	 约书亚	 医师	
+326	 斯通神庙	 尼尔森	 医师	
+327	 布莱克郡神庙	 索尔	 医师	
+328	 阿卜杜的廉价礼拜堂	 阿诺德	 医师	
+329	 白帽神庙	 亨利	 医师	
+330	 浓雾神庙	 约翰	 医师	
+331	 银湾神庙	 杰弗里	 医师	
+332	 王者神庙	 查尔斯	 医师	
+333	 疗伤所	 亚当	 医师	
+334	 羊鸣神庙	 兰德鲁	 医师	
+335	 铁拳城堡			Enter
+336	 牛顿城堡			Enter
+337	 坦普城堡			Enter
+338	 斯通城堡			Enter
+339	 弗丽丝城堡			Enter
+340	 斯壮姆嘉德城堡			Enter
+341	 地之王监狱	Placeholder		
+342	 火之王监狱	Placeholder		
+343	 水之王监狱	Placeholder		
+344	 巴尔萨煞巢穴	Placeholder		
+345	 废弃神庙的后门	Placeholder		
+346	 废庙	Placeholder		0
+347	 前往风元素界的传送门	Placeholder		0
+348	 前往水元素界的传送门	Placeholder		0
+349	 海盗前哨站	Placeholder		0
+350	 前往火元素界的传送门	Placeholder		0
+351	 走私者聚集处	Placeholder		0
+352	 前往土元素界的传送门	Placeholder		0
+353	 猛狼穴	Placeholder		0
+354	 阿尔瓦的商人公会	Placeholder		0
+355	 水晶内部	Placeholder		0
+356	 黄蜂巢	Placeholder		0
+357	 食人妖堡垒	Placeholder		0
+358	 巨魔墓穴	Placeholder		0
+359	 独眼巨人储藏室	Placeholder		0
+360	 火焰之链	Placeholder		0
+361	 猎龙人的营地	Placeholder		0
+362	 龙穴	Placeholder		0
+363	 半蛇人洞穴	Placeholder		0
+364	 太阳神庙	Placeholder		0
+365	 废弃的德鲁伊圣圈	Placeholder		0
+366	 牛头人巢穴	Placeholder		0
+367	 野蛮人要塞	Placeholder		0
+368	 海盗堡垒	Placeholder		0
+369	 废弃海盗要塞	Placeholder		0
+370	 地下小洞窟	Placeholder		0
+371	 死灵法师公会	Placeholder		0
+372	 疯狂死灵法师实验室	Placeholder		0
+373	 风之城堡	Placeholder		0
+374	 风之城堡	Placeholder		0
+375	 献祭墓穴	Placeholder		0
+376	 火之城堡	Placeholder		0
+377	 军营	Placeholder		0
+378	 爱斯卡顿宫殿	Placeholder		0
+379	 风之王监狱	Placeholder		0
+380				
+381				
+382	 哈蒙代尔城堡	Placeholder		0
+383	 格芬哈特城堡	Placeholder		0
+384	 那文城堡	Placeholder		0
+385	 黄昏城堡	Placeholder		0
+386	 光辉城堡	Placeholder		0
+387	 月亮神庙	Placeholder		0
+388	 坟地			
+389	 龙穴	Placeholder		0
+390	 哈蒙代尔城堡	Placeholder		0
+391	 悬崖洞穴	Placeholder		0
+392	 埃拉西亚下水道	Placeholder		0
+393	 利文斯德要塞	Placeholder		0
+394	 图拉利昂洞穴	Placeholder		0
+395	 科兰克实验室	Placeholder		0
+396	 地狱之厅	Placeholder		0
+397	6 号哨塔	Placeholder		0
+398	 魔法学院	Placeholder		0
+399	 红色矮人矿井	Placeholder		0
+400	 迷雾之墙	Placeholder		0
+401	 光明神庙	Placeholder		0
+402	 再生之地	Placeholder		0
+403	 暗黑神庙	Placeholder		0
+404	 高级月亮神庙	Placeholder		0
+405	 高级太阳神庙	Placeholder		0
+406	 桑达非斯山脉	Placeholder		0
+407	 迷宫	Placeholder		0
+408	 石头城	Placeholder		0
+409	 星座之地	Placeholder		0
+410	 雇佣兵行会	Placeholder		0
+411	 潮水洞穴	Placeholder		0
+412	 酒窖	Placeholder		0
+413	 泰坦城堡	Placeholder		0
+414	 羊鸣庙	Placeholder		0
+415	 山下之厅	Placeholder		0
+416	 林肯号	Placeholder		0
+417	 大耳怪前哨			Enter
+418	 羊鸣庙			Enter
+419	 阿拉莫斯城堡			Enter
+420	 维兰坟墓			Enter
+421	 蜂房			Enter
+422	 废庙			Enter
+423	 神拳庙			Enter
+424	 黑摩尔城堡			Enter
+425	 阴影教隐蔽所			Enter
+426	 海神庙			Enter
+427	 克里格斯城堡			Enter
+428	 烈火爵士的大厅			Enter
+429	 太阳神庙			Enter
+430	 斯纳格的岩洞			Enter
+431	 月亮神庙			Enter
+432	 龙骑兵岩洞			Enter
+433	 超级羊鸣庙			Enter
+434	 银舵前哨			Enter
+435	 顶级羊鸣庙			Enter
+436	 阴影教			Enter
+437	 巨蛇庙			Enter
+438	 斯纳格的铁矿			Enter
+439	 龙骑兵堡垒			Enter
+440	 考勒根的豪宅			Enter
+441	 银舵堡垒			Enter
+442	 独立碑			Enter
+443	 疯子埃斯里克的坟墓			Enter
+444	 冰风堡垒			Enter
+445	 军阀堡垒			Enter
+446	 狼穴			Enter
+447	 加里克的炼铁厂			Enter
+448	 阿加的实验室			Enter
+449	 驯龙者洞穴			Enter
+450	 先知			
+451	 神使			Enter
+452	 马车队公会	 威蓝	 驿站主人	0
+453	 马车队公会	 坦普顿	 驿站主人	0
+454	 马车队公会	 艾尔新纳	 驿站主人	0
+455	 马车队公会	 达拉斯	 驿站主人	0
+456	 马车队公会	 特洛伊	 驿站主人	0
+457	 马车队公会	Placeholder	 驿站主人	0
+458	 马车队公会	Placeholder	 驿站主人	0
+459	 马车队公会	Placeholder	 驿站主人	0
+460	 马车队公会	Placeholder	 驿站主人	0
+461	 胜利驿站	 克里斯蒂安	 驿站主人	0
+462	 皇家战马	 亚瑟	 驿站主人	0
+463	 胡尔的种马	 胡尔	 驿站主人	0
+464	 忠诚战马	 杰斯帕	 驿站主人	0
+465	 钻石之旅	 艾文	 驿站主人	0
+466	 神奇战马	 威廉	 驿站主人	0
+467	 豪华马车	 华伦	 驿站主人	0
+468	Placeholder	 利斯	 驿站主人	0
+469	Placeholder	 范尔	 驿站主人	0
+470	 新索匹格驿站	 亚伦	 驿站主人	
+471	 御道	 肖恩	 驿站主人	
+472	 自由天堂东部之旅	 马克	 驿站主人	
+473	 自由天堂西部之旅	 沃尔特	 驿站主人	
+474	 黑摩尔之旅	 斯科特	 驿站主人	
+475	 阿卜杜的廉价旅行	 托德	 驿站主人	
+476	 白帽运输站	 彼得	 驿站主人	
+477	 王者快道	 肯	 驿站主人	
+478	 布莱克郡的马车	 安东尼	 驿站主人	
+479	 顺风号	 卡拉马	 船长	0
+480	 勇进号	 阿利诺	 船长	0
+481	 烟雾号	 迷斯克	 走私者	0
+482	 迷雾号	 巴尔	 走私者	0
+483	 强风号	 皮尔	 走私者	0
+484	 漂流号	 马提	 船长	0
+485	 马格莉特号	 尼尔森	 船长	0
+486	 凯瑟琳王后号	 克利斯托芬	 船长	0
+487	 海上精灵号	 哈斯莱	 船长	0
+488	 漂亮宝贝号	 阿迪科	 船长	0
+489	 神圣之帆号	 德克特	 船长	0
+490	 无敌号	 杰米斯	 船长	0
+491	 独角鲸号	 李尔	 船长	0
+492	 追风号	 迪因	 船长	0
+493	 迷雾号	 麦克斯威尔	 船长	0
+494	Placeholder	Placeholder	 船长	0
+495	Placeholder	Placeholder	 船长	0
+496	 奥德赛号	 布赖恩	 船长	
+497	 西风号	 保罗	 船长	
+498	 凯瑟琳女王号	 克里斯蒂安	 船长	
+499	 探险号	 路易斯	 船长	
+500	 蓝天号	 斯蒂芬	 船长	
+501	 风之子号	 罗伯特	 船长	
+502	 梭子鱼号	 吉姆鲍伯	 船长	
+503	 卷云号	 布莱	 船长	
+504	 虎鲨号	 迦勒	 船长	
+505	 海啸号	 伊斯梅尔	 船长	
+506	 女武神号	 布雷克	 船长	
+507	 企业号	 詹姆士	 船长	
+508	 威尔伯的陋居	Placeholder		
+509	 惠瑟史密斯的豪宅	Placeholder		
+510	 维斯波的大厅	Placeholder		
+511	 索力斯的大厅	Placeholder		
+512	 艾佛斯麦的大厅	Placeholder		
+513	 摩尔的小屋	Placeholder		
+514	 克鲁兰的屋子	Placeholder		
+515	 达肯摩尔的大厅	Placeholder		
+516	 代为瑞许的豪宅	Placeholder		
+517	 爱格瑞尼尔的大厅	Placeholder		
+518	 来特芬格的屋子	Placeholder		
+519	 夜行者的小屋	Placeholder		
+520	 史巴克曼的家	Placeholder		
+521	 赛百物的大厅	Placeholder		
+522	 史提尔的豪宅	Placeholder		
+523	 赏金猎人公会	Placeholder		
+524	 瓦特沙的小屋	Placeholder		
+525	 佛罗马哥的大宅	Placeholder		
+526	 黑王座的豪宅	Placeholder		
+527	 耐芙莫尔的屋子	Placeholder		
+528	 伊塔力的小屋	Placeholder		
+529	 哈维斯特的大厅	Placeholder		
+530	 艾佛森的豪宅	Placeholder		
+531	 欧斯克理顿的住家	Placeholder		
+532	 赛尔鹏的家	Placeholder		
+533	 格雷达的住处	Placeholder		
+534	 史塔拉尔的屋子	Placeholder		
+535	 白兰地的家	Placeholder		
+536	 鲍维斯的住处	Placeholder		
+537	 布理曼的住处	Placeholder		
+538	 暴风枪的住处	Placeholder		
+539	 晨星之屋	Placeholder		
+540	 富斯克的住处	Placeholder		
+541	 艾恩法斯特的住处	Placeholder		
+542	 瑞佛斯顿的住处	Placeholder		
+543	 伯恩的家	Placeholder		
+544	House 322	Placeholder		
+545	 黑流的屋子	Placeholder		
+546	House 324	Placeholder		
+547	  瑞汉西的家 	Placeholder		
+548	 庞巴的大厅	Placeholder		
+549	 凯尔顿的小屋	Placeholder		
+550	 维尔顿的小屋	Placeholder		
+551	 法斯威尔的屋子	Placeholder		
+552	 羽风的屋子	Placeholder		
+553	 斯通的陋居	Placeholder		
+554	 贺斯沃的陋居	Placeholder		
+555	 塔力安的陋居	Placeholder		
+556	 迷雾的陋居	Placeholder		
+557	 贺伯特的陋居	Placeholder		
+558	 葛林斯通的陋居	Placeholder		
+559	 波尔的陋居	Placeholder		
+560	 塔兰的陋居	Placeholder		
+561	 史麦克的陋居	Placeholder		
+562	 阿瓦龙的居所	Placeholder		
+563	 埃林的住处	Placeholder		
+564	 莱特斯文之屋	Placeholder		
+565	 欧特顿的居所	Placeholder		
+566	 卡兰崔尔的居所	Placeholder		
+567	 马克的居所	Placeholder		
+568	 杀手的居所	Placeholder		
+569	 肯恩的住处	Placeholder		
+570	 珍妮的居所	Placeholder		
+571	 威瑞克的家	Placeholder		
+572	 伊斯顿的洞穴	Placeholder		
+573	 伊斯希尔歌尔的洞穴	Placeholder		
+574	 疤翅的洞穴	Placeholder		
+575	Tell James you see this 353	Placeholder		
+576	Tell James you see this 354	Placeholder		
+577	 塔尔希尔大厅	Placeholder		
+578	 夜行者的豪宅	Placeholder		
+579	 雾春的居所	Placeholder		
+580	 阿拉尼雅的屋子	Placeholder		
+581	 德斯摩尔的小屋	Placeholder		
+582	 拉席安的屋子	Placeholder		
+583	 光矛大厅	Placeholder		
+584	 夜木的豪宅	Placeholder		
+585	 沙达的屋子	Placeholder		
+586	 摩枯妥拉的屋子	Placeholder		
+587	 络真的屋子	Placeholder		
+588	 海林安的小屋	Placeholder		
+589	 罗伯兹的居所	Placeholder		
+590	 因佛史塔斯的屋子	Placeholder		
+591	 乔尼的小屋子	Placeholder		
+592	 惠斯伯的大厅	Placeholder		
+593	 钢眼的豪宅	Placeholder		
+594	 班耐费斯的屋子	Placeholder		
+595	 恩普之屋	Placeholder		
+596	 凯尔文的家	Placeholder		
+597	 卡佛希尔的大厅	Placeholder		
+598	 维瑞塔斯的豪宅	Placeholder		
+599	 止水的豪宅	Placeholder		
+600	 克兰恩的小屋	Placeholder		
+601	 比斯的豪宅	Placeholder		
+602	 费尔朋的居所	Placeholder		
+603	 加罗史威的大宅	Placeholder		
+604	 费多朋的屋子	Placeholder		
+605	 代佛贝罗的屋子	Placeholder		
+606	 坦尼林安的屋子	Placeholder		
+607	 费斯特的居所	Placeholder		
+608	 瓦尔格林的实验室	Placeholder		
+609	 华勒斯的屋子	Placeholder		
+610	 鸦眼的居所	Placeholder		
+611	 德姆利忒之屋	Placeholder		
+612	 雪树的居所	Placeholder		
+613	 坦尼林安的居所	Placeholder		
+614	 密斯瑞的居所	Placeholder		
+615	 东克的居所	Placeholder		
+616	 卡内基的住处	Placeholder		
+617	 宝石的居所	Placeholder		
+618	 桑普森的住处	Placeholder		
+619	 夕维恶斯的居所	Placeholder		
+620	 维许的居所	Placeholder		
+621	 赛尔的遮风避雨处	Placeholder		
+622	 波尔多的陋居	Placeholder		
+623	 加文那斯的家	Placeholder		
+624	 坦尼斯的屋子	Placeholder		
+625	 费瑞斯的屋子	Placeholder		
+626	 被洪水淹没的屋子	Placeholder		
+627	 淹水的商店	Placeholder		
+628	Weapon shop placeholder	Placeholder		
+629	 确尾的屋子	Placeholder		
+630	 瑞欧耐尔的屋子	Placeholder		
+631	Armor shop placeholder	Placeholder		
+632	Magic shop placeholder	Placeholder		
+633	Spell shop placeholder	Placeholder		
+634	 乌布理契的屋子	Placeholder		
+635	 森杰克的屋子	Placeholder		
+636	Alchemist placeholder	Placeholder		
+637	Temple placeholder	Placeholder		
+638	 拉兹的屋子	Placeholder		
+639	 荷力菲尔德的屋子	Placeholder		
+640	 泰沙拉的屋子	Placeholder		
+641	 斯达姆安的住处	Placeholder		
+642	Bank placeholder	Placeholder		
+643	Training hall placeholder	Placeholder		
+644	 被洪水淹没的屋子	Placeholder		
+645	 追龙者的大厅	Placeholder		
+646	 诺瑟斯的屋子	Placeholder		
+647	 伯更斗的屋子	Placeholder		
+648	 明眼的大厅	Placeholder		
+649	 影跑者的宝库	Placeholder		
+650	 理夫特的金库	Placeholder		
+651	 史提尔克夫的大厅	Placeholder		
+652	 吹瓶者的大宅	Placeholder		
+653	 马蒙的家	Placeholder		
+654	 独眼的巢穴	Placeholder		
+655	 保罗的大宅	Placeholder		
+656	 特伦斯的家	Placeholder		
+657	 佛恩的巢穴	Placeholder		
+658	 帕佛的宫殿	Placeholder		
+659	 娜拉尼的大厅	Placeholder		
+660	 摩色的家	Placeholder		
+661	 风之王的牢房	Placeholder		
+662	 水之王的牢房	Placeholder		
+663	 地之王的牢房	Placeholder		
+664	 火之王的牢房	Placeholder		
+665	 翅帆的屋子	Placeholder		
+666	 瓦波的屋子	Placeholder		
+667	 风神的屋子	Placeholder		
+668	 空屋	Placeholder		
+669	 空屋	Placeholder		
+670	 空屋	Placeholder		
+671	 空屋	Placeholder		
+672	 耐德龙的屋子	Placeholder		
+673	 克兰恩的小屋	Placeholder		
+674	 卡格纳的商店	Placeholder		
+675	 比斯的豪宅	Placeholder		
+676	 罗姆沃克的屋子	Placeholder		
+677	 所一尔的屋子	Placeholder		
+678	 空屋	Placeholder		
+679	 空屋	Placeholder		
+680	 空屋	Placeholder		
+681	 空屋	Placeholder		
+682	 空屋	Placeholder		
+683	 空屋	Placeholder		
+684	 空屋	Placeholder		
+685	 空屋	Placeholder		
+686	 安伯的屋子	Placeholder		
+687	 暮光的屋子	Placeholder		
+688	 空屋	Placeholder		
+689	 空屋	Placeholder		
+690	 空屋	Placeholder		
+691	 河玻璃的屋子	Placeholder		
+692	 清溪的屋子	Placeholder		
+693	 空屋	Placeholder		
+694	 空屋	Placeholder		
+695	 空屋	Placeholder		
+696	 格瑞文的屋子	Placeholder		
+697	 石下的屋子	Placeholder		
+698	 夕索朋的住家	Placeholder		
+699	 耐力克斯的屋子	Placeholder		
+700	 坦普斯之屋	Placeholder		
+701	 维瑞许的屋子	Placeholder		
+702	 佛蓝林的洞穴	Placeholder		
+703	 布尔斯通的洞穴	Placeholder		
+704	 土洛斯的洞穴	Placeholder		
+705	PLACEHOLDER	Placeholder		
+706	House 487	Placeholder		
+707	House 488	Placeholder		
+708	House 489	Placeholder		
+709	House 490	Placeholder		
+710	House 491	Placeholder		
+711	House 492	Placeholder		
+712	House 493	Placeholder		
+713	House 494	Placeholder		
+714	House 495	Placeholder		
+715	House 496	Placeholder		
+716	House 497	Placeholder		
+717	House 498	Placeholder		
+718	House 501	Placeholder		
+719	House 502	Placeholder		
+720	House 503	Placeholder		
+721	House 504	Placeholder		
+722	House 505	Placeholder		
+723	House 506	Placeholder		
+724	House 507	Placeholder		
+725	House 508	Placeholder		
+726	House 509	Placeholder		
+727	House 510	Placeholder		
+728	House 511	Placeholder		
+729	House 512	Placeholder		
+730	House 513	Placeholder		
+731	House 514	Placeholder		
+732	House 515	Placeholder		
+733	House 516	Placeholder		
+734	House 517	Placeholder		
+735	House 518	Placeholder		
+736	House 519	Placeholder		
+737	House 520	Placeholder		
+738	House 521	Placeholder		
+739	House 522	Placeholder		
+740	House 523	Placeholder		
+741	House 524	Placeholder		
+742	House 525	Placeholder		
+743	Placeholder	Placeholder	 公务员	0
+744	Placeholder	Placeholder	 抄写员	0
+745	Placeholder	Placeholder	 抄写员	0
+746	Placeholder	Placeholder	 抄写员	0
+747	Placeholder	Placeholder	 抄写员	0
+748	Placeholder	Placeholder	 抄写员	0
+749	Placeholder	Placeholder	 抄写员	0
+750	Placeholder	Placeholder	 抄写员	0
+751	 议会	Placeholder	 商人	0
+752	 欧瓦都的房间	Placeholder	 欧瓦都	0
+753	 查尔斯·吉科德的屋子	Placeholder	 查尔斯·吉科德	0
+754	 戴森·李蓝的房间	Placeholder	 戴森·李蓝	0
+755	 牛头人领袖的房间	Placeholder	Placeholder	0
+756	 冒险者的旅店	Placeholder		0
+757	 神使	Placeholder		0
+758	 冒险者的旅店	Placeholder		0
+759	 冒险者的旅店	Placeholder		0
+760	 冒险者的旅店	Placeholder		0
+761	 希斯的小屋	Placeholder		
+762	 杰课的陋居	Placeholder		
+763	Placeholder	Placeholder	 公务员	0
+764	Placeholder	Placeholder	 抄写员	0
+765	Placeholder	Placeholder	 抄写员	0
+766	Placeholder	Placeholder	 抄写员	0
+767	Placeholder	Placeholder	 抄写员	0
+768	Placeholder	Placeholder	 抄写员	0
+769	Placeholder	Placeholder	 抄写员	0
+770	Placeholder	Placeholder	 抄写员	0
+771	Placeholder	Placeholder	 抄写员	0
+772	 半鼠人走私贩子头子的房间	Placeholder	 半鼠人走私贩子	0
+773	 商人公会之家	Placeholder	 商人	0
+774	 飞龙领袖的洞穴	Placeholder	 飞龙	0
+775	 爱斯卡顿的谒见室	Placeholder	 爱斯卡顿	0
+776	 罗特奈克斯的屋子	Placeholder		
+777	 艾佛斯的房屋	Placeholder		
+778	Placeholder	Placeholder	 公务员	0
+779	Placeholder	Placeholder	 抄写员	0
+780	Placeholder	Placeholder	 抄写员	0
+781	Placeholder	Placeholder	 抄写员	0
+782	Placeholder	Placeholder	 抄写员	0
+783	Placeholder	Placeholder	 抄写员	0
+784	 提斯克的小屋	Placeholder		
+785	 派德东的宫殿	Placeholder		
+786	Placeholder	Placeholder	 公务员	0
+787	Placeholder	Placeholder	 抄写员	0
+788	Placeholder	Placeholder	 抄写员	0
+789	Placeholder	Placeholder	 抄写员	0
+790	Placeholder	Placeholder	 抄写员	0
+791	Placeholder	Placeholder	 抄写员	0
+792	 泰丁的屋子	Placeholder		
+793	 普多的陋居	Placeholder		
+794	Placeholder	Placeholder	 公务员	0
+795	 伊奇的屋子	Placeholder		
+796	 佛吉爱特的华宅	Placeholder		
+797	Placeholder	Placeholder	 银行家	0
+798	 蓝贵德的小屋	Placeholder		
+799	 爱波的家	Placeholder		
+800	Placeholder	Placeholder	 炼金术士	0
+801	Placeholder	Placeholder	 船长	0
+802	Placeholder	Placeholder	 导师	0
+803	Placeholder	Placeholder	 银行家	0
+804	 希斯妥的屋子	Placeholder		
+805	 崔比力的家	Placeholder		
+806	Placeholder	Placeholder	 铁匠	0
+807	Placeholder	Placeholder	 盔甲工匠	0
+808	Placeholder	Placeholder	 炼金术士	0
+809	Placeholder	Placeholder	 船长	0
+810	Placeholder	Placeholder	 医师	0
+811	Placeholder	Placeholder	 导师	0
+812	Placeholder	Placeholder	 银行家	0
+813	 赛瓦的小屋	Placeholder		
+814	 何顿的陋居	Placeholder		
+815	Placeholder	Placeholder	 铁匠	0
+816	Placeholder	Placeholder	 盔甲工匠	0
+817	Placeholder	Placeholder	 魔术师	0
+818	Placeholder	Placeholder	 炼金术士	0
+819	Placeholder	Placeholder	 船长	0
+820	Placeholder	Placeholder	 医师	0
+821	Placeholder	Placeholder	 导师	0
+822	Placeholder	Placeholder	 银行家	0
+823	 埃斯瑞克的屋子	Placeholder		
+824	 阿兹诺格的陋居	Placeholder		
+825	Placeholder	Placeholder	 铁匠	0
+826	Placeholder	Placeholder	 盔甲工匠	0
+827	Placeholder	Placeholder	 魔术师	0
+828	Placeholder	Placeholder	 炼金术士	0
+829	Placeholder	Placeholder	 船长	0
+830	Placeholder	Placeholder	 医师	0
+831	Placeholder	Placeholder	 导师	0
+832	Placeholder	Placeholder	 银行家	0
+833	 朋恩的屋子	Placeholder		
+834	 卢欧林的屋子	Placeholder		
+835	Placeholder	Placeholder	 铁匠	0
+836	Placeholder	Placeholder	 盔甲工匠	0
+837	Placeholder	Placeholder	 魔术师	0
+838	Placeholder	Placeholder	 炼金术士	0
+839	Placeholder	Placeholder	 船长	0
+840	Placeholder	Placeholder	 医师	0
+841	Placeholder	Placeholder	 导师	0
+842	Placeholder	Placeholder	 银行家	0
+843	 拉沙庭的小屋	Placeholder		
+844	 苹蜂的屋子	Placeholder		
+845	Placeholder	Placeholder	 铁匠	0
+846	Placeholder	Placeholder	 盔甲工匠	0
+847	Placeholder	Placeholder	 魔术师	0
+848	Placeholder	Placeholder	 炼金术士	0
+849	Placeholder	Placeholder	 医师	0
+850	Placeholder	Placeholder	 导师	0
+851	Placeholder	Placeholder	 旅店老板	0
+852	 曼纳梭尔的屋子	Placeholder		
+853	 阿基巴德的家	Placeholder		
+854	Placeholder	Placeholder	 铁匠	0
+855	Placeholder	Placeholder	 盔甲工匠	0
+856	Placeholder	Placeholder	 魔术师	0
+857	Placeholder	Placeholder	 医师	0
+858	Placeholder	Placeholder	 导师	0
+859	Placeholder	Placeholder	 旅店老板	0
+860	 哈斯克的屋子	Placeholder		
+861	 艾瑞恶斯的屋子	Placeholder		
+862	Placeholder	Placeholder	 铁匠	0
+863	Placeholder	Placeholder	 盔甲工匠	0
+864	Placeholder	Placeholder	 医师	0
+865	Placeholder	Placeholder	 旅店老板	0
+866	 塔力米尔的小屋	Placeholder		
+867	 猎鹿人的屋子	Placeholder		
+868	Placeholder	Placeholder	 医师	0
+869	Placeholder	Placeholder	 旅店老板	0
+870	 瑞西的房子	Placeholder	 	0
+871	 陶恩赛佛的大厅	Placeholder		
+872	Placeholder	Placeholder	 旅店老板	0
+873	 房屋	Placeholder		
+874	 乔波的家	Placeholder		
+875	Placeholder	Placeholder	 旅店老板	0
+876	 长尾的小屋	Placeholder		
+877	 卖蓝德的屋子	Placeholder		
+878	Placeholder	Placeholder	 旅店老板	0
+879	 埃斯兰的屋子	Placeholder		
+880	 蓝天鹅的家	Placeholder		
+881	Placeholder	Placeholder	 旅店老板	0
+882	 葛瑞维克的屋子	Placeholder		
+883	 快舌的豪宅	Placeholder		
+884	Placeholder	Placeholder	 旅店老板	0
+885	 乌许的小屋	Placeholder		
+886	 拉来色尔的豪宅	Placeholder		
+887	Placeholder	Placeholder	 旅店老板	0
+888	 海尔斯曼的小屋	Placeholder		
+889	 卡佛希尔的豪宅	Placeholder		
+890	 利斧的家	Placeholder		
+891	 谈普的大厅	Placeholder		
+892	 普特南的家	Placeholder		
+893	 凯兰德的小屋	Placeholder		
+894	 拉西亚斯的家	Placeholder		
+895	 赏金猎人公会	Placeholder		
+896	 波散恩的大厅	Placeholder		
+897	 耐布力克的屋子	Placeholder		
+898	 石刀的大厅	Placeholder		
+899	 客栈	Placeholder		
+900	 客栈	Placeholder		
+901	 布里汉姆的住处	Placeholder		
+902	 麦莫瑞亚的屋子	Placeholder		
+903	 何索恩的屋子	Placeholder		
+904	 拉兹一家人的房子	Placeholder		
+905	 诺斯沃的屋子	Placeholder		
+906	 追迹者的大厅	Placeholder		
+907	 韩特的小屋	Placeholder		
+908	 代为瑞许的小屋	Placeholder		
+909	 多兹一家人的陋居	Placeholder		
+910	 古斯渥夫的住处			
+911	 渥夫顿的住处			
+912	House 271			
+913	House 272			
+914	House 273			
+915	 卡斯特的住处			
+916	 劳拉瑟尔的住处			
+917	 索洛之屋			
+918				
+919	 阿格亚尔的住处			
+920	House 282			
+921	 提斯的住处			
+922	 泰利昂的住处			
+923	 来文西尔的住处			
+924	 卡德林的住处			
+925				
+926	 格里斯的住处			
+927	 富德来特的住处			
+928	 波利蒂的住处			
+929	 劳兹的住处			
+930				
+931	 茱丽安的住处			
+932	 埃尔西米的住处			
+933	 德斯非尔的住处			
+934				
+935				
+936	 哈特斯的住处			
+937	 希瑟·卡德的住处			
+938				
+939	 西拉丝的住处			
+940	 海利尔的住处			
+941	 科切特的住处			
+942	 奥格的住处			
+943	 特拉利斯的住处			
+944	 巴尼斯的住处			
+945	 哈威斯特的住处			
+946	 比斯的住处			
+947	 苏拉提的住处			
+948	 西尔普的住处			
+949	 米尔扬的住处			
+950	 格林的住处			
+951	 渥尔林的住处			
+952	 多迪斯的住处			
+953	 布鲁斯文的住处			
+954	 特斯通的住处			
+955	 文森的住处			
+956	 维特凯普的住处			
+957	 奥丁的住处			
+958	 布莱克的住处			
+959	 菲德巴恩的住处			
+960	 卡里德的住处			
+961	 威尔巴克的住处			
+962	House 324			
+963	House 325			
+964	House 326			
+965	 本杰明的住处			
+966	 斯通莱特的住处			
+967	 维泽森的住处			
+968	 索渥的住处			
+969	 卡伦德的住处			
+970	 克莱利亚的住处			
+971	 富斯克的住处			
+972	 奥克塞德的住处			
+973	 谢德拉那的住处			
+974	 凯德林的住处			
+975	 博斯汉姆的住处			
+976	 莫根的住处			
+977	 德拉肯的住处			
+978	 哈利的住处			
+979	 那夫莫尔的住处			
+980	 威斯门的住处			
+981	 奈克尔的住处			
+982	 费尔本的住处			
+983	 恩德斯的住处			
+984	 斯莱瑟的住处			
+985	 福克的住处			
+986	 凯夫希尔的住处			
+987	 克雷恩的住处			
+988	 斯密森的住处			
+989	 利夫斯通的住处			
+990	 怀特斯基的住处			
+991	 埃尔莫的住处			
+992	 客栈			
+993	 客栈			
+994	 客栈			
+995	 伊万达的住处			
+996	 安文的住处			
+997	 斯尔克的住处			
+998	 客栈			
+999	 客栈			
+1000	 客栈			
+1001	 客栈			
+1002	 达斯克的住处			
+1003	 客栈			
+1004	 客栈			
+1005	 格雷达的住处			
+1006	 斯达姆安的住处			
+1007	 布里门的住处			
+1008	 布莱斯的住处			
+1009	 霍尔登的住处			
+1010				
+1011				
+1012				
+1013				
+1014	 菲德文特的住处			
+1015	 莱文希尔的住处			
+1016	 基里安的住处			
+1017	 革林斯道的住处			
+1018				
+1019				
+1020	 斯尼克的住处			
+1021	 因法那的住处			
+1022	 猎鹿人之屋			
+1023	 斯威夫特之屋			
+1024				
+1025	 斯特利的住处			
+1026	 意识之屋			
+1027	 伊夫利的住处			
+1028				
+1029				
+1030	 特雷西亚的住处			
+1031	 伊斯拉姆的住处			
+1032	 斯通科利夫的住处			
+1033				
+1034	 卡林德拉的住处			
+1035	 邦布的住处			
+1036	 利斯莱汀的住处			
+1037				
+1038	 费斯特的住处			
+1039	 渥克的住处			
+1040	 维尔狄克的住处			
+1041				
+1042	 威斯康的住处			
+1043	 埃林的住处			
+1044				
+1045				
+1046	 桑普森的住处			
+1047				
+1048	 塔伦的住处			
+1049	 摩尔的住处			
+1050	 罗斯汉姆的住处			
+1051	 卡内基的住处			
+1052	 希林的住处			
+1053	 威尔门的住处			
+1054	 泰那的住处			
+1055	 吉斯莫的住处			
+1056	 斯巴克的住处			
+1057	 特林森的住处			
+1058	 赫斯麦的住处			
+1059	 迪万之屋			
+1060	 晨星之屋			
+1061	 文特布莱之屋			
+1062	 客栈			
+1063	 客栈			
+1064	 客栈			
+1065	 客栈			
+1066	 塔伦特之屋			
+1067	 莱密斯的住处			
+1068	 客栈			
+1069	 客栈			
+1070	 客栈			
+1071	 客栈			
+1072	 恩普之屋			
+1073	 达克莫的住处			
+1074	 山德的住处			
+1075	 客栈			
+1076	 客栈			
+1077				
+1078	 客栈			
+1079	 客栈			
+1080	 客栈			
+1081	 客栈			
+1082				
+1083				
+1084				
+1085				
+1086				
+1087				
+1088				
+1089				
+1090				
+1091				
+1092				
+1093				
+1094				
+1095				
+1096				
+1097				
+1098				
+1099				
+1100				
+1101	 迷雾之屋			
+1102	 海尔斯曼之屋			
+1103	 斯德渥之屋			
+1104	 马克之屋			
+1105	 鲍维斯的住处			
+1106	 坦普之屋			
+1107	 克莱文的住处			
+1108	 威泽斯密的住处			
+1109	House 473			
+1110	 杰克的住处			
+1111	 培顿的住处			
+1112	 埃普尔之屋			
+1113	 莱特斯文之屋			
+1114	 埃拉桑达的住处			
+1115	 格利的住处			
+1116	 布里汉姆的住处			
+1117	 罗文的住处			
+1118	 布朗达的住处			
+1119	 拜森的住处			
+1120	 查姆的住处			
+1121	 肯恩的住处			
+1122	 查德科的住处			
+1123	 威埃达的住处			
+1124	 斯格那之屋			
+1125	 特伦之屋			
+1126	 海墨尔的住处			
+1127	 法斯威尔的住处			
+1128	 莱文渥德的住处			
+1129	 布雷泽之屋			
+1130	 诺里斯的住处			
+1131	 德姆利忒之屋			
+1132	 威尔那之屋			
+1133	 博特南的住处			
+1134	 海克尔的住处			
+1135	 埃兰奇之屋			
+1136	 石头之屋			
+1137	 渥特谢德之屋			
+1138	 霍利菲尔德的住处			
+1139	 甜蜜之屋			
+1140	 坦普斯之屋			
+1141	 克因之屋			
+1142	 埃普之屋			
+1143	 洛根之屋			
+1144	 埃兹贝特的住处			
+1145	 埃兹诺格的住处			
+1146	 霍利斯的住处			
+1147	 兰希的住处			
+1148	 尼德伦的住处			
+1149	 豪斯索那之屋			
+1150	 拉斯特的住处			
+1151	 达拉亚的住处			
+1152	 宝石之屋			
+1153	 菲德斯的住处			
+1154	 裂缝之屋			
+1155	 加内特之屋			
+1156	 碎石之屋			
+1157	 托马斯·格雷			
+1158	 埃莉斯·哈格			
+1159				
+1160				
+1161				
+1162	 盗贼之王			0
+1163	 马克汉姆的总部	Placeholder		0
+1164	 仲裁人	Placeholder		0
+1165	 仲裁人	Placeholder		0
+1166	 仲裁人	Placeholder		0
+1167	 唐纳·理斯的住处			
+1168	 马格莉特号	 尼尔森	 船长	0
+1169	 加冕殿	Placeholder		0
+1170	 米尔·路基的住处			
+1171	 瓦兰达的住处			
+1172	House 227			
+1173	House 228			
+1174	House 229			
+1175	House 230			
+1176	House 231			
+1177	House 232			
+1178	House 233			
+1179	House 234			
+1180	House 235			
+1181	House 236			
+1182	House 237			
+1183	 凯洛琳·威瑟的住处			
+1184	 泰尔马的住处			
+1185	House 241			
+1186	House 242			
+1187	House 243			
+1188	House 244			
+1189	House 245			
+1190	House 246			
+1191	House 247			
+1192	House 248			
+1193	House 249			
+1194	House 250			
+1195	House 251			
+1196	House 252			
+1197	House 253			
+1198	House 254			
+1199	House 255			
+1200	House 256			
+1201	House 257			
+1202	House 258			
+1203	House 259			
+1204	House 260			
+1205	House 261			
+1206	House 262			
+1207	House 263			
+1208	House 264			
+1209	House 265			
+1210	House 266			
+1211	House 267			
+1212	House 268			
+1213	 旅行用品	 里诺	 店主	
+1214	 初级元素魔法行会	 杰里米	 行会首领	
+1215	 国王图书馆			
+1216	 房屋			
+1217	 房屋			
+1218	 房屋			
+1219	 房屋			
+1220	 房屋			
+1221	 房屋			
+1222	 房屋			
+1223	 房屋			
+1224	 房屋			
+1225	 房屋			
+1226	 房屋			
+1227	 房屋			
+1228	 房屋			
+1229	 锁、贮存物和木桶	 爱丽丝	 店主	
+1230	 高级元素魔法行会	 汉斯	 行会首领	
+1231	 房屋			
+1232	 房屋			
+1233	 房屋			
+1234	 房屋			
+1235	 房屋			
+1236	 房屋			
+1237	 房屋			
+1238	 房屋			
+1239	 房屋			
+1240	 房屋			
+1241	 房屋			
+1242	 房屋			
+1243	 房屋			
+1244	 国王图书馆			
+1245	 乔记商店	 乔	 店主	
+1246	 房屋			
+1247	 房屋			
+1248	 房屋			
+1249	 房屋			
+1250	 房屋			
+1251	 房屋			
+1252	 房屋			
+1253	 房屋			
+1254	 房屋			
+1255	 房屋			
+1256	 房屋			
+1257	 房屋			
+1258	 房屋			
+1259	 阿卜杜的廉价商品	 迈克尔	 店主	
+1260	 房屋			
+1261	 房屋			
+1262	 房屋			
+1263	 房屋			
+1264	 房屋			
+1265	 房屋			
+1266	 房屋			Enter
+1267	 房屋			
+1268	 房屋			
+1269	 房屋			
+1270	 房屋			
+1271	 房屋			
+1272	 房屋			
+1273	 房屋			
+1274	 杂货铺	 戴维	 店主	
+1275	 房屋			
+1276	 房屋			
+1277	 房屋			
+1278	 房屋			
+1279	 房屋			
+1280	 房屋			
+1281	 房屋			
+1282	 房屋			
+1283	 房屋			
+1284	 房屋			
+1285	 房屋			
+1286	 房屋			
+1287	 房屋			
+1288	 房屋			
+1289	 域外邮车	 多琳	 店主	
+1290	 房屋			
+1291	 房屋			
+1292	 房屋			
+1293	 房屋			
+1294	 房屋			
+1295	 房屋			
+1296	 房屋			
+1297	 房屋			
+1298	 房屋			
+1299	 房屋			
+1300	 房屋			
+1301	 房屋			
+1302	 房屋			
+1303	 房屋			
+1304	 房屋			
+1305	 房屋			
+1306	 房屋			
+1307	 房屋			
+1308	 房屋			
+1309	 房屋			
+1310	 房屋			
+1311	 房屋			
+1312	 房屋			
+1313	 房屋			
+1314	 房屋			
+1315	 房屋			
+1316	 房屋			
+1317	 房屋			
+1318	 房屋			
+1319	 房屋			
+1320	 房屋			
+1321	 房屋			Enter
+1322	 房屋			
+1323	 房屋			
+1324	 房屋			
+1325	 房屋			
+1326	 房屋			
+1327	 房屋			
+1328	 房屋			
+1329	 房屋			
+1330	 房屋			
+1331	 房屋			
+1332	 房屋			
+1333	 房屋			
+1334	 房屋			
+1335	 房屋			
+1336	 房屋			
+1337	 房屋			
+1338	 房屋			
+1339	 房屋			
+1340	 房屋			
+1341	 房屋			
+1342	 房屋			
+1343	 房屋			
+1344	 房屋			
+1345	 房屋			
+1346	 房屋			
+1347	 房屋			
+1348	 房屋			
+1349	 房屋			
+1350	 房屋			
+1351	 房屋			
+1352	 房屋			
+1353	 房屋			
+1354	 房屋			
+1355	 房屋			
+1356	 房屋			
+1357	 房屋			
+1358	 房屋			
+1359	 房屋			
+1360	 房屋			
+1361	 房屋			
+1362	 房屋			
+1363	 房屋			
+1364	 房屋			
+1365	 房屋			
+1366	 房屋			
+1367	 房屋			
+1368	 房屋			
+1369	 房屋			
+1370	 房屋			
+1371	 房屋			
+1372	 房屋			
+1373	 房屋			
+1374	 房屋			
+1375	 房屋			
+1376	 房屋			
+1377	 房屋			
+1378	 房屋			
+1379	 房屋			
+1380	 房屋			
+1381	 房屋			
+1382	 房屋			
+1383	 房屋			
+1384	 房屋			
+1385	 房屋			
+1386	 房屋			
+1387	 房屋			
+1388	 房屋			
+1389	 房屋			
+1390	 房屋			
+1391	 房屋			
+1392	 房屋			
+1393	 房屋			
+1394	 房屋			
+1395	 房屋			
+1396	 房屋			
+1397	 房屋			
+1398	 房屋			
+1399	 房屋			
+1400	 房屋			
+1401	 房屋			
+1402	 房屋			
+1403	 房屋			
+1404	 房屋			
+1405	 房屋			
+1406	 房屋			
+1407	 房屋			
+1408	 房屋			
+1409	 房屋			
+1410	 房屋			
+1411	 房屋			
+1412	 房屋			
+1413	 房屋			
+1414	 房屋			
+1415	 房屋			
+1416	 房屋			
+1417	 房屋			
+1418	 房屋			
+1419	 房屋			
+1420	 房屋			
+1421	 房屋			
+1422	 房屋			
+1423	 房屋			
+1424	 房屋			
+1425	 房屋			
+1426	 房屋			
+1427	 房屋			
+1428	 房屋			
+1429	 房屋			
+1430	 房屋			
+1431	 房屋			
+1432	 房屋			
+1433	 房屋			
+1434	 房屋			
+1435	 房屋			
+1436	 房屋			
+1437	 房屋			
+1438	 房屋			
+1439	 房屋			
+1440	 房屋			
+1441	 房屋			
+1442	 自由天堂神庙	 尼尔森	 医师	
+1443	 房屋			
+1444	 房屋			
+1445	 房屋			
+1446	 房屋			
+1447	 房屋			
+1448	 房屋			
+1449	 房屋			
+1450	 房屋			
+1451	 隐士小屋	 隐士		
+1452	 房屋			
+1453	 房屋			
+1454	 房屋			
+1455	 房屋			
+1456	 房屋			
+1457	 房屋			
+1458	 房屋			
+1459	 房屋			
+1460	 房屋			
+1461	 房屋			
+1462	 房屋			
+1463	 房屋			
+1464	 房屋			
+1465	 房屋			
+1466	 房屋			
+1467	 房屋			
+1468	 房屋			
+1469	 房屋			
+1470	 房屋			
+1471	 房屋			
+1472	 房屋			
+1473	 房屋			
+1474	 房屋			
+1475	 房屋			
+1476	 房屋			
+1477	 房屋			
+1478	 房屋			
+1479	 房屋			
+1480	 房屋			
+1481	 房屋			
+1482	 房屋			
+1483	 房屋			
+1484	 房屋			
+1485	 房屋			
+1486	 房屋			
+1487	 房屋			
+1488	 房屋			
+1489	 房屋			
+1490	 房屋			
+1491	 房屋			
+1492	 房屋			
+1493	 房屋			
+1494	 房屋			
+1495	 房屋			
+1496	 房屋			
+1497	 房屋			
+1498	 房屋			
+1499	 房屋			
+1500	 房屋			
+1501	 房屋			
+1502	 房屋			
+1503	 房屋			
+1504	 房屋			
+1505	 房屋			
+1506	 房屋			
+1507	 房屋			
+1508	 房屋			
+1509	 房屋			
+1510	 房屋			
+1511	 房屋			
+1512	 房屋			
+1513	 房屋			
+1514	 房屋			
+1515	 房屋			
+1516	 房屋			Enter
+1517	 房屋			
+1518	 房屋			
+1519	 房屋			
+1520	 房屋			
+1521	 房屋			
+1522	 房屋			
+1523	 房屋			
+1524	 房屋			
+1525	 房屋			
+1526	 房屋			
+1527	 房屋			
+1528	 房屋			
+1529	 房屋			
+1530	 房屋			
+1531	 房屋			
+1532	 房屋			Enter
+1533	 房屋			
+1534	 房屋			
+1535	 房屋			
+1536	 房屋			
+1537	 房屋			
+1538	 房屋			
+1539	 房屋			
+1540	 房屋			
+1541	 房屋			
+1542	 房屋			
+1543	 房屋			
+1544	 房屋			
+1545	 房屋			
+1546	 房屋			
+1547	 房屋			
+1548	 房屋			Enter
+1549	 房屋			
+1550	 房屋			
+1551	 房屋			
+1552	 房屋			
+1553	 房屋			
+1554	 房屋			
+1555	 房屋			
+1556	 房屋			
+1557	 房屋			
+1558	 房屋			
+1559	 房屋			
+1560	 房屋			Enter
+1561	 房屋			
+1562	 房屋			
+1563	 房屋			
+1564	 进步之仪式	 尼许顿	 导师	0
+1565	 健身房	 迪因	 导师	0
+1566	 训练公会	 巴林	 导师	0
+1567	 歌瑞克的铁手套	 歌瑞克	 导师	0
+1568	 杀手学校	 拉哈瓦	 导师	0
+1569	 巴尔萨煞学院	 吉尔德	 导师	0
+1570	 海岛训练所	 泰杰恩	 导师	0
+1571	 基本技能训练所	 海德	 导师	0
+1572	 皇家训练所	 泰比斯	 导师	0
+1573	 正义之地	 科劳亚斯	 导师	0
+1574	 荣誉之地	 内罗	 导师	0
+1575	 烈焰训练所	 卡汉	 导师	0
+1576	 斗士训练所	 阿根特斯	 导师	0
+1577	 勇者训练所	 维斯帕	 导师	0
+1578	 埃里训练所	 加斯廷	 导师	0
+1579	 战争学校	 安格斯	 导师	0
+1580	Placeholder	 康斯坦丁	 导师	0
+1581	Placeholder	 康斯坦丁	 导师	0
+1582	Placeholder	 康斯坦丁	 导师	0
+1583	 新索匹格训练营	 内森	 导师	
+1584	 自由天堂学院	 霍利斯	 导师	
+1585	 阿卜杜的廉价训练场	 理查德	 导师	
+1586	 拳击场	 查理曼	 导师	
+1587	 海岸训练营	 加布里埃尔	 导师	
+1588	 狼穴	 西蒙	 导师	
+1589	 皇家体育馆	 格雷伯爵	 导师	
+1590	 海岛测试中心	 玛里德	 导师	
+1591	 孤树训练营	 乔纳斯	 导师	
+1592	 河滨学院	 盖德	 导师	
+1593	 监狱	Placeholder		0
+1594	 监狱			
+1595	 马戏团			
+1596	 帐篷			
+1597	 四轮马车			
+1598	 帐篷			
+1599	 四轮马车			
+1600	 四轮马车			
+1601	 帐篷			
+1602	 帐篷			
+1603	 帐篷			
+1604	 帐篷			
+1605	 帐篷			
+1606	 帐篷			
+1607	 冒险者的旅店	Placeholder		0

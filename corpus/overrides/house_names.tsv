@@ -1,0 +1,889 @@
+# 房屋/店铺名：源码里拿英文名做判断，展示层靠这张表换成中文。
+
+True Mettle	真勇
+Keen Edge	锐锋
+Polished Steel	磨钢
+Lance's Spears	蓝斯之矛
+Blooded Daggers and Blades	沾血匕首与刀刃
+Ayzar's Axes	爱煞之斧
+Custom Cutlass	定作匕首
+The Knight's Blade	武士之刃
+Tempered Steel	百炼精钢
+The Queen's Forge	皇家锻造场
+Hunter's Lodge	猎人小屋
+The Hallowed Sword	神圣之剑
+Blades of Spite	怨恨之剑
+The Blooded Dagger	嗜血之剑
+Vander's Blades & Bows	汪尔达的宝剑和弓箭
+The Knocked Bow	百发百中的弓箭
+The Balanced Axe	精良战斧
+Swords Inc.	宝剑之屋
+Alloyed Weapons	精制武器
+The Best Defense	防御之神
+Ironwood Spears	铁木长矛
+The Knife Shoppe	刀具店
+Hammer and Tongs	铁锤和钢钳
+Fine Blades	利刃
+The Eagle's Eye	鹰眼
+Arm's Length Spear Shop	武器长矛店
+Blunt Trauma Weapons	钝型武器
+The Sharpening Stone	磨刀石
+Feathers and String	羽毛和绳索
+Haft and Handle Pole arms	短兵刃
+Abdul's Discount Weapons	阿卜杜的廉价武器
+Singing Steel	鸣铁
+Mark and Missile	飞标和飞弹
+Stout Heart Staff and Spear	粗棒和长矛
+Knight's Paradise	骑士乐园
+The Tannery	皮革店
+The Polished Shield	打磨盾牌
+Armory	军械库
+Plated Protection	钢甲防御
+Supple Leather	超凡皮革
+Linked Mail	连接锁甲
+Karr Battlegear	卡尔的战斗装备
+Erik's Armory	埃里克的铠甲店
+Castle Deadwood	枯木城堡
+The Peasant's Smithy	农夫铠甲店
+Queen Catherine's Smithy	皇家铠甲店
+Buckskins and Bucklers	鹿皮和盾牌
+Armor of Honor	荣誉铠甲店
+Shields of Malice	怨恨之盾
+The Missing Link	迷幻之店
+Avlee Outpost	防护之店
+The Polished Pauldron	精制肩甲
+Thel's Armor and Shields	泰尔的铠甲和盾牌
+Alloyed Armor and Shields	精制铠甲和盾牌
+The Greenwood Forge	绿林锻造场
+The Thrown Gauntlet	奇妙手套
+The Common Defense	常规防御
+Armor Emporium	铠甲零售市场
+Metalweave Armory	铠甲修补店
+Abraham's Metalworks	亚伯拉罕的金属制品
+Mailed fist Armory	盔甲之拳
+The Foundry	铠甲制造厂
+Iron Defense	钢铁防御
+Abdul's Discount Armor	阿卜杜的廉价铠甲
+Quality Armor	精良铠甲
+Mail and Greaves	铠甲和护胫
+The Footman's Friend	步兵之友
+Armorworks	铠甲作坊
+Silver Lining Armor & Shield	银质铠甲和盾牌
+The Enchanted Hauberk	迷幻锁子甲
+Fearsome Fetishes	恐怖魔法
+Needful Things	有用之物
+Arcane Items	神秘宝物
+Wards and Pendants	结界和饰品
+Mystical Mayhem	神秘大屠杀
+Amulets of Power	力量护身符
+Gifts of Regna	雷格那之礼物
+Caori's Curios	卡欧里的奇妙物品
+Emerald Enchantments	神奇的绿宝石
+Otto's Oddities	奥托的神奇宝物
+Her Majesty's Magics	皇家魔法商店
+Natural Magic	自然魔法商店
+Death's Door	死亡之门
+Artifacts & Antiquities	古代魔法商店
+Esoteric Indulgences	奇幻魔法商店
+Eldritch Influences	埃尔德斯的魔法商店
+Delicate Things	精致宝物
+Rings & Relics	神圣之物
+Mystical Forces	神秘力量
+The Scribbled Page	神秘之页
+The Seeing Eye	透视眼
+Witch's Brew	巫师药剂
+The Little Magic Shop	小魔法店
+Abdul's Discount Magic Supplies	阿卜杜的廉价魔法器具
+Eye of Newt	蝾螈之眼
+Smoke and Mirrors	烟雾和镜子
+Apples, Thorns, and Potions	苹果、荆棘和魔药
+Unusual Enchantments	超常魔法
+The Sorcerer's Shoppe	巫师店铺
+Ty's Trinkets	泰的小首饰
+Alchemy and Incantations	炼金术和咒语
+Little Charms	小幻术
+Mighty Magicks	强力魔法
+Herbal Elixirs	草药灵药
+Apothecary	药剂师
+Prepared Potions	完工的药剂
+Wolves' Bane	恶狼克星
+Poultices and Cures	治病灵药
+Perius' Powders	派瑞呃斯的药粉
+The Blue Bottle	蓝瓶
+Philters and Elixirs	灵丹妙药
+Lead Transformations	梦幻之瓶
+The Bubbling Cauldron	神奇药剂
+The Blackened Vial	黑色药瓶
+Edmond's Ampules	埃德蒙德的圣瓶
+Phials of Faith	忠诚法师
+Infernal Temptations	地狱的诱惑
+Potent Potions & Brews	强力药剂
+Beakers and Bottles	魔法之瓶
+Aromatic Therapies	芳香之屋
+Helpful Solutions	紧急援助
+Initiate Guild of Fire	初级火系魔法行会
+Adept Guild of Fire	高级火系魔法行会
+Master Guild of Fire	高级火系魔法行会
+Paramount Guild of Fire	顶级火系魔法行会
+Initiate Guild of Air	初级空气魔法行会
+Adept Guild of Air	高级空气魔法行会
+Master Guild of Air	高级空气魔法行会
+Paramount Guild of Air	顶级空气魔法行会
+Initiate Guild of Water	初级水系魔法行会
+Adept Guild of Water	高级水系魔法行会
+Master Guild of Water	高级水系魔法行会
+Paramount Guild of Water	顶级水系魔法行会
+Initiate Guild of Earth	初级土系魔法行会
+Adept Guild of Earth	高级土系魔法行会
+Master Guild of Earth	高级土系魔法行会
+Paramount Guild of Earth	顶级土系魔法行会
+Initiate Guild of Spirit	初级灵魂魔法行会
+Adept Guild of Spirit	高级灵魂魔法行会
+Master Guild of Spirit	高级灵魂魔法行会
+Paramount Guild of Spirit	顶级灵魂魔法行会
+Initiate Guild of Mind	初级心智魔法行会
+Adept Guild of Mind	高级心智魔法行会
+Master Guild of Mind	高级心智魔法行会
+Paramount Guild of Mind	顶级心智魔法行会
+Initiate Guild of Body	初级肢体魔法行会
+Adept Guild of Body	高级肢体魔法行会
+Master Guild of Body	高级肢体魔法行会
+Paramount Guild of Body	顶级肢体魔法行会
+Guild of Light	光明魔法行会
+Guild of Illumination	初级光明魔法行会
+Guild of Enlightenment	高级光明魔法行会
+Initiate Guild of Light	初级光明魔法行会
+Adept Guild of Light	高级光明魔法行会
+Guild of Dark	暗黑魔法行会
+Guild of Twilight	初级暗黑魔法行会
+Guild of Night	高级暗黑魔法行会
+Initiate Guild of Dark	初级暗黑魔法行会
+Adept Guild of Dark	高级暗黑魔法行会
+Cures and Curses	诅咒和治疗
+Elemental Guild	元素魔法行会
+Vexation's Hexes	维克沙新的六角形
+Protective Magic	防护性魔法
+Self Guild	自我公会
+Self Study	自我学习
+Guild of Mind	心智魔法行会
+Initiate Guild of the Self	初级自我魔法行会
+Adept Guild of the Self	高级自我魔法行会
+Buccaneers' Lair	海盗之巢
+Protection Services	保护服务
+Smugglers' Guild	走私者行会
+Blades' End	终极利刃
+Duelists' Edge	双刃剑锋
+Berserkers' Fury	雷霆震怒
+Harmondale Townhall	哈蒙代尔市政厅
+Steadwick Townhall	斯坦德威克市政厅
+Pierpont Townhall	匹尔邦特市政厅
+Hall of Dawn	黎明之厅
+Hall of Midnight	午夜之厅
+Town Hall	市政厅
+High Council	高级议会
+Clan Leader's Hall	部落酋长厅堂
+Sandro/Thant's Throne Room	山德罗/ 谭特的谒见室
+Temple of the Sun Leader Room	太阳神庙领袖的房间
+Lord Markham's Chamber	马克汉姆爵士的房间
+Throne Room	加冕殿
+The Grog and Grub	葛卢格和葛卢伯
+Kessel's Kantina	凯所的凯提纳
+Profit House	获利之屋
+Parched Throat	干渴的喉咙
+Dragon's Blood Inn	龙血旅店
+Black Company	黑色伙伴
+Traveler's Rest	旅行者休息站
+Bull's Eye Inn	牛眼旅店
+Pirate's Rest	海盗休息站
+The Dancing Ogre	跳舞食人妖
+Miho's Roadhouse	米和的休息站
+Two Palms Tavern	双叶旅店
+On the House	迎宾旅店
+Griffin's Rest	狮鹫旅店
+Emerald Inn	翡翠旅店
+The Snobbish Goblin	怪物旅店
+Familiar Place	宾至如归旅店
+The Blessed Brew	美酒佳肴旅店
+The Vampyre Lounge	旅行之家
+The Laughing Monk	法师旅店
+Fortune's Folly	幸运旅店
+Miner's Only	矿工旅店
+The Loyal Mercenary	忠诚佣兵旅店
+The Potted Pixie	勇士旅店
+Grogg's Grog	克劳格旅店
+Knightly Pursuits	骑士旅店
+The Last Resort	美景旅店
+Garrion's Roadhouse	格里安旅店
+Creature Comforts	舒适旅店
+So You Want to be a Hero?	英雄旅店
+The Elegant Orc	优雅旅店
+The Bird Paradise	天堂鸟旅店
+A Lonely Knight	孤独骑士
+The Imp Slapper	掴掌旅店
+An Arrow's Flight	神箭穿梭
+A Stone's Throw	巨石投掷
+The King's Crown	国王冠冕
+The Will o' Wisp	真心诚意
+The Goblin's Tooth	恶魔之牙
+The Broken Cutlass	断裂利刃
+Anchors Away	起锚
+The Grove	丛林
+The Haunt	萦绕之地
+The Rusted Shield	锈蚀之盾
+Viktor's Hall	维克多大厅
+The Echoing Whisper	余音绕梁
+Rockham's Pride	洛克汉姆的骄傲
+Rime and Reason	诗歌与理性
+The Frosty Tankard	冰冻大酒杯
+The Oasis	绿洲
+The Howling Moon	鸣月
+The Broken Promise	毁诺
+The Last Chance	一线生机
+The Some Place Safe	安全之处
+Steele's Vault	史提尔的金库
+Guild House of Finance	金融公会聚会所
+The Blood Bank	血之银行
+Bank of Balthazar	巴尔萨煞之银行
+The Vault	信托银行
+Bank of Erathia	埃拉西亚银行
+Nature's Stockpile	大自然银行
+Material Wealth	富贵银行
+Frozen Assets	富豪银行
+The Depository	存款处
+Halls of Gold	信誉银行
+Mineral Wealth	实业银行
+Savings House	储蓄所
+The Reserves	储备室
+The First Bank of Enroth	恩洛斯第一银行
+Foreign Exchange	外汇交易
+Secure Trust	证券信托
+Mystic Medicine	秘药
+Sanctum	圣殿
+House of Healing	疗伤所
+Sacred Steel	神圣钢铁
+Cathedral of Night	夜之教堂
+The Shaman	萨满
+The Blessed Sea	受祝福之海
+Healer's Tent	医师帐篷
+WelNin Cathedral	维尔宁大教堂
+House of Solace	抚慰之屋
+Nature's Remedies	治疗之屋
+Temple of Dark	暗黑神庙
+Temple of Light	治疗之屋
+Offerings and Blessings	祝福神庙
+The Order of Tatalia	泰塔利亚神庙
+Temple of Tranquility	镇定之庙
+Temple of Stone	石之庙
+Sanctuary	避难所
+Holy Ground	神圣之地
+New Sorpigal Temple	新索匹格神庙
+Temple Stone	斯通神庙
+Blackshire Temple	布莱克郡神庙
+Abdul's Discount House of Worship	阿卜杜的廉价礼拜堂
+White Cap Temple	白帽神庙
+Mist Island Temple	浓雾神庙
+Silver Cove Temple	银湾神庙
+King's Temple	王者神庙
+Temple Baa	羊鸣神庙
+Castle Ironfist	铁拳城堡
+Castle Newton	牛顿城堡
+Castle Temper	坦普城堡
+Castle Stone	斯通城堡
+Castle Fleise	弗丽丝城堡
+Castle Stromgard	斯壮姆嘉德城堡
+Prison of the Lord of Earth	地之王监狱
+Prison of the Lord of Fire	火之王监狱
+Prison of the Lord of Water	水之王监狱
+Balthazar Lair	巴尔萨煞巢穴
+Backdoor of Abandoned Temple	废弃神庙的后门
+Abandoned Temple	废庙
+Gateway to the Plane of Air	前往风元素界的传送门
+Gateway to the Plane of Water	前往水元素界的传送门
+Pirate Outpost	海盗前哨站
+Gateway to the Plane of Fire	前往火元素界的传送门
+Smuggler's Cove	走私者聚集处
+Gateway to the Plane of Earth	前往土元素界的传送门
+Dire Wolf Den	猛狼穴
+Merchanthouse of Alvar	阿尔瓦的商人公会
+Inside the Crystal	水晶内部
+Wasp Nest	黄蜂巢
+Ogre Raiding Fort	食人妖堡垒
+Troll Tomb	巨魔墓穴
+Cyclops Larder	独眼巨人储藏室
+Chain of Fire	火焰之链
+Dragon Hunter Camp	猎龙人的营地
+Dragon Cave	龙穴
+Naga Vault	半蛇人洞穴
+Temple of the Sun	太阳神庙
+Abandoned Druid Circle	废弃的德鲁伊圣圈
+Minotaur Lair	牛头人巢穴
+Barbarian Fortress	野蛮人要塞
+Pirate Stronghold	海盗堡垒
+Abandoned Pirate Keep	废弃海盗要塞
+Small Sub Pen	地下小洞窟
+Necromancers' Guild	死灵法师公会
+Mad Necromancer's Lab	疯狂死灵法师实验室
+Castle of Air	风之城堡
+Tribute Tomb	献祭墓穴
+Castle of Fire	火之城堡
+War Camp	军营
+Escaton's Palace	爱斯卡顿宫殿
+Prison of the Lord of Air	风之王监狱
+Castle Harmondale	哈蒙代尔城堡
+Castle Gryphonheart	格芬哈特城堡
+Castle Navan	那文城堡
+Castle Gloaming	黄昏城堡
+Castle Lambent	光辉城堡
+Temple of the Moon	月亮神庙
+Barrow	坟地
+Dragon's Lair	龙穴
+White Cliff Caves	悬崖洞穴
+Erathian Sewer	埃拉西亚下水道
+Fort Riverstride	利文斯德要塞
+Tularean Caves	图拉利昂洞穴
+Clanker's Laboratory	科兰克实验室
+Hall of the Pit	地狱之厅
+Watchtower 6	6 号哨塔
+School of Sorcery	魔法学院
+Red Dwarf Mines	红色矮人矿井
+Walls of Mist	迷雾之墙
+Temple of the Light	光明神庙
+Breeding Zone	再生之地
+Temple of the Dark	暗黑神庙
+Grand Temple of the Moon	高级月亮神庙
+Grand Temple of the Sun	高级太阳神庙
+Thunderfist Mountain	桑达非斯山脉
+The Maze	迷宫
+Stone City	石头城
+Colony Zod	星座之地
+Mercenary Guild	雇佣兵行会
+Tidewater Caverns	潮水洞穴
+Wine Cellar	酒窖
+Titan's Stronghold	泰坦城堡
+Temple of Baa	羊鸣庙
+Hall under the Hill	山下之厅
+The Lincoln	林肯号
+Goblinwatch	大耳怪前哨
+Castle Alamos	阿拉莫斯城堡
+Tomb of VARN	维兰坟墓
+The Hive	蜂房
+Temple of the Fist	神拳庙
+Castle Darkmoor	黑摩尔城堡
+Shadow Guild Hideout	阴影教隐蔽所
+Temple of Tsantsa	海神庙
+Castle Kriegspire	克里格斯城堡
+Hall of the Fire Lord	烈火爵士的大厅
+Snergle's Caverns	斯纳格的岩洞
+Dragoons' Caverns	龙骑兵岩洞
+Supreme Temple of Baa	超级羊鸣庙
+Silver Helm Outpost	银舵前哨
+Superior Temple of Baa	顶级羊鸣庙
+Shadow Guild	阴影教
+Temple of the Snake	巨蛇庙
+Snergle's Iron Mines	斯纳格的铁矿
+Dragoons' Keep	龙骑兵堡垒
+Corlagon's Estate	考勒根的豪宅
+Silver Helm Stronghold	银舵堡垒
+The Monolith	独立碑
+Tomb of Ethric the Mad	疯子埃斯里克的坟墓
+Icewind Keep	冰风堡垒
+Warlord's Fortress	军阀堡垒
+Lair of the Wolf	狼穴
+Gharik's Forge	加里克的炼铁厂
+Agar's Laboratory	阿加的实验室
+Caves of the Dragon Riders	驯龙者洞穴
+The Seer	先知
+The Oracle	神使
+Guild Caravans	马车队公会
+The J.V.C Corral	胜利驿站
+Royal Steeds	皇家战马
+Hu's Stallions	胡尔的种马
+Faithful Steeds	忠诚战马
+Crystal Caravans	钻石之旅
+Dry Saddles	神奇战马
+Plush Coaches	豪华马车
+New Sorpigal Coach Company	新索匹格驿站
+Royal Lines	御道
+Free Haven Travel East	自由天堂东部之旅
+Free Haven Travel West	自由天堂西部之旅
+Darkmoor Travel	黑摩尔之旅
+Abdul's Discount Travel	阿卜杜的廉价旅行
+White Cap Transport Co.	白帽运输站
+King's Highway	王者快道
+Blackshire Coach and Buggy	布莱克郡的马车
+The Windling	顺风号
+The Dauntless	勇进号
+Smoke	烟雾号
+Mist	迷雾号
+Wind	强风号
+Spindrift	漂流号
+Lady Margaret	马格莉特号
+Lady Catherine	凯瑟琳王后号
+Sea Sprite	海上精灵号
+Enchantress	漂亮宝贝号
+Sacred Sails	神圣之帆号
+Dauntless	无敌号
+Narwhale	独角鲸号
+Wind Runner	追风号
+Mist Flyer	迷雾号
+Odyssey	奥德赛号
+Zephyr	西风号
+Queen Catherine	凯瑟琳女王号
+Adventure	探险号
+Cerulean Skies	蓝天号
+Windrunner	风之子号
+Barracuda	梭子鱼号
+Cirrus	卷云号
+Tigershark	虎鲨号
+Tsunami	海啸号
+Valkyrie	女武神号
+Enterprise	企业号
+Wilburt's Hovel	威尔伯的陋居
+Withersmythe Estate	惠瑟史密斯的豪宅
+Vespers Hall	维斯波的大厅
+Hall of Solis	索力斯的大厅
+Eversmyle Hall	艾佛斯麦的大厅
+Moore Cottage	摩尔的小屋
+House of Krewlen	克鲁兰的屋子
+Darkenmoore Hall	达肯摩尔的大厅
+Dervish Estate	代为瑞许的豪宅
+Agraynel Hall	爱格瑞尼尔的大厅
+House of Lightfinger	来特芬格的屋子
+Nightwalker Cottage	夜行者的小屋
+Sparkman Home	史巴克曼的家
+Sablewood Hall	赛百物的大厅
+Steele Estate	史提尔的豪宅
+Guild of Bounty Hunters	赏金猎人公会
+Watershed Cottage	瓦特沙的小屋
+Fromago Manor	佛罗马哥的大宅
+Blackthorne Estate	黑王座的豪宅
+House of Nevermore	耐芙莫尔的屋子
+Ittalle Cottage	伊塔力的小屋
+Havest Hall	哈维斯特的大厅
+Iverson Estate	艾佛森的豪宅
+Oscleton Residence	欧斯克理顿的住家
+Thelbourne Residence	赛尔鹏的家
+Greydawn Residence	格雷达的住处
+House Stellare	史塔拉尔的屋子
+House of Brandy	白兰地的家
+Bowes Residence	鲍维斯的住处
+Breman Residence	布理曼的住处
+Stormlance Residence	暴风枪的住处
+Morningstar Residence	晨星之屋
+Foestryke Residence	富斯克的住处
+Ironfist Residence	艾恩法斯特的住处
+Reaverston Residence	瑞佛斯顿的住处
+Burn's House	伯恩的家
+Black Current's House	黑流的屋子
+Home of Rihansi	瑞汉西的家
+Bombah Hall	庞巴的大厅
+Keldon's Cottage	凯尔顿的小屋
+Veldon's Cottage	维尔顿的小屋
+House Farswell	法斯威尔的屋子
+Featherwind's House	羽风的屋子
+Stone's Hovel	斯通的陋居
+Hearthsworn Hovel	贺斯沃的陋居
+Talion's Hovel	塔力安的陋居
+Hovel of Mist	迷雾的陋居
+Hobert's Hovel	贺伯特的陋居
+Hovel of Greenstorm	葛林斯通的陋居
+Pole's Hovel	波尔的陋居
+Tarent Hovel	塔兰的陋居
+Schmecker's Hovel	史麦克的陋居
+Avalon's Residence	阿瓦龙的居所
+Arin Residence	埃林的住处
+Lightsworn Residence	莱特斯文之屋
+Otterton Residence	欧特顿的居所
+Calandril's Residence	卡兰崔尔的居所
+Maker Residence	马克的居所
+Slayer Residence	杀手的居所
+Kern Residence	肯恩的住处
+Jeni Residence	珍妮的居所
+Weldrick's Home	威瑞克的家
+Ishton's Cave	伊斯顿的洞穴
+Ithilgore's Cave	伊斯希尔歌尔的洞穴
+Scarwing's Cave	疤翅的洞穴
+Taleshire Hall	塔尔希尔大厅
+Nightcrawler Estate	夜行者的豪宅
+Mistspring Residence	雾春的居所
+House Arachnia	阿拉尼雅的屋子
+Dirthmoore Cottage	德斯摩尔的小屋
+House of Lathaen	拉席安的屋子
+Brightsprear Hall	光矛大厅
+Nightwood Estate	夜木的豪宅
+House Shador	沙达的屋子
+House Mercutura	摩枯妥拉的屋子
+Roggen Hall	络真的屋子
+Hallien's Cottage	海林安的小屋
+Roberts Residence	罗伯兹的居所
+Infaustus' House	因佛史塔斯的屋子
+House of Journey	乔尼的小屋子
+Whisper Hall	惠斯伯的大厅
+Steeleye Estate	钢眼的豪宅
+House of Benefice	班耐费斯的屋子
+House Umberpool	恩普之屋
+Kelvin's Home	凯尔文的家
+Caverhill Hall	卡佛希尔的大厅
+Veritas Estate	维瑞塔斯的豪宅
+Stillwater Estate	止水的豪宅
+Crane Cottage	克兰恩的小屋
+Bith Estate	比斯的豪宅
+Fellburn Residence	费尔朋的居所
+Gallowswell Manor	加罗史威的大宅
+House Fiddlebone	费多朋的屋子
+Deverbero Residence	代佛贝罗的屋子
+Tantilion's House	坦尼林安的屋子
+Fist Residence	费斯特的居所
+Wargreen's Lab	瓦尔格林的实验室
+House Wallace	华勒斯的屋子
+Ravensight Residence	鸦眼的居所
+Dreamwright Residence	德姆利忒之屋
+Snowtree Residence	雪树的居所
+Dantillion's Residence	坦尼林安的居所
+Mithrit Residence	密斯瑞的居所
+Tonk Residence	东克的居所
+Keenedge Residence	卡内基的住处
+Treasurestone Residence	宝石的居所
+Sampson Residence	桑普森的住处
+Xevius's Residence	夕维恶斯的居所
+Vish's House	维许的居所
+Sail's Shack	赛尔的遮风避雨处
+Pordo's Hovel	波尔多的陋居
+Galvinus's Home	加文那斯的家
+Thanys' House	坦尼斯的屋子
+Ferris' House	费瑞斯的屋子
+Flooded House	被洪水淹没的屋子
+Flooded Shop	淹水的商店
+Suretail House	确尾的屋子
+Rionel's House	瑞欧耐尔的屋子
+Ulbrecht's House	乌布理契的屋子
+Senjac's House	森杰克的屋子
+Lotts' House	拉兹的屋子
+Hollyfield House	荷力菲尔德的屋子
+Tessalar's House	泰沙拉的屋子
+Stormeye's House	斯达姆安的住处
+Dragontracker Hall	追龙者的大厅
+Nirses Loot	诺瑟斯的屋子
+Burnkindle's Spoils	伯更斗的屋子
+Cleareye Hall	明眼的大厅
+Shadowrunner's Vault	影跑者的宝库
+Lifter's Lockup	理夫特的金库
+Steelcoif Hall	史提尔克夫的大厅
+Jawblower Manor	吹瓶者的大宅
+Marmon Domicile	马蒙的家
+One-eye's Lair	独眼的巢穴
+Paul's Estate	保罗的大宅
+Terrence's Home	特伦斯的家
+Ferne Lair	佛恩的巢穴
+Pavel's Place	帕佛的宫殿
+Nalani's Hall	娜拉尼的大厅
+Mercer Domicile	摩色的家
+Air Lord's Cell	风之王的牢房
+Water Lord's Cell	水之王的牢房
+Earth Lord's Cell	地之王的牢房
+Fire Lord's Cell	火之王的牢房
+Wingsail's House	翅帆的屋子
+Vapor's House	瓦波的屋子
+Zephyr's House	风神的屋子
+Empty House	空屋
+Nedlon's House	耐德龙的屋子
+Cagnor's Shop	卡格纳的商店
+Loamwalker's House	罗姆沃克的屋子
+Soil's House	所一尔的屋子
+Ember's House	安伯的屋子
+Evenblaze's House	暮光的屋子
+Riverglass' House	河玻璃的屋子
+Clearcreek's House	清溪的屋子
+Griven's House	格瑞文的屋子
+House Understone	石下的屋子
+Thistlebone Residence	夕索朋的住家
+Nelix's House	耐力克斯的屋子
+Tempus' House	坦普斯之屋
+Verish's House	维瑞许的屋子
+Flamdring's Cave	佛蓝林的洞穴
+Brimstone's Cave	布尔斯通的洞穴
+Duroth's Cave	土洛斯的洞穴
+Council Chamber Door	议会
+Overdune's House	欧瓦都的房间
+Charles Quixote's House	查尔斯·吉科德的屋子
+Dyson Leland's Room	戴森·李蓝的房间
+Minotaur Leader's Room	牛头人领袖的房间
+The Adventurer's Inn	冒险者的旅店
+Oracle	神使
+Hiss' Hut	希斯的小屋
+Jack's Hovel	杰课的陋居
+Wererat Smuggler Leader	半鼠人走私贩子头子的房间
+Merchant Guildhouse	商人公会之家
+Dragon Leader's Cavern	飞龙领袖的洞穴
+Escaton's Throne Room	爱斯卡顿的谒见室
+Rohtnax's House	罗特奈克斯的屋子
+Iver's Estate	艾佛斯的房屋
+Tisk's Hut	提斯克的小屋
+Pederton Place	派德东的宫殿
+Thadin's House	泰丁的屋子
+Puddle's Hovel	普多的陋居
+House of Ich	伊奇的屋子
+Forgewright Estate	佛吉爱特的华宅
+Languid's Hut	蓝贵德的小屋
+Apple Home	爱波的家
+House of Thistle	希斯妥的屋子
+Treblid's Home	崔比力的家
+Zevah's Hut	赛瓦的小屋
+Holden's Hovel	何顿的陋居
+Isthric's House	埃斯瑞克的屋子
+Aznog's Hovel	阿兹诺格的陋居
+Bone's House	朋恩的屋子
+Luodrin House	卢欧林的屋子
+Lasatin's Hut	拉沙庭的小屋
+Applebee Estate	苹蜂的屋子
+Menasaur's House	曼纳梭尔的屋子
+Archibald's Home	阿基巴德的家
+Husk's Hut	哈斯克的屋子
+Arius' House	艾瑞恶斯的屋子
+Talimere's Hut	塔力米尔的小屋
+Deerhunter's House	猎鹿人的屋子
+House of Reshie	瑞西的房子
+Townsaver Hall	陶恩赛佛的大厅
+House	房屋
+Jobber's Home	乔波的家
+Long-Tail's Hut	长尾的小屋
+Maylander's House	卖蓝德的屋子
+Aislen's House	埃斯兰的屋子
+Bluesawn Home	蓝天鹅的家
+House of Grivic	葛瑞维克的屋子
+Quicktongue Estate	快舌的豪宅
+Ush's Hut	乌许的小屋
+Laraselle Estate	拉来色尔的豪宅
+Hillsman Cottage	海尔斯曼的小屋
+Caverhill Estate	卡佛希尔的豪宅
+Reaver's Home	利斧的家
+Temper Hall	谈普的大厅
+Putnam's Home	普特南的家
+Karrand's Cottage	凯兰德的小屋
+Lathius' Home	拉西亚斯的家
+Botham Hall	波散恩的大厅
+Neblick's House	耐布力克的屋子
+Stonecleaver Hall	石刀的大厅
+Hostel	客栈
+Brigham's Home	布里汉姆的住处
+House Memoria	麦莫瑞亚的屋子
+House of Hawthorne	何索恩的屋子
+Lott's Family Home	拉兹一家人的房子
+House of Nosewort	诺斯沃的屋子
+Hall of the Tracker	追迹者的大厅
+Hunter's Hovel	韩特的小屋
+Dervish's Cottage	代为瑞许的小屋
+Dotes Family Hovel	多兹一家人的陋居
+Guthwulf's Home	古斯渥夫的住处
+Wolverton Residence	渥夫顿的住处
+Castro's House	卡斯特的住处
+Laraselle Residence	劳拉瑟尔的住处
+Sourbrow Home	索洛之屋
+Agraynel Residence	阿格亚尔的住处
+Tish Residence	提斯的住处
+Talion House	泰利昂的住处
+Ravenhill Residence	来文西尔的住处
+Cardrin Residence	卡德林的住处
+Gareth's Home	格里斯的住处
+Forgewright Residence	富德来特的住处
+Pretty House	波利蒂的住处
+Lotts Familly Home	劳兹的住处
+Julian's Home	茱丽安的住处
+Eversmyle Residence	埃尔西米的住处
+Dirthmoore Residence	德斯非尔的住处
+Heartsworn Home	哈特斯的住处
+Cardron Residence	希瑟·卡德的住处
+Thrush Residence	西拉丝的住处
+Hillier Residence	海利尔的住处
+Quixote Residence	科切特的住处
+Org House	奥格的住处
+Talreish Residence	特拉利斯的住处
+Barnes Home	巴尼斯的住处
+Havest Residence	哈威斯特的住处
+Bith Residence	比斯的住处
+Suretrail Home	苏拉提的住处
+Silverpoint Residence	西尔普的住处
+Miyon's Home	米尔扬的住处
+Green House	格林的住处
+Warlin Residence	渥尔林的住处
+Dotes Residence	多迪斯的住处
+Blueswan Home	布鲁斯文的住处
+Treasurestone Home	特斯通的住处
+Windsong House	文森的住处
+Whitecap Residence	维特凯普的住处
+Ottin House	奥丁的住处
+Black House	布莱克的住处
+Fiddlebone Residence	菲德巴恩的住处
+Kerrid Residence	卡里德的住处
+Willowbark's Home	威尔巴克的住处
+Benjamin's Home	本杰明的住处
+Stonewright Residence	斯通莱特的住处
+Weatherson's House	维泽森的住处
+Sower Residence	索渥的住处
+Karrand Residence	卡伦德的住处
+Cleareye's Home	克莱利亚的住处
+Oxhide Residence	奥克塞德的住处
+Shadowrunner's Home	谢德拉那的住处
+Kedrin Residence	凯德林的住处
+Botham's Home	博斯汉姆的住处
+Mogren Residence	莫根的住处
+Draken Residence	德拉肯的住处
+Harli's Place	哈利的住处
+Nevermore Residence	那夫莫尔的住处
+Wiseman Residence	威斯门的住处
+Nightcrawler Residence	奈克尔的住处
+Felburn's House	费尔本的住处
+Undershadow's Home	恩德斯的住处
+Slicer's House	斯莱瑟的住处
+Falk Residence	福克的住处
+Caverhill Residence	凯夫希尔的住处
+Crane Residence	克雷恩的住处
+Smithson Residence	斯密森的住处
+Riverstone House	利夫斯通的住处
+Whitesky Residence	怀特斯基的住处
+Elmo's House	埃尔莫的住处
+Evander's Home	伊万达的住处
+Anwyn Residence	安文的住处
+Silk's Home	斯尔克的住处
+Dusk's Home	达斯克的住处
+Bremen Residence	布里门的住处
+Brightspear Residence	布莱斯的住处
+Holden Residence	霍尔登的住处
+Featherwind Residence	菲德文特的住处
+Ravenhair Residence	莱文希尔的住处
+Jillian's House	基里安的住处
+Greenstorm Residence	革林斯道的住处
+Snick House	斯尼克的住处
+Infernon's House	因法那的住处
+Deerhunter Residence	猎鹿人之屋
+Swiftfoot's House	斯威夫特之屋
+Steele Residence	斯特利的住处
+Conscience Home	意识之屋
+Everil's House	伊夫利的住处
+Tricia's House	特雷西亚的住处
+Isram's House	伊斯拉姆的住处
+Stonecleaver Residence	斯通科利夫的住处
+Calindra's Home	卡林德拉的住处
+Brother Bombah's	邦布的住处
+Redding Residence	利斯莱汀的住处
+Fist's House	费斯特的住处
+Wacko's	渥克的住处
+Weldric's Home	维尔狄克的住处
+Visconti Residence	威斯康的住处
+Taren's House	塔伦的住处
+Moore Residence	摩尔的住处
+Rothham's House	罗斯汉姆的住处
+Seline's House	希林的住处
+Welman Residence	威尔门的住处
+Thain's House	泰那的住处
+Gizmo's	吉斯莫的住处
+Spark's House	斯巴克的住处
+Thorinson Residence	特林森的住处
+Urthsmite Residence	赫斯麦的住处
+House Devine	迪万之屋
+House Winterbright	文特布莱之屋
+Tarent Residence	塔伦特之屋
+Ramiez Residence	莱密斯的住处
+Darkenmore Residence	达克莫的住处
+Sand Residence	山德的住处
+Mist Manor	迷雾之屋
+Hillsmen Residence	海尔斯曼之屋
+Stillwater Residence	斯德渥之屋
+Mark Manor	马克之屋
+Temper Residence	坦普之屋
+Krewlen Residence	克莱文的住处
+Withersmythe's Home	威泽斯密的住处
+Smiling Jack's	杰克的住处
+Pederton Residence	培顿的住处
+Applebee Manor	埃普尔之屋
+Alashandra's Home	埃拉桑达的住处
+Gayle's	格利的住处
+Rowan's House	罗文的住处
+Brand's Home	布朗达的住处
+Benson Residence	拜森的住处
+Zimm's House	查姆的住处
+Chadric's House	查德科的住处
+Weider Residence	威埃达的住处
+Skinner's House	斯格那之屋
+Torrent's	特伦之屋
+Hume Residence	海墨尔的住处
+Farswell Residence	法斯威尔的住处
+Ravenswood Residence	莱文渥德的住处
+Blayze's	布雷泽之屋
+Norris' House	诺里斯的住处
+Wain Manor	威尔那之屋
+Putnam Residence	博特南的住处
+Hawker Residence	海克尔的住处
+Avalanche's	埃兰奇之屋
+Stone House	石头之屋
+Watershed Residence	渥特谢德之屋
+Hollyfield Residence	霍利菲尔德的住处
+Sweet Residence	甜蜜之屋
+Kaine's	克因之屋
+Apple Residence	埃普之屋
+Roggen Residence	洛根之屋
+Elzbet's House	埃兹贝特的住处
+Aznog's Place	埃兹诺格的住处
+Hollis' Home	霍利斯的住处
+Lanshee's House	兰希的住处
+Neldon Residence	尼德伦的住处
+Hawthorne Residence	豪斯索那之屋
+Lasiter's Home	拉斯特的住处
+Dallia's Home	达拉亚的住处
+Gemstone Residence	宝石之屋
+Feldspar's Home	菲德斯的住处
+Fissure Residence	裂缝之屋
+Garnet House	加内特之屋
+Rivenrock Residence	碎石之屋
+Thomas Grey	托马斯·格雷
+Alice Hargreaves	埃莉斯·哈格
+Master Thief	盗贼之王
+Markham's Headquarters	马克汉姆的总部
+Arbiter	仲裁人
+Donna Wyrith's Residence	唐纳·理斯的住处
+The Lady Margaret	马格莉特号
+Mia Lucille' Home	米尔·路基的住处
+Vandalir Residence	瓦兰达的住处
+Carolyn Weathers' House	凯洛琳·威瑟的住处
+Tellmar Residence	泰尔马的住处
+Traveler's Supply	旅行用品
+Initiate Guild of the Elements	初级元素魔法行会
+King's Library	国王图书馆
+Lock, Stock, and Barrel	锁、贮存物和木桶
+Adept Guild of the Elements	高级元素魔法行会
+Trader Joe's	乔记商店
+Abdul's Discount Goods	阿卜杜的廉价商品
+General Store	杂货铺
+Outland Trading Post	域外邮车
+Free Haven Temple	自由天堂神庙
+Hermit's Hut	隐士小屋
+Rites of Passage	进步之仪式
+Gymnasium	健身房
+Guild Training Hall	训练公会
+Godric's Gauntlet	歌瑞克的铁手套
+Assassin's School	杀手学校
+Balthazar Academy	巴尔萨煞学院
+Island Training Grounds	海岛训练所
+Basic Principles	基本技能训练所
+In Her Majesty's Service	皇家训练所
+The Proving Grounds	正义之地
+Trial of Honor	荣誉之地
+Perdition's Flame	烈焰训练所
+Applied Instruction	斗士训练所
+Training Essentials	勇者训练所
+Avlee Gymnaisium	埃里训练所
+War College	战争学校
+New Sorpigal Training Grounds	新索匹格训练营
+Free Haven Academy	自由天堂学院
+Abdul's Discount Training Center	阿卜杜的廉价训练场
+The Sparring Ground	拳击场
+Training-by-the-Sea	海岸训练营
+Wolf's Den	狼穴
+Royal Gymnasium	皇家体育馆
+Island Testing Center	海岛测试中心
+Lone Tree Training	孤树训练营
+Riverside Academy	河滨学院
+Prison	监狱
+Circus	马戏团
+Tent	帐篷
+Wagon	四轮马车

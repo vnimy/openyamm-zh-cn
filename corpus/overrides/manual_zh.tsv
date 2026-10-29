@@ -1,0 +1,1285 @@
+# 引擎硬编码界面文案的手写译文表：原文<TAB>译文。
+# 这一份是「人工逐条翻译」的部分；词缀、事件名、屋名、对话正文由各自的 tsv 与 MMMerge 语料提供。
+# 合并顺序见 tools/make_ui_text.py：本表最后加载，同名时以这里的译法为准。
+# 格式：一行一条，制表符分隔；# 开头为注释；原文以 * 结尾表示前缀匹配；换行写作字面 \n。
+
+
+Cancel	取消
+Apply	应用
+Change	更改
+Clear	清除
+Discard	放弃
+Keep	保留
+Later	稍后
+Never	从不
+Quit	退出
+Restart	重启
+Restart Now	立即重启
+Restore	恢复
+Revert	还原
+Search	搜索
+Stay	留下
+Swap	交换
+Update	更新
+At start	启动时
+New Game	新游戏
+Credits	制作人员
+Main Menu	主菜单
+Settings	设置
+Control	操作
+Preferences	偏好
+System	系统
+All actions	全部操作
+Your adventure begins here	你的冒险从这里开始
+Start a New Adventure?	开始新的冒险？
+Leave OpenYAMM?	退出 OpenYAMM？
+Return to Main Menu?	返回主菜单？
+Return to your desktop?	返回桌面？
+Unsaved progress in this adventure will be lost.	本次冒险中未保存的进度将会丢失。
+Unsaved progress will be lost. Return to your desktop?	未保存的进度将会丢失。确定返回桌面吗？
+The saved adventure could not be loaded.	无法读取已保存的冒险。
+Choose Nightmare?	选择噩梦难度？
+Nightmare can never be lowered again in this adventure.	本次冒险中噩梦难度无法再调低。
+Apply your changes before leaving Settings?	离开设置前应用更改？
+Settings saved.	设置已保存。
+Unapplied Changes	未应用的更改
+Restore Defaults?	恢复默认设置？
+Restore the current Settings section to its defaults?	将当前设置分区恢复为默认值？
+Keep Display Settings?	保留显示设置？
+Previous display settings restored.	已恢复之前的显示设置。
+Your settings are up to date.	设置已是最新。
+Choose a value	选择数值
+Configure Keyboard	键盘设置
+Assign Key	分配按键
+Key Already Assigned	按键已被占用
+Change Control Preset?	更改操作预设？
+This also resets the keyboard bindings for the selected preset.	这同时会重置所选预设的键盘绑定。
+Restore mouse controls, the control preset and its keyboard bindings?	恢复鼠标操作、操作预设及其键盘绑定？
+Modifier combinations are not supported. Choose a single key.	不支持组合键，请选择单个按键。
+That key is reserved. Choose another key.	该按键被保留，请选择其他按键。
+Left Mouse	鼠标左键
+Fixed shortcuts	固定快捷键
+No matching actions	没有匹配的操作
+Search actions or keys...	搜索操作或按键…
+F9  Quicksave       F10  Quickload\n1-5  Select party member       Escape  Open / close menu	F9  快速存档       F10  快速读档\n1-5  选择队员       Esc  打开 / 关闭菜单
+Check for Updates?	检查更新？
+Check Now	立即检查
+Check Now looks for a new version on jasicek.net. Nothing downloads without asking.	「立即检查」会在 jasicek.net 上查找新版本，未经询问不会下载任何内容。
+OpenYAMM can look for a new version on jasicek.net when it starts. Nothing is downloaded without asking.	OpenYAMM 可以在启动时到 jasicek.net 查找新版本，未经询问不会下载任何内容。
+Checking...	检查中…
+This is the newest version.	已经是最新版本。
+The last check failed: 	上次检查失败：
+Downloading...	下载中…
+Starting the download...	开始下载…
+Updating OpenYAMM	正在更新 OpenYAMM
+Update Failed	更新失败
+Update Undone	更新已回退
+Release Notes	版本说明
+Restart now to play the new version.	立即重启以游玩新版本。
+OpenYAMM on GitHub	OpenYAMM 的 GitHub 页面
+Update to OpenYAMM 	更新到 OpenYAMM 
+Downloading OpenYAMM 	正在下载 OpenYAMM 
+Restart to play OpenYAMM 	重启以游玩 OpenYAMM 
+Installed: OpenYAMM 	已安装：OpenYAMM 
+Downloads 	需要下载 
+Reverting in 	还原倒计时 
+Continue	继续
+Load Game	读档
+Universe of Might and Magic	魔法门的世界
+Back	返回
+New World Computing	New World Computing
+OpenEnroth	OpenEnroth
+Rodril & the MMMerge contributors	Rodril 与 MMMerge 的贡献者们
+The MAW team	MAW 团队
+For creating Might and Magic and the worlds that started it all.	创作了魔法门，以及开启这一切的世界。
+For inspiring the engine’s development.	启发了本引擎的开发。
+For bringing the worlds of Might and Magic together.	把魔法门的各个世界汇聚到一起。
+pjasicek · Main developer	pjasicek · 主开发者
+Malekith	Malekith
+Lead developer and designer	主开发与设计
+With thanks to GrayFace and Rodril.	同时感谢 GrayFace 与 Rodril。
+Gameplay	玩法
+Interface	界面
+Video	画面
+Audio	音频
+Rules	规则
+Monster scaling	怪物等级缩放
+Melee impact feedback	近战打击反馈
+Camera kick	镜头震动
+Skip event cutscenes	跳过剧情过场
+Floating combat text	飘浮战斗文字
+Combat log	战斗记录
+Hit messages	命中信息
+Show health bars	显示生命条
+Health values	生命数值
+Damage trail	伤害轨迹
+Quest markers	任务标记
+Context action menu	情境操作菜单
+Portrait frame	头像边框
+Potion buttons	药剂按钮
+Item rarity glow	物品稀有度光效
+Check for updates	检查更新
+Display mode	显示模式
+Resolution	分辨率
+Vertical sync	垂直同步
+Graphics quality	画质等级
+Anti-aliasing	抗锯齿
+View distance	视距
+Distant creature detail	远处生物细节
+Smooth textures	纹理平滑
+Ground texture clarity	地面纹理清晰度
+Creature shadows	生物阴影
+Light detail	光照细节
+Coloured lighting	彩色光照
+Warm torch light	火炬暖光
+Ambient occlusion	环境光遮蔽
+Intensity	强度
+Terrain details	地形细节
+Weather	天气
+Wet surfaces	湿润表面
+Ground highlights	地面高光
+Reflections	反射
+Reflection detail	反射细节
+Reflect nearby objects	反射附近物体
+Movement ripples	移动涟漪
+Rain ripples	雨滴涟漪
+Glow	辉光
+Cinematic colour	电影感色彩
+Sharpening	锐化
+Melee hit effects	近战命中特效
+Melee hit flash	近战命中闪光
+Melee blood	近战血液
+Blood splats	血迹
+Sound effects	音效
+Music	音乐
+Voices	语音
+Footsteps	脚步声
+Control preset	操作预设
+Mouse sensitivity	鼠标灵敏度
+Turn rate	转向速率
+Invert mouse Y	鼠标 Y 轴反转
+Always run	始终奔跑
+Number keys	数字键
+Ruleset	规则集
+Difficulty	难度
+Progression	成长曲线
+Challenge mode	挑战模式
+Randomizer	随机化
+Homing projectiles	追踪弹道
+Friendly fire	误伤友军
+Loot filter	战利品筛选
+Disintegration	化尘而逝
+Forward	前进
+Backward	后退
+Move / turn left	移动 / 左转
+Move / turn right	移动 / 右转
+Jump	跳跃
+Toggle always run	切换常跑
+Fly up	上升
+Fly down	下降
+Land	降落
+Look up	抬头
+Look down	低头
+Centre view	视角回中
+Zoom in	拉近
+Zoom out	拉远
+Attack	攻击
+Cast quick spell	施放速捷法术
+Cast quick spell 1	施放速捷法术 1
+Cast quick spell 2	施放速捷法术 2
+Cast quick spell 3	施放速捷法术 3
+Cast quick spell 4	施放速捷法术 4
+Open spellbook	打开法术书
+Pass turn (turn-based)	跳过回合（回合制）
+Use / interact	使用 / 互动
+Interact ahead	与前方互动
+Next character	下一名角色
+Quest book	任务书
+Map book	地图册
+History	历史记录
+Quick reference	速查手册
+Rest	休息
+Follower panel	队友面板
+Speak with follower 1	与队友 1 交谈
+Speak with follower 2	与队友 2 交谈
+Speak with follower 3	与队友 3 交谈
+Speak with follower 4	与队友 4 交谈
+Toggle double speed	切换双倍速度
+Get unstuck	脱困
+Open Workbench	打开工作台
+Gather corpses and crafting items	拾取尸体与制作材料
+Alchemist takes alchemy items	炼金术士收取炼金材料
+Switch Cover	切换掩护
+Switch Mana Shield	切换法力护盾
+Switch Elementalist rotation	切换元素使轮转
+Knight Charge (a lone Knight)	骑士冲锋（独行骑士）
+Show item rarity (hold)	显示物品稀有度（按住）
+Open bag 1 (with Shift as Controls' Number keys say)	打开背包 1（配合 Shift，见「操作」中的数字键）
+Open bag 2 (with Shift as Controls' Number keys say)	打开背包 2（配合 Shift，见「操作」中的数字键）
+Open bag 3 (with Shift as Controls' Number keys say)	打开背包 3（配合 Shift，见「操作」中的数字键）
+Open bag 4 (with Shift as Controls' Number keys say)	打开背包 4（配合 Shift，见「操作」中的数字键）
+Crafting bag (with Shift; tags or untags the open bag)	制作背包（配合 Shift；标记或取消标记当前背包）
+Open the Journal's Progress tab	打开日志的进度页
+Open the aura panel	打开光环面板
+Potion wheel (the active member's ring)	药剂转盘（当前角色的环）
+Quick potion (the active member's slot 1)	速捷药剂（当前角色的 1 号位）
+Use potion slot 2	使用药剂 2 号位
+Use potion slot 3	使用药剂 3 号位
+Use potion slot 4	使用药剂 4 号位
+Use potion slot 5	使用药剂 5 号位
+Use potion slot 6	使用药剂 6 号位
+'{party_count} / {party_capacity} adventurers	{party_count} / {party_capacity} 名冒险者
+Import Saves\u2026	导入存档…
+Number keys on the inventory page and in shops and chests; Shift with a number does the other. A party	在物品栏、商店与箱子界面使用数字键；按住 Shift 再按数字键可执行另一种操作。
+Voice {voice_number} · {race_name}	语音 {voice_number} · {race_name}
+{save_name}\nSaved {saved_timestamp} · {save_kind} save	{save_name}\n保存于 {saved_timestamp} · {save_kind} 存档
+Voice {voice_number} - {race_name}	语音 {voice_number} - {race_name}
+{ready_count} ready	已就绪 {ready_count} 人
+Fixed by {name}	由 {name} 固定
+Attributes are fixed for this preset.	该预案的属性是固定的。
+Spend all bonus points before beginning.	开始前请分配完所有奖励点数。
+Your party is ready.	你的队伍已就绪。
+Assign bonus points and starting skills to each adventurer.	为每位冒险者分配奖励点数与初始技能。
+No additional skills to choose	没有可选择的额外技能
+Standard MMMerge	标准 MMMerge 合集
+The merged Might and Magic VI-VIII rules.	合并魔法门 VI-VIII 的规则。
+Might and Magic rebalance: monsters scale with the expected party, difficulty from Easy to Nightmare, free or horizontal progression, new loot rarities, skills, spells, classes and crafting.	魔法门重平衡：怪物随队伍预期强度成长，难度从简单到噩梦，自由或横向成长曲线，全新的掉落稀有度、技能、法术、职业与合成。
+Might and Magic rebalance	魔法门重平衡
+MAW rebalances monsters, items, skills and spells.	MAW 重新平衡了怪物、物品、技能与法术。
+{ruleset_name} Rules	{ruleset_name} 规则
+{difficulty} difficulty · {progression} progression	{difficulty} 难度 · {progression} 成长
+{challenge_name} sets the difficulty for the whole adventure; preferences can change.	{challenge_name} 将为整个冒险固定难度；偏好设置仍可更改。
+{difficulty} cannot be lowered later; progression and preferences can change.	{difficulty} 之后无法下调；成长曲线与偏好设置仍可更改。
+Difficulty, progression and preferences can change during play.	难度、成长曲线与偏好设置可在游戏进行中更改。
+Set by {challenge_name}	由 {challenge_name} 决定
+Credits: {credits}	制作人员：{credits}
+Chosen once · fixed for the adventure	开始时选定 · 整个冒险固定
+Change any time	随时可改
+On	开
+Off	关
+default	默认
+locks	锁定
+Monster HP	怪物生命
+Monster dmg	怪物伤害
+Groups	怪物数量
+Loot	掉落加成
+MAW Rules	MAW 规则
+Challenge	挑战
+Coming in a later update	将在后续更新中推出
+Drops you would rather not carry turn into gold. The pause menu's Settings show what each preset filters.	不想携带的掉落物自动换成金币。暂停菜单的设置界面会列出每个预案过滤掉的内容。
+Only two additional skills can be selected.	最多只能再选两个技能。
+Character name cannot be empty.	角色名不能为空。
+Easy	简单
+Normal	普通
+Hard	困难
+Hell	地狱
+Nightmare	恶梦
+Free	自由
+Horizontal	横向
+None	无
+Doom	末日审判
+Road to Insanity	疯狂之路
+Beyond Madness	超越疯狂
+Austerity	苦行
+No bosses. Monsters have half the health and deal half the damage of MAW.	无首领。怪物生命与伤害均为 MAW 的一半。
+No bosses. A gentler start for players new to MAW.	无首领。为初次接触 MAW 的玩家提供更平缓的开局。
+The intended experience. Every map has bosses with special abilities.	设计者的预期体验。每张地图都有具备特殊能力的首领。
+Larger groups and better loot. Attacking while flying ends Fly on most maps.	更大的怪物群体与更好的掉落。在多数地图上，飞行中攻击会结束飞行状态。
+As Hard; melee monsters outdoors can also gain a ranged attack.	同困难难度；野外近战怪物还可能获得远程攻击。
+Saving costs food, and Lloyd's Beacon and Town Portal fail near enemies; dungeons left below 65 % cleared revive their dead.	存档消耗食物，罗德的信标与城镇传送门在敌人附近会失效；清理度低于 65% 的地下城将复活其中的怪物。
+Cannot be lowered later.	之后无法下调。
+Monsters on a new continent gain the levels you earned elsewhere. Suits playing one continent at a time. Masteries need skill 4, 7 and 10.	新大陆的怪物会获得你在其他大陆练就的等级。适合一次只玩一块大陆。宗师级需要技能等级 4、7、10。
+Every map has a fixed level, about 2.5× its original band; travel between continents to progress. Suits clearing the whole game. Masteries need skill 6, 12 and 20.	每张地图等级固定，约为原版的 2.5 倍；需往返各大陆推进。适合打通整个游戏。宗师级需要技能等级 6、12、20。
+MAW's rules with no extra challenge.	MAW 规则，无额外挑战。
+Monster hits cause conditions, more and stronger monsters spawn, items must be identified before wearing and hirelings are limited. Masteries need skill 6, 12 and 20. Starts with 5,000 gold and bonus experience.	怪物攻击会附加异常状态，出现更多更强的怪物，装备须鉴定后才能穿戴，随从数量受限。宗师级需要技能等级 6、12、20。开局 5000 金币与额外经验。
+Doom's monsters, no map refills, and masteries need skill 8, 16 and 25. Starts with 5,000 gold and bonus experience.	末日审判的怪物设定，地图不再刷新，宗师级需要技能等级 8、16、25。开局 5000 金币与额外经验。
+Insanity, and the party restarts at level 1, maps reach level 500, bosses are seeded and every death counts, including loading during combat. No mercenaries. Horizontal progression; masteries need skill 10, 24 and 40.	在疯狂之路基础上，队伍从 1 级重新开始，地图最高 500 级，首领固定生成，每次死亡都会被记录——包括战斗中读档。无雇佣兵。横向成长曲线；宗师级需要技能等级 10、24、40。
+No Legendary or Celestial items and no crafting rewards, weaker enchantments and reagents, flatter bosses and a minimum armour value from the armour skills. Combines with any difficulty.	无传说或神圣物品、无合成奖励，附魔与试剂更弱，首领更平滑，护甲技能提供最低护甲值。可与任意难度叠加。
+Learn Skills	学习技能
+Play Arcomage	玩阿卡玛奇
+Buy Standard	购买标准品
+Buy Special	购买特制品
+Buy Spellbooks	购买法术书
+Display Equipment	查看装备
+Sell	出售
+Identify	鉴定
+Repair	修理
+Heal {cost} gold	治疗 {cost} 金币
+Donate {cost} gold	捐款 {cost} 金币
+Deposit	存款
+Withdraw	取款
+Pay Fine	缴纳罚金
+Current Fine: {cost} gold	当前罚金：{cost} 金币
+Bounty Hunt	悬赏追捕
+Learn {skill} for {cost} gold	学习{skill}，{cost} 金币
+Rent room for {cost} gold	租一间房，{cost} 金币
+Fill packs to {days} days for {cost} gold	补给到 {days} 天，{cost} 金币
+Train to level {level} for {cost} gold	训练至 {level} 级，{cost} 金币
+You need {exp} more experience to train to level {level}	还需 {exp} 点经验才能训练至 {level} 级
+Buy {school} Spells	购买{school}法术
+{days} to {dest} for {cost} gold	{days}，前往{dest}，{cost} 金币
+{days} day(s)	{days} 天
+{name}, {title}	{name}·{title}
+Welcome to {house}	欢迎来到{house}
+This place is open from {open} to {close}	本店营业时间 {open} 至 {close}
+With your skills, you should be working here as a teacher\n\nSorry, but we are unable to train you.	以你的本事，该在这里当老师了。\n\n抱歉，我们无法训练你。
+No skills are available here for this character.	此角色在此没有可学的技能。
+This house does not buy equipment.	本店不收购装备。
+This house cannot identify items.	本店不提供鉴定服务。
+This house cannot repair items.	本店不提供修理服务。
+Your packs are already full enough.	背包已经够满了。
+You must be a member of this guild to study here.	你必须加入本行会才能在此学习。
+You do not owe a fine.	你没有欠缴罚款。
+Sorry, come back another day	抱歉，改天再来
+You must have your own card deck to play here.	你必须自备牌组才能在这里玩。
+Price Fixing	价格垄断
+More Info	更多信息
+Yes	是
+Malekith, lead developer and designer	Malekith，首席开发与设计师
+Rawsugar, co-lead designer	Rawsugar，联合首席设计师
+Eksekk, senior contributor	Eksekk，资深贡献者
+Yuji Sakai/Knightmarevive, contributor	Yuji Sakai/Knightmarevive，贡献者
+2D (Perduelion), alchemy design	2D (Perduelion)，炼金设计
+Thor Thunderfist, skill limit removal	Thor Thunderfist，技能上限移除
+With thanks to GrayFace and Rodril	感谢 GrayFace 与 Rodril
+DarkElf	黑暗精灵
+Troll	巨魔
+Minotaur	牛头人
+Undead	亡灵
+Zombie	僵尸
+Ascension	飞升
+Choose one more	再选择一项
+{selected_count} / {required_count}	{selected_count} / {required_count}
+Choose two more	再选择两项
+All skills - Grandmaster	全部技能 - 宗师
+Every skill is granted at level 200.\nAll spells are learned.\nNo starting skill choices are needed.	所有技能初始等级 200。\n所有法术均已学会。\n无需选择初始技能。
+Choose a continent to create your party.	选择一块大陆来创建你的队伍。
+RULESET	规则集
+Choose two ingredients or a recipe.	选择两种材料或一个配方。
+Staff	手杖
+Sword	长剑
+Dagger	匕首
+Axe	战斧
+Spear	矛
+Bow	弓
+Mace	钉锤
+Blaster	迷你榴弹枪
+Shield	盾牌
+Leather Armor	皮甲
+Chain Armor	锁甲
+Plate Armor	钢甲
+Fire Magic	火系魔法
+Air Magic	空气魔法
+Water Magic	水系魔法
+Earth Magic	土系魔法
+Spirit Magic	灵魂魔法
+Mind Magic	心智魔法
+Body Magic	肢体魔法
+Light Magic	光明魔法
+Dark Magic	暗黑魔法
+Dark Elf Ability	黑暗精灵能力
+Vampire Ability	吸血鬼能力
+Dragon Ability	飞龙能力
+Identify Item	物品鉴定术
+Merchant	经商术
+Repair Item	修补术
+Body Building	健身术
+Meditation	冥想术
+Perception	洞察术
+Regeneration	再生术
+Disarm Traps	陷阱拆卸术
+Dodging	闪躲术
+Unarmed	空手搏斗术
+Identify Monster	怪物鉴定术
+Armsmaster	武器使用术
+Stealing	偷窃术
+Learning	学习术
+Throwing Weapons	投掷武器
+Energy Guns	能量枪
+Energy Blades	能量刃
+Shield Tech	护盾技术
+Hacking	骇入
+Cover	掩护
+Mana Shield	法力护盾
+Enlightenment	启迪
+Retaliation	反击
+Cybernetics	义体改造
+Knight	骑士
+Cavalier	豪侠
+Champion	勇士
+Black Knight	黑骑士
+Death Knight	死亡骑士
+Death Lord	死亡领主
+Archer	弓箭手
+Master Archer	神箭手
+Sniper	狙击手
+Warrior Mage	高级射手
+Cleric	牧师
+Priest	神甫
+Priest of the Light	光明主教
+Priest of the Dark	黑暗主教
+High Priest	大主教
+Druid	德鲁伊
+Great Druid	高级德鲁伊
+Arch Druid	大德鲁伊
+Warlock	邪术师
+Paladin	圣武士
+Crusader	十字军
+Hero	英雄
+Villain	魔头
+Ranger	游骑兵
+Hunter	猎手
+Bounty Hunter	赏金猎人
+Ranger Lord	游骑领主
+Thief	盗贼
+Rogue	神偷
+Assassin	杀手
+Spy	密探
+Monk	僧侣
+Initiate	修士
+Master	智者
+Ninja	忍者
+Sorcerer	巫师
+Wizard	法师
+Master Wizard	大魔法师
+Necromancer	死灵法师
+Lich	巫妖
+Lich King	巫妖王
+Arch Mage	大法师
+Dark ArchMage	死灵大法师
+Dark Elf	黑暗精灵
+Patriarch	尊者
+Minotaur Lord	牛头领主
+War Troll	战斗巨魔
+Vampire	吸血鬼
+Nosferatu	吸血圣王
+Dragon	龙
+Great Wyrm	神龙
+Peasant	农夫
+Seraphim	炽天使
+Angel	天使
+Archangel	大天使
+Shaman	萨满
+Sekhem	塞赫姆
+Marabou	马拉布
+Elementalist	元素使
+Elemental Adept	元素行家
+Master of Elements	元素之主
+Human	人类
+Elf	精灵
+Dwarf	矮人
+Goblin	大耳怪
+Lizardman	蜥蜴人
+Ratman	人型鼠
+Genie	灯怪
+Monsters keep pace with the party's level. Takes effect on entering an area.	怪物跟随队伍等级成长，进入新区域时生效。
+Standard games only; this game's ruleset scales its monsters itself.	仅标准游戏可用；本局规则集会自行缩放怪物。
+Impact sounds by what was struck, and a brief pause of the struck creature.	按受击材质播放打击音效，并使受击生物短暂顿挫。
+Nudge the view along the blow on critical hits and kills.	重击与击杀时镜头随打击方向轻晃。
+Skip event movies. Leave off for a first adventure.	跳过剧情影片。首次冒险建议保持关闭。
+Show damage numbers and combat messages in the world.	在游戏世界中显示伤害数字与战斗信息。
+A button beside the followers' head opens a log of recent hits, each with its damage steps.	队友头像旁的按钮可打开最近战斗记录，逐条显示伤害构成。
+Describe each attack in the status bar.	在状态栏逐条描述每次攻击。
+Over the target, recent combatants, or all nearby visible enemies.	显示于目标头顶、近期交战者，或所有附近可见敌人。
+Show current and maximum health above the bars.	在生命条上方显示当前与最大生命值。
+Briefly show recently lost health behind the current fill.	在当前血量之后短暂显示刚失去的生命。
+Mark characters with quests to offer or complete, where the world has them.	在世界地图上标记可接取或交付任务的角色。
+Offer actions for the object under the pointer.	针对指针所指的物体弹出可执行操作。
+Draw the frame behind the party portraits during play. Other screens always keep it.	游戏进行中绘制队伍头像边框，其他界面始终保留。
+Show the round potion quick-slot button at each portrait. The Potion Wheel key opens the ring either way.	在每个头像旁显示圆形速捷药剂按钮；无论开关，药剂转盘键均可打开圆环。
+Outline items in their rarity colour (rulesets with rarities, such as MAW).	按稀有度颜色勾勒物品轮廓（限带稀有度的规则集，如 MAW）。
+Look for a new version on jasicek.net when OpenYAMM starts. Nothing downloads without asking.	OpenYAMM 启动时到 jasicek.net 查找新版本，未经询问不会下载任何内容。
+Changes must be confirmed within 15 seconds.	更改必须在 15 秒内确认。
+Borderless uses your desktop resolution.	无边框模式使用桌面分辨率。
+Prevent screen tearing by matching frames to the display.	让画面帧与显示器刷新对齐，消除画面撕裂。
+Sets most options below at once; changing one of them shows Custom.	一键设定下方大多数选项；单独改动任何一项后会显示为「自定义」。
+Smooth jagged edges and shimmering foliage.	平滑锯齿边缘与闪烁的 foliage。
+Longer distances can reduce performance outdoors.	更远的视距可能降低户外场景性能。
+Draw simpler creature shapes far away; nearby creatures keep full detail.	远处生物使用简化模型，近处保持完整细节。
+Off keeps the sharp, pixelated texels of the original.	关闭时保留原版锐利的像素纹理。
+Keep distant ground textures sharp (anisotropic filtering).	让远处地面纹理保持清晰（各向异性过滤）。
+Animated shadows of creatures; higher quality adds detail and range.	生物的动态阴影；更高质量带来更多细节与更大范围。
+How finely torches, spells and other lights are sorted; Low suits phones.	火炬、法术等光源的细分精度；低档适合手机。
+Lights tint their surroundings with their own colour.	光源用自己的颜色为周围环境着色。
+Torch Light glows firelight orange instead of the original white.	火炬发出暖橙色火光，而不是原版的白光。
+Add soft shading where solid surfaces meet.	在实体表面交界处添加柔和阴影。
+Draw extra ground decorations where available.	在有素材处绘制额外的地面装饰。
+Density of falling rain and snow; Off hides them but the weather goes on.	雨雪的密度；关闭后不再显示，但天气仍在运作。
+Rain darkens the ground and buildings, which dry slowly afterwards.	雨水打湿地面与建筑，随后缓慢晾干。
+Smooth rock and wet ground catch the sun and nearby lights.	光滑岩石与湿地反射阳光和附近灯光。
+Reflect the sky, ground and buildings in water. Costs extra rendering.	水面倒映天空、地面与建筑，需要额外渲染开销。
+Higher detail gives sharper reflections at a higher cost.	更高细节带来更清晰的反射，开销也更大。
+Include nearby creatures, trees and decorations.	把附近的生物、树木与装饰物也纳入反射。
+Small ripples from creatures moving on water.	生物在水面移动时泛起细小涟漪。
+Raindrop rings on still water while it rains.	下雨时静水上泛起雨滴圆环。
+Flames, glowing crystals and spell light bloom softly into their surroundings.	火焰、发光水晶与法术光芒向四周柔和晕染。
+Bring out shadow detail and soften over-saturated earth tones.	增强阴影细节，柔化过饱和的大地色调。
+Sharpen the 3D view; the interface is unaffected. Zero turns it off.	锐化 3D 画面；界面不受影响。设为 0 关闭。
+Show a slash, thrust or crush where melee attacks connect.	近战命中处显示劈砍、突刺或重击特效。
+Briefly brighten a creature struck in melee.	被近战击中的生物短暂发亮。
+Add blood effects when melee attacks connect.	近战命中时添加血液效果。
+Leave a pool of blood beneath slain creatures.	被击杀的生物身下留下一滩血。
+Weapons, spells, the interface and the world. Zero mutes.	武器、法术、界面与世界音效。设为 0 静音。
+Music in menus, towns and dungeons. Zero mutes.	菜单、城镇与地下城的音乐。设为 0 静音。
+Spoken character reactions and dialogue. Zero mutes.	角色的语音反应与对白。设为 0 静音。
+Play walking and running sounds.	播放行走与奔跑声。
+Modern: WASD, left-click attack, E to use. Classic: arrow keys, A to attack, left-click to use.	现代：WASD 移动、左键攻击、E 互动。经典：方向键移动、A 攻击、左键互动。
+How fast the view follows the mouse. Zero turns mouse look off.	视角跟随鼠标的速度。设为 0 关闭鼠标视角。
+Base turning speed, from the original 16× and 32× to the faster Smooth.	基础转向速度：原版 16 倍、32 倍，或更快的「平滑」。
+Move the mouse up to look down, and down to look up.	鼠标上移向下看，下移向上看。
+Run by default instead of walking.	默认奔跑而不是步行。
+Number keys on the inventory page and in shops and chests; Shift with a number does the other. A party of one opens bags.	数字键用于行囊页及商店与宝箱；Shift+数字执行另一侧。单人队伍直接打开背包。
+Chosen at the start of the adventure. The rules of each part follow below.	在冒险开始时选择，各项细则见下方。
+Monster health and damage, how many come, loot and bosses. Nightmare can never be lowered again.	怪物生命与伤害、数量、战利品与头目。噩梦难度无法再调低。
+Free lets monsters grow with the levels you gain elsewhere; Horizontal fixes each map's level.	「自由」让怪物随你在别处获得的等级成长；「水平」固定每张地图的等级。
+Chosen once at the start; fixed for the whole adventure.	开始时选择一次，整个冒险期间固定。
+Your missiles follow their target.	你的飞行法术与箭矢会追踪目标。
+Your attacks and spells can hurt peaceful townsfolk and guards.	你的攻击与法术可能伤及无辜镇民与守卫。
+Drops you would rather not carry turn into gold. Opens the filter with its presets.	不想携带的掉落物自动换成金币。可通过筛选器配置预案。
+A companion slain far past death leaves the party for the Adventurer's Inn.	队友倒下超过极限后离队，前往冒险者旅店。
+Accuracy	精确
+Armor	护甲
+Armor Class	护甲等级
+Attributes	属性
+Age	年龄
+Class	职业
+Condition:	状态：
+Damage	伤害
+Endurance	耐力
+Equipment	装备
+Experience	经验
+Hit Points	生命值
+Intellect	智力
+Level	等级
+LEVEL	等级
+Luck	幸运
+Might	力量
+Name	名称
+Personality	个性
+Points	点数
+Resistances	抗性
+Speed	速度
+Spell Points	魔法值
+Stats	属性
+Skills	技能
+Skill Points:	技能点：
+Starting skills	初始技能
+Strength	力量
+Awards	荣誉
+Effects	效果
+HP	生命
+SP	魔法
+AC	护甲
+Cond	状态
+Dmg	伤害
+QSpell	快捷法术
+Quick Spell:	快捷法术：
+Air	气
+Body	身体
+Dark	暗
+Earth	土
+Fire	火
+Light	光
+Magic	魔法
+Mind	心智
+Physical	物理
+Spirit	精神
+Water	水
+Antagarich	安塔加里奇
+Enroth	恩洛斯
+Jadame	贾达梅
+Begin in Dagger Wound Islands	从匕痕群岛开始
+Begin in Emerald Island	从翡翠岛开始
+Begin in New Sorpigal	从新索皮加尔开始
+Obelisks	方尖碑
+Fountains	喷泉
+Seer	先知
+Trainers	训练师
+Might and Magic VI	魔法门 VI
+Might and Magic VII	魔法门 VII
+Might and Magic VIII	魔法门 VIII
+Appearance	外观
+Begin Adventure	开始冒险
+Choose Starting Continent	选择起始大陆
+Create Your Party	创建你的队伍
+Default	默认
+Dismiss	解散
+Hire	雇佣
+Party	队伍
+Party & books	队伍与书籍
+whole party, click or drag to place	全队，点击或拖动以放置
+Spend all {total_bonus_points} bonus points before beginning.	开始前请分配完 {total_bonus_points} 点奖励点数。
+{party_count} / {party_capacity} adventurers	{party_count} / {party_capacity} 名冒险者
+{bonus_points} points left	剩余 {bonus_points} 点
+01 · Continent   /   02 · Party	01 · 大陆   /   02 · 队伍
+Alchemy	炼金术
+Alchemy Bench	炼金台
+All	全部
+All known	全部已知
+Apply All	全部应用
+Can brew	可调配
+Cheapest gems	最便宜的宝石
+Crafting	合成
+Gems	宝石
+Ingredients	原料
+Inventory	物品栏
+Items	物品
+Materials	材料
+Mix	调制
+Mix All	全部调制
+New stock	新到的货
+Potions	药水
+Reagents	试剂
+Recipes	配方
+Remove	移除
+Sort	排序
+Take All	全部拿取
+Take Gold	拿取金币
+Worn	已穿戴
+Weapons	武器
+Type: {item_type}	类型：{item_type}
+Value: {item_value}	价值：{item_value}
+Close	关闭
+Delete Save	删除存档
+Exit	退出
+Import Saves…	导入存档…
+Load Adventure	载入冒险
+Loading...	载入中…
+Notes	笔记
+OK	确定
+Resume	继续游戏
+Save Adventure	保存冒险
+Save Game	保存游戏
+Save name	存档名称
+Quicksave	快速保存
+Quickload	快速读取
+Quit to Desktop	退出到桌面
+F9	F9
+F10	F10
+1–5	1–5
+Escape	退出
+Open / close menu	打开 / 关闭菜单
+Select party member	选择队员
+{page} / {pages}	第 {page} / {pages} 页
+{location} · {world}	{location} · {world}
+{world_name} · {save_kind}	{world_name} · {save_kind}
+Fame: {fame}	声望：{fame}
+Reputation: {reputation}	声望：{reputation}
+Points: {tech_points_value}	点数：{tech_points_value}
+Day	日
+Month	月
+Year	年
+Wait	等待
+Wait 1 Hour	等待 1 小时
+Wait 5 Minutes	等待 5 分钟
+Wait until Dawn	等待至天明
+Rest & Heal 8 Hours	休息并治疗 8 小时
+Exit Rest	结束休息
+Map	地图
+Recall	召回
+Recall Beacon	召回信标
+Set Beacon	设置信标
+Game date	游戏日期
+Game time	游戏时间
+Story	故事
+Quests	任务
+Player's guide	玩家手册
+Rules…	规则…
+Use These Rules	使用这些规则
+DIFFICULTY	难度
+Controls	操作
+Keyboard	键盘
+Updates	更新
+Installed version	已安装版本
+Apply Changes	应用更改
+Restore Defaults	恢复默认
+Set	设置
+Preset	预案
+Version	版本
+Packs	背包
+Open Folder	打开文件夹
+OpenYAMM	OpenYAMM
+Assigned key	已分配按键
+Automatic checks	自动检查
+Progress	进度
+Fixed shortcut	固定快捷键
+Volume	音量
+Sounds	音效
+Next	下一页
+Previous	上一页
+Misc	其他
+Misc.	其他
+Special	特殊
+Technology	技术
+Environment	环境
+Exploration	探索
+Combat	战斗
+Camera	镜头
+Mouse	鼠标
+Movement	移动
+Interaction	互动
+Action	动作
+Shoot	射击
+Spell	法术
+Fly Up	上升
+Fly Down	下降
+Look Up	向上看
+Look Down	向下看
+Zoom In	拉近
+Zoom Out	拉远
+Display	显示
+Quality	画质
+Textures	贴图
+Lighting & shadows	光照与阴影
+Post-processing	后期处理
+COLOR GRADING	色彩分级
+Cinematic grading: Off	电影化调色：关闭
+Combat effects	战斗特效
+Combat messages	战斗信息
+Enemy health bars	敌人血条
+'Lead developer and designer	首席开发者与设计师
+'pjasicek · Main developer	pjasicek · 主开发者
+'Malekith	Malekith
+Type: *	类型：
+Power: *	威力：
+Value: *	价值：
+Hit Points : *	生命值：
+Spell Points : *	法术值：
+Condition: *	状态：
+Cond: *	状态：
+Quick Spell: *	快捷法术：
+QSpell: *	快捷法术：
+Name: *	姓名：
+Class: *	职业：
+Level: *	等级：
+HP: *	生命：
+SP: *	法术：
+AC: *	护甲：
+Attack: *	命中：
+Dmg: *	伤害：
+Shoot: *	射击：
+Skills: *	技能：
+Points: *	点数：
+Strength: *	力量：
+Balance: *	余额：
+Fame: *	名望：
+Reputation: *	声望：
+Slain: *	击杀：
+Death Count: *	死亡次数：
+Reward: *	奖励：
+Mix: *	混合：
+Alchemist: *	炼金术士：
+Normal: *	普通：
+Expert: *	专家：
+Master: *	大师：
+Grand Master: *	宗师：
+Bag *	背包 
+Slot *	栏位 
+Casting *	施放 
+Armour *	护甲 
+Uses *	使用 
+Set *	设置 
+Replace *	替换 
+You need *	你需要 
+It will take *	需要 
+To confirm *	确认以 
+Set beacon to *	把信标设在 
+Recall to *	召回至 
+Learned recipe: *	学会配方：
+Congratulations! You have won *	恭喜！你赢得了 
+You found something (*	你找到了什么（
+Wave level: *	波次等级：
+This wave: *	本波次：
+Dimension run: power *	维度突袭：威力 
+Dead rise again on leaving: *	离开时亡者复生：
+The innkeeper fills your packs to *	店主把你的背包补满到 
+Your current fine is *	你目前的罚款是 
+The temple restores *	神殿恢复了 
+The temple staff cannot treat *	神殿人员无法治疗 
+Buying *	购买 
+Selling *	出售 
+Active Party Buffs	队伍增益
+No active buffs	当前没有增益
+Active Spells:	生效中的法术：
+No	否
+Not identified	未鉴定
+Empty slot	空栏位
+Select an item	选择一件物品
+Can't do that	无法这么做
+Cannot leave turn-based mode now.	现在无法退出回合制模式。
+You can't rest in turn-based mode!	回合制模式下无法休息！
+The party	队伍
+The party carries only one of those.	队伍只带了一件这样的物品。
+Nobody carries a potion or a scroll	没人携带药水或卷轴
+Nobody holds an aura. Cast a buff spell to hold it.	没有人持有光环。施放一个增益法术即可保持。
+Click: open the aura panel	点击：打开光环面板
+Aura	光环
+Auras	光环
+Loot Filter	拾取过滤
+Finish current action	结束当前动作
+Press ESC again to confirm.	再按一次 ESC 确认。
+Select an item target	选择目标物品
+Spell cancelled	法术已取消
+Spell not learned	尚未学会该法术
+Spell data missing	缺少法术数据
+Unknown attack spell	未知的攻击法术
+Unknown quick spell	未知的快捷法术
+Unknown scroll spell	未知的卷轴法术
+Attack spell cleared	攻击法术已清除
+Quick spell cleared	快捷法术已清除
+Attack spell set to *	攻击法术设为 
+Quick spell set to *	快捷法术设为 
+Can't set attack spell	无法设置攻击法术
+Can't set quick spell	无法设置快捷法术
+no spell points	法术值不足
+SP Cost	法术消耗
+Lloyd's Beacon	劳埃德信标
+Set or recall beacon	设置或召回信标
+Setting beacon	正在设置信标
+Town Portal destinations unavailable	传送门目的地不可用
+Dimension Door destinations unavailable	异次元门目的地不可用
+Town Portal data missing	缺少传送门数据
+Choose Town Portal destination	选择传送门目的地
+The connector stone calls Verdant.	连接石指向翠绿之境。
+The connector stone is recharging.	连接石正在充能。
+Training is not available right now.	目前无法训练。
+Travel is unavailable right now.	目前无法旅行。
+The bounty office is unavailable right now.	目前无法受理悬赏。
+There is no bounty this month.	本月没有悬赏。
+This service is not implemented yet.	该服务尚未实现。
+The Adventurer's Inn is empty.	冒险者旅店空无一人。
+That companion is not ready to join yet.	该同伴还没准备好加入。
+That follower is not available.	该随从无法加入。
+Recruitment is not available for this companion yet.	该同伴暂不可招募。
+Sorry, come back another day.	抱歉，改天再来。
+Donations are not accepted here.	此处不接受捐赠。
+Healing is not offered here.	此处不提供治疗。
+You have served one year in prison.	你在监狱服刑一年。
+Your fine has been paid.	你的罚款已缴清。
+That lesson is not available.	该课程不可用。
+No character is selected.	没有选中角色。
+No character is selected for training.	没有选中要训练的角色。
+That topic does not have an event yet.	该话题还没有对应事件。
+That route is not available.	该路线不可用。
+Elder Priest of the Light	光明长老祭司
+the Elder Priest of the Light	光明长老祭司
+Day of Protection	守护之日
+Hour of Power	力量时刻
+Pain Reflection	痛苦反射
+Dark Grasp	暗影之握
+Regeneration (potion)	再生（药水）
+You are not carrying any gold.	你身上没有金币。
+You do not have any gold in the bank.	你银行里没有金币。
+You don't have enough gold.	你的金币不够。
+You don't have enough food to rest.	食物不足，无法休息。
+You are already resting.	你已经在休息了。
+Your packs are already full!	背包已满！
+Pack is Full!	背包已满！
+Not enough room to sort.	空间不足，无法整理。
+No room to put the material down	没有空间放下材料
+Put the item down first.	请先放下物品。
+Put down the held item first	请先放下手上的物品
+Not enough gems to combine	宝石不足，无法合成
+No alchemist: only bottle and reagent mixes are safe.	没有炼金术士：只有瓶装与试剂混合是安全的。
+Workbench	工作台
+Description	说明
+Pick	拾取
+Start	开始
+Create	创建
+Game	游戏
+How Much?	多少？
+Welcome to the Arena. Choose the difficulty of your challenge.	欢迎来到竞技场。选择你的挑战难度。
+The Arena is never completed	竞技场永无止境
+The Arena is unavailable here.	此处没有竞技场。
+The Arena cannot prepare opponents for this challenge.	竞技场无法为这次挑战准备对手。
+You have already won this Arena challenge. Come back for another tournament.	你已赢得本次竞技场挑战。下次再来参加别的锦标赛吧。
+Arcomage play is not implemented yet.	骨牌游戏尚未实现。
+Arcomage uses the house deck. Build your tower, destroy theirs, or win on resources.	骨牌使用本店的牌组：建造你的塔楼、摧毁对手的，或以资源取胜。
+Are you sure you want to resign?	确定要认输吗？
+Right-click a card to discard.	右键点击卡牌将其丢弃。
+Choose an Arcomage option.	选择一个骨牌选项。
+Clearing it banks experience on this continent and adds it to the dimension map pool.	清空后会把经验存放在这片大陆，并计入维度地图池。
+Levels banked here	此处存放的等级
+Maps cleared	已清理地图
+Cleared since its refill	自补充以来已清理
+No maps	没有地图
+Monster level	怪物等级
+Monster levels	怪物等级
+Elementalist rotation enabled	元素使轮转已启用
+Comment	备注
+Kills	击杀
+Dismissal failed.	遣散失败。
+Nothing happens.	什么也没发生。
+Congratulations!	恭喜！
+Thank You	谢谢
+Not identified *	未鉴定
+Can't equip that item	无法装备该物品
+Can't equip that item there	无法装备到该位置
+Can't drop *	无法丢弃 
+Immune to *	免疫
+Drops you would rather not carry turn into gold (40 % of their value).	你不想带的战利品会自动换成金币（按其价值的 40%）。
+Revives	复活
+Blind	致盲
+Poisoned	中毒
+Diseased	患病
+Insane	发疯
+Paralyzed	麻痹
+Unconscious	昏迷
+Dead	死亡
+Good	良好
+Fair	尚可
+Poor	衰弱
+Weak	虚弱
+Join	加入
+Fellow Travelers	同行旅人
+Recruit	招募
+Leave	离开
+Selected: *	已选择：
+Selected: no character	已选择：无角色
+Search notes	搜索笔记
+Search recipes	搜索配方
+Choose Class	选择职业
+Challenge Mode	挑战模式
+Completion reward	完成奖励
+Delete Save?	删除存档？
+Import Saves	导入存档
+Load Adventure?	读取冒险？
+Replace Saved Adventure?	替换已保存的冒险？
+Effect	效果
+Holder	持有者
+State	状态
+Resets	重置
+Refills in	补充倒计时
+Action Group	动作组
+Is Ready	已就绪
+nobody ready	无人就绪
+nothing	无
+reserves nothing	未预留
+claimed	已领取
+waiting	等待中
+cleared	已清空
+Value	价值
+There are hostile creatures nearby!	附近有敌对生物！
+Reverting in 15 seconds.	15 秒后还原。
+Fixed for the whole adventure.	整段冒险中固定不变。
+Arcomage victory conditions depend on the inn. This tavern flow is not implemented yet.	骨牌的胜负条件取决于旅店。该酒馆流程尚未实现。
+Select item target  LMB cast  Esc cancel	选择目标  左键施放  Esc 取消
+The town hall offers a reset: *	市政厅提供重置：
+The temple staff says *	神殿人员说：
+Select item for *	为以下目标选择物品：
+Needed to complete: *	完成所需：
+Releasing it frees *	释放后将腾出 
+Damage *	伤害 
+Beacon *	信标 
+Crafted *	制作 
+Deposited *	存入 
+Dropped *	丢弃 
+Withdrew *	取出 
+Quick spell *	快捷法术 
+Value *	价值 
+Welcome to *	欢迎来到
+Spellbook	法术书
+Spells	法术
+Expert	专家
+Grand Master	宗师
+Neutral	中立
+Current Quests	当前任务
+Potion Notes	药剂笔记
+Obelisk Notes	方尖碑笔记
+Seer Notes	先知笔记
+Miscellaneous	杂项
+Teacher Locations	训练师位置
+Monday	星期一
+Tuesday	星期二
+Wednesday	星期三
+Thursday	星期四
+Friday	星期五
+Saturday	星期六
+Sunday	星期日
+Brew chain	连续调制
+Can't brew yet	暂时无法调制
+Try Mix	尝试调制
+Brew All	全部调制
+Experiment	试验
+Mix: {item}	调制：{item}
+Mix All ({count})	全部调制（{count}）
+Brew All ({count})	全部调制（{count}）
+{known} / {total} known	已学会 {known} / {total}
+??? ({count} undiscovered)	???（还有 {count} 个未发现）
+BOTTLE + REAGENT	瓶子 + 试剂
+NORMAL	普通
+EXPERT	专家
+MASTER	大师
+GRANDMASTER	宗师
+NEW	新
+Exploded!	爆炸了！
+Exploded	已爆炸
+Explodes	会爆炸
+Chain	连锁
+Unknown	未知
+The party carries no bottles, reagents or potions.	队伍没有携带瓶子、试剂或药水。
+Alchemist: {name} - {mastery} {level} (best in party)	炼金术士：{name} · {mastery} {level}（队伍最佳）
+Nobody in the party	队伍中无人
+no Alchemy skill	没有炼金术
+higher	更高等级
+Known recipe	已知配方
+Untried mixture	未试过的组合
+Too difficult	难度过高
+Known to explode	已知会爆炸
+Not enough ingredients.	材料不足。
+Safe to mix.	可以安全调制。
+The empty bottle is returned.	空瓶会退回。
+{count} drinks.	可饮用 {count} 次。
+Works from power {power}.	力量 {power} 起生效。
+Needs {mastery} Alchemy. Safe for {alchemist}.	需要{mastery}炼金术，{alchemist}可安全调制。
+Needs {mastery} Alchemy; {alchemist} has {mastery2}.	需要{mastery}炼金术，而{alchemist}只有{mastery2}。
+This mixture blew up before, and {alchemist} would fail it again.	这种组合以前炸过，{alchemist}再做仍会失败。
+Potions that clash explode, and without Alchemy skill so does any real recipe.	相冲的药剂会爆炸，没有炼金术时连正常配方也会失败。
+Potions that clash explode, and so does a recipe beyond {mastery} Alchemy.	相冲的药剂会爆炸，超出{mastery}炼金术的配方同样会失败。
+No empty bottle left to fill.	没有空瓶可用。
+Missing a reagent for {item}.	缺少{item}所需的试剂。
+Unknown step: the {item} recipe.	未知步骤：{item}的配方。
+{item} needs {mastery} Alchemy.	{item}需要{mastery}炼金术。
+Uses: {list}.	消耗：{list}。
+Brews first: {list}.	先调制：{list}。
+Step {step}:	第 {step} 阶：
+ already at step {step},	 已达第 {step} 阶，
+ +{steps} steps,	 提升 {steps} 阶，
+{count} items	{count} 件
+L{level}	L{level}
+Merge	合并
+Merge x{count}	合并 x{count}
+Apply x{count}	应用 x{count}
+Confirm	确认
+Choose an item and a material.	请选择一件装备和一种材料。
+No equipment to craft on.	没有可制作的装备。
+The party carries no crafting materials.	队伍没有携带制作材料。
+item	物品
+material	材料
+ kills 	 杀死了 
+ hits 	 击中 
+ shoots 	 射击 
+ casts 	 施放 
+ on 	 对 
+Filtered: 	已过滤：
+{amount} gold	{amount} 金币
+Rolled 	掷出 
+No damage steps for this line.	这一击没有伤害明细。
+Resistance	抗性
+Missile shield	飞弹护盾
+Physical damage taken	承受的物理伤害
+Armour and resistances	护甲与抗性
+Resistances and armour	抗性与护甲
+Monster damage	怪物伤害
+Spear stacks	矛的层数
+Boss affix	首领词缀
+Dimension affix	位面词缀
+Energy shield	能量护盾
+Legendary	传奇
+Legendary defence	传奇防御
+Mist Form	雾化形态
+Disease	疾病
+Monster against monster	怪物对怪物
+The follower	该随从
+The temple staff cannot treat {name}'s condition.	神殿无法治疗{name}的病。
+The temple staff says {name} is already well.	神殿说{name}已经痊愈了。
+The temple restores {name} for {gold} gold.	神殿治疗了{name}，收费 {gold} 金币。
+You need {gold} gold for healing.	治疗需要 {gold} 金币。
+You need {gold} gold to donate here.	在这里捐赠需要 {gold} 金币。
+You need {gold} gold to rent a room.	租房间需要 {gold} 金币。
+You need {gold} gold for provisions.	买补给需要 {gold} 金币。
+You need {gold} gold for a drink.	喝一杯需要 {gold} 金币。
+You need {gold} gold for a tip.	给小费需要 {gold} 金币。
+You need {gold} gold to pay your fine.	缴纳罚款需要 {gold} 金币。
+You need {gold} gold for training.	训练需要 {gold} 金币。
+Your current fine is {gold} gold.	当前罚款为 {gold} 金币。
+The innkeeper fills your packs to {days} days.	旅店老板把口粮补到了 {days} 天。
+You need {exp} more experience to train to level {level}.	还差 {exp} 点经验才能训练到 {level} 级。
+{name} is now level {level} and has earned {points} skill points!	{name}升到了 {level} 级，并获得了 {points} 点技能点！
+{name} cannot learn {skill} here.	{name}无法在这里学习{skill}。
+{name} learns {skill} for {gold} gold.	{name}花 {gold} 金币学会了{skill}。
+It will take {days} to travel to {destination}.	前往{destination}需要 {days}。
+Deposited {gold} gold.	存入 {gold} 金币。
+Withdrew {gold} gold.	取出 {gold} 金币。
+{name} waits at the Adventurer's Inn.	{name}在冒险者旅店等候。
+{name} joined the party.	{name}加入了队伍。
+{name} is already following you.	{name}已经在跟随你了。
+{name} joined the followers.	{name}加入了随从。
+{name} left the followers.	{name}离开了随从。
+Windowed	窗口化
+Borderless	无边框
+Fullscreen	全屏
+Very low	很低
+Low	低
+Medium	中
+High	高
+Very high	很高
+Custom	自定义
+World default	世界默认
+Extended	扩展
+Unlimited	无限
+Modern	现代
+Classic	经典
+Smooth	平滑
+Target only	仅目标
+Nearby	附近
+All bars	全部血条
+Hold key	按住按键
+Always	始终
+Ask me	询问我
+Pick member	选择成员
+Open bag	打开背包
+Soft	宽松
+Regular	标准
+Strict	严格
+Very strict	极严格
+{count} unapplied changes	还有 {count} 项改动未应用
+{key} is assigned to {action}. Swap the two actions?	{key} 已分配给{action}。要对调这两个操作吗？
+{width} x {height}	{width}×{height}
+{action}\nPress a key, mouse button, or scroll the wheel.	{action}\n请按一个按键、鼠标按钮，或滚动滚轮。
+Left	左移
+Right	右移
+Yell	喊话
+Cast Ready	准备施法
+Trigger	触发
+Cast	施法
+Pass	跳过
+Char Cycle	切换角色
+Quest	任务
+Quick Ref	快速参考
+Use	使用
+Map Book	地图册
+Always Run	始终奔跑
+Ctr. View	回正视角
+Double Speed	双倍速度
+Unstuck	脱困
+Gather Loot	收集战利品
+Alchemist	炼金术士
+Cover Switch	掩护切换
+Mana Shield Switch	魔力护盾切换
+Rotation Switch	轮换切换
+Knight Charge	骑士冲锋
+Show Item Rarity	显示物品稀有度
+Quick Spell 1	快速法术 1
+Quick Spell 2	快速法术 2
+Quick Spell 3	快速法术 3
+Quick Spell 4	快速法术 4
+Follower Panel	随从面板
+Follower 1	随从 1
+Follower 2	随从 2
+Follower 3	随从 3
+Follower 4	随从 4
+Bag 1	背包 1
+Bag 2	背包 2
+Bag 3	背包 3
+Bag 4	背包 4
+Crafting Bag	制作背包
+Open Progress	打开进度
+Open Auras	打开光环
+Potion Wheel	药水轮盘
+Quick Potion (Slot 1)	快速药水（槽位 1）
+Potion Slot 2	药水槽位 2
+Potion Slot 3	药水槽位 3
+Potion Slot 4	药水槽位 4
+Potion Slot 5	药水槽位 5
+Potion Slot 6	药水槽位 6
+Looking for a new version on jasicek.net...	正在 jasicek.net 上查找新版本……
+Restart to play OpenYAMM {version}	重启后即可游玩 OpenYAMM {version}
+Update to OpenYAMM {version} ({size} MB)	更新到 OpenYAMM {version}（{size} MB）
+Update to OpenYAMM {version}?	更新到 OpenYAMM {version}？
+The last check failed: {message}	上次检查失败：{message}
+OpenYAMM {version} is available ({size}).	OpenYAMM {version} 有新版本（{size}）。
+OpenYAMM {version} is available ({size}). Update it from the main menu.	OpenYAMM {version} 有新版本（{size}）。请从主菜单更新。
+Downloading OpenYAMM {version}: {done} of {size}.	正在下载 OpenYAMM {version}：{done} / {size}。
+OpenYAMM {version} is downloaded. Restart to play it.	OpenYAMM {version} 已下载完成，重启后即可游玩。
+OpenYAMM {version} is downloaded. Restart from the main menu to play it.	OpenYAMM {version} 已下载完成，请从主菜单重启后游玩。
+Installed: OpenYAMM {version}	已安装：OpenYAMM {version}
+Downloads {size}. Your saves and settings stay as they are.	将下载 {size}。存档与设置保持不变。
+Downloads {size} in the update screen. Your saves and settings stay as they are.	将在更新界面下载 {size}。存档与设置保持不变。
+OpenYAMM {version} Is Ready	OpenYAMM {version} 已就绪
+{slot} set to {spell}	{slot} 设为{spell}
+{name} is not ready	{name}还没准备好。
+Sorry, I'm not interested in that item.	抱歉，我对那件东西不感兴趣。
+Unavailable	暂无
+Unknown item	未知物品
+Not enough gold.	金币不足。
+You don't have enough gold	你的金币不足
+Inventory full.	背包已满。
+Caught stealing.	偷窃被抓。
+You failed to steal it.	偷窃失败。
+Good as New!	焕然一新！
+That item cannot be sold.	该物品无法出售。
+That item is unavailable.	该物品不可用。
+Could not take the item.	无法取得该物品。
+Nothing is for sale in that slot.	这个位置没有在售商品。
+No item there.	那里没有物品。
+New stock for {price} gold.	新到货，{price} 金币。
+Hmph. Looks like junk to me. <yawn> I suppose I could give you oh, say, {price} gold pieces for it.	哼，我看是破烂。<打了个哈欠> 我大概能给你……{price} 金币吧。
+Normally, I do my best to buy a {item} for {listed} gold. But I can see you know it's worth {price}. Agreed?	通常我收一件{item}最多出 {listed} 金币。不过看得出你知道它值 {price}，成交？
+Usually I try to buy something like this {item} for {listed} gold. I'll give you {price} for it.	这样的{item}我一般按 {listed} 金币收，这件我给你 {price}。
+Sorry, I can't identify a {item} because I'm a {profession}. I don't know anything about those.	抱歉，我只是个{profession}，{item}这类东西我完全不懂行。
+Sorry, I can't identify a {item} because I'm a {profession}.	抱歉，我只是个{profession}，{item}我鉴定不了。
+I'll tell you what it is for {price} gold pieces.	{price} 金币，我告诉你它是什么。
+Sorry, I have no idea how to fix a {item}.	抱歉，{item}我可不会修。
+This {item} is nearly beyond repair. It will take a superhuman effort to fix it! I'll have to charge {price} gold.	这件{item}几乎没救了，修好它得费天大的功夫！我得收 {price} 金币。
+Hmmm. Nothing a little glue and polish won't fix, I warrant. My policy is to ask for {listed} gold, but I can go as low as {price}.	嗯……我担保，一点胶水再加点打磨就能修好。我开价向来是 {listed} 金币，不过最低能给你 {price}。
+This {item} is in bad shape, but it can be fixed. I usually want {listed} gold, but for you I will charge a mere {price}.	这件{item}状况不佳，不过还能修。我一般要 {listed} 金币，看在你的面子上只收 {price}。
+An excellent choice! This {item} is of the finest quality. I am willing to virtually give it away for {price} gold.	好眼光！这件{item}品质上乘，我几乎等于白送，只要 {price} 金币。
+I try to sell things like this {item} for {listed} gold. But we both know it's really worth {price}. So that's my price.	这样的{item}我一般卖 {listed} 金币。不过咱俩都清楚它实际值 {price}，就按这个价。
+Ordinarily I sell things like this {item} for {listed} gold. But you drive a hard bargain-- I'll sell it to you for {price}.	这样的{item}平常我卖 {listed} 金币。不过你真会砍价——{price} 金币卖你了。
+Imported 1 save.	已导入 1 个存档。
+Imported {count} saves.	已导入 {count} 个存档。
+No saves were found in that folder or in a "saves" folder inside it.	那个文件夹里（以及其中的 "saves" 文件夹里）都没有找到存档。
+{count} skipped: a save with the same name already exists.	跳过 {count} 个：已有同名存档。
+{count} could not be copied.	{count} 个无法复制。
+Permanently delete "{name}"?	永久删除「{name}」？
+Unable to delete this save: {message}	无法删除该存档：{message}
+This save no longer exists.	该存档已不存在。
+Saving here costs {cost} food, you carry {carried}	在此存档需要 {cost} 份食物，你携带了 {carried} 份
+Saving here is free now	现在在此存档不需要食物
+With enemies near: {cost} food	附近有敌人时需要：{cost} 份食物
+Not enough food: saving here costs {cost}.	食物不足：在此存档需要 {cost} 份。
+{count} save needs a newer version of OpenYAMM and is not listed.	有 {count} 个存档需要更新版本的 OpenYAMM，未在列表中显示。
+{count} saves need a newer version of OpenYAMM and is not listed.	有 {count} 个存档需要更新版本的 OpenYAMM，未在列表中显示。
+{name} (not installed)	{name}（未安装）
+Unable to load this save. Check its required content packages.	无法读取该存档，请检查它要求的内容包。
+A save already uses that name. Select it to replace it.	已有存档使用该名称，选中它即可覆盖。
+No saved games\nStart a new game from the main menu.	没有存档\n请从主菜单开始新游戏。
+No saved games with this ruleset	该规则集下没有存档
+Saving failed or is not allowed in this location.	存档失败，或此地点不允许存档。
+Choose a name other than Autosave or Quicksave.	请换一个名字，不要用 Autosave 或 Quicksave。
+No screenshot available	无截图
+Create a new save	新建存档
+New save	新存档
+You have to be promoted to {classes} to learn this skill.	要先转职为{classes}才能学习该技能。
+This skill level can not be learned by the {class} class.	{class}职业无法学习该等级的技能。
+You must have at least 50 base Intellect to learn Master Learning.	要学习「专家学习术」，基础智力至少要 50。
+You must have at least 50 base Personality to learn Master Merchant.	要学习「专家经商术」，基础个性至少要 50。
+You must have at least 50 base Endurance to learn Master Bodybuilding.	要学习「专家健身术」，基础耐力至少要 50。
+The requirements for this training are unmet.	尚未满足该训练的要求。
+This character already knows that mastery.	该角色已经掌握这一等级。
+This character does not know that skill.	该角色不会这项技能。
+You do not have enough gold.	你的金币不足。
+Become {mastery} in {skill} for {cost} gold	花 {cost} 金币把{skill}提升为{mastery}
+{name} is now a {mastery} in {skill}.	{name}的{skill}现在是{mastery}。
+Bought {item} for {price} gold.	买下{item}，花费 {price} 金币。
+Sold {item} for {price} gold.	卖出{item}，得到 {price} 金币。
+You found an item ({item})!	你找到一件物品（{item}）！
+You found {gold} gold and an item ({item})!	你找到 {gold} 金币和一件物品（{item}）！
+{gold} gold	{gold} 金币
+Nothing here	这里什么都没有
+inventory full	背包已满
+Broken item	已损坏
+Skill bonus: +{points}	技能加成：+{points}
+Skill bonus: 	技能加成：
+Awards earned: {count}	获得荣誉：{count}
+{points} pts	{points} 点
+{time} remaining	剩余 {time}
+{item} {suffix}	{suffix}{item}
+Special: {text}	特殊：{text}
+Set: {name} ({owned}/{total}, {state})	套装：{name}（{owned}/{total}，{state}）
+Mod: {name}	改装：{name}
+active	已激活
+inactive	未激活
+Stolen	赃物
+Hardened	强化

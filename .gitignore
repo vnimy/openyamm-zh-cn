@@ -1,0 +1,20 @@
+# 构建产物
+build/
+dist/
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 本地覆盖（各人机器上的路径不同）
+.env
+local.*

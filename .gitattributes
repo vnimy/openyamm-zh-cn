@@ -1,0 +1,20 @@
+# 默认按文本处理，统一 LF，避免 Windows 上提交的 CRLF 让 diff 整文件变红。
+* text=auto eol=lf
+
+# 译文表必须保持 LF：引擎按 \n 切行，CRLF 会让每行末尾多一个 \r。
+*.txt   text eol=lf
+*.tsv   text eol=lf
+*.md    text eol=lf
+*.py    text eol=lf
+*.yml   text eol=lf
+*.json  text eol=lf
+
+# 二进制
+*.ttf   binary
+*.otf   binary
+*.png   binary
+*.jpg   binary
+*.zip   binary
+
+# Windows PowerShell 脚本用 CRLF（5.1 更稳），且文件带 BOM，别让编辑器抹掉
+*.ps1   text eol=crlf

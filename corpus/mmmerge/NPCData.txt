@@ -1,0 +1,1226 @@
+NPC Data (Special)			Group			Current	Profession	Greet	Join	Event	Event	Event	Event	Event	Event	
+#	Name	Pic	A	B	C	2D Location	 1 - 76	#	Y / N	# A	# B	# C	# D	# E	# F	Notes
+1	 布瑞克许·单牙	1465	0	0	0	212	0	3	0	7	8	9	0	0	0	"(1) Lizardman Throne Room, Lizardman Leader pre Qbit 6 after, NPC 35"
+2	 达德洛斯	1325	0	0	0	212	0	2	0	20	5	6	72	0	0	"(1) Lizardman Throne Room, Minotaur, Caravan Leader pre Qbit 6, cut after bit set becomes 36"
+3	 艾尔加·费尔蒙	1438	0	0	0	354	0	10	0	28	0	0	0	0	0	"(2) Merchanthouse, door"
+4	 艾瑞安·韩特	1070	0	0	0	772	0	12	0	32	188	187	0	0	0	"(2) Smuggler's Cove, wererat smuggler leader"
+5	 巴斯沈·卢德林	1132	0	0	0	773	0	14	0	41	0	0	0	0	0	"(3) Merchant Guild, dark elf merchant one"
+6	 艾莱恩·佛瑞尔席格	1133	0	0	0	0	0	0	0	0	0	0	0	0	0	Dark Elf Merchant Two
+7	 欧瓦都·弹指	1042	0	0	0	0	0	16	0	45	701	0	0	0	0	"(4) 2DLoc initially ""0"". Set to 177 in Event 42"
+8	 爱欧瑞·德瑞塞	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"(3) Drk Elf Rch House, pc"
+9	 山德罗	1038	0	0	0	213	0	31	0	94	96	0	0	0	0	"(6) Necromancers' Guild ,w 180"
+10	 谭特	1223	0	0	0	213	0	0	0	158	0	0	0	0	0	"(6) Necromancers' Guild, w 180"
+11	 戴森·李蓝	1058	0	0	0	754	0	0	0	97	98	99	0	0	0	"(6) Necromancers' Guild, pc w 181"
+12	 伊卡洛斯·戴尔	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"(6) Necromancer Rich House, pc"
+13	 马苏尔	1043	0	0	0	755	0	29	0	744	0	0	0	0	0	"(8) Minotaur Lair, (2) Merchant House of Alvar"
+14	 亥力欧斯	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"(8) Minotaur Lair, pc"
+15	 查尔斯·科切特爵士	1089	0	0	0	753	0	21	0	63	56	58	57	0	0	"(5) Dragon Hunters' Camp, (2) Merchant House of Alvar"
+16	 瑞金那·朵雷	0	0	0	0	0	0	0	0	0	0	0	0	0	0	(5) Dragon Hunters' Camp
+17	 达夫克劳·红斧	1088	0	0	0	774	0	19	0	48	60	62	0	0	0	"(5) Dragon's Cave, (2) Merchant House of Alvar"
+18	 豺狼索格	0	0	0	0	0	0	0	0	0	0	0	0	0	0	(8) Barbarian Fortress
+19	 萨索尔	1106	0	0	0	0	0	45	0	152	0	0	0	0	0	(2) Rich Dark Elf House
+20	 凯瑟琳王后	1067	0	0	0	0	0	0	0	590	591	592	0	0	0	(2) Merchant House of Alvar
+21	 罗兰德国王	1068	0	0	0	0	0	55	0	587	588	589	0	0	0	(2) Merchant House of Alvar
+22	 爱斯卡顿	1066	0	0	0	775	0	48	0	159	0	0	0	0	0	(14) Eschaton's Palace
+23	 派蓝纳斯特	1086	0	0	0	664	0	53	0	170	0	0	0	0	0	(14) Prison of the Lord of Fire
+24	 爱克瓦蓝德	1085	0	0	0	662	0	51	0	168	0	0	0	0	0	(14) Prison of the Lord of Water
+25	 残酷葛罗格	1087	0	0	0	663	0	52	0	169	0	0	0	0	0	(14) Prison of the Lord of Earth
+26	 夏尔温	1090	0	0	0	661	0	50	0	167	0	0	0	0	0	(14) Prison of the Lord of Air
+27	 色顿	1477	0	0	0	0	0	1	0	1	2	3	0	0	0	"(1) Outside, Lizardman Journeyman Merchant of Alvar"
+28	 佛得瑞克·塔力米尔	1060	0	0	0	866	0	5	0	10	11	0	0	0	0	"(1) Cleric House, Cleric PC that joins party"
+29	 罗特奈克斯	1466	0	0	0	776	0	6	0	14	15	16	17	0	0	"(1) Peasant House, Find Brother Secondary Quest"
+30	 派赛拉·提斯克	1463	0	0	0	784	0	7	0	18	19	584	0	0	0	"(1) Peasant House, Prophecies of the Snake Secondary Quest"
+31	 布瑞克许·单牙	0	0	0	0	0	0	0	0	0	0	0	0	0	0	STILL USED?
+32	 达德洛斯	1325	0	0	0	0	0	0	0	0	0	0	0	0	0	"(3) Drk Elf Medium House, After Qbit 6 set"
+33	 奥斯卡·提尔	1156	0	0	0	214	0	37	0	102	0	0	0	0	0	(7) w 182 - door inside the Sun Temple
+34	 卫兵	1213	0	0	0	0	0	107	0	0	0	0	0	0	0	Necromancer Guard
+35	 卫兵	1039	0	0	0	0	0	108	0	0	0	0	0	0	0	Dragon Guard
+36	 卫兵	1302	0	0	0	0	0	109	0	0	0	0	0	0	0	Dragon Hunter Guard
+37	 卫兵	1167	0	0	0	0	0	110	0	0	0	0	0	0	0	Wererat Guard
+38	 杰瑞克·惠索多	1302	0	0	0	0	0	111	0	0	0	0	0	0	0	Placemon in dh camp area 5
+39	 瑞尔朋·吉普斯	1440	0	0	0	526	0	0	0	22	23	733	0	0	0	(3) Dark Elf Promotion Quest
+40	 艾尔加·费尔蒙	1438	0	0	0	751	0	24	0	104	105	731	0	0	0	"(2) Merchanthouse, Council Chamber"
+41	 丹提理安	1158	0	0	0	613	0	104	0	27	0	0	0	0	0	(8) Cleric of the Sun
+42	 考瑞·黑王座	1389	0	0	0	0	0	0	0	24	25	0	0	0	0	"(8) Dark Elf Hero, Promotion Quest"
+43	 瓦络格·沙风	1041	0	0	0	561	0	0	0	35	36	37	0	0	0	(4)Troll Promo
+44	 沙希尔·伊塔力	1441	0	0	0	528	0	54	0	581	582	583	0	0	0	(3) Guy who talks about alliance promo
+45	 卫兵	1262	0	0	0	0	0	13	0	0	0	0	0	0	0	(6) Guard in Necromancers' Guild
+46	 黑暗精灵朝圣者	1438	0	0	0	0	0	105	0	0	0	0	0	0	0	(7) Statues in Area 7 for Dark Elf Promo
+47	 法希尔·弹指	1365	0	0	0	0	0	17	0	0	0	0	0	0	0	"(4) 2D Loc set in event 42, Event 47 set in event 46 "
+48	 冉索拉	1240	0	0	0	0	0	0	0	0	0	0	0	0	0	"(6) Mad Necromancer's Lair, Mad Necromancer"
+49	 林恩·暴风枪	1295	0	0	0	538	0	0	0	52	0	51	0	0	0	"(5) House at Dragon Hunter fort, Knight Promo Start"
+50	 代为瑞许·其佛龙	1058	0	0	0	908	0	0	0	50	659	0	0	0	0	"(2) Cleric, Rescue Blazen Stormlance Secondary Quest"
+51	 盖瑞特·大夫罗	1301	0	0	0	0	0	0	0	735	0	0	0	0	0	(5) Quixote's Chamber (179) after Quixote goes to w 175
+52	 查尔斯·科切特爵士	1089	0	0	0	0	0	23	0	0	0	58	0	0	0	"(2) Merchanthouse, Council Chamber"
+53	 达夫克劳·红斧	1088	0	0	0	0	0	25	0	123	60	62	0	0	0	"(2) Merchanthouse, Council Chamber"
+54	 奥斯卡·提尔	1156	0	0	0	0	0	26	0	130	0	0	0	0	0	"(2) Merchanthouse, Council Chamber"
+55	 马苏尔	1043	0	0	0	0	0	27	0	137	0	0	0	0	0	"(2) Merchanthouse, Council Chamber"
+56	 山德罗	1038	0	0	0	0	0	28	0	144	0	0	0	0	0	"(2) Merchanthouse, Council Chamber"
+57	 坦尼斯	1044	0	0	0	624	0	30	0	66	172	0	0	0	0	"(8) Minotaur Lair, house near entrance"
+58	 泰沙拉	1340	0	0	0	640	0	0	0	69	70	0	0	0	0	"(8) Minotaur Lair, house near entrance, Promo dude"
+59	 史蒂芬	1064	0	0	0	612	0	0	0	80	0	78	76	77	0	(2) Cleric Promo dude
+60	 太阳主教	1153	0	0	0	0	0	0	0	0	0	0	0	0	0	(7) Cleric in the foyer of the Temple of the Sun
+61	 维崔那斯·塔尔希尔	1038	0	0	0	577	0	0	0	86	0	0	0	0	0	(2) Necro Promo dude
+62	 拉席安	1226	0	0	0	582	0	0	0	82	83	738	0	0	0	(6) Vampire Promo Dude
+63	 谭特	1223	0	0	0	0	0	0	0	0	0	0	0	0	0	"(6) Thant after Sandro leaves, placed here leaving N guild after alliance formed"
+64	 德林·戴尔瓦	1164	0	0	0	0	0	44	0	151	0	0	0	0	0	(2) Rich Dark Elf House place w276 after fleet sunk
+65	 埃斯蓝	1473	0	0	0	879	0	0	0	174	0	0	0	0	0	(1)Begin Jungle Fever Secondary Quest
+66	 蓝贵德	1477	0	0	0	798	0	0	0	177	585	0	0	0	0	(1) Poisoned Water Supply Secondary Quest
+67	 霍伯·沙风	1375	0	0	0	561	0	0	0	734	0	0	0	0	0	(4)Secondary Troll promo dude
+68	 系斯妥	1479	0	0	0	804	0	0	0	179	180	181	0	0	0	(1) Potion of Pure Speed Secondary Quest
+69	 希斯	1481	0	0	0	761	0	0	0	182	0	586	0	0	0	(1) Idol of the Snake Secondary Quest
+70	 利舌埃斯瑞克	1469	0	0	0	823	0	0	0	296	190	584	0	0	0	(1) Brother of Rohtnax
+71	 追迹者马帝刚	1400	0	0	0	906	0	0	0	184	185	0	0	0	0	(2) Kill Dire Wolves and Cash for Pelts Secondary Quests
+72	 威尔伯	1370	0	0	0	508	0	0	0	190	671	0	0	0	0	(2) Hint About Location of Anointed Potion
+73	 拉西亚斯	1161	0	0	0	894	0	0	0	193	0	0	0	0	0	(2) Recover Shield Eclipse for Cleric Secondary Quest
+74	 瑞汉西	1387	0	0	0	547	0	0	0	201	202	203	0	0	0	(3) Potion of Pure Luck Secondary Quest
+75	 利斧	1313	0	0	0	890	0	0	0	191	192	0	0	0	0	(2) Pays for Naga Hides
+76	 凯尔顿	1431	0	0	0	549	0	0	0	198	199	0	0	0	0	(3) Kill All Ogres Secondary Quest and Pays bounty on Ogre Ears
+77	 加文那斯	1154	0	0	0	623	0	0	0	244	245	246	0	0	0	(8) Potion of Pure Accuracy Secondary Quest
+78	 塔力安	1374	0	0	0	555	0	0	0	210	211	0	0	0	0	(4) Potion of Pure Endurance Secondary Quest
+79	 维尔顿	1451	0	0	0	550	0	0	0	204	205	0	0	0	0	(3) Pays for Wasp Stingers
+80	 德系克	1478	0	0	0	852	0	0	0	294	585	0	0	0	0	(1) CureJungle Fever Secondary Quest
+81	 哈斯克	1480	0	0	0	860	0	0	0	295	586	0	0	0	0	(1) CureJungle Fever Secondary Quest
+82	 贺伯特	1372	0	0	0	557	0	0	0	575	669	0	0	0	0	(4) Fire Resistance Potion Secondary Quest
+83	 凯尔文	1269	0	0	0	596	0	0	0	232	233	234	0	0	0	(6) Potion of Pure Intellect Secondary Quest
+84	 波尔	1373	0	0	0	559	0	0	0	206	207	0	0	0	0	(4) Begin Deliver Fire Resistance Potions Secondary Quest
+85	 夕维恶斯	1347	0	0	0	619	0	0	0	242	243	0	0	0	0	(8) Buys Wyvern Horns
+86	 史麦克	1369	0	0	0	561	0	0	0	195	196	197	0	0	0	(4) Royal Wasp Jelly Secondary Quest
+87	 卡林最尔	1301	0	0	0	566	0	0	0	213	0	0	0	0	0	(5) Dragon Hunters Dragonbane Secondary Quest
+88	 卡斯提盖尔	1164	0	0	0	615	0	0	0	238	239	240	0	0	0	(7) Potion of Pure Personallity Quest
+89	 巴力安·泪翼	1040	0	0	0	574	0	0	0	216	0	0	0	0	0	(5) Dragons Dragonbane Secondary Quest
+90	 阿瓦龙	1310	0	0	0	562	0	0	0	219	0	0	0	0	0	(5) Kill All Dragons Secondary quest
+91	 杰林·炎眼	1039	0	0	0	572	0	0	0	221	0	0	0	0	0	(5) Kill All Dragon Hunters Secondary Quest
+92	 赛林姆	1304	0	0	0	540	0	0	0	223	224	0	0	0	0	(5) Drum of Vicotry Secondary Quest
+93	 坦尼林安	1283	0	0	0	606	0	0	0	226	227	0	0	0	0	(6) Bone of Doom Secondary Quest
+94	 班耐费斯	1284	0	0	0	594	0	0	0	229	728	0	0	0	0	(6) Puzzle Box Secondary Quest
+95	 海林安	1263	0	0	0	588	0	0	0	235	236	0	0	0	0	(6) Vial of Grave Dirt Secondary Quest
+96	 独眼	1193	0	0	0	654	0	0	0	249	247	248	0	0	0	(13) Lost Treasure of the Dread Pirate Stanley Secondary Quest
+97	 长尾	1464	0	0	0	876	0	0	0	250	251	584	0	0	0	(1) Simple Trading Triangle
+98	 崔比力	1161	0	0	0	805	0	0	0	252	253	0	0	0	0	(2) Simple Trading Triangle
+99	 杰伯瑞	1450	0	0	0	535	0	0	0	254	255	0	0	0	0	(3) Simple Trading Triangle
+100	 麦兰德	1152	0	0	0	617	0	0	0	256	257	0	0	0	0	(7) Long Trading Triangle
+101	 惠斯伯	1238	0	0	0	592	0	0	0	258	259	0	0	0	0	(6) Long Trading Triangle 
+102	 伊拉贝尔·韩特	1168	0	0	0	0	0	0	0	741	0	0	0	0	0	Arion Hunters daughter
+103	 帕佛	1198	0	0	0	658	0	98	0	260	261	0	0	0	0	(13) Long trading Triangle
+104	 乔尼	1272	0	0	0	591	0	0	0	262	263	0	0	0	0	(6) Mysterious Trading Triangle
+105	 耐布力克	1426	0	0	0	897	0	0	0	264	265	0	0	0	0	(2) Mysterious Trading Triangle
+106	 卡格纳	1344	0	0	0	674	0	0	0	266	267	0	0	0	0	(8) Mysterious Trading Triangle
+107	 布拉森·暴风枪	1062	0	0	0	0	0	115	0	53	54	55	0	0	0	(6) Part of Knight Promotion Quest
+108	 恐怖海盗史坦力	1186	0	0	0	236	0	0	0	298	0	0	0	0	0	(13) False Report Secondary Quest
+109	 布莱恩·康兰	1308	0	0	0	895	0	0	0	579	577	578	0	0	0	(2) Bounty Hunter Quest
+110	 卡哈利·伊凡诺	1434	0	0	0	523	0	0	0	579	577	578	0	0	0	(3) Bounty Hunter Quest
+111	 哈利·马利特	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+112	 爱利·卢欧林	1395	0	0	0	834	0	49	0	303	421	422	0	0	0	Expert Sword (2)
+113	 杰新·卡卓	1192	0	0	0	538	0	49	0	304	420	422	0	0	0	Master Sword (5)
+114	 麦友·追龙者	1305	0	0	0	645	0	49	0	305	420	421	0	0	0	Grand Master Sword (13)
+115	 哈洛·佛斯太克	1302	0	0	0	540	0	49	0	309	427	428	0	0	0	Expert Axe (5)
+116	 杰斯普·韩特	1362	0	0	0	907	0	49	0	310	426	428	0	0	0	Master Axe (2)
+117	 加瑞克·森杰克	1319	0	0	0	635	0	49	0	311	426	427	0	0	0	Grand Master Axe (8)
+118	 普多·泰恩	1369	0	0	0	793	0	49	0	300	418	419	0	0	0	Expert Staff (2)
+119	 赛丽雅·斯通	1369	0	0	0	553	0	49	0	301	417	419	571	0	0	Master Staff (4)
+120	 崔斯坦·止水	1257	0	0	0	599	0	49	0	302	417	418	0	0	0	Grand Master Staff (6)
+121	 麦崔克·陶恩赛佛	1455	0	0	0	871	0	49	0	312	430	431	0	0	0	Expert Spear (2)
+122	 雅山德拉·惠瑟史密斯	1408	0	0	0	509	0	49	0	313	429	431	0	0	0	Master Spear (3)
+123	 雅罗	1487	0	0	0	876	0	49	0	314	429	430	0	0	0	Grand Master Spear (1)
+124	 罗瑞·维斯波	1404	0	0	0	510	0	49	0	306	424	425	0	0	0	Expert Dagger (3)
+125	 乔波	1159	0	0	0	874	0	49	0	307	423	425	0	0	0	Master Dagger (2)
+126	 卡拉·诺瑟斯	1182	0	0	0	646	0	49	0	308	423	424	0	0	0	Grand Master Dagger (13)
+127	 席瓦·锐眼	1482	0	0	0	804	0	49	0	315	433	434	0	0	0	Expert Bow (1)
+128	 欧伯力克·诺斯沃	1425	0	0	0	905	0	49	0	316	432	434	0	0	0	Master Bow (2)
+129	 索力斯	1453	0	0	0	511	0	49	0	317	432	433	0	0	0	Grand Master Bow (3)
+130	 丽莎·所尔波罗	1378	0	0	0	871	0	49	0	318	436	437	0	0	0	Expert Mace (2)
+131	 罗伯特·晨星	1346	0	0	0	539	0	49	0	319	435	437	0	0	0	Master Mace (5)
+132	 贺斯沃弟兄	1362	0	0	0	554	0	49	0	320	435	436	572	0	0	Grand Master Mace (4)
+133	 泰丁	1480	0	0	0	792	0	49	0	327	442	443	0	0	0	Exper Leather (1)
+134	 沙漠斯·荷力菲	1333	0	0	0	639	0	49	0	328	441	443	0	0	0	Master Leather (8)
+135	 麦瓦力·爱姆斯麦尔	1377	0	0	0	555	0	49	0	329	441	442	573	0	0	Grand Master Leather (4)
+136	 托伯伦·佛吉爱特	1414	0	0	0	796	0	49	0	330	445	446	0	0	0	Expert Chain (2)
+137	 海立安·艾佛斯麦	1188	0	0	0	512	0	49	0	331	444	446	0	0	0	Master Chain (3)
+138	 赛林·伯更斗	1398	0	0	0	647	0	49	0	332	444	445	0	0	0	Grand Master Chain (13)
+139	 朋恩	1475	0	0	0	833	0	49	0	333	448	449	292	0	0	Expert Plate (1)
+140	 波散恩	1307	0	0	0	896	0	49	0	334	447	449	0	0	0	Master Plate (2)
+141	 赛欣·艾恩法斯特	1294	0	0	0	541	0	49	0	335	447	448	0	0	0	Grand Master Plate (5)
+142	 奎蓝·摩尔	1437	0	0	0	513	0	49	0	324	439	440	0	0	0	Expert Shield (3)
+143	 谢尔顿·夜木	1270	0	0	0	584	0	49	0	325	438	440	0	0	0	Master Shield (6)
+144	 派林·瑞佛斯通	1312	0	0	0	542	0	49	0	326	438	439	0	0	0	Grand Master Shield (5)
+145	 泰伦·谈普	1446	0	0	0	891	0	49	0	336	451	452	0	0	0	Expert Fire_Magic (2)
+146	 所罗门·史提尔	1430	0	0	0	522	0	49	0	337	450	452	0	0	0	Master Fire_Magic (3)
+147	 伯恩	1149	0	0	0	543	0	49	0	338	450	451	0	0	0	Grand Master Fire_Magic (11)
+148	 乌尔布拉契·派德东	1160	0	0	0	785	0	49	0	342	457	458	0	0	0	Expert Water_Magic (2)
+149	 葛丽果力·迷雾	1369	0	0	0	556	0	49	0	343	456	458	574	0	0	Master Water_Magic (4)
+150	 黑流	1134	0	0	0	545	0	49	0	344	456	457	0	0	0	Grand Master Water_Magic (12)
+151	 瑞西	1470	0	0	0	870	0	49	0	339	454	455	0	0	0	Expert Air_Magic (1)
+152	 荷力司·暴风眼	1336	0	0	0	641	0	49	0	340	453	455	0	0	0	Master Air_Magic (7)
+153	 克劳德·耐德龙	1139	0	0	0	672	0	49	0	341	453	454	0	0	0	Grand Master Air_Magic (9)
+154	 奥斯崔恩·葛瑞维克	1463	0	0	0	882	0	49	0	345	460	461	0	0	0	Expert Earth_Magic (1)
+155	 陶乐熙·塞百物	1387	0	0	0	521	0	49	0	346	459	461	0	0	0	Master Earth_Magic (2)
+156	 葛瑞文	1144	0	0	0	696	0	49	0	347	459	460	0	0	0	Grand Master Earth_Magic (10)
+157	 史拉顿·何索恩	1164	0	0	0	903	0	49	0	348	463	464	0	0	0	Expert Spirit_Magic (2)
+158	 贝索德·科恩	1303	0	0	0	569	0	49	0	349	462	464	0	0	0	Master Spirit_Magic (5)
+159	 来西特·鸦眼	1154	0	0	0	610	0	49	0	350	462	463	0	0	0	Grand Master Spirit_Magic (7)
+160	 商恩·克鲁兰	1460	0	0	0	514	0	49	0	351	466	467	0	0	0	Expert Mind_Magic (3)
+161	 芭芭拉·拉兹	1339	0	0	0	638	0	49	0	352	465	467	0	0	0	Master Mind_Magic (8)
+162	 吉拉德·梦妖	1287	0	0	0	611	0	49	0	353	465	466	0	0	0	Grand Master Mind_Magic (7)
+163	 赛瓦·波斯德	1486	0	0	0	813	0	49	0	354	469	470	290	0	0	Expert Body_Magic (1)
+164	 土加·爱林	1309	0	0	0	563	0	49	0	355	468	470	0	0	0	Master Body_Magic (5)
+165	 克理塔斯·雪树	1164	0	0	0	612	0	49	0	356	468	469	0	0	0	Grand Master Body_Magic (7)
+166	 阿基巴德·曙光	1159	0	0	0	853	0	49	0	357	472	473	0	0	0	Expert Light_Magic (2)
+167	 卢理那斯·破晓者	1195	0	0	0	613	0	49	0	358	471	473	0	0	0	Master Light_Magic (7)
+168	 艾德林·明眼	1162	0	0	0	648	0	49	0	359	471	472	0	0	0	Grand Master Light_Magic (13)
+169	 帕特温·达肯摩尔	1456	0	0	0	515	0	49	0	360	475	476	0	0	0	Expert Dark_Magic (3)
+170	 卡拉·安伯普尔	1184	0	0	0	595	0	49	0	361	474	476	0	0	0	Master Dark_Magic (6)
+171	 西西克斯·影跑者	1221	0	0	0	649	0	49	0	362	474	475	0	0	0	Grand Master Dark_Magic (13)
+172	 佛林·沙达	1218	0	0	0	585	0	49	0	366	523	524	0	0	0	Expert Vampire(6)
+173	 道格拉斯·德斯摩尔	1223	0	0	0	581	0	49	0	367	522	524	0	0	0	Master Vampire (6)
+174	 佩吉·阿拉尼雅	1206	0	0	0	580	0	49	0	368	522	523	0	0	0	Grand Master Vampire (6)
+175	 费德温·德维禧	1422	0	0	0	516	0	49	0	363	526	527	0	0	0	Expert Dark Elf (3)
+176	 蓝西·卡佛希尔	1402	0	0	0	889	0	49	0	364	525	527	0	0	0	Master Dark Elf (2)
+177	 堂·爱格瑞尼尔	1421	0	0	0	517	0	49	0	365	525	526	0	0	0	Grand Master Dark Elf (3)
+178	 伊斯顿	1040	0	0	0	572	0	49	0	369	529	530	0	0	0	Expert Dragon(5)
+179	 噩欣特	1039	0	0	0	573	0	49	0	370	528	530	0	0	0	Master Dragon (5)
+180	 克兰·疤翅	1039	0	0	0	574	0	49	0	371	528	529	0	0	0	Grand Master Dragon (5)
+181	 其王·为斯特	1480	0	0	0	795	0	49	0	393	499	500	0	0	0	Expert Disarm_Trap (1)
+182	 凯力·来特芬格	1187	0	0	0	518	0	49	0	394	498	500	0	0	0	Master Disarm_Trap (3)
+183	 加拉司·理夫特	1422	0	0	0	650	0	49	0	395	498	499	0	0	0	Grand Master Disarm_Trap (13)
+184	 希尔克·夜行者	1433	0	0	0	519	0	49	0	387	493	494	0	0	0	Expert Perception (3)
+185	 海尔加·钢眼	1266	0	0	0	593	0	49	0	388	492	494	0	0	0	Master Perception (6)
+186	 巴兰·确尾	1334	0	0	0	629	0	49	0	389	492	493	0	0	0	Grand Master Perception (8)
+187	 费许那·汤伯	1477	0	0	0	823	0	49	0	375	481	482	291	0	0	Expert Merchant (1)
+188	 费顿·艾佛森	1447	0	0	0	530	0	49	0	376	480	482	0	0	0	Master Merchant (3)
+189	 瑞文·快舌	1387	0	0	0	883	0	49	0	377	480	481	0	0	0	Grand Master Merchant (2)
+190	 派德拉·密斯瑞	1292	0	0	0	614	0	49	0	414	520	521	0	0	0	Expert Learning (7)
+191	 加瑞特·雾春	1256	0	0	0	579	0	49	0	415	519	521	0	0	0	Master Learning (6)
+192	 汪达·来特史汪	1295	0	0	0	564	0	49	0	416	519	520	0	0	0	Grand Master Learning (5)
+193	 艾顿·普特南	1315	0	0	0	892	0	49	0	384	490	491	0	0	0	Expert Meditation (2)
+194	 葛拉琴·耐芙莫尔	1405	0	0	0	527	0	49	0	385	489	491	0	0	0	Master Meditation (7)
+195	 蓝诺德·夜行者	1224	0	0	0	578	0	49	0	386	489	490	0	0	0	Grand Master Meditation (6)
+196	 曼纳梭尔	1485	0	0	0	852	0	49	0	381	487	488	0	0	0	Expert Body_building (1)
+197	 肯尼斯·欧特顿	1347	0	0	0	565	0	49	0	382	486	488	0	0	0	Master Body_Building (5)
+198	 米凯尔·史密森	1376	0	0	0	558	0	49	0	383	486	487	576	0	0	Grand Master Body_Building (4)
+199	 其拉·史巴克曼	1416	0	0	0	520	0	49	0	372	478	479	0	0	0	Expert Identify_Item (1)
+200	 爱西恩	1464	0	0	0	798	0	49	0	373	477	479	0	0	0	Master Identify_Item (3)
+201	 艾尔斯伯·络真	1228	0	0	0	587	0	49	0	374	477	478	0	0	0	Grand Master Identify_Item (6)
+202	 艾凡达·拉兹	1163	0	0	0	904	0	49	0	378	484	485	0	0	0	Expert Repair_Item (2)
+203	 逵克·珍妮	1296	0	0	0	570	0	49	0	379	483	485	0	0	0	Master Reapir_Item (5)
+204	 逵斯林·东克	1160	0	0	0	615	0	49	0	380	483	484	0	0	0	Grand Master Repair_Item (7)
+205	 泰沙·马克	1289	0	0	0	567	0	49	0	402	508	509	0	0	0	Expert Identify_Monster (5)
+206	 马崔克·锐锋	1282	0	0	0	616	0	49	0	403	507	509	0	0	0	Master Identify_Monster (7)
+207	 布拉肯·石刀	1303	0	0	0	898	0	49	0	404	507	508	0	0	0	Grand Master Identify_Monster (2)
+208	 诺伯特·杀手	1310	0	0	0	568	0	49	0	405	511	512	0	0	0	Expert Armsmaster (5)
+209	 疤面拉沙庭	1485	0	0	0	843	0	49	0	406	510	512	293	0	0	Master Armsmaster (1)
+210	 杰斯伯·史提尔克夫	1189	0	0	0	651	0	49	0	407	510	511	0	0	0	Grand Master Armsmaster (13)
+211	 塔必煞·瓦特沙	1378	0	0	0	524	0	49	0	411	517	518	0	0	0	Expert Alchemy (3)
+212	 凯斯瑞·宝石	1176	0	0	0	617	0	49	0	412	516	518	0	0	0	Master Alchemy (7)
+213	 伊奇	1482	0	0	0	795	0	49	0	413	516	517	0	0	0	Grand Master Alchemy (1)
+214	 凯斯瑞·塔兰	1375	0	0	0	560	0	49	0	390	496	497	0	0	0	Expert Regeneration (4)
+215	 威廉·山普森	1157	0	0	0	618	0	49	0	391	495	497	0	0	0	Master Regeneration (7)
+216	 多尾乌许	1464	0	0	0	885	0	49	0	392	495	496	0	0	0	Grand Master Regeneration (1)
+217	 艾尔西·爱波	1415	0	0	0	799	0	60	0	676	0	0	0	0	0	Hint NPC in Ravenshore
+218	 吉力安·苹蜂	1378	0	0	0	844	0	62	0	679	0	0	0	0	0	Hint NPC in Ravenshore
+219	 柴瑞克·班森	1314	0	0	0	541	0	0	0	675	0	0	0	0	0	Hint NPC in DH camp
+220	 莫提·比斯	1154	0	0	0	675	0	61	0	678	0	0	0	0	0	Hint NPC in Shadowspire
+221	 阿兹诺格·布拉克	1369	0	0	0	824	0	0	0	677	0	0	0	0	0	Troll Hint NPC in Ravenshore
+222	 汤克·蓝天鹅	1297	0	0	0	880	0	0	0	0	597	0	0	0	0	Arcomange Secondary Quest (2)
+223	 塔工·庞巴	1459	0	0	0	548	0	106	0	594	0	0	0	0	0	Ore Weapon (3)
+224	 卡恩·包威	1441	0	0	0	536	0	106	0	595	0	0	0	0	0	Ore Armor (3)
+225	 凯林·布里曼	1414	0	0	0	537	0	106	0	596	0	0	0	0	0	Ore Item (3)
+226	 凯拉德林·光矛	1232	0	0	0	583	0	106	0	594	0	0	0	0	0	Ore Item (6)
+227	 凯瑞克·卡文希尔	1218	0	0	0	597	0	106	0	595	0	0	0	0	0	Ore Item (6)
+228	 克兰恩弟兄	1268	0	0	0	673	0	106	0	596	0	0	0	0	0	Ore Item (6)
+229	 庖德林·猎鹿人	1395	0	0	0	867	0	58	0	672	0	0	0	0	0	"Ravenshore, Vault of Time Hint"
+230	 伊斯兰·戴尔瓦	1308	0	0	0	539	0	58	0	674	0	0	0	0	0	Hint NPC in DH camp
+231	 多兹	1376	0	0	0	909	0	0	0	661	663	0	0	0	0	Hint Npc
+232	 威瑞克·鹰眼	1311	0	0	0	571	0	93	0	711	0	0	0	0	0	Hint Npc
+233	 德肯安·法斯威尔	1445	0	0	0	551	0	58	0	709	0	0	0	0	0	Hint Npc
+234	 布兰德·羽风	1442	0	0	0	552	0	58	0	710	0	0	0	0	0	Hint Npc
+235	 肯多·费尔朋	1401	0	0	0	602	0	58	0	712	0	0	0	0	0	Hint Npc
+236	 爱审·费多朋	1423	0	0	0	604	0	94	0	714	0	0	0	0	0	Hint Npc
+237	 赛斯瑞克·费斯特	1422	0	0	0	607	0	95	0	715	0	0	0	0	0	Hint Npc
+238	 大拳·漫步者	1371	0	0	0	553	0	94	0	716	0	0	0	0	0	Hint Npc
+239	 风神	1140	0	0	0	667	0	96	0	717	0	0	0	0	0	Hint Npc
+240	 萝拉·加罗史威	1399	0	0	0	603	0	58	0	713	0	0	0	0	0	Hint Npc
+241	 吉斯摩·贝传	1456	0	0	0	861	0	0	0	663	665	0	0	0	0	Hint Npc
+242	 海色·大耳怪斧	1361	0	0	0	557	0	0	0	668	671	0	0	0	0	Hint Npc
+243	 班哲明·葛林斯通	1367	0	0	0	558	0	0	0	669	0	0	0	0	0	Hint Npc
+244	 朱立安·格林史沃	1363	0	0	0	559	0	0	0	670	0	0	0	0	0	Hint Npc
+245	 麦尔斯·灰晨	1439	0	0	0	533	0	0	0	664	0	0	0	0	0	Hint Npc
+246	 萨维尔·海威斯特	1458	0	0	0	529	0	0	0	665	0	0	0	0	0	Hint Npc
+247	 伊森·海尔斯曼	1438	0	0	0	888	0	0	0	661	0	0	0	0	0	Hint Npc
+248	 何顿	1362	0	0	0	814	0	0	0	662	671	0	0	0	0	Hint Npc
+249	 卡林·艾佛斯	1410	0	0	0	777	0	0	0	663	662	0	0	0	0	Hint Npc
+250	 山谬尔·捷克	1364	0	0	0	762	0	0	0	660	0	0	0	0	0	Hint Npc
+251	 佩吉·卡伦德	1405	0	0	0	893	0	0	0	659	665	0	0	0	0	Hint Npc
+252	 布理汉·金尼	1424	0	0	0	901	0	0	0	658	663	0	0	0	0	Hint Npc
+253	 汤马斯·拉来色尔	1444	0	0	0	886	0	0	0	657	666	0	0	0	0	Hint Npc
+254	 阿萨尔·福罗马哥	1457	0	0	0	525	0	57	0	654	655	656	0	0	0	Cheese Connoisseur in Alvar
+255	 巴萨拉斯	1039	0	0	0	572	0	0	0	673	0	0	0	0	0	Dragon Hint NPC in Dragon Cave
+256	 罗姆沃克	1145	0	0	0	676	0	63	0	680	0	0	0	0	0	Hint NPC in Plane of Earth
+257	 所一尔	1146	0	0	0	677	0	64	0	681	0	0	0	0	0	Hint NPC in Plane of Earth
+258	 翅帆	1139	0	0	0	665	0	65	0	682	0	0	0	0	0	Hint NPC in Plane of Air
+259	 瓦波	1141	0	0	0	666	0	66	0	683	0	0	0	0	0	Hint NPC in Plane of Air
+260	 河玻璃	1135	0	0	0	691	0	67	0	684	0	0	0	0	0	Hint NPC in Plane of Water
+261	 清溪	1136	0	0	0	692	0	68	0	685	0	0	0	0	0	Hint NPC in Plane of Water
+262	 代为林·阿肯那斯	0	0	0	0	0	0	0	0	601	0	0	0	0	0	Roster PC
+263	 佛得瑞克·塔力米尔	0	0	0	0	0	0	0	0	602	0	0	0	0	0	Roster PC
+264	 赛蒙·谭普勒	1064	0	0	0	0	0	103	0	603	0	0	0	0	0	Roster PC
+265	 欧瓦都·弹指	0	0	0	0	0	0	0	0	604	0	0	0	0	0	Roster PC
+266	 艾瑞恶斯	1044	0	0	0	861	0	71	0	605	0	0	0	0	0	Roster PC
+267	 罗哈尼·欧斯克理顿	1047	0	0	0	531	0	72	0	606	0	0	0	0	0	Roster PC
+268	 艾尔斯被斯·拉曼提亚	0	0	0	0	0	0	0	0	607	0	0	0	0	0	Roster PC
+269	 伊斯希尔歌尔	1040	0	0	0	573	0	73	0	608	0	0	0	0	0	Roster PC
+270	 卡蓝雅·麦莫瑞亚	1055	0	0	0	902	0	74	0	706	0	0	0	0	0	Roster PC
+271	 麦兰德	1058	0	0	0	877	0	75	0	707	0	0	0	0	0	Roster PC
+272	 林恩·暴风枪	1061	0	0	0	0	0	0	0	611	0	0	0	0	0	Roster PC
+273	 瓦络格·沙风	1041	0	0	0	0	0	0	0	612	0	0	0	0	0	(4) troll promo
+274	 坦尼斯	0	0	0	0	0	0	0	0	613	0	0	0	0	0	Roster PC
+275	 杰斯波·赛尔鹏	1048	0	0	0	532	0	76	0	708	0	0	0	0	0	Roster PC
+276	 盖斯瑞克·摩枯妥拉	1050	0	0	0	586	0	77	0	615	0	0	0	0	0	Roster PC
+277	 佛蓝林	1039	0	0	0	702	0	79	0	616	0	0	0	0	0	Roster PC
+278	 海瓦提亚·代佛贝罗	0439	0	0	0	605	0	80	0	688	0	0	0	0	0	Roster PC
+279	 瓦瑞西	1060	0	0	0	701	0	81	0	689	0	0	0	0	0	Roster PC
+280	 耐力克斯·巫瑞尔	1062	0	0	0	699	0	82	0	690	0	0	0	0	0	Roster PC
+281	 赛斯瑞克·系索朋	1042	0	0	0	698	0	83	0	691	0	0	0	0	0	Roster PC
+282	 瑞欧耐尔	1044	0	0	0	630	0	84	0	692	0	0	0	0	0	Roster PC
+283	 艾瑞克·史塔拉尔	1046	0	0	0	534	0	85	0	693	0	0	0	0	0	Roster PC
+284	 因佛史塔斯	1051	0	0	0	590	0	86	0	694	0	0	0	0	0	Roster PC
+285	 布尔斯通	1040	0	0	0	703	0	87	0	695	0	0	0	0	0	Roster PC
+286	 维崔那斯·塔尔希尔	0439	0	0	0	0	0	0	0	625	0	0	0	0	0	(6) Necro Promo
+287	 代为瑞许·其佛龙	1058	0	0	0	0	0	0	0	626	0	0	0	0	0	(2) Eclipse secondary quest
+288	 坦帕斯	1062	0	0	0	700	0	88	0	696	0	0	0	0	0	Roster PC
+289	 索恩·石下	1041	0	0	0	697	0	89	0	697	0	0	0	0	0	Roster PC
+290	 乌布理契	1043	0	0	0	634	0	90	0	698	0	0	0	0	0	Roster PC
+291	 考瑞·黑王座	1045	0	0	0	0	0	0	0	630	0	0	0	0	0	(7) dark elf promo 
+292	 阿图瑞斯·维瑞塔斯	1050	0	0	0	598	0	91	0	699	0	0	0	0	0	Roster PC
+293	 永恒土洛斯	1039	0	0	0	704	0	92	0	700	0	0	0	0	0	Roster PC
+294	 纳山尼尔·罗伯兹	1054	0	0	0	589	0	78	0	633	0	0	0	0	0	Roster PC
+295	 戴森·赖兰	0	0	0	0	0	0	0	0	634	0	0	0	0	0	Roster PC
+296	 布拉森·暴风枪	1062	0	0	0	0	0	0	0	635	0	0	0	0	0	(6) knight promo
+297	 巨魔	0	0	0	0	0	0	0	0	636	0	0	0	0	0	Roster PC
+298	 牛头人	0	0	0	0	0	0	0	0	637	0	0	0	0	0	Roster PC
+299	 黑暗精灵	0	0	0	0	0	0	0	0	638	0	0	0	0	0	Roster PC
+300	 吸血鬼	0	0	0	0	0	0	0	0	639	0	0	0	0	0	Roster PC
+301	 飞龙	0	0	0	0	0	0	0	0	640	0	0	0	0	0	Roster PC
+302	 死灵法师	0	0	0	0	0	0	0	0	641	0	0	0	0	0	Roster PC
+303	 牧师	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+304	 骑士	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+305	 巨魔	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+306	 牛头人	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+307	 黑暗精灵	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+308	 吸血鬼	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+309	 飞龙	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+310	 飞龙	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Roster PC
+311	 安伯	1147	0	0	0	686	0	69	0	686	0	0	0	0	0	Hint NPC in Plane of Fire
+312	 暮光	1149	0	0	0	687	0	70	0	687	0	0	0	0	0	Hint NPC in Plane of Fire
+313	 竞技场主人	1295	0	0	0	0	0	0	0	704	0	0	0	0	0	Arena Master
+314	 神使	1444	0	0	0	757	0	113	0	705	732	0	0	0	0	Seer
+315	 达维·赛尔	1190	0	0	0	621	0	97	0	718	0	0	0	0	0	Hint NPC
+316	 艾瑞克·吹瓶者	1185	0	0	0	652	0	98	0	719	0	0	0	0	0	Hint NPC
+317	 贾瑞纳·马蒙	1183	0	0	0	653	0	98	0	720	0	0	0	0	0	HintNPC
+318	 海盗保罗	1197	0	0	0	655	0	98	0	721	0	0	0	0	0	HintNPC
+319	 由尔·瓦尔格林	1213	0	0	0	608	0	99	0	722	0	0	0	0	0	HintNPC
+320	 波多	1350	0	0	0	622	0	100	0	723	0	0	0	0	0	HintNPC
+321	 维许	1349	0	0	0	620	0	100	0	724	0	0	0	0	0	HintNPC
+322	 费瑞斯	1335	0	0	0	625	0	58	0	725	0	0	0	0	0	HintNPC
+323	 前船长特伦斯	1194	0	0	0	656	0	101	0	726	0	0	0	0	0	HintNPC
+324	 费娜拉·佛恩	1177	0	0	0	657	0	98	0	727	0	0	0	0	0	HintNPC
+325	 迪尔拉·瓦拉斯	1207	0	0	0	609	0	62	0	728	0	0	0	0	0	HintNPC
+326	 娜拉尼	1178	0	0	0	659	0	98	0	729	0	0	0	0	0	HintNPC
+327	 瑞塔·摩色	1175	0	0	0	660	0	102	0	730	0	0	0	0	0	HintNPC
+328	 蜥蜴人农民	1487	0	0	0	0	0	0	0	0	0	0	0	0	0	
+329	 蜥蜴人守卫	1475	0	0	0	0	0	0	0	0	0	0	0	0	0	
+330	 黑暗精灵农民	1402	0	0	0	0	0	0	0	0	0	0	0	0	0	
+331	 黑暗精灵守卫	1462	0	0	0	0	0	0	0	0	0	0	0	0	0	
+332	 食人妖农民	1351	0	0	0	0	0	0	0	0	0	0	0	0	0	
+333	 鼠人农民	1166	0	0	0	0	0	0	0	0	0	0	0	0	0	
+334	 巨魔农民	1370	0	0	0	0	0	0	0	0	0	0	0	0	0	
+335	 猎龙人	1314	0	0	0	0	0	0	0	0	0	0	0	0	0	
+336	 死灵法师农民	1204	0	0	0	0	0	0	0	0	0	0	0	0	0	
+337	 牧师农民	1153	0	0	0	0	0	0	0	0	0	0	0	0	0	
+338	 雷格那农民	1190	0	0	0	0	0	0	0	0	0	0	0	0	0	
+339	 牛头人农民	1321	0	0	0	0	0	0	0	0	0	0	0	0	0	
+340	 马克汉姆爵士	0532	0	0	0	1163	0	116	0	751	752	753	784	937	0	
+341	 裁判托马斯	0534	0	0	0	1163	0	117	0	755	756	0	0	0	0	
+342	 向导马格莉特	0853	0	0	0	0	0	118	0	757	759	792	0	0	0	
+343	 诗人埃莉萨	0852	0	0	0	0	0	119	0	760	761	762	0	0	0	
+344	 塞莉	0865	0	0	0	0	0	120	0	764	765	0	0	0	0	Sells seashells by the seashore
+345	 马尔维克先生	0945	0	0	0	0	0	121	0	767	768	776	0	0	0	Offers an item now for a favor later
+346	 绍尔·沙克斯	0946	0	0	0	0	0	123	0	771	772	0	0	0	0	Ambusher leader in Emerald Isle
+347	 布兰特·费兰	0960	0	0	0	0	0	125	0	777	778	779	0	0	0	Trade hat for red potion
+348	 凯洛琳·威瑟	0857	0	0	0	1183	0	126	0	0	1152	1154	0	0	0	Elemental Guild Membership
+349	 罗格·泰尔马	0956	0	0	0	1184	0	127	0	0	1156	1158	0	0	0	Self Guild Membership
+350	 威廉姆·达维斯	0889	0	0	0	1168	0	128	0	782	0	0	0	0	0	Boatman to take party to area 2
+351	 唐纳·理斯	0796	0	0	0	1167	0	129	0	786	787	0	0	0	0	Sally's mom in dragon house
+352	 格兰特·瓦兰达	0934	0	0	0	1171	0	130	0	790	791	0	0	0	0	Back of the weapon shop
+353	 米尔·路基	0799	0	0	0	1170	0	131	0	788	789	0	0	0	0	Favor for Mark near entrance to town
+354	 比尔·拉斯克	1530	0	0	0	1162	0	152	0	794	0	393	308	0	0	Good Thief promoter
+355	 塞克尼特·恩德斯	0949	0	0	0	983	0	155	0	798	799	0	0	0	0	Evil Thief promoter
+356	 查尔斯·科切特爵士	0930	0	0	0	941	0	158	0	801	0	0	0	0	0	Good Paladin promoter
+357	 威廉姆·塞塔格	0926	0	0	0	0	0	164	0	806	0	0	0	0	0	Evil Paladin promoter
+358	 向导马格莉特	0853	0	0	0	0	0	133	0	757	759	792	0	0	0	Docent for the tour 1
+359	 向导马格莉特	0853	0	0	0	0	0	134	0	757	759	792	0	0	0	Docent for the tour 2
+360	 向导马格莉特	0853	0	0	0	0	0	135	0	757	759	792	0	0	0	Docent for the tour 3
+361	 向导马格莉特	0853	0	0	0	0	0	136	0	757	759	792	0	0	0	Docent for the tour 4
+362	 向导马格莉特	0853	0	0	0	0	0	137	0	757	759	792	0	0	0	Docent for the tour 5
+363	 向导马格莉特	0853	0	0	0	0	0	138	0	757	759	792	0	0	0	Docent for the tour 6
+364	 向导马格莉特	0853	0	0	0	0	0	139	0	757	759	792	0	0	0	Docent for the tour 7
+365	 向导马格莉特	0853	0	0	0	0	0	140	0	757	759	792	0	0	0	Docent for the tour 8
+366	 向导马格莉特	0853	0	0	0	0	0	141	0	757	759	792	0	0	0	Docent for the tour 9
+367	 向导马格莉特	0853	0	0	0	0	0	142	0	757	759	792	0	0	0	Docent for the tour 10
+368	 向导马格莉特	0853	0	0	0	0	0	143	0	757	759	792	0	0	0	Docent for the tour 11
+369	 向导马格莉特	0853	0	0	0	0	0	144	0	757	759	792	0	0	0	Docent for the tour 12
+370	 向导马格莉特	0853	0	0	0	0	0	145	0	757	759	792	0	0	0	Docent for the tour 13
+371	 向导马格莉特	0853	0	0	0	0	0	146	0	757	759	792	0	0	0	Docent for the tour 14
+372	 向导马格莉特	0853	0	0	0	0	0	147	0	757	759	792	0	0	0	Docent for the tour 15
+373	 向导马格莉特	0853	0	0	0	0	0	148	0	757	759	792	0	0	0	Docent for the tour 16
+374	 向导马格莉特	0853	0	0	0	0	0	149	0	757	759	792	0	0	0	Docent for the tour 17
+375	 向导马格莉特	0853	0	0	0	0	0	150	0	757	759	792	0	0	0	Docent for the tour 18
+376	 向导马格莉特	0853	0	0	0	0	0	151	0	757	759	792	0	0	0	Docent for the tour 19
+377	 巴斯洛缪·海墨尔	0876	0	0	0	1126	0	166	0	808	0	0	0	0	0	Good Monk promoter
+378	 斯丹芬尼·山德	0925	0	0	0	1074	0	169	0	813	0	0	0	0	0	Evil Monk promoter
+379	 劳伦斯·马克	0940	0	0	0	1104	0	171	0	815	0	0	0	0	0	Good Archer promoter
+380	 斯第格·斯尼克	0962	0	0	0	1020	0	173	0	817	0	0	0	0	0	Evil Archer promoter
+381	 立德·罗文	0824	0	0	0	1117	0	175	0	821	0	0	0	0	0	Good Knight promoter
+382	 福瑞德里克·奥格	0885	0	0	0	942	0	177	0	823	0	0	0	0	0	Evil Knight promoter
+383	 里桑德·斯维特	0923	0	0	0	1139	0	179	0	827	0	0	0	0	0	Good Ranger promoter
+384	 埃伯登泽·索渥	0903	0	0	0	968	0	181	0	829	0	0	0	0	0	Evil Ranger promoter
+385	 蕾贝卡·迪万	0790	0	0	0	1059	0	187	0	836	0	0	0	0	0	Good Cleric promoter
+386	 达德拉斯·福克	0914	0	0	0	985	0	189	0	838	0	0	0	0	0	Evil Cleric promoter
+387	 托马斯·格雷	0902	0	0	0	1157	0	191	0	842	0	0	0	0	0	Good Sorcerer promoter
+388	 哈夫·维克	1493	0	0	0	1073	0	193	0	846	0	0	0	0	0	Evil Sorcerer promoter
+389	 安东尼·格林	0921	0	0	0	950	0	195	0	848	0	0	0	0	0	Good Druid promoter
+390	 托尔·安文	0959	0	0	0	996	0	197	0	852	0	0	0	0	0	Evil Druid promoter
+391	 仙帝	0678	0	0	0	0	0	183	0	833	939	0	0	0	0	Faerie King (hunter promo end)
+392	 古树	1490	0	0	0	0	0	184	0	834	0	0	0	0	0	The Oldest Tree (Ranger lord end)
+393	 埃莉斯·哈格	0848	0	0	0	0	0	162	0	805	0	0	0	0	0	Capture/Rescue girl for Paladin 2nd promotion
+394	 巴斯洛缪·海墨尔	0876	0	0	0	0	0	168	0	810	0	0	0	0	0	Bartholomew for dungeon promo event
+395	 人偶	1492	0	0	0	0	0	199	0	854	855	0	0	0	0	Golem party gets to construct
+396	 幼龙	1494	0	0	0	0	0	284	0	0	0	0	0	0	0	Baby Dragon familiar for Warlock quest
+397	 管家	0906	0	0	0	0	0	200	0	856	1252	0	0	0	0	Player Castle
+398	 贺斯法九世	1551	0	0	0	216	0	202	0	857	0	0	0	0	0	Dwarf King
+399	 德根·凯尔丁	0764	0	0	0	0	0	204	0	0	0	0	0	0	0	
+400	 杰森·凯尔丁	0745	0	0	0	0	0	205	0	0	0	0	0	0	0	
+401	 劳莱尔·凯尔丁	0749	0	0	0	0	0	205	0	0	0	0	0	0	0	
+402	 弗斯·凯尔丁	0735	0	0	0	0	0	205	0	0	0	0	0	0	0	
+403	 瑞德·凯尔丁	0754	0	0	0	0	0	205	0	0	0	0	0	0	0	
+404	 索尔·凯尔丁	0742	0	0	0	0	0	205	0	0	0	0	0	0	0	
+405	 阿尔文·凯尔丁	0757	0	0	0	0	0	205	0	0	0	0	0	0	0	
+406	 艾伦·洛克威	0791	0	0	0	0	0	206	0	866	867	868	869	0	0	Human Ambassador
+407	 埃兰·汉尼	0700	0	0	0	0	0	207	0	870	871	872	873	0	0	Elven Ambassador
+408	 凯瑟琳王后	1534	0	0	0	217	0	208	0	874	876	877	879	880	0	
+409	 精灵王	1543	0	0	0	218	0	210	0	881	883	884	886	887	0	
+410	 劳伦·斯迪尔	0894	0	0	0	0	0	262	0	0	0	0	0	0	0	
+411	 假冒的劳伦	0894	0	0	0	0	0	263	0	0	0	0	0	0	0	
+412	 信使	0915	0	0	0	0	0	212	0	0	0	0	0	0	0	Artifact Battle
+413	 仲裁人格瑞	1517	0	0	0	1165	0	213	0	888	889	890	0	0	0	
+414	 怀特大使	0922	0	0	0	0	0	214	0	0	0	0	0	0	0	Wizard Ambassador
+415	 斯克尔大使	0892	0	0	0	0	0	215	0	0	0	0	0	0	0	Necro Ambassador
+416	 仲裁人费尔维泽	1536	0	0	0	0	0	219	0	893	0	0	0	0	0	good arbiter (144/139)
+417	 仲裁人斯利恩	1548	0	0	0	0	0	216	0	891	0	0	0	0	0	evil arbiter (142/139)
+418	 格文·玛格努斯	1497	0	0	0	220	0	222	0	895	359	0	0	0	0	Wizard Boss
+419	 瑞瑟雷克特	1559	0	0	0	0	0	225	0	897	899	0	0	0	0	Good MM3 Boss
+420	 克拉格·汉克	0455	0	0	0	0	0	229	0	901	0	0	0	0	0	Good MM3
+421	 卡格汉爵士	0456	0	0	0	0	0	232	0	903	0	0	0	0	0	Good MM3
+422	 智者罗伯特	1556	0	0	0	0	0	235	0	905	0	0	0	0	0	Good MM3
+423	 卡斯托	1558	0	0	0	0	0	237	0	907	909	0	0	0	0	Evil MM3 Boss
+424	 马克西姆	0454	0	0	0	0	0	241	0	911	0	0	0	0	0	Evil MM3
+425	 达克·谢德	1560	0	0	0	0	0	244	0	913	0	0	0	0	0	Evil MM3
+426	 托尔伯蒂	1557	0	0	0	0	0	247	0	915	0	0	0	0	0	Evil MM3
+427	 阿基巴德·艾恩法斯特	1508	0	0	0	219	0	249	0	917	362	0	0	0	0	Necro Boss
+428	 光明神庙	1495	0	0	0	316	0	0	0	923	0	0	0	0	0	Dungeon Entrance
+429	 暗黑神庙	1495	0	0	0	317	0	0	0	924	0	0	0	0	0	Dungeon Entrance
+430	 信使	0932	0	0	0	0	0	265	0	0	0	0	0	0	0	Arbiter death
+431	 卡米尔女士	0826	0	0	0	0	0	295	0	0	0	0	0	0	0	
+432	 忒林维泽	0933	0	0	0	311	0	266	0	929	0	0	0	0	0	Lantern Quest
+433	 马吉姆·达斯克	0925	0	0	0	1002	0	268	0	931	0	0	0	0	0	Haldar's Remains Quest
+434	 德弗里克·派尔丁	0881	0	0	0	240	0	270	0	933	0	0	0	0	0	Davrik's Signet Ring Quest
+435	 诺伯特·西拉丝	0915	0	0	0	939	0	272	0	935	0	0	0	0	0	Quill
+436	 乔安·卡里德	0677	0	0	0	960	0	274	0	938	0	0	0	0	0	Faerie Pipes Quest
+437	 信使	0925	0	0	0	0	0	276	0	0	0	0	0	0	0	
+438	 尼尔斯·斯坦利	0929	0	0	0	0	0	277	0	941	942	0	0	0	0	
+439	 斯巴克·伯恩基德	0745	0	0	0	1056	0	278	0	944	0	0	0	0	0	Kill Troggie Quest
+440	 托恩·威泽斯密	0927	0	0	0	1108	0	0	0	300	1065	0	0	0	0	Expert Staff (2)
+441	 艾尔希·培顿	0809	0	0	0	1111	0	0	0	301	1066	0	0	0	0	Master Staff (6)
+442	 基里安·米斯瑞特	0666	0	0	0	1016	0	0	0	302	0	0	0	0	0	Grand Master Staff (14)
+443	 佩琪·来文西尔	0821	0	0	0	923	0	0	0	303	1067	0	0	0	0	Expert Sword (3)
+444	 特格·斯莱瑟	0630	0	0	0	984	0	0	0	304	1068	0	0	0	0	Master Sword (5)
+445	 查德科·唐瑟夫	0931	0	0	0	1122	0	0	0	305	1233	0	0	0	0	Grand Master Sword (2)
+446	 莫地·奥丁	0947	0	0	0	957	0	0	0	306	1069	0	0	0	0	Expert Dagger (4)
+447	 埃兹诺格·斯莱什	0622	0	0	0	1145	0	0	0	307	1070	0	0	0	0	Master Dagger (10)
+448	 托肯·费斯特	0718	0	0	0	1038	0	0	0	308	1194	0	0	0	0	Grand Master Dagger (13)
+449	 托根·渥斯特	0747	0	0	0	1122	0	0	0	309	1071	0	0	0	0	Expert Axe (2)
+450	 德林·卡内基	0736	0	0	0	1051	0	0	0	310	1072	0	0	0	0	Master Axe (39)
+451	 卡恩·斯通科利夫	0739	0	0	0	1032	0	0	0	311	1194	1174	0	0	0	Grand Master Axe (13)
+452	 凯林·格雷达	0665	0	0	0	1005	0	0	0	312	1073	0	0	0	0	Expert Spear (13)
+453	 科拉德林·西尔普	0701	0	0	0	948	0	0	0	313	1074	0	0	0	0	Master Spear (4)
+454	 希林·法尔科内	0664	0	0	0	1052	0	0	0	314	1188	0	0	0	0	Grand Master Spear (39)
+455	 捷辛·苏拉提	0693	0	0	0	947	0	0	0	315	1075	0	0	0	0	Expert Bow (4)
+456	 兰希·拉弗赛特	0664	0	0	0	1147	0	0	0	316	1076	0	0	0	0	Master Bow (10)
+457	 凯德拉克·斯蒂德	0702	0	0	0	1104	0	0	0	317	1230	0	0	0	0	Grand Master Bow (2)
+458	 阿尔丁·泰罗克	0757	0	0	0	1057	0	0	0	318	1077	0	0	0	0	Expert Mace (39)
+459	 布拉泽·罗斯汉姆	0887	0	0	0	1050	0	0	0	319	1078	0	0	0	0	Master Mace (13)
+460	 帕特文·费尔本	0573	0	0	0	982	0	0	0	320	1239	0	0	0	0	Grand Master Mace (5)
+461	 鲁那斯·萨达	0954	0	0	0	0	0	309	0	513	514	0	0	0	0	Area 5 Ambusher
+462	 阿基巴德·艾恩法斯特	1508	0	0	0	0	0	0	0	0	0	0	0	0	0	Area 12 Archibald
+463	 榴弹枪宗师	0965	0	0	0	0	0	0	0	323	0	0	0	0	0	Grand Master Blaster
+464	 普丁·劳兹	0735	0	0	0	929	0	0	0	324	1079	0	0	0	0	Expert Shield (39)
+465	 伊斯拉姆·格洛威尔	0575	0	0	0	1031	0	0	0	325	1080	0	0	0	0	Master Shield (13)
+466	 费德文·斯密森	0895	0	0	0	988	0	0	0	326	1199	0	0	0	0	Grand Master Shield (9)
+467	 道格拉斯·埃弗森	0872	0	0	0	1108	0	0	0	327	1081	0	0	0	0	Exper Leather (2)
+468	 拉比萨·尼德伦	0847	0	0	0	1148	0	0	0	328	1082	0	0	0	0	Master Leather (10)
+469	 米尔扬·奎克	0941	0	0	0	949	0	0	0	329	0	0	0	0	0	Grand Master Leather (4)
+470	 奇拉德·比斯	0698	0	0	0	946	0	0	0	330	1083	0	0	0	0	Expert Chain (4)
+471	 麦德沃里	0687	0	0	0	1021	0	0	0	331	1084	0	0	0	0	Master Chain (14)
+472	 哈利安·那夫莫尔	0916	0	0	0	979	0	0	0	332	1195	0	0	0	0	Grand Master Chain (5)
+473	 维尔狄克·劳兹	0738	0	0	0	1040	0	0	0	333	1085	0	0	0	0	Expert Plate (13)
+474	 德坎·富德来特	0953	0	0	0	927	0	0	0	334	1086	0	0	0	0	Master Plate (3)
+475	 布朗达	0952	0	0	0	1118	0	0	0	335	1240	0	0	0	0	Grand Master Plate (6)
+476	 金德·特斯通	0659	0	0	0	954	0	0	0	336	1087	0	0	0	0	Expert Fire_Magic (4)
+477	 阿什·坦普	0823	0	0	0	1106	0	0	0	337	1088	0	0	0	0	Master Fire_Magic (2)
+478	 布雷泽	0810	0	0	0	1129	0	0	0	338	1171	0	0	0	0	Grand Master Fire_Magic (3)
+479	 索里克·文森	0683	0	0	0	955	0	0	0	339	1089	0	0	0	0	Expert Air_Magic (4)
+480	 瑞斯林·革林斯道	0671	0	0	0	1017	0	0	0	340	1090	0	0	0	0	Master Air_Magic (14)
+481	 格利	0822	0	0	0	1115	0	0	0	341	1195	0	0	0	0	Grand Master Air_Magic (6)
+482	 海德·维特凯普	0685	0	0	0	956	0	0	0	342	1091	0	0	0	0	Expert Water_Magic (4)
+483	 托伯伦·瑞恩谢德	0789	0	0	0	1002	0	0	0	343	1092	0	0	0	0	Master Water_Magic (10)
+484	 特伦	0888	0	0	0	1125	0	0	0	344	1234	0	0	0	0	Grand Master Water_Magic (2)
+485	 乔那森·肯恩	0958	0	0	0	1121	0	0	0	345	1093	0	0	0	0	Expert Earth_Magic (2)
+486	 兰拉·斯通莱特	0670	0	0	0	966	0	0	0	346	1094	0	0	0	0	Master Earth_Magic (4)
+487	 埃兰奇	0638	0	0	0	1135	0	0	0	347	1173	0	0	0	0	Grand Master Earth_Magic (5)
+488	 伯特·斯德渥	0937	0	0	0	1103	0	0	0	348	1095	0	0	0	0	Expert Spirit_Magic (2)
+489	 希瑟·德姆利忒	0851	0	0	0	1131	0	0	0	349	1096	0	0	0	0	Master Spirit_Magic (3)
+490	 本杰明	0901	0	0	0	965	0	0	0	350	1190	0	0	0	0	Grand Master Spirit_Magic (4)
+491	 茱丽安	0905	0	0	0	931	0	0	0	351	1097	0	0	0	0	Expert Mind_Magic (3)
+492	 米莱斯·菲德文特	0683	0	0	0	1014	0	0	0	352	1098	0	0	0	0	Master Mind_Magic (14)
+493	 克维尔·布里门	0869	0	0	0	1007	0	0	0	353	1196	0	0	0	0	Grand Master Mind_Magic (13)
+494	 斯顿·海尔斯曼	0884	0	0	0	1102	0	0	0	354	1099	0	0	0	0	Expert Body_Magic (2)
+495	 邦布大哥	0883	0	0	0	1035	0	0	0	355	1100	0	0	0	0	Master Body_Magic (13)
+496	 坦普斯	0918	0	0	0	1140	0	0	0	356	1180	0	0	0	0	Grand Master Body_Magic (14)
+497	 埃珊·莱特斯文	0924	0	0	0	1113	0	0	0	357	1129	0	0	0	0	Expert Light_Magic (6)
+498	 晨星海伦娜	0860	0	0	0	1060	0	0	0	358	1130	0	0	0	0	Master Light_Magic (7)
+499	 沙莫斯·德布林	0852	0	0	0	0	0	0	0	359	0	0	0	0	0	Hint NPC
+500	 加斯·奈克尔	0781	0	0	0	981	0	0	0	360	1131	0	0	0	0	Expert Dark_Magic (5)
+501	 塞斯·达克莫	0826	0	0	0	1073	0	0	0	361	1132	1204	0	0	0	Master Dark_Magic (8)
+502	 卡林·阿卡尼亚	0917	0	0	0	0	0	0	0	362	1182	0	0	0	0	Hint NPC
+503	 菲顿·克莱文	0910	0	0	0	1107	0	0	0	372	1101	0	0	0	0	Expert Identify_Item (2)
+504	 萨缪尔·拜森	0891	0	0	0	1119	0	0	0	373	1102	0	0	0	0	Master Identify_Item (6)
+505	 佩吉·布鲁斯文	0668	0	0	0	953	0	0	0	374	1193	0	0	0	0	Grand Master Identify_Item (4)
+506	 梅迪克·维泽森	0936	0	0	0	967	0	0	0	375	1103	0	0	0	0	Expert Merchant (4)
+507	 贝特胡德·凯夫希尔	0881	0	0	0	986	0	0	0	376	1104	0	0	0	0	Master Merchant (9)
+508	 布里汉姆	0948	0	0	0	1116	0	0	0	377	1184	0	0	0	0	Grand Master Merchant (6)
+509	 沙那·托马斯	0964	0	0	0	1107	0	0	0	378	1105	0	0	0	0	Expert Repair_Item (2)
+510	 托马斯·摩尔	0868	0	0	0	1049	0	0	0	379	1106	0	0	0	0	Master Reapir_Item (13)
+511	 格里斯	0951	0	0	0	926	0	0	0	380	1168	0	0	0	0	Grand Master Repair_Item (3)
+512	 凯利·霍利菲尔德	0725	0	0	0	1138	0	0	0	381	1107	0	0	0	0	Expert Body_building (6)
+513	 汪达·富斯克	0704	0	0	0	971	0	0	0	382	1108	0	0	0	0	Master Body_Building (5)
+514	 伊万达·托马斯	0624	0	0	0	995	0	0	0	383	1210	0	0	0	0	Grand Master Body_Building (10)
+515	 芭芭拉·威斯门	0854	0	0	0	980	0	0	0	384	1109	0	0	0	0	Expert Meditation (5)
+516	 特萨·格林斯沃德	0863	0	0	0	1113	0	0	0	385	1110	0	0	0	0	Master Meditation (6)
+517	 克因	0684	0	0	0	1141	0	0	0	386	1181	0	0	0	0	Grand Master Meditation (14)
+518	 格里高里·威埃达	0909	0	0	0	1123	0	0	0	387	1111	0	0	0	0	Expert Perception (2)
+519	 嘉瑞特·多迪斯	0686	0	0	0	952	0	0	0	388	1112	0	0	0	0	Master Perception (4)
+520	 佩特拉·克莱利亚	0583	0	0	0	970	0	0	0	389	1239	0	0	0	0	Grand Master Perception (5)
+521	 奇兰·劳拉瑟尔	0702	0	0	0	916	0	306	0	501	0	0	0	0	0	Ore for weapon
+522	 罗伯特·索洛	0744	0	0	0	917	0	307	0	502	0	0	0	0	0	Ore for armor
+523	 克劳德·阿格亚尔	0846	0	0	0	919	0	308	0	503	0	0	0	0	0	Ore for misc
+524	 偷窃术专家	0965	0	0	0	0	0	0	0	390	0	0	0	0	0	Expert Thievery
+525	 偷窃术大师	0965	0	0	0	0	0	0	0	391	0	0	0	0	0	Master Thievery
+526	 偷窃术宗师	0965	0	0	0	0	0	0	0	392	0	0	0	0	0	Grand Master Thievery
+527	 格里成·菲德巴恩	0652	0	0	0	959	0	0	0	393	1113	0	0	0	0	Expert Lock_Pick (4)
+528	 李诺德·斯格那	0935	0	0	0	1124	0	0	0	394	1114	0	0	0	0	Master Lock_Pick (2)
+529	 快嘴斯尔克	0576	0	0	0	997	0	0	0	395	1246	0	0	0	0	Grand Master Lock_Pick (10)
+530	 谢尔登·密斯特	0773	0	0	0	1101	0	0	0	396	1115	0	0	0	0	Expert Dodging (2)
+531	 奥伯瑞克·克雷恩	0870	0	0	0	987	0	0	0	397	1116	0	0	0	0	Master Dodging (9)
+532	 科尼斯·威尔那	0929	0	0	0	1132	0	0	0	398	1169	0	0	0	0	Grand Master Dodging (3)
+533	 凯拉·斯迪利	0858	0	0	0	1101	0	0	0	399	1117	0	0	0	0	Expert Unarmed (2)
+534	 安伯莱赫特·布劳勒	0571	0	0	0	987	0	0	0	400	1118	0	0	0	0	Master Unarmed (9)
+535	 诺里斯	0942	0	0	0	1130	0	0	0	401	1232	0	0	0	0	Grand Master Unarmed (3)
+536	 埃尔顿·布莱克	0696	0	0	0	958	0	0	0	402	1119	0	0	0	0	Expert Identify_Monster (4)
+537	 吉尼·斯威夫特	0663	0	0	0	1023	0	0	0	403	1120	0	0	0	0	Master Identify_Monster (14)
+538	 猎人莱文	0919	0	0	0	1123	0	0	0	404	1231	0	0	0	0	Grand Master Identify_Monster (2)
+539	 埃德嘉·博斯汉姆	0626	0	0	0	975	0	0	0	405	1121	0	0	0	0	Expert Armsmaster (5)
+540	 保拉·布莱斯	0689	0	0	0	1008	0	0	0	406	1122	0	0	0	0	Master Armsmaster (14)
+541	 拉斯特	0958	0	0	0	1150	0	0	0	407	1194	0	0	0	0	Grand Master Armsmaster (12)
+542	 波利·莱芬格	0938	0	0	0	1124	0	0	0	408	1123	0	0	0	0	Expert Stealing (2)
+543	 里尼·谢德拉那	0849	0	0	0	973	0	0	0	409	1124	0	0	0	0	Master Stealing (5)
+544	 伊夫利	0699	0	0	0	1027	0	0	0	410	1196	0	0	0	0	Grand Master Stealing (13)
+545	 埃德嘉·威尔巴克	0694	0	0	0	961	0	0	0	411	1125	0	0	0	0	Expert Alchemy (4)
+546	 埃兹贝特·温特斯普恩	0808	0	0	0	1144	0	0	0	412	1126	0	0	0	0	Master Alchemy (10)
+547	 路西德·埃普	0558	0	0	0	1142	0	0	0	413	1185	0	0	0	0	Grand Master Alchemy (14)
+548	 阿格塔·博特南	0812	0	0	0	1133	0	0	0	414	1127	0	0	0	0	Expert Learning (5)
+549	 道洛希·森加卡	0811	0	0	0	996	0	0	0	415	1128	0	0	0	0	Master Learning (10)
+550	 威廉姆·斯密森	0572	0	0	0	988	0	0	0	416	1199	0	0	0	0	Grand Master Learning (9)
+551	 格瑞克·豪斯索那	0904	0	0	0	1149	0	0	0	300	1065	0	0	0	0	Expert Staff (10)
+552	 弗林·埃林	0950	0	0	0	1043	0	0	0	303	1067	0	0	0	0	Expert Sword (13)
+553	 杰克	0908	0	0	0	1110	0	0	0	306	1069	0	0	0	0	Expert Dagger (6)
+554	 瓦特·高琳	0565	0	0	0	1022	0	0	0	309	1071	0	0	0	0	Expert Axe (14)
+555	 卡桑德拉·霍尔登	0688	0	0	0	1009	0	0	0	312	1073	0	0	0	0	Expert Spear (14)
+556	 维尔·鲁迪门	0873	0	0	0	1110	0	0	0	315	1075	0	0	0	0	Expert Bow (6)
+557	 诺伯特·哈威斯特	0877	0	0	0	945	0	0	0	318	1077	0	0	0	0	Expert Mace (3)
+558	 榴弹枪专家	0965	0	0	0	0	0	0	0	321	0	0	0	0	0	Expert Blaster
+559	 兰达内·渥夫顿	0880	0	0	0	911	0	0	0	324	1079	0	0	0	0	Expert Shield (3)
+560	 猎鹿人麦可尔	0567	0	0	0	1022	0	0	0	327	1081	0	0	0	0	Expert Leather (14)
+561	 特雷西亚·斯迪可夫	0775	0	0	0	1030	0	0	0	330	1083	0	0	0	0	Expert Chain (13)
+562	 克莱迪亚斯·伯恩奇德	0739	0	0	0	1056	0	0	0	333	1270	0	0	0	0	Expert Plate (13)
+563	 利斯莱汀	0861	0	0	0	1036	0	0	0	336	1087	0	0	0	0	Expert Fire_Magic (13)
+564	 卡拉·斯达姆安	0859	0	0	0	1006	0	0	0	339	1089	0	0	0	0	Expert Air_Magic (13)
+565	 莱文希尔	0651	0	0	0	1015	0	0	0	342	1091	0	0	0	0	Expert Water_Magic (14)
+566	 杰斯帕·威尔门	0744	0	0	0	1053	0	0	0	345	1093	1225	0	0	0	Expert Earth_Magic (39)
+567	 索洛门·利夫斯通	0866	0	0	0	989	0	0	0	348	1095	0	0	0	0	Expert Spirit_Magic (13)
+568	 海尔格·怀特斯基	0808	0	0	0	990	0	0	0	351	1097	0	0	0	0	Expert Mind_Magic (10)
+569	 索森·哈特斯	0902	0	0	0	936	0	0	0	354	1099	0	0	0	0	Expert Body_Magic (3)
+570	 斯利亚·塞巴门	0965	0	0	0	0	0	0	0	357	1129	0	0	0	0	Expert Light_Magic
+571	 布莱肯·利弗斯通	0965	0	0	0	0	0	0	0	360	1131	0	0	0	0	Expert Dark_Magic
+572	 霍利斯	0794	0	0	0	1146	0	0	0	372	1101	0	0	0	0	Expert Identify_Item (10)
+573	 亚伯·泰那	0760	0	0	0	1054	0	0	0	375	1103	0	0	0	0	Expert Merchant (39)
+574	 伯兰·吉斯莫	0742	0	0	0	1055	0	0	0	378	1105	0	0	0	0	Expert Repair_Item (39)
+575	 特瑞普·特林森	0761	0	0	0	1057	0	0	0	381	1107	0	0	0	0	Expert Body_Building (39)
+576	 斯图亚特·怀特斯基	0900	0	0	0	990	0	0	0	384	1109	0	0	0	0	Expert Meditation (10)
+577	 凯萨克·奥德顿	0695	0	0	0	1009	0	0	0	387	1111	0	0	0	0	Expert Perception (14)
+578	 交际术专家	0965	0	0	0	0	0	0	0	390	0	0	0	0	0	Expert Diplomacy
+579	 偷窃术专家	0965	0	0	0	0	0	0	0	390	0	0	0	0	0	Expert Thievery
+580	 塔伦	0943	0	0	0	1048	0	0	0	393	1113	0	0	0	0	Expert Lock_Pick (13)
+581	 斯伯达	0591	0	0	0	1136	0	0	0	396	1115	0	0	0	0	Expert Dodging (6)
+582	 普德·斯通	0875	0	0	0	1136	0	0	0	399	1117	0	0	0	0	Expert Unarmed (6)
+583	 克里斯迪·诺索渥	0802	0	0	0	1146	0	0	0	402	1119	0	0	0	0	Expert Identify_Monster (10)
+584	 特伦特·斯特利	0574	0	0	0	1025	0	0	0	405	1121	0	0	0	0	Expert Armsmaster (13)
+585	 埃尔莫·佩斯	0815	0	0	0	991	0	0	0	408	1123	0	0	0	0	Expert Stealing (10)
+586	 布雷斯·渥特谢德	0911	0	0	0	1137	0	0	0	411	1125	0	0	0	0	Expert Alchemy (6)
+587	 伊萨克·埃普尔	0898	0	0	0	1112	0	0	0	414	1127	0	0	0	0	Expert Learning (6)
+588	 梅迪克·鲍维斯	0957	0	0	0	1105	0	0	0	1154	1220	0	0	0	0	Fire Guild Membership (2)
+589	 凯斯瑞·唐斯格	0564	0	0	0	954	0	0	0	1154	1206	0	0	0	0	Fire Guild Membership (4)
+590	 利塔·洛根	0709	0	0	0	1143	0	0	0	1154	1243	0	0	0	0	Fire Guild Membership (10)
+591	 卡拉·塔伦特	0585	0	0	0	1105	0	0	0	1152	1236	0	0	0	0	Air Guild Membership (2)
+592	 派德斯·维斯	0560	0	0	0	955	0	0	0	1152	1194	0	0	0	0	Air Guild Membership (4)
+593	 劳瑞·文特布莱	0587	0	0	0	1061	0	0	0	1152	1237	0	0	0	0	Air Guild Membership (7)
+594	 埃利·法斯威尔	0581	0	0	0	1127	0	0	0	1155	1236	1270	0	0	0	Water Guild Membership (2)
+595	 泰比特·密斯普林	0561	0	0	0	956	0	0	0	1155	1194	0	0	0	0	Water Guild Membership (4)
+596	 珍尼特·托马斯	0792	0	0	0	1137	0	0	0	1155	1240	0	0	0	0	Water Guild Membership (6)
+597	 丹尼斯·凯夫希尔	0779	0	0	0	986	0	0	0	1155	1199	0	0	0	0	Water Guild Membership (9)
+598	 彼德·塞伯	0963	0	0	0	1127	0	0	0	1153	1218	0	0	0	0	Earth Guild Membership (2)
+599	 德冯·埃弗斯	0697	0	0	0	966	0	0	0	1153	1206	0	0	0	0	Earth Guild Membership (4)
+600	 忒利斯·恩普	0602	0	0	0	1072	0	0	0	1153	1182	1205	0	0	0	Earth Guild Membership (8)
+601	 费尔丁·赫斯麦	0750	0	0	0	1058	0	0	0	1153	1224	0	0	0	0	Earth Guild Membership (39)
+602	 埃利斯·那渥	0766	0	0	0	1103	0	0	0	1158	1220	0	0	0	0	Spirit Guild Membership (2)
+603	 威尔伯·埃尔西米	0882	0	0	0	932	0	0	0	1158	1169	0	0	0	0	Spirit Guild Membership (3)
+604	 梅莉莎·卡伦德	0803	0	0	0	969	0	0	0	1158	1239	0	0	0	0	Spirit Guild Membership (5)
+605	 劳莱尔·埃恩斯尔	0886	0	0	0	1102	0	0	0	1156	1178	0	0	0	0	Body Guild Membership (2)
+606	 泰尔加·德斯非尔	0928	0	0	0	933	0	0	0	1156	1232	0	0	0	0	Body Guild Membership (3)
+607	 亚萨德·斯诺	0669	0	0	0	1015	0	0	0	1156	1191	0	0	0	0	Body Guild Membership (14)
+608	 罗纳德·基尼	0893	0	0	0	1126	0	0	0	1157	1194	0	0	0	0	Mind Guild Membership (2)
+609	 希瑟·卡德	0857	0	0	0	937	0	0	0	1157	1168	0	0	0	0	Mind Guild Membership (3)
+610	 哈利安·桑普森	0878	0	0	0	1046	0	0	0	1157	1196	0	0	0	0	Mind Guild Membership (13)
+611	 劳尔·德维斯	0566	0	0	0	1014	0	0	0	1157	1191	0	0	0	0	Mind Guild Membership (14)
+612	 卫兵	0931	0	0	0	0	0	253	0	0	0	0	0	0	0	Fort Riverstride Guard
+613	 卫兵	0953	0	0	0	0	0	254	0	0	0	0	0	0	0	Watchtower 6 Guard
+614	 卫兵	0940	0	0	0	0	0	255	0	0	0	0	0	0	0	Temple of Light Guard
+615	 卫兵	0914	0	0	0	0	0	256	0	0	0	0	0	0	0	Temple of Dark Guard
+616	 城堡守卫	0931	0	0	0	0	0	257	0	0	0	0	0	0	0	Castle Gryphonheart Guard
+617	 城堡守卫	0689	0	0	0	0	0	258	0	0	0	0	0	0	0	Castle Navan Guard
+618	 城堡守卫	0952	0	0	0	0	0	259	0	0	0	0	0	0	0	Castle Lambent Guard
+619	 城堡守卫	0637	0	0	0	0	0	260	0	0	0	0	0	0	0	Castle Gloaming Guard
+620	 埃利克·斯维罗	0913	0	0	0	0	0	261	0	925	926	0	0	0	0	School of Sorcery Receptionist
+621	 卫兵	0902	0	0	0	0	0	132	0	0	0	0	0	0	0	School of Sorcery Guard
+622	 卫兵	0875	0	0	0	0	0	264	0	0	0	0	0	0	0	Markham's House Guard
+623	 塞斯·达克森	0872	0	0	0	984	0	280	0	946	0	0	0	0	0	Kill Griffin Quest
+624	 达伦·坦普	0955	0	0	0	1106	0	285	0	948	0	0	0	0	0	Arcomage Cards Quest
+625	 盖里·查姆	0900	0	0	0	1120	0	286	0	1063	0	0	0	0	0	Scarf Quest
+626	 罗兰德·艾恩法斯特	1491	0	0	0	0	0	287	0	0	0	0	0	0	0	Roland for the Hive
+627	 索尔·伦伯拉	0892	0	0	0	957	0	288	0	1212	0	0	0	0	0	Statuette Quest
+628	 费迪南德·威斯康	0897	0	0	0	1042	0	290	0	1214	0	0	0	0	0	Painting Quest
+629	 吉娜·巴尼斯	0822	0	0	0	944	0	292	0	1216	0	0	0	0	0	Arcomage Quest
+630	 蒂里西娅·兰伯特	0838	0	0	0	0	0	294	0	1200	1202	0	0	0	0	Hint NPC In Bracada (6)
+631	 蒂莫西·霍克	0594	0	0	0	0	0	294	0	1201	1203	0	0	0	0	Hint NPC In Bracada (6)
+632	 希瑟·修斯	0843	0	0	0	0	0	295	0	1238	1194	0	0	0	0	Hint NPC In Celeste (7)
+633	 杰弗里·哈米克	0934	0	0	0	0	0	295	0	1244	1249	0	0	0	0	Hint NPC In Celeste (7)
+634	 欧文·库尔	0935	0	0	0	0	0	296	0	1182	1205	0	0	0	0	Hint NPC In The Pit (8)
+635	 波莱拉·斯库尔克	0845	0	0	0	0	0	296	0	1204	1182	0	0	0	0	Hint NPC In The Pit (8)
+636	 阿加莎·诺贝尔	0707	0	0	0	0	0	297	0	1210	1211	0	0	0	0	Hint NPC in Nighon (10)
+637	 文森特·阿贝斯	0781	0	0	0	0	0	297	0	1246	1211	0	0	0	0	Hint NPC in Nighon (10)
+638	 达利亚·斯巴克斯	0714	0	0	0	1151	0	298	0	1209	1187	0	0	0	0	Hint NPC in Barrow Downs (11)
+639	 竞技场主人	0734	0	0	0	0	0	0	0	0	0	1149	0	0	0	
+640	 亚当·麦卡锡	0779	0	0	0	0	0	0	0	0	0	0	0	0	0	
+641	 阿历克斯·谢尔曼	0879	0	0	0	0	0	0	0	0	0	0	0	0	0	
+642	 安德鲁·格鲁姆	0929	0	0	0	0	0	0	0	0	0	0	0	0	0	
+643	 阿普莉尔·李	0560	0	0	0	0	0	0	0	0	0	0	0	0	0	
+644	 本杰明·本特	0949	0	0	0	0	0	0	0	0	0	0	0	0	0	
+645	 比尔·内塞迈尔	0956	0	0	0	0	0	0	0	0	0	0	0	0	0	
+646	 鲍伯·杨	0923	0	0	0	0	0	0	0	0	0	0	0	0	0	
+647	 邦妮·朗- 赫姆萨斯	0791	0	0	0	0	0	0	0	0	0	0	0	0	0	
+648	 布莱恩·德梅茨	0573	0	0	0	0	0	0	0	0	0	0	0	0	0	
+649	 布莱恩·凯普	0598	0	0	0	0	0	0	0	0	0	0	0	0	0	
+650	 布莱恩·法里纳	1494	0	0	0	0	0	0	0	0	0	0	0	0	0	
+651	 卡尔·平德	0592	0	0	0	0	0	0	0	0	0	0	0	0	0	
+652	 查尔斯·齐尔姆	0962	0	0	0	0	0	0	0	0	0	0	0	0	0	
+653	 克里斯·贝茨	0950	0	0	0	0	0	0	0	0	0	0	0	0	0	
+654	 克里斯·罗克	0574	0	0	0	0	0	0	0	0	0	0	0	0	0	
+655	 克里斯蒂安·瓦诺弗	1554	0	0	0	0	0	0	0	0	0	0	0	0	0	
+656	 查克·鲁森	0950	0	0	0	0	0	0	0	0	0	0	0	0	0	
+657	 戴夫·博坦	0960	0	0	0	0	0	0	0	0	0	0	0	0	0	
+658	 大卫·穆利奇	0955	0	0	0	0	0	0	0	0	0	0	0	0	0	
+659	 大卫·瑞奇	0957	0	0	0	0	0	0	0	0	0	0	0	0	0	
+660	 大卫·维拉	0576	0	0	0	0	0	0	0	0	0	0	0	0	0	
+661	 迪恩·吉布森	0961	0	0	0	0	0	0	0	0	0	0	0	0	0	
+662	 爱德华·哈德森	0565	0	0	0	0	0	0	0	0	0	0	0	0	0	
+663	 乔治·阿尔蒙德	0740	0	0	0	0	0	0	0	0	0	0	0	0	0	
+664	 乔治·鲁夫	0735	0	0	0	0	0	0	0	0	0	0	0	0	0	
+665	 格瑞格·弗尔顿	0757	0	0	0	0	0	0	0	0	0	0	0	0	0	
+666	 加斯·史麦史达	0694	0	0	0	0	0	0	0	0	0	0	0	0	0	
+667	 伊恩·布拉德	0693	0	0	0	0	0	0	0	0	0	0	0	0	0	
+668	 杰克·罗素	0872	0	0	0	0	0	0	0	0	0	0	0	0	0	
+669	 詹姆斯·迪金森	0527	0	0	0	0	0	0	0	0	0	0	0	0	0	
+670	 杰夫·比格曼	0937	0	0	0	0	0	0	0	0	0	0	0	0	0	
+671	 杰夫·布拉特纳	0938	0	0	0	0	0	0	0	0	0	0	0	0	0	
+672	 杰夫·莱格特	0940	0	0	0	0	0	0	0	0	0	0	0	0	0	
+673	 珍妮佛·布拉德	0670	0	0	0	0	0	0	0	0	0	0	0	0	0	
+674	 乔尔·凯利	0692	0	0	0	0	0	0	0	0	0	0	0	0	0	
+675	 约翰·博尔顿	0869	0	0	0	0	0	0	0	0	0	0	0	0	0	
+676	 约翰·吉布森	0904	0	0	0	0	0	0	0	0	0	0	0	0	0	
+677	 约翰·克劳斯	0906	0	0	0	0	0	0	0	0	0	0	0	0	0	
+678	 约翰·马奇	0914	0	0	0	0	0	0	0	0	0	0	0	0	0	
+679	 约翰·斯洛夫斯基	0888	0	0	0	0	0	0	0	0	0	0	0	0	0	
+680	 乔·万·坎赫姆	0456	0	0	0	0	0	0	0	0	0	0	0	0	0	
+681	 朱莉娅·乌拉诺	0664	0	0	0	0	0	0	0	0	0	0	0	0	0	
+682	 基思·弗兰卡特	1539	0	0	0	0	0	0	0	0	0	0	0	0	0	
+683	 基思·塔拉奈	1540	0	0	0	0	0	0	0	0	0	0	0	0	0	
+684	 肯·斯宾塞	1548	0	0	0	0	0	0	0	0	0	0	0	0	0	
+685	 肯·汤姆森	0951	0	0	0	0	0	0	0	0	0	0	0	0	0	
+686	 库尔特·麦基弗	0954	0	0	0	0	0	0	0	0	0	0	0	0	0	
+687	 丽莎·惠特曼	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+688	 卢·亨德森	0891	0	0	0	0	0	0	0	0	0	0	0	0	0	
+689	 马库斯·普雷金特	0887	0	0	0	0	0	0	0	0	0	0	0	0	0	
+690	 马克·考德威尔	1546	0	0	0	0	0	0	0	0	0	0	0	0	0	
+691	 麦可·沃夫	0878	0	0	0	0	0	0	0	0	0	0	0	0	0	
+692	 尼克·瓦根	0900	0	0	0	0	0	0	0	0	0	0	0	0	0	
+693	 保罗·拉特纳	1516	0	0	0	0	0	0	0	0	0	0	0	0	0	
+694	 皮特·佐普·柳	1530	0	0	0	0	0	0	0	0	0	0	0	0	0	
+695	 菲兰·赛克斯	0656	0	0	0	0	0	0	0	0	0	0	0	0	0	
+696	 丽贝卡·克里斯特尔	0657	0	0	0	0	0	0	0	0	0	0	0	0	0	
+697	 里基·科雷德拉	1518	0	0	0	0	0	0	0	0	0	0	0	0	0	
+698	 罗伯特·金	0781	0	0	0	0	0	0	0	0	0	0	0	0	0	
+699	 瑞安·登	0699	0	0	0	0	0	0	0	0	0	0	0	0	0	
+700	 斯科特·怀特	0675	0	0	0	0	0	0	0	0	0	0	0	0	0	
+701	 史蒂夫·巴卡	0695	0	0	0	0	0	0	0	0	0	0	0	0	0	
+702	 史蒂夫·贾斯珀	0698	0	0	0	0	0	0	0	0	0	0	0	0	0	
+703	 史蒂夫·瓦萨夫	0702	0	0	0	0	0	0	0	0	0	0	0	0	0	
+704	 蒂姆·朗	0700	0	0	0	0	0	0	0	0	0	0	0	0	0	
+705	 特蕾西·岩田	0660	0	0	0	0	0	0	0	0	0	0	0	0	0	
+706	 沃尔特·约翰逊	0873	0	0	0	0	0	0	0	0	0	0	0	0	0	
+707	 德文·查普曼	0877	0	0	0	0	0	0	0	0	0	0	0	0	0	
+708	 德里克·切斯特	0893	0	0	0	0	0	0	0	0	0	0	0	0	0	
+709	 埃利克·威廉姆森	0871	0	0	0	0	0	0	0	0	0	0	0	0	0	
+710	 汤姆·泽利夫	0876	0	0	0	0	0	0	0	0	0	0	0	0	0	
+711	 劳德·罗普兹	0959	0	0	0	0	0	0	0	0	0	0	0	0	0	
+712	 吉斯通	0666	0	0	0	0	0	0	0	0	0	0	0	0	0	
+713	 忍者渥克	0935	0	0	0	0	0	0	0	0	0	0	0	0	0	
+714	 安德鲁·匹德斯	0926	0	0	0	0	0	0	0	0	0	0	0	0	0	
+715	 布莱	0898	0	0	0	0	0	0	0	0	0	0	0	0	0	
+716	 古代巫师莫菲斯多	0914	0	0	0	0	0	0	0	0	0	0	0	0	0	
+717	 竞赛胜利者	0963	0	0	0	0	0	0	0	0	0	0	0	0	0	
+718	 路易斯国王	1537	0	0	0	0	0	0	0	0	0	0	0	0	0	
+719	 瑞德里克	0902	0	0	0	1127	0	310	0	515	1257	0	0	0	0	Trade NPC Arrowheads/Wood
+720	 古斯渥夫	0889	0	0	0	910	0	304	0	1170	1179	0	0	0	0	Hint NPC in Steadwick/Pete (3)
+721	 阿隆·卡斯特	0869	0	0	0	915	0	304	0	1168	1170	0	0	0	0	Hint NPC in Steadwick/Pete (3)
+722	 瑞普·海利尔	0942	0	0	0	940	0	311	0	1258	1259	0	0	0	0	Trade NPC Feathers/Arrowheads
+723	 罗贝特·贝尔克耐普	0694	0	0	0	960	0	312	0	1260	1261	0	0	0	0	Trade NPC Wood/Feathers
+724	 因法那	0701	0	0	0	1021	0	315	0	1266	1267	0	0	0	0	Trade NPC Wine/Bottles
+725	 渥克	0935	0	0	0	1039	0	299	0	1268	1270	0	0	0	0	Hint NPC in Tatalia (13) wharf area
+726	 康德斯	0929	0	0	0	1026	0	299	0	1270	1268	0	0	0	0	Hint NPC in Tatalia (13) wharf area
+727	 吉斯通	0719	0	0	0	1152	0	298	0	1209	1249	0	0	0	0	Hint NPC in Barrow Downs/Pete (11)
+728	 马塞斯·贝哈特	0923	0	0	0	940	0	304	0	1313	1170	0	0	0	0	Hint NPC in Steadwick/Pete (3)
+729	 坦亚·基科林	0844	0	0	0	1121	0	302	0	1245	1228	0	0	0	0	Hint NPC in Harmondale (2)
+730	 布拉汉·凯达	0934	0	0	0	1125	0	302	0	1222	1227	0	0	0	0	Hint NPC in Harmondale (2)
+731	 卡林·泰利昂	0802	0	0	0	922	0	304	0	1249	1176	0	0	0	0	Hint NPC in Steadwick (3)
+732	 佩奇·提斯	0835	0	0	0	921	0	304	0	1175	1170	0	0	0	0	Hint NPC in Steadwick (3)
+733	 凯拉·卡德林	0824	0	0	0	924	0	304	0	1171	1168	0	0	0	0	Hint NPC in Steadwick (3)
+734	 因杰·于尔	0662	0	0	0	946	0	299	0	1197	1250	0	0	0	0	Hint NPC in Tularean Forest (4)
+735	 埃力克·怀特门	0682	0	0	0	961	0	299	0	1198	1194	0	0	0	0	Hint NPC in Tularean Forest (4)
+736	 达门·海克尔	0929	0	0	0	1134	0	305	0	1172	1249	0	0	0	0	Hint NPC in Deyja (5)
+737	 卡里斯·莫根	0596	0	0	0	976	0	305	0	1173	1194	0	0	0	0	Hint NPC in Deyja (5)
+738	 利西亚·雷文克	0717	0	0	0	1156	0	298	0	1207	1179	0	0	0	0	Hint NPC in Barrow Downs (11)
+739	 菲德斯·图尔门	0740	0	0	0	1153	0	298	0	1179	1189	0	0	0	0	Hint NPC in Barrow Downs (11)
+740	 杰斯帕·费什	0746	0	0	0	1154	0	298	0	1269	1179	0	0	0	0	Hint NPC in Barrow Downs (11)
+741	 凯利·加内特	0709	0	0	0	1155	0	298	0	1270	1194	0	0	0	0	Hint NPC in Barrow Downs (11)
+742	 雷吉娜·费恩	0828	0	0	0	0	0	299	0	1197	1250	0	0	0	0	Hint NPC in Tatalia (13) wharf area
+743	 塞德·罗比森	0868	0	0	0	0	0	299	0	1198	1250	0	0	0	0	Hint NPC in Tatalia (13) wharf area
+744	 泰沙·维尔	0670	0	0	0	0	0	300	0	1248	1191	0	0	0	0	Hint NPC in Avlee (14)
+745	 瑞尔本·德斯	0764	0	0	0	0	0	301	0	1208	1223	0	0	0	0	Hint NPC in Stone City (39)
+746	 奥利克·高密斯	0746	0	0	0	0	0	301	0	1248	1226	0	0	0	0	Hint NPC in Stone City (39)
+747	 德若克·豪文	0740	0	0	0	0	0	301	0	1242	1247	0	0	0	0	Hint NPC in Stone City (39)
+748	 迪安娜·迪特克	0842	0	0	0	0	0	302	0	1221	1228	0	0	0	0	Hint NPC in Harmondale (2)
+749	 塞恩德·渥森	0853	0	0	0	0	0	302	0	1312	1229	0	0	0	0	Hint NPC in Harmondale (2)
+750	 迪达·布鲁渥	0822	0	0	0	0	0	302	0	1227	1245	0	0	0	0	Hint NPC in Harmondale (2)
+751	 索利泰尔·贝尔夫	0666	0	0	0	0	0	303	0	1194	1193	0	0	0	0	Hint NPC in Tularean Forest (4)
+752	 天纳·维泽曼	0660	0	0	0	0	0	303	0	1190	1192	0	0	0	0	Hint NPC in Tularean Forest (4)
+753	 塞达·埃弗莫	0849	0	0	0	0	0	304	0	1168	1176	0	0	0	0	Hint NPC in Steadwick (3)
+754	 塔马拉·安德斯	0844	0	0	0	0	0	304	0	1169	1170	0	0	0	0	Hint NPC in Steadwick (3)
+755	 罗伯达·瑟本	0592	0	0	0	0	0	304	0	1171	1249	0	0	0	0	Hint NPC in Steadwick (3)
+756	 塞曼沙·基尔斯	0590	0	0	0	0	0	304	0	1171	1194	0	0	0	0	Hint NPC in Steadwick (3)
+757	 泰比特·莱茵	0816	0	0	0	0	0	305	0	1172	1249	0	0	0	0	Hint NPC in Deyja (5)
+758	 贾斯麦尼·加弗斯	0609	0	0	0	0	0	305	0	1173	1313	0	0	0	0	Hint NPC in Deyja (5)
+759	 梅迪克·鲍维斯	0595	0	0	0	1120	0	294	0	1183	1202	0	0	0	0	Hint NPC In Bracada (6)
+760	 埃拉桑达·里斯	0586	0	0	0	1114	0	294	0	1202	1203	0	0	0	0	Hint NPC In Bracada (6)
+761	 卡林德拉·高登赛特	0846	0	0	0	1034	0	313	0	1262	1263	0	0	0	0	Trade NPC Sand/Wine
+762	 阿尔文·伯纳克老德	0740	0	0	0	1156	0	314	0	1264	1265	0	0	0	0	Trade NPC Bottles/Sand
+763	 尼维克·阿兰德	0934	0	0	0	933	0	304	0	1194	1175	0	0	0	0	Hint NPC in Steadwick (3)
+764	 米兰·渥尔林	0664	0	0	0	951	0	303	0	1190	1193	0	0	0	0	Hint NPC in Tularean Forest (4)
+765	 沙拉·菲尔波	0798	0	0	0	1089	0	305	0	1194	1249	0	0	0	0	Hint NPC in Deyja (5)
+766	 琳达·德拉肯	0806	0	0	0	977	0	305	0	1173	1172	0	0	0	0	Hint NPC in Deyja (5)
+767	 费利斯·奥克塞德	0756	0	0	0	972	0	305	0	1194	506	0	0	0	0	Hint NPC in Deyja (5)
+768	 杰西·凯德林	0745	0	0	0	974	0	305	0	1249	506	0	0	0	0	Hint NPC in Stone City (39)
+769	 基里安·瑞德芬	0660	0	0	0	947	0	303	0	1194	1192	0	0	0	0	Hint NPC in Tularean Forest/Pete (4)
+770	 卡桑·斯格菲	0684	0	0	0	959	0	303	0	1190	1193	0	0	0	0	Hint NPC in Tularean Forest (4)
+771	 莱芬·利文斯特	0651	0	0	0	951	0	303	0	506	1313	0	0	0	0	Hint NPC in Tularean Forest (4)
+772	 汤姆·阿诺	1506	0	0	0	0	0	0	0	0	0	0	0	0	0	
+773	 凯尔·德能	1504	0	0	0	0	0	0	0	0	0	0	0	0	0	
+774	 托尼·艾文斯	0948	0	0	0	0	0	0	0	0	0	0	0	0	0	
+775	 克里斯·米勒	0686	0	0	0	0	0	0	0	0	0	0	0	0	0	
+776	 卡尔·平德	0690	0	0	0	0	0	0	0	0	0	0	0	0	0	
+777	 埃利克·海弗	0694	0	0	0	0	0	0	0	0	0	0	0	0	0	
+778	 海尔博	0936	0	0	0	0	0	319	0	1256	1311	0	0	0	0	Goblin Spy in Harmondale
+779	 劳尔·特拉利斯	0568	0	0	0	943	0	304	0	1270	1249	0	0	0	0	Hint NPC in Steadwick (3)
+780	 卫兵	0738	0	0	0	0	0	318	0	0	0	0	0	0	0	Guard in Stone City
+781	 番尼·波利蒂	0839	0	0	0	928	0	304	0	1253	1313	0	0	0	0	Hint NPC in Erathia (3)
+782	 塔利雅·莱文渥德	0850	0	0	0	1128	0	304	0	1270	1313	0	0	0	0	Hint NPC in Erathia (3)
+783	 哈利·昆恩	0613	0	0	0	978	0	305	0	1313	1270	0	0	0	0	Hint NPC in Deyja (5)
+784	 麦迪·塔伦特	0849	0	0	0	1066	0	295	0	1312	1270	0	0	0	0	Hint NPC in Celeste (7)
+785	 加力安·莱密斯	0949	0	0	0	1067	0	295	0	1313	1194	0	0	0	0	Hint NPC in Celeste (7)
+786	 安多弗·波特皮洛	0372	0	0	0	260	74	0	0	1314	1609	0	0	0	0	gives money for the sixth letter and retrieve candelabra quest
+787	 玛利亚	0327	0	0	0	260	48	0	0	1321	0	0	0	0	0	gives clue for marketing promotion.
+788	 弗兰克·费尔基德	0266	0	0	0	208	0	0	0	1637	1639	0	0	0	0	Gives the save the mom quest and takes letter from d6
+789	 威尔伯·汉弗里	1030	0	0	0	222	0	0	0	1322	1326	0	0	0	0	Council Quest and Promotion Quest.
+790	 阿尔伯特·牛顿	0030	0	0	0	223	0	0	0	1364	1368	0	0	0	0	Council Quest and Promotion Quest.
+791	 奥斯里克·坦普	0033	0	0	0	224	0	0	0	1374	1378	0	0	0	0	Council Quest and Promotion Quest.
+792	 查德威克·布莱克普尔	0414	0	0	0	274	0	0	0	0	0	0	0	0	0	Gives nomination for Cavalier Quest - is supposed to be in Free Haven inn
+793	 神使	0034	0	0	0	451	0	0	0	1386	1387	0	0	0	0	Return the crystals and pyramid quests
+794	 先知	0035	0	0	0	450	0	0	0	1354	1358	1359	0	0	0	"Seer quest, item return, and hint"
+795	 马顿·费里斯	0443	0	0	0	1294	42	0	0	0	0	1709	0	0	0	Divine Intervention quest
+796	 米拉达·席尔瓦	0289	0	0	0	0	0	0	0	1344	0	0	0	0	0	The damsel in distress for the paladin quest
+797	 阿基巴德·艾恩法斯特	1029	0	0	0	1244	0	0	0	1343	0	0	0	0	0	Need picture from heroes 2
+798	 尼古拉·艾恩法斯特	0031	0	0	0	222	0	0	0	1331	1338	0	0	0	0	Need a new picture
+799	 劳里达·弗丽斯	0029	0	0	0	226	0	0	0	1392	1395	0	0	0	0	
+800	 埃里克·冯·斯壮姆嘉德	0028	0	0	0	227	0	0	0	1400	1404	0	0	0	0	
+801	 安东尼·斯通	0032	0	0	0	225	0	0	0	1345	1348	0	0	0	0	
+802	 盗贼王子	0057	0	0	0	0	0	0	0	1411	0	0	0	0	0	
+803	 维尔丹	1574	0	0	0	0	0	323	0	0	0	0	0	0	0	Cross continent Q NPC.
+804	 深山隐士	0228	0	0	0	1451	0	0	0	1408	0	0	0	0	0	winter quest for Stromgard
+805	 亚伦·斯壮姆	0453	0	0	0	1285	13	0	0	1515	1574	0	0	0	0	"Sword Expert, door next to weaponshop (D3)"
+806	 伯纳德·雅各布斯	0452	0	0	0	1327	13	0	0	1559	1596	0	0	0	0	Repair expert (E2)
+807	 贝尼托·德尔曼	0451	0	0	400	1393	13	0	0	1535	1584	0	0	0	0	"Plate expert, 4 buildings south of Ironfist (D3)"
+808	 福雷斯特·萨德斯	0450	0	0	0	1418	14	0	0	1536	0	0	0	0	0	Plate Master (C2)
+809	 约翰·特克	0449	0	800	0	1535	14	0	0	1572	0	0	0	0	0	Learning master (D1)
+810	 凯尔·路特维格	0448	0	0	0	1220	77	0	0	0	0	0	0	0	0	child
+811	 戴维·费什	0447	0	0	0	1237	14	0	0	1534	0	0	0	0	0	chain master (C3)
+812	 里奇·汉堡	0446	0	0	400	1382	13	0	0	1533	1583	0	0	0	0	"chain expert, 4 buildings south of Ironfist (D3)"
+813	 苏珊·汉德勒邦	0445	0	0	0	0	77	0	0	0	0	0	0	0	0	child
+814	 威尔·奥特曼	0444	0	800	0	1511	13	0	0	1558	1602	0	0	0	0	merchant master (D1)
+815	 诺亚·怀特	0443	0	0	0	1366	14	0	0	0	0	0	0	0	0	instructor
+816	 卡尔文·布莱克	0442	0	0	200	1302	13	0	0	1513	1573	0	0	0	0	staff expert (E2)
+817	 阿维里·辛西亚	0441	0	0	0	270	15	0	0	1603	0	0	0	0	0	"Good dwarf who gives defeat Snergal quest, Master axe (C3)"
+818	 哈罗德·赫斯	0440	0	0	0	1339	55	0	0	0	0	1699	0	0	0	Merc Guild Membership (E3)
+819	 雅克·科尔	0438	0	0	200	1331	14	0	0	1568	0	0	0	0	0	diplomacy master (C1)
+820	 蒂姆·欧胡里汉	0437	0	0	0	1524	13	0	0	1549	1591	0	0	0	0	body expert (C2)
+821	 弗雷德里克·派尔斯	0436	0	0	400	1308	46	0	0	0	0	1699	0	0	0	Merc Guild Membership (C1)
+822	 查尔斯·德索匹格	0435	0	0	0	210	15	0	0	1605	0	0	0	0	0	Constable in Mist who gives the prove Silver Helms are bad quest
+823	 肯特·威廉姆斯	0434	0	0	0	1435	32	0	0	0	0	0	0	0	0	Person who sells house in Free Haven
+824	 戈登·斯泰尔斯	0433	0	0	0	1429	2	0	0	0	0	0	0	0	0	armorer
+825	 多夫	0432	0	0	0	1413	13	0	0	1513	1573	0	0	0	0	"staff expert, Bottom middle building (E3)"
+826	 特威伦	0431	0	0	0	0	41	0	0	1667	0	0	0	0	0	"Young Twillen, after the statuette quest"
+827	 特伦斯·史密斯	0430	0	0	0	1325	13	0	0	1517	1575	0	0	0	0	"dagger expert, behind tavern below Ironfist  (D3)"
+828	 萨穆森·德斯	0429	0	0	0	0	73	0	0	1661	0	0	0	0	0	Human guard in Goblinwatch after quest complete
+829	 哈珀·柯林斯	0428	0	0	400	1287	14	0	0	1542	0	1705	0	0	0	water master (E2)
+830	 阿伦·塞勒	0427	0	0	0	1280	13	0	0	1532	0	0	0	0	0	leather master (C1)
+831	 贝特朗·斯科里弗纳	0426	0	0	0	210	23	0	0	1607	0	0	0	0	0	Mayor in Mist Town Hall
+832	 彼得·伊万诺维奇	0425	0	0	0	1336	7	0	0	0	0	0	0	0	0	pathfinder
+833	 迈克尔·奥格威	0424	0	0	0	1528	46	0	0	1515	1574	0	0	0	0	Sword expert (C2)
+834	 伯妮斯·哈特	0423	0	0	0	1531	3	0	0	0	0	0	0	0	0	alchemist
+835	 苔丝·塔克	0422	0	0	0	1397	51	0	0	0	0	1698	0	0	0	Thief Guild Membership (B2)
+836	 赫克托·德拉基德	0421	0	0	0	0	0	0	0	0	0	0	0	0	0	
+837	 盖·汉普顿	0420	0	0	0	1307	14	0	0	1516	0	0	0	0	0	sword master (B2)
+838	 贺拉斯·罗斯	0419	0	0	400	1283	46	0	0	0	0	1701	0	0	0	Merc Guild Membership (D1)
+839	 法拉格	0418	0	0	0	1351	41	0	0	1662	0	0	0	0	0	Mage from the intro
+840	 吉尔伯特·汉默	0417	0	0	0	1525	14	0	0	1550	0	0	0	0	0	body master (D1)
+841	 莱昂·拉扎鲁	0416	0	0	0	1300	13	0	0	1555	1594	0	0	0	0	"identify expert, 2 houses by gate (D3)"
+842	 马克罗·卡利古拉	0415	0	0	0	1252	14	0	0	1566	0	0	0	0	0	perception master (C3)
+843	 奥维·考威尔	0414	0	0	0	1372	4	0	0	0	0	0	0	0	0	scholar
+844	 拉吉·奥斯特	0413	0	0	0	1298	51	0	0	0	0	1697	0	0	0	Thief Guild Membership (D1)
+845	 贡萨洛·拉米雷斯	0412	0	0	200	1315	0	0	0	1521	1577	1700	0	0	0	spear expert (E2)
+846	 马塞勒斯·路特维格	0411	0	0	0	1220	51	0	0	0	0	1697	0	0	0	Thief Guild Membership (C1)
+847	 埃里克·萨尔茨伯格	0410	0	0	0	1430	13	0	0	1561	1597	0	0	0	0	"bodybuilding expert, 2 big houses east (E3)"
+848	 艾哈迈德·阿桑兹	0409	0	0	0	1292	5	0	0	0	0	0	0	0	0	guide
+849	 塞尔吉奥·卡林顿	0408	0	0	0	1266	51	0	0	0	0	1698	0	0	0	Thief Guild Membership (C2)
+850	 萨阿德·沙美尔	0407	0	0	0	0	0	0	0	0	0	0	0	0	0	
+851	 吉姆·哈蒙德	0406	0	0	0	0	0	0	0	1614	0	0	0	0	0	Dwarf prisoner that gives key to d5
+852	 沃尔特·哈格里夫斯	0405	0	0	0	1240	13	0	0	1567	1600	0	0	0	0	"diplomacy expert, upstairs Ironfist (D3)"
+853	 维吉尔·霍里德	0404	0	0	0	1273	13	0	0	1547	1590	0	0	0	0	"mind expert, west 5 poor houses (E3)"
+854	 沃伦·霍尔姆斯	0403	0	0	0	1355	17	0	0	0	0	1694	0	0	0	Elemental Guild Membership (C1)
+855	 泰勒·泰勒	0402	0	0	0	1313	13	0	0	1569	1601	0	0	0	0	"disarm expert, 2 houses by gate (D3)"
+856	 西尔维斯特·摩尔	0401	0	0	0	1460	13	0	0	1567	1600	0	0	0	0	diplomacy expert (C2)
+857	 维克多·霍森	0400	0	0	0	1422	13	0	0	1563	1598	0	0	0	0	"meditation expert, 2 big houses east (E3)"
+858	 坦恩·罗珀	0399	0	0	0	1523	14	0	0	1548	0	0	0	0	0	mind master (D1)
+859	 奥利弗·温德尔	0398	0	0	0	0	0	0	0	1615	0	0	0	0	0	Monk who gives party info in d7
+860	 温斯顿·希斯托里安	0397	0	0	400	1281	46	0	0	0	0	1700	0	0	0	Merc Guild Membership (C2)
+861	 佐尔丹·菲尔普	0396	0	0	0	1390	21	0	0	1635	0	0	0	0	0	Gives quest to retrieve lost artifact
+862	 安德鲁·贝斯普	0395	0	0	0	1348	31	0	0	1616	0	1701	0	0	0	Gives quest to retrieve harp
+863	 艾伦·洛克威	0394	0	0	0	1507	48	0	0	0	0	0	0	0	0	gypsy
+864	 欧拉夫·贝林	0393	0	0	0	1421	13	0	0	1561	1597	0	0	0	0	bodybuilding expert (D3)
+865	 纳丁·海登	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"Guild of light proprietor (npc 61), picture used ?"
+866	 伊绍·麦吉斯特鲁斯	0391	0	0	0	1228	13	0	0	1537	1585	0	0	0	0	"fire expert, west 5 poor houses (E3)"
+867	 利维娅·法雷尔	0390	0	0	0	1453	13	0	0	1557	1595	0	0	0	0	merchant expert (C2)
+868	 埃诺克·黑格里奇	0389	0	0	0	1258	13	0	0	1545	1589	0	0	0	0	"spirit expert, west 5 poor houses (E3)"
+869	 埃德加·卡朋特	0388	0	0	400	1359	13	0	0	1529	1581	0	0	0	0	"shield expert, 4 buildings south of Ironfist (D3)"
+870	 汉斯·吉福德	0387	0	0	0	1251	14	0	0	1556	0	0	0	0	0	identify master (C2)
+871	 艾萨克·斯特里曼	0386	0	0	0	1268	17	0	0	0	0	1695	0	0	0	Self Guild Membership (D1)
+872	 特威伦	0385	0	0	0	1342	41	0	0	1664	1666	0	0	0	0	Statuette Quest
+873	 娜奥米·海兰德	0384	0	0	0	1361	10	0	0	0	0	0	0	0	0	healer
+874	 埃罗尔·奥斯特曼	0383	0	0	0	1330	14	0	0	1526	0	0	0	0	0	mace master (B2)
+875	 加布·莱斯特	0382	0	0	0	1320	14	0	0	1570	0	0	0	0	0	disarm master (C1)
+876	 迪克森·帕克斯	0381	0	0	0	1250	13	0	0	1525	1579	0	0	0	0	mace expert (C1)
+877	 塔考	0380	0	0	0	1532	13	0	0	1529	1581	0	0	0	0	shield expert (C2)
+878	 杰德·莫里森	0379	0	0	0	1235	13	0	0	1523	1578	0	0	0	0	bow expert (C1)
+879	 道格拉斯·希尔	0378	0	0	0	1383	13	0	0	1541	1587	0	0	0	0	"water expert, on luck island (E3)"
+880	 埃尔顿·阿斯特罗盖特	0377	0	0	0	1225	13	0	0	1571	1602	0	0	0	0	"learning expert, upstairs Ironfist (D3)"
+881	 莫顿·霍洛文	0376	0	0	0	1295	13	0	0	1553	1593	0	0	0	0	dark expert (C1)
+882	 纽特·海德洛	0375	0	0	400	1371	13	0	0	1531	1582	0	0	0	0	"leather expert, 4 buildings south of Ironfist (D3)"
+883	 雅斯曼·斯派塞	0374	0	0	0	1520	11	0	0	0	0	0	0	0	0	expert healer
+884	 海伦·蒂尔	0373	0	0	0	1403	13	0	0	1523	1578	0	0	0	0	bow expert (D3)
+885	 帕特	0372	0	0	0	0	0	0	0	0	0	0	0	0	0	Proprietor picture already used.
+886	 杰西卡·卡森	0371	0	0	0	1309	17	0	0	0	0	1702	0	0	0	Air Guild Membership (C2)
+887	 菲斯·凯伦摩尔	0370	0	0	0	1366	21	0	0	0	0	0	0	0	0	merchant
+888	 金格·阿斯特	0369	0	0	0	1514	13	0	0	0	0	0	0	0	0	teacher
+889	 伊冯娜·达西	0368	0	0	0	1406	33	0	0	0	0	0	0	0	0	cook
+890	 杰扎贝尔	0367	0	0	400	1227	14	0	0	1538	0	1704	0	0	0	fire master (E2)
+891	 帕特·斯凯拉克	0366	0	0	0	1286	13	0	0	1527	1580	0	0	0	0	blaster expert (E1)
+892	 多琳·伊斯帕纳	0365	0	0	0	1549	34	0	0	0	0	0	0	0	0	chef
+893	 埃曼纽尔·克拉维兹	0364	0	0	0	0	0	0	0	1634	0	0	0	0	0	Husband needed for t8 find the husband quest
+894	 李维·博塔尼亚	0363	0	0	0	1507	14	0	0	1544	0	0	0	0	0	earth master (D1)
+895	 戴斯·马克布勒	0362	0	0	0	0	0	0	0	0	0	0	0	0	0	weird face...not sure what to do with this one.
+896	 胡格兄弟	0361	0	0	0	1427	20	0	0	0	0	0	0	0	0	trader
+897	 胡格兄弟	0360	0	0	0	1533	28	0	0	0	0	0	0	0	0	chimney sweep
+898	 胡格兄弟	0359	0	0	0	1338	8	0	0	0	0	0	0	0	0	sailor
+899	 胡格兄弟	0358	0	0	0	1493	26	0	0	0	0	0	0	0	0	locksmith
+900	 格雷厄姆·丹西	0357	0	0	0	1539	24	0	0	0	0	0	0	0	0	barrister
+901	 温迪·费瑟希尔	0356	0	0	0	1454	47	0	0	0	0	0	0	0	0	psychic
+902	 多洛雷斯·科拉夫特	0355	0	0	0	1461	33	0	0	0	0	0	0	0	0	cook
+903	 乔安娜·克拉维兹	0354	0	0	0	1354	52	0	0	1630	0	0	0	0	0	Wife for the t8 find the husband quest
+904	 霍莉·斯特拉瑟斯	0353	0	0	0	1253	17	0	0	0	0	1703	0	0	0	Earth Guild Membership (D1)
+905	 艾克·帕格鲁	0352	0	0	0	1332	17	0	0	0	0	1703	0	0	0	Earth Guild Membership (C2)
+906	 科瑞·鲁兹伯格	0351	0	0	0	1296	17	0	0	0	0	1704	0	0	0	Fire Guild Membership (C2)
+907	 普雷斯腾·哈珀	0350	0	0	200	1224	13	0	0	1533	1583	0	0	0	0	chain expert (D2)
+908	 蒂娜·谢尔丹	0349	0	0	800	1473	13	0	0	1551	1592	0	0	0	0	light expert (D1)
+909	 罗克珊·谢尔丹	0348	0	0	0	1473	77	0	0	0	0	0	0	0	0	child
+910	 塔拉·德凯赛	0347	0	0	0	1448	13	0	0	1565	1599	0	0	0	0	"perception expert, above tavern (E3)"
+911	 维拉·格拉斯林	0346	0	0	0	1468	36	0	0	0	0	0	0	0	0	bard
+912	 艾玛·特伦斯	0345	0	0	0	1462	59	0	0	0	0	0	0	0	0	weaver
+913	 奥利维亚·特伦佩特	0344	0	0	0	1455	58	0	0	0	0	0	0	0	0	potter
+914	 丽贝卡·特拉弗勒	0343	0	0	0	1236	77	0	0	0	0	0	0	0	0	child
+915	 李克斯拉	0342	0	0	0	1375	14	0	0	1528	0	0	0	0	0	master blaster (A2)
+916	 米里娅姆·古德维夫	0341	0	0	0	1416	32	0	0	0	0	0	0	0	0	banker
+917	 多梅尼克·华雷斯	0340	0	0	0	1321	17	0	0	0	0	1705	0	0	0	Water Guild Membership (C2)
+918	 格雷琴·法尔曾	0339	0	0	0	1437	54	0	0	0	0	0	0	0	0	tailor
+919	 埃德娜·哈门诺夫	0338	0	0	0	1256	55	0	0	0	0	0	0	0	0	laborer
+920	 朱莉·库珀	0337	0	0	0	1503	56	0	0	0	0	0	0	0	0	farmer
+921	 埃塞尔·阿姆斯特朗	0336	0	0	0	1410	70	0	0	0	0	0	0	0	0	scribe
+922	 伯妮斯·韦弗	0335	0	0	600	1438	17	0	0	0	0	1706	0	0	0	Body Guild Membership (D3)
+923	 毕肖普·因奎斯托里奥	0334	0	0	600	1255	14	0	0	1546	0	1708	0	0	0	"spirit master, behind Ironfist (D3)"
+924	 伊娃·森普尔	0333	0	0	100	1419	14	0	0	0	0	0	0	0	0	instructor
+925	 盖尔·阿什滕加德	0332	0	0	0	1271	53	0	0	0	0	0	0	0	0	serf
+926	 达芬·卡洛维	0331	0	0	0	1357	23	0	0	0	0	0	0	0	0	counselor
+927	 斯蒂芬·比格斯	0330	0	0	0	1412	13	0	0	1519	1576	0	0	0	0	"axe expert, 2nd door in training (D3)"
+928	 莉丽·琼	0329	0	0	0	1369	19	0	0	0	0	0	0	0	0	spell master
+929	 佩姬·伍兹	0328	0	0	0	1368	17	0	0	0	0	1706	0	0	0	Body Guild Membership (C2)
+930	 玛利亚	0327	0	0	0	0	0	0	0	0	0	0	0	0	0	picture already used by maria the gypsy
+931	 爱丽丝·奥芬豪斯	0326	0	0	0	1488	24	0	0	0	0	0	0	0	0	barrister
+932	 赛勒斯·蒙特布勒	0325	0	0	0	1483	13	0	0	1559	1596	0	0	0	0	repair expert (D1)
+933	 唐纳德·莱特泽	0324	0	0	0	1469	13	0	0	1571	1602	0	0	0	0	"learning expert, upstairs self guild (E3)"
+934	 科迪·里伯	0323	0	0	0	1299	46	0	0	0	0	0	0	0	0	squire
+935	 特雷西·弗劳塔	0322	0	0	600	1403	17	0	0	0	0	1707	0	0	0	Mind Guild Membership (D3)
+936	 卡罗尔·罗西尼	0321	0	0	0	1498	72	0	0	0	0	0	0	0	0	clerk
+937	 斯蒂芬妮·帕夫洛夫	0320	0	0	0	1269	71	0	0	0	0	0	0	0	0	missionary
+938	 桑德拉·特鲁多尔	0319	0	0	0	1550	74	0	0	0	0	0	0	0	0	follower of Baa
+939	 威尔特·德沃森	0318	0	0	0	1316	58	0	0	1641	0	1695	0	0	0	(Self Guild Membership and Rescue Angela)
+940	 谢勒尔·伊万诺夫	0317	0	0	0	0	0	0	0	1646	0	0	0	0	0	Prisoner of the cannibals in the t3 rescue the prisoner quest
+941	 艾尔斯·弗里德曼	0316	0	0	0	1356	17	0	0	0	0	1707	0	0	0	Mind Guild Membership (C2)
+942	 贝弗利·斯维特沃特	0315	0	0	0	1317	4	0	0	0	0	0	0	0	0	scholar
+943	 弗洛里梅尔·艾维伦	0314	0	0	100	1341	75	0	0	0	0	0	0	0	0	noble
+944	 斯泰西·法兰德斯	0313	0	0	0	1401	74	0	0	0	0	0	0	0	0	follower of baa
+945	 贝琳达·派克曼	0312	0	0	0	1391	33	0	0	0	0	0	0	0	0	cook
+946	 康妮·莱特林	0311	0	0	0	1310	13	0	0	1519	1576	0	0	0	0	axe expert (C3)
+947	 钱德拉·斯特里普林	0310	0	0	0	1380	52	0	0	0	0	0	0	0	0	peasant
+948	 吉恩·阿克顿	0309	0	0	0	1284	31	0	0	0	0	0	0	0	0	factor
+949	 克莱德·达盖特	0308	0	0	0	1537	13	0	0	1563	1598	0	0	0	0	meditation expert (D1)
+950	 凯瑟琳·美斯特	0307	0	0	0	1373	18	0	0	1711	0	0	0	0	0	mystic - allows the use of the teleporter (E2)
+951	 麦尼西亚	0306	0	0	0	1526	13	0	0	1547	1590	0	0	0	0	mind expert (C2)
+952	 安伯·普拉特	0305	0	0	100	1548	36	0	0	0	0	0	0	0	0	bard
+953	 卡桑德拉·迪蒙	0304	0	0	0	1411	42	0	0	0	0	0	0	0	0	acolyte
+954	 米歇尔·布莱克谢尔	0303	0	0	0	1522	13	0	0	1545	1589	0	0	0	0	spirit expert (C2)
+955	 卡莉·鹿特丹	0302	0	0	0	1546	77	0	0	0	0	0	0	0	0	child
+956	 盖贝里·卡特曼	0301	0	0	0	1379	3	0	0	1618	0	0	0	0	0	Alchemist who gives retrieve Ethric's skull quest
+957	 凯茜·路德维希	0300	0	0	0	1282	13	0	0	1557	1595	0	0	0	0	merchant expert (C3)
+958	 希拉·鲁姆普斯	0299	0	0	0	1439	13	0	0	1555	1594	0	0	0	0	"identify expert, above tavern (E3)"
+959	 朱迪思·舒梅克	0298	0	0	0	1402	60	0	0	0	0	0	0	0	0	cobbler
+960	 塞莱娜·菌柄	0297	0	0	0	1362	45	0	0	0	0	0	0	0	0	pirate
+961	 威尔玛·罗斯文	0296	0	0	0	1344	17	0	0	0	0	1708	0	0	0	Spirit Guild Membership (C2)
+962	 伊万·马格亚	0295	0	0	0	1221	13	0	0	1569	1601	0	0	0	0	disarm expert (C2)
+963	 尼古拉斯·罗斯	0294	0	999	800	1219	13	0	0	1551	1592	0	0	0	0	light expert (B1)
+964	 伯尼·鹿特丹	0293	0	0	100	1546	0	0	0	1429	0	0	0	0	0	Harpy Feather Buyer (C2)
+965	 卡奥·塞勒姆	0292	0	0	400	1272	14	0	0	1540	0	1702	0	0	0	air master (E2)
+966	 布朗温·梅克	0291	0	0	400	1279	14	0	0	1530	0	0	0	0	0	Shield Master (B2)
+967	 兰德尔·诺里斯	0290	0	0	0	1301	9	0	0	0	0	0	0	0	0	navigator
+968	 远程定位器	0034	0	0	0	0	0	0	0	0	0	0	0	0	0	
+969	 海蒂·斯特朗普	0288	0	0	100	1544	75	0	0	0	0	0	0	0	0	noble
+970	 伊格	0287	0	0	0	1394	13	0	0	1527	1580	0	0	0	0	"blaster expert, behind goblin camp (E3)"
+971	 伊里斯·波普费尔德	0286	0	0	100	1542	36	0	0	0	0	0	0	0	0	bard
+972	 贾森·特拉弗勒	0285	0	800	0	1236	14	0	0	1562	0	0	0	0	0	bodybuilding master (C2)
+973	 德斯蒙德·威勒	0284	0	0	0	1249	14	0	0	1524	0	0	0	0	0	bow master (B1)
+974	 杰克·克劳	0283	0	0	0	1267	13	0	0	1525	1579	0	0	0	0	mace expert (C3)
+975	 哈里特·沃特斯	0282	0	0	0	1392	57	0	0	0	0	0	0	0	0	cooper
+976	 阿维莉娅·阿希德	0281	0	0	0	1345	22	0	0	0	0	0	0	0	0	scout
+977	 凯文·沃奇	0280	0	0	0	0	52	0	0	0	0	0	0	0	0	Peasant turned to stone in t8
+978	 雪莉·卡耐基	0329	0	0	0	0	0	0	0	1640	0	0	0	0	0	"Rescue the Sharry quest, becomes healer in 2D 471 in New Sorpigal"
+979	 乔·汉德勒邦	0278	0	0	0	1377	19	0	0	0	0	0	0	0	0	spell master
+980	 安吉拉·德沃森	0277	0	0	0	0	77	0	0	1643	0	0	0	0	0	Child for the d2 rescue the lost child quest
+981	 亚瑟·欧李雷	0276	0	0	0	1257	0	0	0	1531	1582	1696	0	0	0	leather expert (E2)
+982	 安布罗斯·布鲁斯	0275	0	0	0	1376	13	0	0	1553	1593	0	0	0	0	dark expert (B2)
+983	 弗莱彻·托蒙加斯特	0274	0	0	0	0	52	0	0	0	0	0	0	0	0	Peasant turned to stone in t8
+984	 以利亚·斯凯拉克	0273	0	0	0	1286	77	0	0	0	0	0	0	0	0	child
+985	 卡尔罗·托米尼	0272	0	0	0	1400	35	0	0	1644	0	0	0	0	0	Gives the t3 rescue the prisoner quest
+986	 埃米尔·利姆	0271	0	0	0	1306	37	0	0	1668	0	0	0	0	0	Jewelled Egg Quest
+987	 克恩·卡耐基	0270	0	0	0	1333	15	0	0	0	0	0	0	0	0	arms master
+988	 洛根·达什尔	0269	0	0	0	1530	13	0	0	1517	1575	0	0	0	0	dagger expert (C2)
+989	 佛萝茜·塞特林	0268	0	0	0	1322	58	0	0	0	0	0	0	0	0	potter
+990	 多洛雷斯·菲舍尔	0267	0	0	0	1381	6	0	0	0	0	0	0	0	0	tracker
+991	 伯顿·卢瑟福	0266	0	800	0	1297	14	0	0	1522	0	0	0	0	0	spear master (C3)
+992	 布福德·提·奥曼	0265	0	0	0	1303	24	0	0	1621	0	1694	0	0	0	(Elemental Guild and kill Spider Queen)
+993	 杰克·范因普	0264	0	0	0	1426	13	0	0	1537	1585	0	0	0	0	fire expert (C2)
+994	 李克斯拉·范因普	0263	0	0	0	1426	42	0	0	0	0	0	0	0	0	acolyte
+995	 朱尔斯·米尔斯	0262	0	0	0	1265	14	0	0	1518	0	0	0	0	0	dagger master (C1)
+996	 瑞安·特里克尔	0261	0	0	0	1343	13	0	0	1560	0	0	0	0	0	repair master (C1)
+997	 玛利亚·特里潘	0260	0	0	0	1319	33	0	0	1647	0	0	0	0	0	Gives the free Blackshire from the curse quest
+998	 谢丽尔·邓肯	0259	0	0	0	1456	13	0	0	1539	1586	0	0	0	0	"air expert, above bank (E3)"
+999	 伍德罗·奥尔布赖特	0258	0	0	0	1409	13	0	0	1535	1584	0	0	0	0	plate expert (C2)
+1000	 德罗巴·马潘兹	0257	0	0	0	1278	27	0	0	0	0	0	0	0	0	fool
+1001	 塔罗	0256	0	0	0	1243	13	0	0	1543	1588	0	0	0	0	"earth expert, west 5 poor houses (E3)"
+1002	 玛德琳·陶尔斯	0255	0	0	0	1358	21	0	0	0	0	0	0	0	0	merchant
+1003	 法比安·森	0254	0	0	0	1505	30	0	0	0	0	0	0	0	0	quarter master
+1004	 班达·加荣	0232	0	0	0	1606	0	0	0	1448	0	0	0	0	0	Lamp Trader (B3)
+1005	 实留本多理	0252	0	0	0	1534	77	0	0	0	0	0	0	0	0	child
+1006	 连凯	0251	0	0	0	1370	59	0	0	0	0	0	0	0	0	weaver
+1007	 金银甫	0250	0	0	0	1262	23	0	0	0	0	0	0	0	0	counselor
+1008	 实留本仁美	0249	0	0	0	1534	13	0	0	1541	1587	0	0	0	0	water expert (C2)
+1009	 西拉·达翁	0248	0	0	100	1248	14	0	0	0	0	0	0	0	0	instructor
+1010	 阿卜杜拉·马格里布	0247	0	0	0	1288	13	0	0	1549	1591	0	0	0	0	"body expert, west 5 poor houses (E3)"
+1011	 希塔妮娅·雷蒂亚尼	0246	0	0	0	1513	58	0	0	0	0	0	0	0	0	potter
+1012	 西格里伍	0245	0	0	0	1478	13	0	0	1521	1577	0	0	0	0	spear expert (D1)
+1013	 米拉·汉	0244	0	0	0	1350	47	0	0	0	0	0	0	0	0	psychic
+1014	 诺里奥·阿里加纳卡	0243	0	0	600	1242	14	0	0	1564	0	0	0	0	0	meditation master (E2)
+1015	 索西·波顿尼基	0242	0	0	0	1239	13	0	0	1565	1599	0	0	0	0	perception expert (D2)
+1016	 莉娅·鲁	0241	0	0	0	1543	77	0	0	0	0	0	0	0	0	child
+1017	 罗迪尼亚·希达拉	0240	0	0	0	1293	43	0	0	0	0	0	0	0	0	piper
+1018	 因蒂希尔·维兰蒂	0239	0	0	0	1467	29	0	0	0	0	0	0	0	0	porter
+1019	 塔里诺·加玛	0238	0	0	0	1396	62	0	0	0	0	0	0	0	0	miller
+1020	 阿克巴	0237	0	0	0	1472	30	0	0	0	0	0	0	0	0	quarter master
+1021	 李·提扎尔	0236	0	0	0	1536	13	0	0	1543	1588	0	0	0	0	earth expert (C2)
+1022	 宋·鲁	0235	0	0	0	1543	40	0	0	0	0	0	0	0	0	water master
+1023	 佐达恩·德尔菲	0234	0	0	0	1538	13	0	0	1539	1586	0	0	0	0	air expert (C2)
+1024	 洛瑞·陶	0233	0	0	0	1501	74	0	0	0	0	0	0	0	0	follower of baa
+1025	 斯里·雷蒂亚尼	0215	0	0	0	1513	77	0	0	0	0	0	0	0	0	child
+1026	 黛拉·周	0214	0	0	0	0	77	0	0	0	0	0	0	0	0	child
+1027	 格黑·马苏	0204	0	0	0	1482	43	0	0	0	0	0	0	0	0	piper
+1028	 西莉卡·托里纳	0202	0	0	100	1314	39	0	0	0	0	0	0	0	0	wind master
+1029	 米拉达·斯通	0201	0	0	0	1311	38	0	0	0	0	0	0	0	0	cartographer
+1030	 丽贝卡·卡拉维	0200	0	0	0	1365	17	0	0	0	0	1710	0	0	0	Dark Guild Membership (B2)
+1031	 弗吉尼亚·斯坦德里吉	0199	0	0	600	1238	17	0	0	0	0	1709	0	0	0	Light Guild Membership (D1)
+1032	 达娜·费恩斯特	0197	0	0	0	0	0	0	0	0	0	0	0	0	0	"proprietor light guild, picture already used"
+1033	 洛克希娜·斯莫伦斯卡	0196	0	0	0	1270	25	0	0	0	0	0	0	0	0	tinker
+1034	 贝丝·汤普森	0195	0	0	100	1487	40	0	0	0	0	0	0	0	0	water master
+1035	 威尔玛·库克	0194	0	0	100	1476	41	0	0	0	0	0	0	0	0	gate master
+1036	 莱斯娅·马杜克	0193	0	0	0	1384	51	0	0	0	0	0	0	0	0	burglar
+1037	 米罗·希奈克	0190	0	0	0	1517	35	0	0	0	0	0	0	0	0	horseman
+1038	 安阿瓦	0182	0	0	0	1334	29	0	0	0	0	0	0	0	0	porter
+1039	 米西·米西·纳努克	0180	0	0	0	1477	55	0	0	0	0	0	0	0	0	laborer
+1040	 苏朗满	0179	0	0	0	1291	14	0	0	1554	0	0	0	0	0	dark master (A2)
+1041	 尼根	0175	0	0	0	1323	15	0	0	0	0	0	0	0	0	arms master
+1042	 寅长嘉智子	0170	0	0	100	1312	36	0	0	0	0	0	0	0	0	bard
+1043	 贾斯伯·莱斯	0164	0	0	0	1223	14	0	0	1514	0	0	0	0	0	staff master (D1)
+1044	 伊绍·提扎尔	0158	0	0	0	1536	77	0	0	0	0	0	0	0	0	child
+1045	 海瑟·米切尔	0157	0	0	0	1234	49	0	0	0	0	0	0	0	0	negotiator
+1046	 琳达·尼科尔斯	0156	0	0	0	1324	17	0	0	0	0	0	0	0	0	apprentice
+1047	 斯威特南塔·伊尔库茨克	0155	0	0	0	1335	19	0	0	0	0	0	0	0	0	spell master
+1048	 雷切尔·赫茨尔	0154	0	0	0	1367	17	0	0	0	0	1710	0	0	0	Dark Guild Membership (C1)
+1049	 罗斯玛丽·雷雅未克	0153	0	0	0	1471	21	0	0	0	0	0	0	0	0	merchant
+1050	 米里娅姆·博伊尔	0152	0	0	0	1444	16	0	0	0	0	0	0	0	0	weapons master
+1051	 娜奥米·温德	0151	0	0	0	1377	41	0	0	0	0	0	0	0	0	gate master
+1052	 埃里诺·范德贝尔特	0150	0	0	0	1446	7	0	0	1623	0	0	0	0	0	Gives the deface the altar quest
+1053	 格特鲁德·瓦勒	0149	0	0	0	1388	39	0	0	0	0	0	0	0	0	wind master
+1054	 阿曼达·范德坎普	0148	0	0	0	1378	76	0	0	0	0	0	0	0	0	gambler
+1055	 莎拉·奎因	0147	0	0	0	1399	12	0	0	0	0	0	0	0	0	master healer
+1056	 德莉亚·博瓦纳	0146	0	0	0	1388	40	0	0	0	0	0	0	0	0	water master
+1057	 奇罗尼	0078	0	0	999	1226	14	0	0	1552	0	0	0	0	0	Light Master (E1)
+1058	 罗西塔·亚历山大	0137	0	0	100	1389	75	0	0	0	0	0	0	0	0	noble
+1059	 劳	0128	0	0	0	1486	63	0	0	0	0	0	0	0	0	carpenter
+1060	 尼科比	0125	0	0	0	1491	22	0	0	0	0	0	0	0	0	scout
+1061	 博勒加德·沃尔夫	0095	0	0	0	1496	50	0	0	0	0	0	0	0	0	duper
+1062	 莱赛德·法雷尔	0072	0	0	0	1453	77	0	0	0	0	0	0	0	0	child
+1063	 贝基·霍尔姆斯	0071	0	0	0	1355	77	0	0	0	0	0	0	0	0	child
+1064	 金·阿斯特罗盖特	0070	0	0	0	1225	77	0	0	0	0	0	0	0	0	child
+1065	 威廉·塔克	0069	0	0	0	1397	77	0	0	0	0	0	0	0	0	child
+1066	 丹尼斯·约翰逊	0068	0	0	0	0	77	0	0	0	0	0	0	0	0	Stable proprietor picture used
+1067	 珍妮弗·赫茨尔	0067	0	0	0	1367	77	0	0	0	0	0	0	0	0	child
+1068	 克里斯托弗·史密斯	0066	0	0	0	1325	77	0	0	0	0	0	0	0	0	child
+1069	 乔治·阿尔蒙德	0064	0	0	0	1466	64	0	0	0	0	0	0	0	0	stonecutter
+1070	 丹尼尔·卡耐基	0063	0	0	0	1333	77	0	0	0	0	0	0	0	0	child
+1071	 嘉莉·卡拉维	0062	0	0	0	1365	77	0	0	0	0	0	0	0	0	child
+1072	 迪尼·马格里布	0061	0	0	0	1288	77	0	0	0	0	0	0	0	0	child
+1073	 黑加·毛瑟	0108	0	0	0	1328	18	0	0	1625	0	1696	0	0	0	(Thief Guild Membership and Cobra Eggs)
+1074	 巴拉德·恩特	0091	0	0	0	1398	32	0	0	0	0	0	0	0	0	banker
+1075	 温斯顿·舒则	0101	0	0	0	1254	42	0	0	1628	0	0	0	0	0	Gives destroy wicked crystal quest
+1076	 贾尼斯	0020	0	0	0	208	72	0	0	1316	0	1712	0	0	0	Gives Goblinwatch and Temple of Baa quest - Monster Hunt
+1077	 欧尼斯特	0019	0	0	0	210	72	0	0	0	0	1712	0	0	0	Monster Hunt
+1078	 杰克	0021	0	0	0	211	72	0	0	0	0	1712	0	0	0	Monster Hunt
+1079	 约翰·席尔瓦的幽灵	0059	0	0	0	0	0	0	0	1611	1612	1613	0	0	0	Ghost in d12
+1080	 幽灵巴塞萨	0060	0	0	0	0	0	0	0	1651	1652	1653	0	0	0	Paladin ghost in d17
+1081	 尤克	1031	0	0	0	1463	0	0	0	1660	0	0	0	0	0	Goblin guard in Goblinwatch
+1082	 阿里乌斯·佩雷斯	0228	0	0	0	0	0	0	0	0	0	0	0	0	0	Toll bridge NPC
+1083	 烈火爵士	0058	0	0	0	0	0	0	0	1670	1671	1672	0	0	0	Lord of Fire NPC in d4
+1084	 普雷斯腾·斯蒂尔	0018	0	0	0	209	0	0	0	1688	0	0	0	0	0	Osric Temper's councilman
+1085	 多莉·哥德曼	0015	0	0	0	209	0	0	0	1689	0	0	0	0	0	Loretta's councilwoman
+1086	 艾萨克·洛克威尔	0012	0	0	0	209	0	0	0	1690	0	0	0	0	0	Anthony Stone's councilman
+1087	 欧拉夫·海德尔	0009	0	0	0	209	0	0	0	1691	0	0	0	0	0	Stromgard's councilman
+1088	 欧几里得·开普勒	0006	0	0	0	209	0	0	0	1692	0	0	0	0	0	Newton's councilman
+1089	 斯里克·席尔瓦托恩	0003	0	0	0	209	0	0	0	1693	0	0	0	0	0	the traitor
+1090	 劳里达·弗丽斯	0029	0	0	0	0	0	0	0	1678	0	0	0	0	0	loretta for the first druid promo
+1091	 劳里达·弗丽斯	0029	0	0	0	0	0	0	0	1679	0	0	0	0	0	loretta for the second druid promo
+1092	 失控混沌	0980	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1093	 斯洛旺·阿卡诺斯	0453	0	0	0	1216	1	0	0	0	0	0	0	0	0	Smith
+1094	 布赖恩·特拉梅尔	0452	0	0	0	1231	2	0	0	0	0	0	0	0	0	Armorer
+1095	 肯·乔马斯	0451	0	0	0	1217	3	0	0	0	0	0	0	0	0	Alchemist
+1096	 克里斯蒂安·维拉	0450	0	0	0	1232	4	0	0	0	0	0	0	0	0	Scholar
+1097	 迈克尔·特克	0449	0	0	0	1247	5	0	0	0	0	0	0	0	0	Guide
+1098	 安东尼·哈格莱恩	0447	0	0	0	1276	6	0	0	0	0	0	0	0	0	Tracker
+1099	 米尔斯·洛曼	0446	0	0	0	1305	7	0	0	0	0	0	0	0	0	Pathfinder
+1100	 泽克·麦哲伦	0444	0	0	0	1329	8	0	0	0	0	0	0	0	0	Sailor
+1101	 提戈·赫尔姆斯	0443	0	0	0	1353	9	0	0	0	0	0	0	0	0	Navigator
+1102	 沃尔夫·阿姆斯特朗	0442	0	0	0	1364	10	0	0	0	0	0	0	0	0	Healer
+1103	 洛克威尔·亨德林	0441	0	0	0	1277	11	0	0	0	0	0	0	0	0	Expert Healer
+1104	 卡尔·莫拉米尔	0440	0	0	0	1263	12	0	0	0	0	0	0	0	0	Master Healer
+1105	 范斯·科尼利厄斯	0438	0	0	0	1318	13	0	0	0	0	0	0	0	0	Teacher
+1106	 诺里斯·霍顿	0437	0	0	0	1398	24	0	0	0	0	0	0	0	0	barrister
+1107	 斯蒂莱·布洛克	0436	0	0	0	1407	15	0	0	0	0	0	0	0	0	Arms Master
+1108	 阿卜杜	0230	0	0	0	1602	0	0	0	1437	1438	0	0	0	0	Abdul (B3)
+1109	 纳加特·拉马笛	0237	0	0	0	1604	0	0	0	1439	1442	1445	0	0	0	Armor Pyramid (B3)
+1110	 汉斯·舒尔茨	0433	0	0	0	1481	18	0	0	0	0	0	0	0	0	Mystic
+1111	 唐纳德·多夫斯	0432	0	0	0	1509	19	0	0	0	0	0	0	0	0	Spell Master
+1112	 理查德·哈普	0431	0	0	0	1516	20	0	0	0	0	0	0	0	0	Trader
+1113	 斯蒂芬·伊阿古	0430	0	0	0	1519	21	0	0	0	0	0	0	0	0	Merchant
+1114	 劳伦斯·艾尔曼	0429	0	0	0	1540	0	0	0	1426	0	0	0	0	0	Temple Gong buyer (C2)
+1115	 德里·罗斯	0428	0	0	0	1436	19	0	0	1435	0	0	0	0	0	Lich Book Quest (C3)
+1116	 亚历克斯·莫罗	0427	0	0	0	1445	25	0	0	0	0	0	0	0	0	Barrister
+1117	 卡斯特·利思戈	0426	0	0	0	1346	24	0	0	0	0	0	0	0	0	Tinker
+1118	 伊格·伊万诺维奇	0425	0	0	0	1420	28	0	0	0	0	0	0	0	0	Locksmith
+1119	 雅克·罗斯科蒙	0424	0	0	0	1428	27	0	0	0	0	0	0	0	0	Fool
+1120	 希拉·温德	0423	0	0	0	1527	26	0	0	0	0	0	0	0	0	Chimney Sweep
+1121	 布朗温·布鲁	0422	0	0	0	1529	29	0	0	0	0	0	0	0	0	Porter
+1122	 丹尼尔·弗洛斯米尼	0421	0	0	0	1541	30	0	0	0	0	0	0	0	0	Quarter Master
+1123	 本杰明·索斯兰德	0420	0	0	0	1431	31	0	0	0	0	0	0	0	0	Factor
+1124	 哈罗德·安文	0419	0	0	0	1440	32	0	0	0	0	0	0	0	0	Banker
+1125	 李奥·格兰特	0418	0	0	0	1449	33	0	0	0	0	0	0	0	0	Cook
+1126	 朗·汉默	0417	0	0	0	1457	34	0	0	0	0	0	0	0	0	Chef
+1127	 戴维·派克	0416	0	0	0	1464	35	0	0	0	0	0	0	0	0	Horseman
+1128	 巴里·谢菲德	0415	0	0	0	1414	36	0	0	0	0	0	0	0	0	Bard
+1129	 罗宾·朗	0414	0	0	0	1423	37	0	0	0	0	0	0	0	0	Enchanter
+1130	 多姆·马里科托	0413	0	0	0	1432	38	0	0	0	0	0	0	0	0	Cartographer
+1131	 约瑟夫·罗格尔	0412	0	0	0	1441	39	0	0	0	0	0	0	0	0	Wind Master
+1132	 朱尔特·班蒂托	0411	0	0	0	1450	40	0	0	0	0	0	0	0	0	Water Master
+1133	 皮特·哈科宁	0410	0	0	0	1458	41	0	0	0	0	0	0	0	0	Gate Master
+1134	 索尔·福格	0409	0	0	0	1465	42	0	0	0	0	0	0	0	0	Acolyte
+1135	 亚瑟·杰尔尼格	0408	0	0	0	1470	43	0	0	0	0	0	0	0	0	Piper
+1136	 阿贝·马可诺维奇	0407	0	0	0	1475	44	0	0	0	0	0	0	0	0	Explorer
+1137	 谢尔·斯泰因维	0406	0	0	0	1480	45	0	0	0	0	0	0	0	0	Pirate
+1138	 莱斯·帕克	0405	0	0	0	1485	46	0	0	0	0	0	0	0	0	Squire
+1139	 雷·博斯韦尔	0404	0	0	0	1490	47	0	0	0	0	0	0	0	0	Psychic
+1140	 斯莱·席尔瓦斯通	0403	0	0	0	1495	48	0	0	0	0	0	0	0	0	Gypsy
+1141	 马克·提根	0402	0	0	0	1500	49	0	0	0	0	0	0	0	0	Negotiator
+1142	 哈珀·耐克	0401	0	0	0	1504	50	0	0	0	0	0	0	0	0	Duper
+1143	 特雷弗·琼斯	0400	0	0	0	1508	51	0	0	0	0	0	0	0	0	Burglar
+1144	 杰罗尔德·戴恩	0399	0	0	0	1512	52	0	0	0	0	0	0	0	0	Peasant
+1145	 皮斯·斯特林格	0398	0	0	0	1515	53	0	0	0	0	0	0	0	0	Serf
+1146	 特伦特·詹姆森	0397	0	0	0	1518	54	0	0	0	0	0	0	0	0	Tailor
+1147	 伊夫·米克斯	0396	0	0	0	1521	55	0	0	0	0	0	0	0	0	Laborer
+1148	 狄恩·弗林普	0395	0	0	0	1551	56	0	0	0	0	0	0	0	0	Farmer
+1149	 丽莎·珍维	0394	0	0	0	1552	57	0	0	0	0	0	0	0	0	Cooper
+1150	 托尔·布洛克	0393	0	0	0	1553	58	0	0	0	0	0	0	0	0	Potter
+1151	 谢丽尔·阿曼森	0392	0	0	0	1554	59	0	0	0	0	0	0	0	0	Weaver
+1152	 莱尔·罗马	0391	0	0	0	1555	75	0	0	0	0	0	0	0	0	noble
+1153	 蕾妮·布莱克本	0390	0	0	0	1556	0	0	0	1430	0	0	0	0	0	Golden Pyramid Buyer (C2)
+1154	 朗·米勒	0389	0	0	0	1557	0	0	0	1427	0	0	0	0	0	Bone Buyer (C2)
+1155	 戴维斯·卡普	0388	0	0	0	1558	0	0	0	1428	0	0	0	0	0	Lodestone Buyer (C2)
+1156	 尼克·费恩斯特	0387	0	0	0	1559	0	0	0	1431	0	0	0	0	0	Keg of Wine Buyer (C2)
+1157	 塞·罗斯	0386	0	0	0	1560	0	0	0	1432	0	0	0	0	0	Tooth Buyer (C2)
+1158	 摩特·阿诺斯蒂	0385	0	0	0	1561	66	0	0	0	0	0	0	0	0	Trapper
+1159	 杰夫·索斯	0383	0	0	0	1562	0	0	0	1433	0	0	0	0	0	Four Leaf Clover Buyer (C2)
+1160	 迪伦·罗宾逊	0382	0	0	0	1563	0	0	0	1434	0	0	0	0	0	Amber Buyer (C2)
+1161	 伊恩·特罗姆	0380	0	0	0	1408	20	0	0	0	0	0	0	0	0	locksmith
+1162	 达斯·卡特莱特	0379	0	0	0	1408	16	0	0	0	0	0	0	0	0	weapons master
+1163	 贾森·达斯特	0378	0	0	0	1417	37	0	0	0	0	0	0	0	0	enchanter
+1164	 保罗·哈布斯伯格	0377	0	0	0	1417	12	0	0	0	0	0	0	0	0	master healer
+1165	 科曼·默里安	0227	0	0	0	1603	0	0	0	1440	1443	1446	0	0	0	Weapon Trader (B3)
+1166	 埃贝尔·巴卡塔里亚	0075	0	0	0	1605	0	0	0	1441	1444	1447	0	0	0	Misc Trader (B3)
+1167	 特雷西·里瑟	0370	0	0	0	1340	75	0	0	0	0	0	0	0	0	Noble
+1168	 泰·科涅克	0364	0	0	0	1352	76	0	0	0	0	0	0	0	0	Gambler
+1169	 乔伊·布朗	0354	0	0	0	1363	1	0	0	0	0	0	0	0	0	Smith
+1170	 拉里·多夫曼	0352	0	0	0	1374	2	0	0	0	0	0	0	0	0	Armorer
+1171	 内罗·克劳狄乌斯	0351	0	0	0	1385	3	0	0	0	0	0	0	0	0	Alchemist
+1172	 德鲁西斯·蒂贝里奥	0350	0	0	0	1395	4	0	0	0	0	0	0	0	0	Scholar
+1173	 伊里斯·安波	0347	0	0	0	1405	5	0	0	0	0	0	0	0	0	Guide
+1174	 康迪斯·斯特里普	0341	0	0	0	1415	6	0	0	0	0	0	0	0	0	Tracker
+1175	 鲁斯·霍克沃勒	0325	0	0	0	1424	7	0	0	0	0	0	0	0	0	Pathfinder
+1176	 杰克·格林	0308	0	0	0	1433	8	0	0	0	0	0	0	0	0	Sailor
+1177	 马戏团主人火焰先生	1027	0	0	0	1595	0	0	0	1417	1418	0	0	0	0	Circus Master
+1178	 威廉·塔奎恩爵士	0994	0	0	0	1596	0	0	0	1419	1420	0	0	0	0	Might Game
+1179	 皮普·达克斯通	1012	0	0	0	1597	0	0	0	1419	1421	0	0	0	0	Endurance Game
+1180	 沙拉兹·扎拉斯	1005	0	0	0	1598	0	0	0	1419	1422	0	0	0	0	Speed Game
+1181	 阿苏勒·温德宋	1017	0	0	0	1599	0	0	0	1419	1423	0	0	0	0	Accuracy Game
+1182	 格尼米什·高罗斯	0976	0	0	0	1600	0	0	0	1419	1424	0	0	0	0	Luck Game
+1183	 特勒伦·普伦蒂斯	1014	0	0	0	1601	0	0	0	1419	1425	0	0	0	0	Intellect Game
+1184	Random MapNPC 1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1185	Random MapNPC 2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1186	Random MapNPC 3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1187	Random MapNPC 4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1188	Random MapNPC 5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1189	Random MapNPC 6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1190	Random MapNPC 7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1191	Random MapNPC 8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1192	Random MapNPC 9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1193	Random MapNPC 10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1194	Random MapNPC 11	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1195	Random MapNPC 12	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1196	Random MapNPC 13	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1197	Random MapNPC 14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1198	Random MapNPC 15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1199	Random MapNPC 16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1200	Random MapNPC 17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1201	Random MapNPC 18	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1202	Random MapNPC 19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1203	Random MapNPC 20	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1204	Random MapNPC 21	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1205	Random MapNPC 22	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1206	Random MapNPC 23	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1207	Random MapNPC 24	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1208	Random MapNPC 25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1209	Random MapNPC 26	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1210	Random MapNPC 27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1211	Random MapNPC 28	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1212	Random MapNPC 29	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1213	Random MapNPC 30	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1214	Random MapNPC 31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1215	Random MapNPC 32	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1216	Random MapNPC 33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1217	Random MapNPC 34	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1218	Random MapNPC 35	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1219	Random MapNPC 36	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1220	Random MapNPC 37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1221	Random MapNPC 38	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1222	Random MapNPC 39	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1223	Random MapNPC 40	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+1224	Random MapNPC 41	0	0	0	0	0	0	0	0	0	0	0	0	0	0	

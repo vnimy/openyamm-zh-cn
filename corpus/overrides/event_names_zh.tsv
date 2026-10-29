@@ -1,0 +1,546 @@
+Door	门
+Door.	门。
+Door 	门
+Chest	箱子
+Chest 	箱子
+Chest.	箱子。
+Lever	拉杆
+Button	按钮
+Bookcase	书柜
+Bookshelf	书架
+Bookshelves	书架
+Book Case	书柜
+Cabinet	橱柜
+Chest of Drawers	抽屉柜
+Drawer	抽屉
+Dresser	梳妆柜
+Shelves	架子
+Pantry	食品柜
+Counter	柜台
+Switch	开关
+Switch.	开关。
+Small switch.	小开关。
+Fruit Tree	果树
+Crate	木箱
+Open Crate	打开的木箱
+Sealed Crate	封死的木箱
+Crates.	木箱。
+Crates filled with wood chips.	装满木屑的木箱。
+Obelisk	方尖碑
+Wooden Door	木门
+Double Door	双开门
+Magic Door	魔法门
+Picture Door	画像后的门
+Skull Door	骷髅门
+Flame Door	火焰之门
+Door Beam	门闩
+Exit Door	出口门
+Back Door	后门
+Sarcophagus	石棺
+Burial niche	墓龛
+Altar	祭坛
+Altar of Might	力量祭坛
+Altar of Life	生命祭坛
+Altar of Endurance	耐力祭坛
+Altar of Accuracy	精准祭坛
+Altar of Speed	速度祭坛
+Altar of Luck	幸运祭坛
+Altar of the Moon	月亮祭坛
+Altar of Fire	火焰祭坛
+Altar of Cold	寒冷祭坛
+Altar of Pain	痛苦祭坛
+Evil Altar	邪恶祭坛
+Wolf Altar	狼之祭坛
+Tree	树
+Pine tree	松树
+Palm tree	棕榈树
+Strange tree	奇怪的树
+Nice Flower	漂亮的花
+Flower	花
+Flowers	花丛
+Cactus	仙人掌
+Well	水井
+Well of VARN	VARN 之井
+Fountain	喷泉
+Pool	水池
+Lava pool	熔岩池
+Sacred Pool	圣水池
+Cleansing Pool	净化水池
+Small glittering pool.	闪着微光的小水池。
+Suspicious Floor	可疑的地板
+Tile	地砖
+Bag	袋子
+Sack	麻袋
+Full sack	满袋
+Sacks.	麻袋。
+Storage Container	储物箱
+Ore Vein	矿脉
+Gold vein	金矿脉
+Mine Car	矿车
+Mine	矿坑
+Statue	雕像
+Druid statue	德鲁伊雕像
+Crystal.	水晶。
+Crystal	水晶
+Evil Crystal	邪恶水晶
+Oracle Memory Crystal	神谕记忆水晶
+Shrine	神龛
+Shrine of Fire	火焰神龛
+Shrine of Air	空气神龛
+Shrine of Water	流水神龛
+Shrine of Earth	大地神龛
+Shrine of Cold	寒冷神龛
+Shrine of Magic	魔法神龛
+Shrine of the Gods	众神神龛
+Shrine of Might	力量神龛
+Shrine of Intellect	智力神龛
+Shrine of Personality	人格神龛
+Shrine of Endurance	耐力神龛
+Shrine of Accuracy	精准神龛
+Shrine of Speed	速度神龛
+Shrine of Luck	幸运神龛
+Shrine of Poison	毒素神龛
+Shrine of Electricity	闪电神龛
+Cage	笼子
+Skeleton in a cage.	笼中的骷髅。
+Iron Maiden	铁处女
+Barrel	木桶
+Keg	小酒桶
+Wine Rack	酒架
+Mead filled barrel.	装满蜂蜜酒的木桶。
+Water filled barrel.	装满水的木桶。
+Black liquid filled barrel	装满黑液的木桶
+Stew filled bowl.	盛满炖菜的碗。
+Computer Terminal	终端机
+Control Room Entry	控制室入口
+Bed	床
+Bench	长凳
+Sign	标牌
+Plaque	铭牌
+Portrait	画像
+Picture	图画
+Mural	壁画
+Carved mural.	雕花壁画。
+Tapestry	挂毯
+Desk	书桌
+Table with implements atop.	摆着工具的桌子。
+Podium	讲台
+Panel	面板
+Pedestal	基座
+Cylinder	圆柱
+Pillar	石柱
+Monolith	巨石柱
+Lift	升降机
+Elevator	电梯
+Teleporter	传送器
+Stone Face	石像面孔
+Stone	石头
+Rock	岩石
+rock	岩石
+Strange rock	奇怪的岩石
+Unstable rock	不稳定的岩石
+Crumbling boulder.	碎裂的巨石。
+Boulders.	巨石。
+Wall	墙
+Magical Wall	魔法墙
+Wall with missing bricks.	缺了砖的墙。
+Sewer Grate	下水道格栅
+Buoy	浮标
+Rune post	符文柱
+Circle of Stones	石阵
+Torch	火把
+Flickering Torch	摇曳的火把
+Chandelier	吊灯
+Signal Fire Pit	烽火坑
+Anvil	铁砧
+Cart	手推车
+Wagon	马车
+Tent	帐篷
+Hut	小屋
+Shops	商店
+Guilds	公会
+Docks	码头
+Dock	码头
+Wharf	码头
+Stables	马厩
+Tavern	酒馆
+Plaza	广场
+Sewer	下水道
+Tower	塔楼
+Vault	金库
+The Vault	金库
+Ship	船
+Pirate Ship	海盗船
+Regnan Ship	雷格那船
+Sunk Regnan Ship	沉没的雷格那船
+Submarine	潜水艇
+Landing Craft	登陆艇
+Hatch	舱口
+Exit	出口
+Exit.	出口。
+Enter	进入
+Gate	大门
+Tunnel Entrance	隧道入口
+Key Hole	钥匙孔
+Books	书
+Potions for sale	待售药水
+Placeholder	占位
+Weapon shop placeholder	武器店
+Armor shop placeholder	防具店
+Magic shop placeholder	魔法店
+Spell shop placeholder	法术店
+Alchemist placeholder	炼金店
+Temple placeholder	神殿
+Bank placeholder	银行
+Training hall placeholder	训练场
+Baa Head One	巴阿头像之一
+Baa Head Two	巴阿头像之二
+Baa Head Three	巴阿头像之三
+Baa Head Four	巴阿头像之四
+Almighty Head of Baa.	巴阿全能头像。
+Glowing dinosaur bones	发光的恐龙骨骸
+Bones	骨骸
+Old bones.	陈年骨骸。
+Poisoned Spike	淬毒尖刺
+Forcefield	力场
+Protected	受保护
+Cell	牢房
+Demon Lair	恶魔巢穴
+Cauldron	大锅
+Keep Off!	请勿靠近！
+The door will not budge	这扇门纹丝不动
+Looks like an earthquake hit this mine.	这座矿坑像是被地震犁过。
+Shard filled caskets.	装满碎片的匣子。
+Long dead adventurer.	死去已久的冒险者。
+A giant's sword	巨人的剑
+Dimension Door	次元门
+Dimensional travel	跨位面传送
+Fire the Cannon !	开炮！
+Fire the cannon !	开炮！
+Leave to tower	离开塔楼
+Drink from the Well	饮井水
+Drink from the well	饮井水
+Drink from Well.	饮井水。
+Drink from the Fountain	饮喷泉水
+Drink from the fountain	饮喷泉水
+Drink from Fountain	饮喷泉水
+Drink from Fountain.	饮喷泉水。
+Drink from Trough.	在饮水槽饮水。
+Drink from Fountain of Magic	饮用魔法之泉
+Take a Drink	喝一口
+Drink	饮用
+Jump into the Well	跳进水井
+Free Haven	自由港
+Freehaven	自由港
+Rockham	洛克汉姆
+Rockham/Free Haven	洛克汉姆／自由港
+Ironfist Castle	铁拳城堡
+Castle Ironfist	铁拳城堡
+Harmondale	哈蒙代尔
+Avlee	艾弗利
+Tatalia	塔塔利亚
+Darkmoor	暗沼
+Whitecap	白浪镇
+White Cap	白浪镇
+Silver Cove	银湾
+New Sorpigal	新索匹格
+Blackshire	布莱克郡
+Misty Islands	雾岛
+Welcome to Misty Islands	欢迎来到雾岛
+Welcome to Emerald Isle	欢迎来到翡翠岛
+Dwarven Barrow	矮人古墓
+Titan Stronghold	泰坦要塞
+Temple of Baa	巴阿神殿
+Temple Baa	巴阿神殿
+Temple of Light	光明神殿
+Temple of Dark	黑暗神殿
+Temple of Stone	石头神殿
+Water Temple	水之神殿
+Abandoned Temple	废弃神殿
+The Grand Temple of the Moon	月之大神殿
+The Grand Temple of the Sun	日之大神殿
+Grand Temple of Eep	伊普大神殿
+Chapel of Eep	伊普礼拜堂
+Church of Eep	伊普教堂
+Vampire Crypt	吸血鬼墓穴
+The Crypt of Korbu	科布之墓
+The Tomb of Lord Brinne	布林领主之墓
+Tomb of Lord Brinne	布林领主之墓
+Raven Man Nest	鸦人巢穴
+Mansion	宅邸
+Destroyed Building	损毁的建筑
+Merchant House of Alvar	阿尔瓦商会
+Escaton's Crystal	艾斯卡顿水晶
+The Vault of Time	时间宝库
+Balthazar Lair	巴萨泽巢穴
+Smuggler's Cove	走私者海湾
+Regnan Pirate Outpost	雷格那海盗前哨
+Dark Dwarf Compound	黑暗矮人营地
+Uplifted Library	升格图书馆
+Ancient Troll Home	巨魔古居
+A Druid Circle	德鲁伊石环
+War Camp	战营
+Ogre Raiding Fort	食人魔劫掠要塞
+Castle Gloaming	幽暗城堡
+Castle Navan	纳文城堡
+Castle Gryphonheart	狮鹫之心城堡
+Fort Riverstride	川跃堡
+Castle Harmondale	哈蒙代尔城堡
+Castle Lambent	朗本城堡
+Castle of Air	空气城堡
+Castle of Fire	火焰城堡
+The Castle of Air	空气城堡
+The Castle of Fire	火焰城堡
+Hall of the Pit	深坑大厅
+The Pit	深坑
+Throne Room	王座厅
+Clanker's Lab	克兰克实验室
+Clanker's Laboratory	克兰克实验室
+School of Sorcery	巫术学院
+The School of Sorcery	巫术学院
+Arena	竞技场
+The Arena	竞技场
+Circus	马戏团
+Circus (Winter)	马戏团（冬季）
+Hostel	旅舍
+Empty House	空屋
+Flooded House	被淹的房屋
+The Mercenary Guild	雇佣兵公会
+Mercenary Guild	雇佣兵公会
+Smugglers' Guild	走私者公会
+Guild of Bounty Hunters	赏金猎人工会
+Guild of Fire	火焰公会
+Guild of Air	空气公会
+Guild of Water	流水公会
+Guild of Earth	大地公会
+Guild of Mind	心灵公会
+Guild of Spirit	灵魂公会
+Guild of Body	肉体公会
+Guild of Light	光明公会
+Guild of Dark	黑暗公会
+Guild of Night	暗夜公会
+Guild of Twilight	黄昏公会
+Guild of Enlightenment	启蒙公会
+Guild of Illumination	启明公会
+Guild Caravans	公会商队
+Crystal Caravans	水晶商队
+Protection Services	护卫服务
+The Adventurer's Inn	冒险者旅店
+Emerald Inn	翡翠旅店
+Two Palms Tavern	双棕榈酒馆
+The Grog and Grub	格罗格酒馆
+Grogg's Grog	克劳格的酒馆
+The Vampyre Lounge	吸血鬼酒廊
+The Vampyre Lounge 	吸血鬼酒廊
+War College	战争学院
+Balthazar Academy	巴萨泽学院
+Bank of Balthazar	巴萨泽银行
+Bank of Erathia	埃拉西亚银行
+Halls of Gold	黄金之厅
+The Depository	存款处
+Town Hall	市政厅
+Steadwick Townhall	斯特德威克市政厅
+Harmondale Townhall	哈蒙代尔市政厅
+Pierpont Townhall	皮尔庞特市政厅
+City of Steadwick	斯特德威克城
+Steadwick	斯特德威克
+Royal Lines	王室血脉
+Royal Lines 	王室血脉
+Trial of Honor	荣誉试炼
+The Proving Grounds	试炼场
+Island Training Grounds	岛屿训练场
+Self Study	自学
+Basic Principles	基础原理
+Applied Instruction	应用教学
+Training Essentials	训练要点
+Rites of Passage	成年礼
+House of Healing	治疗之家
+Healer's Tent	治疗师帐篷
+House of Solace	慰藉之家
+House of Hawthorne 	霍桑家族宅邸
+ Home of Rihansi 	里汉西之家
+Armorworks	盔甲工坊
+Armorworks 	盔甲工坊
+Shields of Malice	恶意之盾
+Blades of Spite	怨恨之刃
+Blades' End	刀刃终点
+Duelists' Edge	决斗者之锋
+The Knight's Blade	骑士之刃
+Erik's Armory	埃里克兵甲店
+Queen Catherine's Smithy	凯瑟琳女王铁匠铺
+The Queen's Forge	女王熔炉
+The Peasant's Smithy	农夫铁匠铺
+Tempered Steel	回火之钢
+The Balanced Axe	平衡之斧
+Ayzar's Axes	爱煞之斧
+The Polished Pauldron	抛光肩甲
+The Hallowed Sword	神圣之剑
+Armor of Honor	荣誉之甲
+Linked Mail	连环甲
+Buckskins and Bucklers	皮装与圆盾
+Alloyed Weapons	合金武器
+Alloyed Armor and Shields	合金护甲与盾牌
+Vander's Blades & Bows	范德的刀剑与弓
+The Knocked Bow	搭箭之弓
+Frozen Assets	冰封资产
+Eldritch Influences	诡异法器
+Esoteric Indulgences	秘学珍玩
+Infernal Temptations	地狱诱惑
+Perdition's Flame	毁灭之焰
+Hall of Dawn	黎明之厅
+Hall of Midnight	午夜之厅
+Artifacts & Antiquities	古物与神器
+Amulets of Power	力量护符
+Fearsome Fetishes	骇人护符
+Delicate Things	精致之物
+Potent Potions & Brews	强效药剂与酿品
+Phials of Faith	信仰之瓶
+Philters and Elixirs	媚药与灵药
+The Blessed Brew	祝福酿品
+Emerald Enchantments	翡翠附魔
+The Blue Bottle	蓝瓶
+The Blackened Vial	焦黑小瓶
+Edmond's Ampules	埃德蒙药瓶
+Perius' Powders	佩里乌斯药粉
+Mineral Wealth	矿物财富
+Material Wealth	物质财富
+Natural Magic	自然魔法
+Nature's Remedies	自然药方
+Nature's Stockpile	自然储备
+Mystic Medicine	秘法医药
+Herbal Elixirs	草药灵药
+Cures and Curses	医治与诅咒
+Lead Transformations	铅之转化
+Otto's Oddities	奥托奇物
+The Snobbish Goblin	势利哥布林
+The Laughing Monk	大笑僧侣
+The Missing Link	缺失环节
+The Potted Pixie	盆栽小妖精
+Familiar Place	熟悉之地
+Fortune's Folly	命运愚行
+Markham's Headquarters	马卡姆总部
+Lord Markham's Manor	马卡姆领主庄园
+Vault of Time	时间宝库
+J.V.C. Corral	JVC 马场
+The J.V.C Corral	JVC 马场
+Royal Steeds	皇家坐骑
+Faithful Steeds	忠诚信骑
+Plush Coaches	华贵马车
+Dry Saddles	干爽马鞍
+Narwhale	独角鲸号
+Wind Runner	风行者号
+Sea Sprite	海精灵号
+Sacred Sails	圣帆号
+Clan Leader's Hall	族长之厅
+Wolves' Bane	狼之克星
+Berserkers' Fury	狂战士之怒
+Hunter's Lodge	猎人小屋
+Temple of Tranquility	宁静神殿
+The Order of Tatalia	塔塔利亚骑士团
+The Loyal Mercenary	忠诚佣兵
+The Shaman	萨满
+King's Blade	国王之刃
+Guardian of Kriegspire	冰尖峰守卫
+Curator of Kriegspire	冰尖峰馆长
+Lord of Fire	火焰领主
+Prison of the Air Lord	空气领主之牢
+Prison of the Earth Lord	大地领主之牢
+Prison of the Fire Lord	火焰领主之牢
+Prison of the Water Lord	流水领主之牢
+Gate to the Plane of Air	通往空气位面的门
+Gate to the Plane of Earth	通往大地位面的门
+Gate to the Plane of Fire	通往火焰位面的门
+Gate to the Plane of Water	通往流水位面的门
+Gate out of the Plane of Air	离开空气位面的门
+Gate out of the Plane of Earth	离开大地位面的门
+Gate out of the Plane of Fire	离开火焰位面的门
+Gate out of the Plane of Water	离开流水位面的门
+North to the Tularean Forest	向北往图拉雷安森林
+East to the Tularean Forest	向东往图拉雷安森林
+West to Erathia	向西往埃拉西亚
+East to Steadwick	向东往斯特德威克
+East to Harmondale	向东往哈蒙代尔
+North to Deyja Moors	向北往戴贾沼泽
+West to Tatalia	向西往塔塔利亚
+South to the Bracada Desert	向南往布拉卡达沙漠
+South to Barrow Downs	向南往古墓丘陵
+East	向东
+North 	向北
+To Main Square	前往中央广场
+Leave the *	离开
+Leave to *	离开
+Leave *	离开
+Enter the *	进入
+Enter The *	进入
+Enter *	进入
+Exit the *	离开
+Exit *	离开
+House *	民宅 
+Wasp Nest	黄蜂巢
+Thunderfist Mountain	雷拳山
+Barbarian Fortress	蛮族堡垒
+Passage Under Regna	雷格那地下通道
+Erathian Sewer	埃拉西亚下水道
+Tularean Caves	图拉雷安洞窟
+Breeding Zone	培育区
+Walls of Mist	迷雾之墙
+Watchtower 6	6 号瞭望塔
+Stone City	石头城
+Chain of Fire	火焰之链
+Pirate Stronghold	海盗要塞
+Abandoned Pirate Keep	废弃海盗堡
+Cave	洞穴
+Maze	迷宫
+Hidden tomb	隐秘墓室
+Temple of the Moon	月之神殿
+Vampire Family House	吸血鬼家族宅邸
+Tidewater Caverns	潮水洞窟
+White Cliff Caves	白崖洞窟
+Hall Under the Hill	山丘之下的大厅
+Lincoln	林肯号
+Celeste	塞莱斯特
+Pit	深坑
+Hive	蜂巢
+Red Dwarf Mines	红矮人矿坑
+Haunted Mansion	闹鬼宅邸
+Druid Circle	德鲁伊石环
+Castle Air	空气城堡
+Castle Fire	火焰城堡
+Small Sub Pen	小型潜艇坞
+Escaton's Palace	艾斯卡顿宫殿
+Prison of the Lord of Air	空气领主之牢
+Prison of the Lord of Fire	火焰领主之牢
+Prison of the Lord of Water	流水领主之牢
+Prison of the Lord of Earth	大地领主之牢
+Old Loeb's Cave	老勒布之洞
+Ilsingore's Cave	伊尔辛戈尔之洞
+Yaardrake's Cave	亚德雷克之洞
+New World Computing	新世界电脑公司
+Plane of Air	空气位面
+Plane of Earth	大地位面
+Plane of Fire	火焰位面
+Plane of Water	流水位面
+Dire Wolf Den	恐狼巢穴
+Ogre Raiding Fortress	食人魔劫掠要塞
+Troll Tomb	巨魔陵墓
+Cyclops Larder	独眼巨人储藏室
+Dragon Hunter's Camp	猎龙者营地
+dragon cave	龙穴
+Naga Vault	娜迦宝库
+Necromancers' Guild	亡灵法师公会
+Mad Necromancer's Lab	疯狂亡灵法师的实验室
+Temple of the Sun	日之神殿
+Dragon's Cave	龙穴
+Wine Cellar	酒窖
+Dragon Cave	龙穴
+The Titan Stronghold	泰坦要塞
+Colony Zod	佐德殖民地
+Hall under the Hill	山丘之下的大厅
+Grand Temple of the Sun	日之大神殿
+Temple	神殿
+A Cave	一处洞穴
+Lord Markham	马卡姆领主
+The Mercenary Guild 	佣兵公会
+Dragon Leader's Cavern 	龙首领洞窟
+Talk to the Arena Master	与竞技场主管交谈
+The Temple of the Sun	日之神殿

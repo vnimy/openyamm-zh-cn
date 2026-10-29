@@ -1,0 +1,9 @@
+id: test.npc_dialog_text
+title: "汉化检查：NPC 对话正文"
+world: mm7
+mode: faithful
+steps:
+  - new_game_flow: {start_map: 7out01.odm}
+  - speak_npc: {source_id: 786}
+  - select_topic: {action_id: 1609}
+  - advance_runtime: {seconds: 1}

@@ -1,0 +1,511 @@
+3104	Door
+2238	Chest
+219	Chest 
+113	Lever
+99	Button
+64	Bookcase
+62	Cabinet
+52	Switch
+49	Fruit Tree
+49	Crate
+39	Obelisk
+39	Bookshelf
+38	Drink from the Well
+38	Wooden Door
+33	Drink from Fountain
+31	Sarcophagus
+30	Leave the Dwarven Barrow
+29	Burial niche
+28	Tree
+27	Drink from the well
+26	Well
+19	Altar
+19	Suspicious Floor
+17	Door.
+15	Bag
+14	Bookshelves
+14	Drink from Well.
+14	Storage Container
+13	Ore Vein
+13	Take a Drink
+13	Mine Car
+13	Statue
+13	Crystal.
+12	Shrine
+11	Skull Door
+10	Fountain
+10	Cage
+9	Open Crate
+9	Sack
+9	Strange tree
+9	Computer Terminal
+8	Enter the Cave
+8	Bed
+8	Sign
+8	Plaque
+7	Leave the Cave
+7	Drink from the Fountain
+7	Barrel
+7	Picture Door
+6	Leave Thunderfist Mountain
+6	Key Hole
+6	Gold vein
+6	Cleansing Pool
+6	Desk
+5	Lift
+5	Drink from the fountain
+5	Fire the Cannon !
+5	Rock
+5	Magic Door
+5	Strange rock
+5	Tile
+5	Pedestal
+5	Drink from Fountain.
+5	Sewer Grate
+4	Pillar
+4	Temple
+4	Enter Thunderfist Mountain
+4	Leave the Barbarian Fortress
+4	Ship
+4	Leave the Passage Under Regna
+4	House of Hawthorne 
+4	Placeholder
+4	Enter the Barbarian Fortress
+4	Free Haven
+4	Switch.
+3	Wine Rack
+3	Portrait
+3	Guilds
+3	Signal Fire Pit
+3	Docks
+3	Stables
+3	Enter The Erathian Sewer
+3	Leave the Erathian Sewer
+3	Enter Dwarven Barrow
+3	Leave the Abandoned Temple
+3	Leave the Wasp Nest
+3	Pirate Ship
+3	Sealed Crate
+3	Buoy
+3	A Cave
+3	Rune post
+3	Teleporter
+3	Stone Face
+3	Black liquid filled barrel
+3	Double Door
+3	Monolith
+3	Elevator
+3	Chandelier
+3	Drink from Trough.
+3	Keep Off!
+3	Mine
+3	Wall with missing bricks.
+2	Leave the Arena
+2	Exit the Tularean Caves
+2	Leave the Breeding Zone
+2	Leave the Walls of Mist
+2	Leave Watchtower 6
+2	Leave Stone City
+2	The Vampyre Lounge 
+2	Enter Castle Gloaming
+2	Leave Fort Riverstride
+2	Leave Castle Navan
+2	Leave Castle Gryphonheart
+2	House 255
+2	Keg
+2	Shops
+2	Hut
+2	Enter Fort Riverstride
+2	Enter
+2	Dimension Door
+2	Enter Watchtower 6
+2	Drink
+2	Jump into the Well
+2	Submarine
+2	Enter the Submarine
+2	Leave Merchant House of Alvar
+2	Leave Escaton's Crystal
+2	Leave the Chain of Fire
+2	Weapon shop placeholder
+2	Armor shop placeholder
+2	Magic shop placeholder
+2	Spell shop placeholder
+2	Alchemist placeholder
+2	Temple placeholder
+2	Bank placeholder
+2	Training hall placeholder
+2	Leave Balthazar Lair
+2	Leave the Pirate Stronghold
+2	Leave the Abandoned Pirate Keep
+2	Enter the Abandoned Temple
+2	The Vault of Time
+2	Escaton's Crystal
+2	Enter the Merchant House of Alvar
+2	Enter Escaton's Crystal
+2	 Home of Rihansi 
+2	Pine tree
+2	Enter the Wasp Nest
+2	Enter the Chain of Fire
+2	Enter the Balthazar Lair
+2	Enter the Tower
+2	Glowing dinosaur bones
+2	Bones
+2	Mural
+2	Pool
+2	Wall
+2	Gate
+2	Chest of Drawers
+2	Cylinder
+2	Shrine of Fire
+2	Baa Head Two
+2	Podium
+2	Panel
+2	Armorworks 
+2	Rockham
+2	Ironfist Castle
+2	Royal Lines 
+2	Books
+2	Tapestry
+2	Stew filled bowl.
+2	Crates filled with wood chips.
+2	Mead filled barrel.
+2	Water filled barrel.
+2	Old bones.
+2	Chest.
+1	Leave the Temple of the Moon
+1	Exit Clanker's Lab
+1	Leave the School of Sorcery
+1	Leave the Vampire Family House
+1	Leave the Tidewater Caverns
+1	Leave Lord Markham's Manor
+1	Drawer
+1	Leave the Grand Temple of the Moon
+1	Leave the Mercenary Guild
+1	Leave the White Cliff Caves
+1	Leave the Hall Under the Hill
+1	Leave the Lincoln
+1	Leave Celeste
+1	Enter the Walls of Mist
+1	Enter Castle Lambent
+1	Leave the Pit
+1	Enter the Breeding Zone
+1	Leave the Hive
+1	Leave Castle Harmondale
+1	Dimensional travel
+1	Leave Castle Lambent
+1	Vault
+1	Leave the Red Dwarf Mines
+1	Leave the Haunted Mansion
+1	Welcome to Emerald Isle
+1	House 227
+1	House 228
+1	House 229
+1	House 241
+1	House 242
+1	House 254
+1	Anvil
+1	Cart
+1	Lord Markham
+1	Enter The Temple of the Moon
+1	Enter the Dragon's Cave
+1	North to the Tularean Forest
+1	West to Erathia
+1	South to Barrow Downs
+1	East
+1	Harmondale
+1	Hatch
+1	Enter Castle Harmondale
+1	Enter the White Cliff Caves
+1	House 271
+1	House 272
+1	House 273
+1	House 282
+1	Plaza
+1	East to Harmondale
+1	North to Deyja Moors
+1	West to Tatalia
+1	South to the Bracada Desert
+1	City of Steadwick
+1	Sewer
+1	Enter Castle Gryphonheart
+1	House 324
+1	House 325
+1	House 326
+1	Enter Castle Navan
+1	Enter Clanker's Laboratory
+1	Enter the Hall of the Pit
+1	Dock
+1	Tavern
+1	To Main Square
+1	Enter the School of Sorcery
+1	Enter the Red Dwarf Mines
+1	The Mercenary Guild 
+1	Lord Markham's Manor
+1	Tatalia
+1	East to Steadwick
+1	Wharf
+1	Stone
+1	North 
+1	Enter the Wine Cellar
+1	Enter the Mercenary Guild
+1	Enter the Tidewater Caverns
+1	Enter Lord Markham's Manor
+1	Enter the Lincoln
+1	Leave the Maze
+1	Leave to tower
+1	Leave the Hidden tomb
+1	The Grand Temple of the Moon
+1	The Grand Temple of the Sun
+1	Enter the Grand Temple of the Moon
+1	Enter the Grand Temple of the Sun
+1	Enter The Maze
+1	Dwarven Barrow
+1	Mansion
+1	Enter Stone City
+1	Enter Mansion
+1	Tunnel Entrance
+1	Enter Colony Zod
+1	Titan Stronghold
+1	Avlee
+1	East to the Tularean Forest
+1	Enter the The Titan Stronghold
+1	Enter the Temple of Baa
+1	Enter the Hall under the Hill
+1	Leave the Temple of Light
+1	Leave to Temple of Dark
+1	Leave the Grand Temple of the Sun
+1	Leave the Hall of the Pit
+1	Enter the Pit
+1	Leave the Regnan Pirate Outpost
+1	Leave Smuggler's Cove
+1	Leave the Dire Wolf Den
+1	Leave the Ogre Raiding Fortress
+1	Leave the Troll Tomb
+1	Leave the Cyclops Larder
+1	Leave the Dragon Hunter's Camp
+1	Dragon Leader's Cavern 
+1	Leave the dragon cave
+1	Leave the Naga Vault
+1	Door Beam
+1	Leave the Necromancers' Guild
+1	Leave the Mad Necromancer's Lab
+1	Leave the Vampire Crypt
+1	Leave the Temple of the Sun
+1	Leave the Druid Circle
+1	Leave the Crypt of Korbu
+1	Leave the Castle Air
+1	Tomb of Lord Brinne
+1	Leave the Tomb of Lord Brinne
+1	Leave the Castle of Fire
+1	Leave the War Camp
+1	Leave the Small Sub Pen
+1	Leave Escaton's Palace
+1	Leave the Prison of the Lord of Air
+1	Leave the Prison of the Lord of Fire
+1	Leave Prison of the Lord of Water
+1	Leave the Prison of the Lord of Earth
+1	Leave the Uplifted Library
+1	Leave the Dark Dwarf Compound
+1	Talk to the Arena Master
+1	Leave the Ancient Troll Home
+1	Leave the Grand Temple of Eep
+1	Leave the Chapel of Eep
+1	Leave the Church of Eep
+1	Leave Old Loeb's Cave
+1	Leave Ilsingore's Cave
+1	Leave Yaardrake's Cave
+1	Leave New World Computing
+1	Raven Man Nest
+1	Gate out of the Plane of Air
+1	Enter the Castle of Air
+1	Leave the Plane of Air
+1	Gate out of the Plane of Earth
+1	Leave the Plane of Earth
+1	Gate out of the Plane of Fire
+1	Enter the Castle of Fire
+1	Enter the War Camp
+1	Leave the Plane of Fire
+1	Gate out of the Plane of Water
+1	Leave the Plane of Water
+1	Regnan Pirate Outpost
+1	Uplifted Library
+1	Gate to the Plane of Earth
+1	Landing Craft
+1	Palm tree
+1	Flower
+1	Enter the Regnan Pirate Outpost
+1	Enter the Uplifted Library
+1	Enter the Plane of Earth
+1	Merchant House of Alvar
+1	The Tomb of Lord Brinne
+1	Chapel of Eep
+1	Enter Smuggler's Cove
+1	Enter the Dire Wolf Den
+1	Enter the Tomb of Lord Brinne
+1	Enter the Chapel of Eep
+1	Dark Dwarf Compound
+1	Enter the Ogre Raiding Fort
+1	Enter the Dark Dwarf Compound
+1	Gate to the Plane of Fire
+1	Destroyed Building
+1	Cactus
+1	Enter the Troll Tomb
+1	Enter the Cyclops Larder
+1	Enter the Plane of Fire
+1	Flowers
+1	Grand Temple of Eep
+1	Enter the Dragon Hunter's Camp
+1	Enter the Dragon Cave
+1	Enter the Naga Vault
+1	Enter the Grand Temple of Eep
+1	Vampire Crypt
+1	Enter the Necromancers' Guild
+1	Enter the Mad Necromancer's Lab
+1	Enter the Vampire Crypt
+1	The Temple of the Sun
+1	A Druid Circle
+1	Ancient Troll Home
+1	Gate to the Plane of Air
+1	Enter the Temple of the Sun
+1	Enter the Druid Circle
+1	Enter the Plane of Air
+1	Enter the Ancient Troll Home
+1	The Crypt of Korbu
+1	Church of Eep
+1	Gate to the Plane of Water
+1	Enter the Crypt of Korbu
+1	Enter the Plane of Water
+1	Enter the Church of Eep
+1	Tower
+1	Regnan Ship
+1	Sunk Regnan Ship
+1	Fire the cannon !
+1	Enter the Pirate Stronghold
+1	Enter the Abandoned Pirate Keep
+1	Prison of the Air Lord
+1	Prison of the Earth Lord
+1	Prison of the Fire Lord
+1	Prison of the Water Lord
+1	Enter Escaton's Palace
+1	Enter the Prison of the Air Lord
+1	Enter the Prison of the Fire Lord
+1	Enter the Prison of the Water Lord
+1	Enter the Prison of the Earth Lord
+1	A giant's sword
+1	A
+1	B
+1	C
+1	D
+1	E
+1	F
+1	G
+1	H
+1	I
+1	J
+1	K
+1	L
+1	M
+1	N
+1	O
+1	P
+1	Exit Door
+1	Lord of Fire
+1	The door will not budge
+1	Poisoned Spike
+1	Unstable rock
+1	Magical Wall
+1	Nice Flower
+1	Druid statue
+1	Sacred Pool
+1	Evil Altar
+1	Exit.
+1	Wolf Altar
+1	Cauldron
+1	Flickering Torch
+1	Full sack
+1	Evil Crystal
+1	Cell
+1	Altar of Might
+1	Altar of Life
+1	Altar of Endurance
+1	Altar of Accuracy
+1	Altar of Speed
+1	Altar of Luck
+1	Altar of the Moon
+1	Oracle Memory Crystal
+1	Altar of Fire
+1	Altar of Cold
+1	Altar of Pain
+1	Shrine of Air
+1	Shrine of Water
+1	Shrine of Earth
+1	Book Case
+1	Baa Head One
+1	Baa Head Three
+1	Baa Head Four
+1	Almighty Head of Baa.
+1	Lava pool
+1	Door 
+1	Crystal
+1	Forcefield
+1	Guardian of Kriegspire
+1	Curator of Kriegspire
+1	Protected
+1	Demon Lair
+1	Shrine of Cold
+1	Shrine of Magic
+1	Blackshire guard hostility fixup
+1	Shrine of the Gods
+1	rock
+1	White Cap
+1	Rockham/Free Haven
+1	Shrine of Endurance
+1	Darkmoor
+1	Guild of Water
+1	Blackshire
+1	Whitecap
+1	Shrine of Accuracy
+1	Shrine of Speed
+1	Silver Cove
+1	Circle of Stones
+1	Shrine of Personality
+1	Silver Cove guard hostility fixup
+1	Freehaven
+1	Circus (Winter)
+1	Drink from Fountain of Magic
+1	Shrine of Might
+1	New Sorpigal
+1	Shrine of Electricity
+1	Castle Ironfist guard hostility fixup
+1	Shrine of Poison
+1	Welcome to Misty Islands
+1	Shrine of Intellect
+1	Misty Islands guard hostility fixup
+1	Shrine of Luck
+1	New Sorpigal guard hostility fixup
+1	Well of VARN
+1	Back Door
+1	Water Temple
+1	Picture
+1	Flame Door
+1	Control Room Entry
+1	Torch
+1	Bench
+1	Crumbling boulder.
+1	Small switch.
+1	Looks like an earthquake hit this mine.
+1	Boulders.
+1	Small glittering pool.
+1	Shard filled caskets.
+1	Sacks.
+1	Table with implements atop.
+1	Carved mural.
+1	Crates.
+1	Iron Maiden
+1	Long dead adventurer.
+1	Skeleton in a cage.
+1	Dresser
+1	Shelves
+1	Potions for sale
+1	Pantry
+1	Counter

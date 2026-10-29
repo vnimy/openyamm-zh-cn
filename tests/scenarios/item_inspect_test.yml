@@ -1,0 +1,12 @@
+id: test.item_inspect_zh
+title: "汉化检查：物品详情（词缀名 / Special 行）"
+world: mm7
+mode: faithful
+steps:
+  - new_game_flow: {start_map: 7out01.odm}
+  # 137 = Bronze Ring；标准词缀 14 = 土系抗性（earth resistance）
+  - grant_item: {item_id: 137, member_index: 0}
+  - grant_item: {item_id: 137, member_index: 0, enchant: [14, 4]}
+  # 特殊词缀 4 = of Carnage（Explosive Impact!）
+  - grant_item: {item_id: 137, member_index: 0, special: 4}
+  - assert: {ruleset: {report_items: true}}

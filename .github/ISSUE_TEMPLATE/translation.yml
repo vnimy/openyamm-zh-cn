@@ -1,0 +1,60 @@
+name: 漏译 / 译错
+description: 某个界面还有英文，或者译文不对、排版坏了
+title: "[翻译] "
+labels: ["翻译"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不用截图也能定位——说清是哪个面板就够了。维护者可以用
+        `python tools/check_literals.py --files <对应源码文件>` 扫出缺口。
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 还是英文（没翻译）
+        - 译法不对 / 用词不统一
+        - 排版坏了（溢出、截断、标点跑到行首）
+        - 显示成方块或乱码
+    validations:
+      required: true
+
+  - type: input
+    id: panel
+    attributes:
+      label: 界面 / 位置
+      description: 例如「炼金台 → 试剂栏」「物品详情 → Special 行」「设置 → 画面」
+      placeholder: 物品栏 → 物品详情
+    validations:
+      required: true
+
+  - type: textarea
+    id: text
+    attributes:
+      label: 出问题的文字
+      description: 直接把屏幕上的英文（或错的译文）抄下来，越完整越好
+      placeholder: |
+        原文：Special: Earth Resistance +4
+        现状：显示了英文
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      description: 补丁的 Release 号，以及游戏目录下 app/ 里的版本号
+      placeholder: 补丁 1.17.0 / app/1.17
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充
+      description: 截图、复现步骤、建议译法……都可以放这里
+    validations:
+      required: false

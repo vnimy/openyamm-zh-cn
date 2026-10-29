@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 从 Releases 下载补丁
+    url: https://github.com/vnimy/openyamm-zh-cn/releases
+    about: 安装包与更新说明

@@ -1,0 +1,272 @@
+2D#	Transition Description	Note
+1	 吸血鬼的墓窖通常隐藏得很好，但在阴影塔这边则是例外，很明显的是因为他们在这边的影响力非比寻常的关系。	"Vampire Crypt, 32"
+2	 这是个墓冢，看起来已经有好几世纪的历史了，但是门上的装饰和纹章看起来似乎相当干净，没有受到任何岁月的侵蚀。他们似乎是受到魔法的保护。	"The Crypt of Korbu,37"
+3	 当布林恩爵士去世的时候，全大陆的人都哀悼他的逝去。现在，他的墓穴已经成为了朝圣者和其它膜拜者必经之地。	Tomb of Lord Brinnie 39
+4	 你发现了一个通往底下的楼梯，要进去吗？	Passage Under Regna 44
+5	 火山的爆发很明显的把这座建筑从海底拉了上来，到底谁是这些建筑的神秘建造者？	Uplifted Library 51
+6	 阿尔瓦的黑暗矮人才抵达此处不久，但是就在这短短的时间内，他们已经挖掘出了一系列错综复杂的隧道。	Dark Dwarf Compound 52
+8	 山洞里住着一条巨龙，到处都有探险者的骨骸，看来他们是因为觊觎巨龙的宝藏而引来杀身之祸。	Dragon Cave (area 12)
+9	 马克汉姆的府邸豪华奢侈，与附近平民的简陋小屋形成了鲜明的对比。	Lord Markham's Manor
+10	 洞穴的外面堆满了垃圾杂物，但里面却是盗贼们逃避法律制裁的安乐窝。	Bandit Caves
+11	 这幢大楼一定有过辉煌的历史，但现在已经被废弃了。	Haunted Mansion
+12	 入口处阴森森的，连空气都似乎静止不动了。	Barrow
+13	 入口处阴森森的，连空气都似乎静止不动了。	Barrow
+14	 入口处阴森森的，连空气都似乎静止不动了。	Barrow
+15	 从外面看来，这扇门没有上锁，也没有什么防卫，连门环都已经生锈了。你看见门的上方有一个蜂巢。	Tower
+16	 洞穴的深处吹来一阵凉风，夹杂着令人作呕的气味，闻起来象是硫磺和烂肉，好象还有薄荷！看来里面充满了危险。	Dragon Cave (area 13)
+17	 看来是某个小人物的住处（也许主人希望访客有这种感觉）。	Small House (assassination)
+18	 这一定是某个性情古怪的隐士的住处，看来很久没人打扰过他了。	Hidden Tomb
+22	 路人皆知，一头巨龙居住在这些洞穴中。在洞穴周围游荡的亡灵可能是那些因为觊觎里面富可敌国的宝藏，铤而走险进洞寻宝的探险者。	
+23	 从洞口飘来淡淡的硫磺气味，并隐约有窃窃私语之声，但听不懂是什么语言。	
+44	Placeholder Text	
+45	Placeholder Text	
+46	Placeholder Text	
+48	Placeholder Text	
+50	Placeholder Text	
+148	 摄政王威尔伯·汉弗里，王国的首席圣武士，和尼古拉·艾恩法斯特王子，恩洛斯王位的继承人，一同居住于铁拳城堡。	
+152	 阿尔伯特·牛顿爵士，恩洛斯的首席大法师，居住于牛顿城堡。	
+154	 奥斯里克·坦普爵士，王国的首席骑士，居住于坦普城堡。	
+158	 安东尼·斯通爵士，自由天堂的首席大主教，居住于斯通城堡。	
+160	 劳里达·弗丽斯夫人，王国财政大臣，居住于弗丽斯城堡。	
+164	 埃里克·冯·斯壮姆嘉德爵士，北方边境的侯爵，居住于斯壮姆嘉德城堡。	
+166	 自古以来，神使赋予恩洛斯的统治者以睿智和聪慧。	
+177	Placeholder Text	
+178	Placeholder Text	
+179	Placeholder Text	
+209	 自古以来，神使赋予恩洛斯的统治者以睿智和聪慧。	
+217	Placeholder Text	Placeholder
+218	Placeholder Text	Placeholder
+219	Placeholder Text	Placeholder
+220	Placeholder Text	Placeholder
+221	Placeholder Text	
+335	 摄政王威尔伯·汉弗里，王国的首席圣武士，和尼古拉·艾恩法斯特王子，恩洛斯王位的继承人，一同居住于铁拳城堡。	
+336	 阿尔伯特·牛顿爵士，恩洛斯的首席大法师，居住于牛顿城堡。	
+337	 奥斯里克·坦普爵士，王国的首席骑士，居住于坦普城堡。	
+338	 安东尼·斯通爵士，自由天堂的首席大主教，居住于斯通城堡。	
+339	 劳里达·弗丽斯夫人，王国财政大臣，居住于弗丽斯城堡。	
+340	 埃里克·冯·斯壮姆嘉德爵士，北方边境的侯爵，居住于斯壮姆嘉德城堡。	
+341	 风元素的能源环绕着一个由云雾所构成的蛋形建筑。你可以清楚的听见里面传来微弱的怒吼声。	Prison of the Lord of Earth
+342	 虽然附近的空气相当的温暖，但这个冰球并不融化。水元素的力量在旁边环绕，让它保持极度的低温。	Prison of the Lord of Fire
+343	 火元素的力量将这个圆柱加热到赤红的状态。旁边不停冒出的蒸汽让你怀疑里面是不是装有煮沸的水。	Prison of the Lord of Water
+344	 在你救出了牛头人之后，巴尔萨煞的居民们又建造了一个新的入口通往它们的城市。	New Entrance to Balthazar Lair
+345	 在蜥蜴人来到匕伤岛之前，一个神秘种族居住于此。这里是该种族建造的神秘的废弃神庙的后门。这么长时间了，现在应该安全了吧？	Backdoor to the Abandoned Temple
+346	 根据历史上的记载，蜥蜴人在这个年代所建造的神庙都是由陷阱而不是用怪兽所防御的。里面那传来的爬虫类在地上摩擦的声音。	Abandoned Temple
+347	 从这个传送门看过去，你看不见风元素界中有任何坚固的地方。在遥远的天际，似乎可以看见一个怪异形状的建筑飘浮在云端。	Gateway to the Plane of Air
+348	 从这个传送门往外看，仿佛在看一座水底的峡谷。各种各样不同尺寸的生物就浮游在不远的地方，用咄咄逼人的眼光看着这边。	Gateway to the Plane of Water
+349	 刚砍下木材的新鲜味道证明了这个地方是刚刚才被摧毁的。这里所储存的庞大数量补给品证明了他们准备在这里待上很长的一段时间。	Pirate Outpost
+350	 虽然这里的景观被不停蒸腾上升的热气给阻挡了，但是你依旧可以看的出来这是一个浮在高热岩浆上的世界。	Gateway to the Plane of Fire
+351	 即使在渡鸦海滨的自由港之中，有些货物也必须要躲避官方的眼光。这些货物通常会经由这个洞穴来到鼠人走私者的手中。	Smuggler's Cove
+352	 这个传送门通往一个隧道，就在不远之处它就同时往两边转向，从这里完全看不出它们通向哪里。	Gateway to the Plane of Earth
+353	 从通到这个狼穴的足迹看来，要嘛就是这些狼出入相当频繁，再不然就是这里面有数百只的狼。	Dire Wolf Lair
+354	 阿尔瓦的黑暗精灵商人们在全贾丹姆大陆都有相当大的生意，这里就是他们在渡鸦海滨的公会之家。	Merchanthouse of Alvar
+355	 从汇流之钥中传出来一个特殊的声调，这个声调和水晶产生了共鸣，让里面出现了一个深邃的黑色空洞，吸引你进入。	Inside the Crystal
+356	 蜂巢里面传来沉闷的低哼声，让你的牙齿忍不住不停的打颤。那不是什么巨大机器运作的声音，而是数以千计的翅膀不停拍动的声音。	Wasp Nest
+357	 食人妖的军队不需要携带任何的建筑工具。他们惊人的臂力就足以举起建造堡垒所需要的句大支柱。	Ogre Raiding Fort
+358	 铁锈镇的巨魔已经在这个地点安葬他们的祖先有好几世纪之久了。每一代的巨魔都会将墓穴挖的更深，安葬更年轻的人。	Troll Tomb
+359	 独眼巨人究竟拿这个地方作什么？不管怎么样，这里闻起来都很像可怕的屠宰场。	Cyclops Larder
+360	 一个由岩浆所构成的通路不停往下延伸，这是否可能是安全通过火湖的道路呢？	Chain of Fire
+361	 这个城堡在不知多久以前发生的战争中被彻底摧毁了，猎龙人则是相当聪明的利用了还完好的区域。	Dragon Hunter Camp
+362	 龙的天性是孤单独立的，有时他们也会聚集成一个集团。但在绞刑峡谷这边，他们有一个相当完整的社群。	Dragon Cave
+363	 这个古老神庙的许多石头雕刻的雄伟之处都已经随着时间而剥落了，但是，它的神秘风格依旧留存了下来。	Naga Vault
+364	 虽然这座神庙刚新盖不久，但是却还有一种神秘的气氛。	Temple of the Sun
+365	 这些纪念碑所使用的黑石在附近根本找不到，最近的出产地是阴影塔山区，距离这边有数百里之遥。	Abandoned Druid Circle
+366	 这个通气口似乎是进入牛头人所居住的巴尔萨煞巢穴的唯一入口。	Minotaur Lair
+367	 豺狼索格喜欢在高地建筑的偏好让他躲过了袭来的大洪水。	Barbarian Fortress
+368	 雷格那人一向是直来直往的，这座外墙上装满了大炮的城堡就很明显的是“禁止”两个字的具体化。	Pirate Stronghold
+369	 从一段距离外看起来，这个满盖青苔的堡垒似乎已经被废弃很长的一段时间，但是靠近一看，那些新的脚印和讯号镜则是完全泄漏了真相。	Abandoned Pirate Keep
+370	 这个怪异的船只似乎可以在水面上和水面下行进，一连串的拉杆和齿轮推动了后面的推进器。	Hand-Cranked Submarine
+371	 死灵法师的公会俯瞰着村庄，制造了一种君临天下的邪恶气氛。	Necromancers' Guild
+372	 虽然以美丽而知名，但死灵法师冉索拉的疯狂使她远离众人。她就在这座禁忌的城堡里进行着她的黑暗实验。	Mad Necromancer's Lab
+373	 风元素界的所有建筑都会漂浮，但为什么这个云雾城堡看起来似乎特别违和？也许是因为它庞大的体积？	Castle of Air
+374	 风元素界的所有建筑都会漂浮，但为什么这个云雾城堡看起来似乎特别违和？也许是因为它庞大的体积？	Castle of Air
+375	 献祭墓穴	Tribute Tomb
+376	 这座由铁和岩石所构成的庞大堡垒附近没有任何的树木。	Castle of Fire
+377	 如果有任何人还在怀疑火元素对贾丹姆大陆是否真的存在攻击倾向，那么这些罗列的营帐可以让他们消除疑虑。	War Camp
+378	 毁灭者在一个恐怖的宫殿里统治着他的世界。什么样的人会选择住在400 英尺高的巨人的头骨里面？	Eschaton's Palace
+379	 土元素的力量如同暴风一样环绕着这个岩石所构成的建筑。里面不时传来如同最后一口气般的凄惨嘶嚎。	Prison of the Lord of Air
+382	 城堡的大门前。	Castle Harmondale
+383	 你站在格芬哈特城堡雄伟的大门前，一对驯服的狮鹫在城堡上空盘旋。	Castle Gryphonheart
+384	 那文城堡是精灵们的大本营，周围种满了千年古树。	Castle Navan
+385	 谁也不知道为什么巫师们要在大地的深处建造这座黄昏城堡，它看上去阴森、恐怖而且神秘。	Castle Gloaming
+386	 光辉城堡飘浮在彩云之间，终年阳光灿烂，城里的建筑富丽堂皇。	Castle Lambent
+387	 洞穴中偶尔发出滴水的声音以及一种奇怪的吱吱声。	Temple of the Moon
+389	 山洞里住着一条巨龙，也许那些失踪的探险者都在这儿。	Dragon's Lair
+390	 城堡的大门前。	Castle Harmondale
+391	 这些洞穴是大耳怪和盗贼的巢穴，充满了难闻的气味。	White Cliff Caves
+392	 你看到污水从埃拉西亚下水道里不断流出，据说盗贼行会就在附近。	Erathian Sewer
+393	 这座要塞守卫着东部大桥，看来这里不欢迎访客。	Fort Riverstride
+394	 你看到有人类或精灵的足迹指向洞穴深处，洞口的灌木和杂草也被清除了。	Tularean Caves
+395	 门后隐约传来爆炸的声音以及疯狂的笑声，空气中弥漫着一股难闻的气味。	Clanker's Laboratory
+396	 一些阴森可怕的身影从不远处向你招手，你隐约听见有女人唱歌的声音，但听不清歌词。	Hall of the Pit
+397	6 号哨塔长久以来一直守护着迪雅，它虽然饱受战火的摧残，但依然高高耸立。	Watchtower 6
+398	 学院外的空气中弥漫着一股魔法的神秘气息，几百年来，这里盛行魔法试验和恶作剧。	School of Sorcery
+399	 虽然此地最近被矮人们遗弃了，但他们精良的雕刻作品仍然随处可见。	Red Dwarf Mines
+400	 这是法师们聚集的地方，终年烟雾缭绕，充满了魔力。	Walls of Mist
+401	 光明神庙是世界上最美丽宁静的地方，善良的人们在这里会忘记所有的烦恼。	Temple of the Light
+402	 叛徒和战俘都被扔进此地受刑，这也是巫师们“进修”的场所。	Breeding Zone
+403	 暗黑神庙被邪恶势力所控制，他们经常在此进行各种可怕的祭祀。	Temple of the Dark
+404	 大门后隐约传来亡灵的呻吟和邪恶的祷告声。	Grand Temple of the Moon
+405	 高级太阳神庙饱经风霜，曾经有过光辉的岁月，看来直到现在还有人在守护着它。	Grand Temple of the Sun
+406	 尼根的邪术师将这座火山视为他们的家。这里有四通八达的地道延伸到整个尼根，甚至还可以过海。	Thunderfist Mountain
+407	 你的眼前出现了一座巨大的迷宫，你望了一会儿，只觉得头昏脑涨。	The Maze
+408	 石头城是矮人们的乐园，城堡的大门看上去坚实稳固。	Stone City
+409	 你的心中产生了一种莫名的恐惧。应该有一条通道是入口。	Colony Zod
+410	 雇佣兵行会里经常有各种剑客出入。这里不欢迎访客。	Mercenary Guild
+411	 许多世纪以来这些洞穴一直是海盗和歹徒的藏身之所。	Tidewater Caverns
+412	 一些污垢一路指向楼梯下的黑暗地窖。	Wine Cellar
+413	 这是泰坦的城堡，谁也不知道里面有什么，因为进去的人从来没有回来过。	Titans' Stronghold
+414	 这里曾经是邪教的神庙，但现在只是一片废墟。	Temple of Baa
+415	 这里看上去非常平静，但实际上绝不简单，小心不要走错路。	Hall under the Hill
+416	 这艘神奇的飞船是古代文明的杰作。	The Lincoln
+417	 已风化的砖石遮蔽着这个耸立在土丘上的堡垒。一个破旧的阶梯通向城堡主楼地下，微弱的声音从里面回荡而出。	
+418	 庙宇的门外可以听到微弱的吟唱声。该寺庙似乎不欢迎访客。	
+419	 第一个致力于魔法研究的堡垒，其偏远的地点为法师保守了秘密，并在突发事故时避免了民众受其伤害。	
+420	 这座金字塔似乎是用一种神秘的金属建成，它的一部分已经埋没在了沙漠之中。	
+421	 这座奇特的建筑俯瞰着天堂谷的壮观景色，它的外壁由未知材料构成。	
+422	 从大门后发出奇怪的吱吱声。这个建筑曾经是一座羊鸣庙，但因为一个魔法诅咒而导致信徒不得不全数撤离。	
+423	 这个庞大但简单的建筑已经成为了一个名为“神拳会”的小型宗教团体的朝拜中心。	
+424	 接近城堡大门时会感到温度下降。传说城堡里保存着关于如何超越死亡，化作亡灵生物的知识。	
+425	 本应为一座废弃的建筑，却有新近的脚印进出于一扇刚修补过的大门。也许还有人在使用这个建筑。	
+426	 死亡和腐尸的气味弥漫在此建筑的周围。新来的朝拜者早已忘记了这座庙宇原来的宗旨。	
+427	 克里格斯城堡不再仅以水环绕，城堡的四周还筑起了土丘以防止里面的生灵逃离。	
+428	 入口上方的古代符文试图吓退随意闯入的不速之客。门前到处是新近的大耳怪脚印。	
+429	 被遗忘的太阳神庙圣坛依然耸立着。尽管在潮湿的丛林中这么多年，太阳神庙令人惊讶地保存完好。	
+430	 这些岩洞原属于被放逐的洛克林国王，现为新矮人国王斯纳格的家园。	
+431	 原本是月亮神庙的朝拜地，但现在这座古老的圣地已经成为了塞德里克兄弟会的德鲁伊们的家园。	
+432	 这些岩洞本来的名字已被人忘却，现以将此地设为据点匪徒帮会的名字命名。	
+433	 接近大门时能感觉到温度不断升高，硫磺和烟灰的气味十分刺鼻。比起寺庙来，这个地方更像是一个隐匿之地。	
+434	 这个小型哨站是银色兄弟会的前线基地。从这里出发，可以在浓雾镇巡逻，镇邪驱魔。	
+435	 作为恩洛斯羊鸣教朝拜的中心，顶级羊鸣庙只允许羊鸣教的教徒进入。	
+436	 这是所谓的侠盗王子的家园，阴影教在此自由地运作而不受安东尼·斯通的管辖。这个教派大堂不向公众开放。	
+437	 石像零零落落四处散布，使整个星岛显得更加静谧。显然，关于美杜莎女妖生活在此庙中的传言绝非空穴来风。	
+438	 恩洛斯最大的矮人矿，斯纳格国王在即位后占有此矿。	
+439	 龙骑兵将此城堡重建并翻修一新，作为他们的总部，以便从这里出发去抢劫那些进出自由天堂的商队与路人。	
+440	 这里曾是大法师德雷克斯的住所，考勒根因在王位争夺战争中战功卓著，从阿基巴德手中受此封地。	
+441	 这里是银色兄弟会的总部和约翰·席尔瓦爵士的老家。银舵兵团从此出发逡巡银湾镇以搜寻邪恶势力。	
+442	 这座可预测吉凶的建筑散发出无尽魔力，来自恩洛斯各地的德鲁伊们定期来此地朝圣。	
+443	 埃斯里克是第一个追求死后生命的巫师，他作为一群亡灵奴仆的领袖，至今仍在他自己的坟墓边游荡。至少，据说是这样……	
+444	 原本是为了阻止生灵逃离冰冻荒原，现在这座堡垒却阻断了斯壮姆嘉德城堡和白帽镇之间的交通路线。	
+445	 这个气势雄伟的堡垒中不时传出金属的撞击声和喊叫声。无人胆敢攻击此军阀老家。	
+446	 这些岩洞中飘散出阵阵恶臭。能听到狼的嗥叫从远处传来。	
+447	 烈火元素兽曾在此协助加里克尝试发明威力巨大的物件。他的一班学生正继续他的实验。	
+448	 这个实验室是无数可怕实验的发生地。为安全和保密起见它被建在偏远地区。	
+449	 这些洞穴中驻扎着人类战士和巨龙的罕见强盗联盟。恩洛斯城镇中建立的龙塔就是为了防御这些掠夺者。	
+451	 这座控制中心从大约12 个世纪之前的“寂静”事件开始就被关闭了。	
+508	 在蜥蜴人来到匕伤岛之前，一个神秘种族居住于此。这里是该种族建造的神秘的废弃神庙的后门。这么长时间了，现在应该安全了吧？	Abandoned Temple
+671	Placeholder Text	
+672	Placeholder Text	
+673	Placeholder Text	
+674	Placeholder Text	
+675	Placeholder Text	
+676	Placeholder Text	
+677	Placeholder Text	
+678	Placeholder Text	
+679	Placeholder Text	
+680	Placeholder Text	
+681	Placeholder Text	
+682	Placeholder Text	
+683	Placeholder Text	
+684	Placeholder Text	
+685	Placeholder Text	
+686	Placeholder Text	
+687	Placeholder Text	
+688	Placeholder Text	
+689	Placeholder Text	
+690	Placeholder Text	
+691	Placeholder Text	
+692	Placeholder Text	
+693	Placeholder Text	
+694	Placeholder Text	
+695	Placeholder Text	
+696	Placeholder Text	
+697	Placeholder Text	
+698	Placeholder Text	
+699	Placeholder Text	
+700	Placeholder Text	
+701	Placeholder Text	
+702	Placeholder Text	
+703	Placeholder Text	
+704	Placeholder Text	
+705	Placeholder Text	
+706	Placeholder Text	
+707	Placeholder Text	
+708	Placeholder Text	
+709	Placeholder Text	
+710	 这个入口似乎并没有通往黑暗矮人聚集地。	Breach basement outside
+711	 进入大裂缝地下室。	Breach basement inside
+712	Placeholder Text	
+713	Placeholder Text	
+714	Placeholder Text	
+715	Placeholder Text	
+716	Placeholder Text	
+717	Placeholder Text	
+761	Placeholder Text	
+776	Placeholder Text	
+784	Placeholder Text	
+792	Placeholder Text	
+795	Placeholder Text	
+798	Placeholder Text	
+804	Placeholder Text	
+806	 这个洞穴在巨魔的传说里面是神圣的地方。但是，对其他的生物来说，可能只把这个地方当做居住的地方而已。	Ancient Troll Home 54
+813	Placeholder Text	
+815	 如同所有伊普的追随者一样，这个神庙闻起来有着潮湿毛皮和奶酪的味道。里面又持续的传来小声的吱吱声，如同吟唱声一般。	Grand Temple of Eep 55
+823	Placeholder Text	
+825	 如同所有伊普的追随者一样，这个神庙闻起来有着潮湿毛皮和奶酪的味道。	Chapel of Eep 56
+833	Placeholder Text	
+835	 这是伊普的神圣教堂，闻起来有着潮湿毛皮和奶酪的味道。	Church of Eep 57
+843	Placeholder Text	
+845	 洞穴的入口。从里面吹来的一阵微风带来了硫磺的味道。	Ilsingore's Cave 58
+852	Placeholder Text	
+854	 这是洞穴的入口，难道是某种怪兽的巢穴入口？	Yaardrake's Cave 59
+860	Placeholder Text	
+862	 通往这个洞穴的入口很明显的被某种爪子利到可以抓穿岩石的怪兽给拓宽了。	Old Loeb's Cave 60
+866	Placeholder Text	
+870	Placeholder Text	
+873	Placeholder Text	
+876	Placeholder Text	
+879	Placeholder Text	
+882	Placeholder Text	
+885	Placeholder Text	
+1085	 入口处阴森森的，连空气都似乎静止不动了。	Barrow
+1086	Placeholder Text	
+1087	Placeholder Text	
+1088	Placeholder Text	
+1089	Placeholder Text	
+1090	Placeholder Text	
+1091	Placeholder Text	
+1092	Placeholder Text	
+1093	Placeholder Text	
+1094	Placeholder Text	
+1095	Placeholder Text	
+1096	Placeholder Text	
+1097	Placeholder Text	
+1098	Placeholder Text	
+1099	Placeholder Text	
+1100	Placeholder Text	
+1162	Placeholder Text	
+1163	Placeholder Text	
+1164	Placeholder Text	
+1165	Placeholder Text	
+1166	Placeholder Text	
+1167	Placeholder Text	
+1169	Placeholder Text	Placeholder
+1170	Placeholder Text	
+1171	Placeholder Text	
+1172	Placeholder Text	
+1173	Placeholder Text	
+1174	Placeholder Text	
+1175	Placeholder Text	
+1176	Placeholder Text	
+1177	Placeholder Text	
+1178	Placeholder Text	
+1217	 进入蜂房	
+1218	 进入铁拳城堡	
+1304	 进入维兰坟墓	
+1305	 进入地下城	
+1317	 进入地下城	
+1341	 进入地下城	
+1386	 进入地下城	
+1416	 进入地下城	
+1452	 进入地下城	
+1459	 进入地下城	
+1593	Placeholder Text	
