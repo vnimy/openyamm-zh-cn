@@ -8,7 +8,7 @@
 
 ```bash
 # 先在 yml 里描述「新开一局 → 给队伍发一件带词缀的戒指 → 报告物品名」
-OpenYAMM/app/1.17/openyamm.exe --headless-run-scenario tests/scenarios/item_inspect_test.yml
+<安装目录>/app/<版本>/openyamm.exe --headless-run-scenario tests/scenarios/item_inspect_test.yml
 ```
 
 输出（节选）：
@@ -49,8 +49,9 @@ ruleset item: 寒冰青铜戒指 ... special=4  special_line="（3-4）寒冷伤
 | `{item} {suffix}<TAB>{suffix}{item}` | 模板：先查表得到模板，再由 `translateTemplate` 填 `{占位符}` |
 | `...作老师了。\n\n抱歉...` | 换行写成**字面 `\n`**，引擎读表时还原成真换行 |
 
-`ui_text.txt` 是 `make_ui_text.py` 把五张源表合并出来的产物（词缀 → 事件名 → 屋名 → 对话 → 手写译文），
-**不要直接改它**——下次生成就没了。
+`ui_text.txt` 是 `make_ui_text.py` 把源表合并出来的产物（词缀 → 事件名 → 屋名 → 补充表 →
+lua 对话 → 手写译文），**不要直接改它**——下次生成就没了。补充表指 `world_objects_zh.tsv`、
+`lua_extra_mm6_zh.tsv`、`lua_extra_rest_zh.tsv`、`templates_zh.tsv`（见 `EXTRA_TABLES`）。
 
 几条硬规矩：
 
@@ -61,19 +62,34 @@ ruleset item: 寒冰青铜戒指 ... special=4  special_line="（3-4）寒冷伤
 3. **译文里不要出现真正的 tab**。
 4. **改完必须重启游戏**：`UiText::load` 启动时一次性载入。
 
+## 多行表单元格：必须先折成逻辑记录（踩坑）
+
+`npc_topic_text`、`npc_greet` 这类表把一段正文拆成多条物理行（引擎按「首列是数字开新记录，否则把本行
+首列接到上一条记录末尾」加载）。MMMerge 译文把整段折成一行写进第一条物理行，如果只替换第一行，
+后面那些英文续行会被引擎接在中文后面，屏幕上就出现「中文……\nEnglish tail」。
+
+`tools/build_patch.py` 的 `FOLDED_TABLES` / `merge_folded_records` 就是处理这个的：先按引擎规则折叠，
+再按记录写回「一条记录一行」。**新接一张多行表时要先确认它属于哪一类**，否则会出现只有第一条
+有译文、后面夹英文的假象。`npc_news` 的第 2 列（Notes/Topic）也会被当成新闻话题按钮显示，映射别漏。
+
 ## 查缺口
 
 ```bash
-python tools/check_literals.py                 # 默认范围，列 40 条
+python tools/dev/audit_visible_text.py          # 屏幕文本验收：对话、世界对象、NPC、表项
+python tools/dev/audit_visible_text.py --show 0 --json build/audit.json
+python tools/check_literals.py                 # 源码硬编码候选（默认范围，列 40 条）
 python tools/check_literals.py --show 0        # 全部
 python tools/check_literals.py --files game/ui/screens/NewGameScreen.cpp
 python tools/check_literals.py --write build/literals_missing.txt
 ```
 
-它扫 `game/ui/`、`game/gameplay/`、`game/events/` 里传给绘制函数的字符串字面量，跟覆盖表对一遍。
-过滤规则是「宁缺勿滥」：至少两个词、含空格、不是路径／标识符／常量名、所在行不是日志输出。
+`audit_visible_text.py` 是「玩家能不能看到英文」的验收口径：它用与 `UiText::translate` 相同的匹配规则，
+扫 lua 的 `SetMessage`/`SimpleMessage`/`StatusText`、装饰物 Hint、事件名、NPC 表、房屋/地图/怪物/物品名等；
+返回 0 表示这些屏幕文本没有英文残留。「源码硬编码 UI」一项只作参考（含日志与拼接误报）。
 
-所以报告里仍会有误报（日志串、内部 key）。判断标准很简单：**这句话玩家能在屏幕上看到吗**。
+`check_literals.py` 扫 `game/ui/`、`game/gameplay/`、`game/events/` 里传给绘制函数的字符串字面量，
+过滤规则是「宁缺勿滥」。所以报告里仍会有误报（日志串、内部 key、纯拼接片段）。
+判断标准很简单：**这句话玩家能在屏幕上看到吗**。
 
 界面布局（`ui/**/*.yml` 的 `value:` 与设置项的下拉标签）不在这个脚本范围里，用：
 

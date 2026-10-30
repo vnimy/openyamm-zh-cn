@@ -11,29 +11,34 @@
 > layer. Coverage is broad but not complete — see the status table below. Documentation is in Chinese;
 > the code comments are too.
 
-**当前适配 OpenYAMM 1.18**。引擎每次换版本都要重新移植一次（通常改动不大），做法见
+**当前适配 OpenYAMM 1.19**。引擎每次换版本都要重新移植一次（通常改动不大），做法见
 [docs/upgrading.md](docs/upgrading.md)；旧版本 1.17 的补丁包仍留在 [Releases](../../releases)。
+
+**Android 端**（arm64 APK）必须重新编译 Android 引擎；做法、本机构建环境与当前验证结果见
+[docs/android.md](docs/android.md)。
 
 ---
 
 ## 现在能玩到什么程度
 
-先把话说清楚：**主线流程基本是中文了，但并没有全部译完。** 下表给的是实测口径，每一项都写明
-「译了多少」和「还会在哪儿看到英文」。游戏里碰上英文属于已知缺口，不是补丁装错了。
+先把话说清楚：**主线流程、NPC 对话与世界对象提示已经全中文，但并没有把所有界面边角都译完。**
+下表给的是实测口径，每一项都写明「译了多少」和「还会在哪儿看到英文」。
 
 | 部分 | 现状 | 还会看到英文的地方 |
 |---|---|---|
-| 界面文字（菜单、设置、角色创建、物品栏、法术书、炼金台、日志、队伍面板……） | 主要界面已译，覆盖表 4317 条 | 引擎源码里散落的硬编码文案还有约 500 处没清理（含误报），实际能看到的多集中在灵气／光环日志、对话框、队伍面板快捷提示等 |
-| NPC 对话正文 | 已译 1512 条，约占全部台词九成 | 剩下约一成的台词仍是英文；话题菜单上的话题名（「Star Lake」之类）整块未译 |
-| 物品名／描述／词缀 | 名称与描述约八成半取自 MMMerge 官方简中包；词缀 260 条已全覆盖 | MMMerge 新增而官方语言包没收录的物品名，以及 `_misc191` 这类内部占位名 |
-| 怪物／NPC 名、屋名、地图名、技能、法术、书籍 | 大体已对齐：怪物名约 99%、NPC 名约 97%、地图名约 80% | 传送点描述约 59%（其余多为 `Placeholder Text`）；官方语言包未覆盖的记录保持英文 |
-| 字形渲染 | 已可用 | 新增译文里若出现字体子集外的字会显示成空白，重跑 `tools/font_subset.py` 即可 |
+| 界面文字（菜单、设置、角色创建、物品栏、法术书、炼金台、日志、队伍面板……） | 覆盖表 5476 条；1.19 新增的战利品汇总、背包搜索、截图提示、存档列表日期也已汉化 | 引擎源码里散落的硬编码文案仍有约 495 条候选未收录（含大量误报与日志串），实际能看到的多集中在灵气／光环说明、掉落过滤说明、新角色向导等长文案 |
+| NPC 对话正文与选项 | 全量覆盖：lua 的 `SetMessage` 1512 条 + `SimpleMessage`／`StatusText` 506 条手译；话题名、招呼语、职业描述、乞求／贿赂／威胁的条件台词、新闻话题标题全部中文 | 极少数解谜用字母串（方尖碑密文）按原样保留，避免破坏谜题 |
+| 世界对象 | 装饰物 Hint（树／岩石／花草……130 条）、事件名（门、箱子、拉杆、传送点……）、世界物品交互提示全部中文 | 无（内部占位名 `_misc191` 之类不显示给玩家） |
+| 物品名／描述／词缀 | 名称与描述约八成半取自 MMMerge 官方简中包；词缀 260 条已全覆盖；内部占位物品名补了中文占位 | MMMerge 新增而官方语言包没收录的物品名 |
+| 怪物／NPC 名、屋名、地图名、技能、法术、书籍 | 名称列已无英文残留：怪物、NPC、房屋、地图（含 MM9 地名音译）、`House NNN` 占位屋名全部补齐 | 少量内部占位名（`Random MapNPC N`、`quest item N` 等）按占位处理 |
+| 1.19 新功能 | 战利品汇总面板、背包搜索框、地图进度“一键拾取”、PrintScreen 截图提示、重做后的读档列表均已汉化 | 新增译文里若出现字体子集外的字会显示成空白，重跑 `tools/font_subset.py` 即可 |
 
 完整的缺口清单、按文件的条数分布、以及「哪些是误报」见 **[docs/progress.md](docs/progress.md)**。
 想自己扫一遍，不用进游戏截图：
 
 ```bash
-python tools/check_literals.py --show 60
+python tools/dev/audit_visible_text.py    # 屏幕文本残留英文验收（对话/世界对象/NPC/表项）
+python tools/check_literals.py --show 60  # 源码硬编码 UI 文案缺口（含误报）
 ```
 
 ## 安装
@@ -55,13 +60,16 @@ python tools/check_literals.py --show 60
 corpus/
   mmmerge/       MMMerge 官方简中包解出来的 30 张原始表（可重建，见 tools/extract_corpus.py）
   overrides/     覆盖表与语料——汉化的主要工作面
-                  manual_zh.tsv（手写的界面文案，1279 条）
-                  lua_dialog_zh.tsv（对话正文）、event_names_zh.tsv、house_names.tsv、
-                  enchant_names_zh.tsv、npc_professions_zh.tsv
+                  manual_zh.tsv（手写的界面文案与占位文本，1649 条）
+                  lua_dialog_zh.tsv（SetMessage 对话正文，生成）
+                  lua_extra_mm6_zh.tsv / lua_extra_rest_zh.tsv（lua 的非 SetMessage 消息，手译）
+                  world_objects_zh.tsv（装饰物提示、残留表项、新闻标题）
+                  templates_zh.tsv（代码动态拼接文案的模板）
+                  event_names_zh.tsv、house_names.tsv、enchant_names_zh.tsv、npc_professions_zh.tsv
                   ui_text.txt（上面这些合成出来的最终覆盖表，勿手改）
   reports/       缺口清单等中间稿
 tools/           语料生成、覆盖表合成、字体烘焙、打包、审计
-  dev/           排查用的一次性脚本（按文件细查、提取布局文案）
+  dev/           排查/验收脚本（audit_visible_text.py、按文件细查、提取布局文案）
 scripts/         一键构建（build.ps1 / build.sh）
 tests/scenarios/ 无头回归场景（不开窗口验证译文）
 assets/fonts/    思源黑体（Noto Sans SC）与其 OFL 许可证
@@ -117,14 +125,14 @@ UiText::translateTemplate("{item} {suffix}", {{"{item}", baseName}, {"{suffix}",
 
 ```bash
 python tools/make_ui_text.py                      # 合成 corpus/overrides/ui_text.txt
-python tools/build_patch.py --openyamm ../openyamm-1.18 --out build/mods
-python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.18 \
+python tools/build_patch.py --openyamm ../openyamm-1.19 --out build/mods
+python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.19 \
        --out build/mods/engine/fonts/truetype
 python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf \
        --license assets/fonts/OFL.txt --out build/mods
 ```
 
-或者一行：`scripts/build.sh --openyamm ../openyamm-1.18`（Windows 用 `scripts\build.ps1`）。
+或者一行：`scripts/build.sh --openyamm ../openyamm-1.19`（Windows 用 `scripts\build.ps1`）。
 
 exe 要用「打包资产」方式构建（`-DOPENYAMM_DEV_ASSETS_DIR:STRING=assets`），否则运行时不会挂载 `mods/`。
 完整步骤、依赖与踩坑见 **[docs/build.md](docs/build.md)**；引擎侧改了哪些文件见

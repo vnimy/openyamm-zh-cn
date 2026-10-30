@@ -1,0 +1,341 @@
+# OpenYAMM 简体中文补丁：世界对象与表内遗留英文覆盖表（原文<TAB>译文）。
+# 引擎侧 UiText 按「原文整串精确匹配 → 译文」替换；本表由 tools/make_ui_text.py 合入 ui_text.txt 的 EXTRA_TABLES。
+# 格式：UTF-8、LF，一行一条两列；# 开头为注释；译文里不得出现真实 tab/换行。
+# 生成脚本：.workbuddy/tmp_audit/world_objects/build_world_objects.py（译文写死在脚本里的字典，本文件为产物）。
+#
+# 分类与条数（去重后按 A→G 顺序输出，跨类重复的键只在首次出现处保留）：
+#   A decoration_data.txt 的 Hint 列（屏幕提示词，如「树」「岩石」）：125 条，取自
+#     .workbuddy/worklists/decoration_hints.tsv；按原文大小写/单复数逐条译成游戏内名词，不加句号。
+#     其中 dec03 / tree69 / null / test / Hint / pending / pltepeas / Uneasy origin matter 是装饰表的内部
+#     占位/杂项值，按实际用途分别译为 装饰物 / 树 / 无 / 测试 / 提示 / 待定 / 豌豆盘 / 不安的源质。
+#   B 表内占位文本（会当话题按钮/招呼语显示）：B1 npc_topic.txt 话题列、B2 npc_topic_text.txt 正文列、
+#     B3 npc_greet.txt 招呼语列。对应关系：
+#       Placeholder        → 占位符
+#       MMExt Placeholder  → MMExt 占位符
+#       Missing Text N     → 缺失文本 N        （N 为原编号，原样保留）
+#       Put Text Here N    → 此处填写文本 N    （N 为原编号，原样保留）
+#       yes                → 是
+#     另有 3 条真实英文话题名（Dimensional travel / Path of Light / Path of Dark）一并译出。
+#   C map_stats.txt 的 Name 列（MM9 场景名）：48 条。MM6/7/8 地名沿用语料既有译名
+#     （渡鸦海滨、铁锈镇、尼根、迪雅……）；MM9 新地名按通用音译（索加德、斯特姆福德……）。
+#   D monster_data.txt 的 Name 列：7 条（Reactor、Crusader 三色、三档法师）。
+#   E english/quests.txt 第 2 列任务日志：9 条 “Price fixing: …”，整句翻译，店名沿用 house_names.tsv
+#     （王者快道/御道/布莱克郡的马车/白帽运输站/自由天堂东·西部之旅/黑摩尔之旅/阿卜杜的廉价旅行/新索匹格驿站）。
+#   F npc_news.txt 第 3 列 Notes/Topic（酒馆传闻与消息话题标题）：源 79 条（去重 69 条，其中 Placeholder
+#     与 B 重复，最终新增 68 条）。既有译名沿用：农夫、领主、渡鸦海滨、铁锈镇、尼根、迪雅、地狱城等。
+#   G house_data.txt 第 6 列显示名的未覆盖项：5 条（Nighon tunnels、Tunnels to Eeofol、Tell James 353/354、PLACEHOLDER）。
+#   H items.txt 物品名：0 条——真正可见的物品名（Blaster Shotgun、message scroll NNN 等）已由 manual_zh.tsv 覆盖，
+#     其余中文名之外的英文均为 _misc191 / artifact NNN 一类内部占位名，按 docs/glossary.md 原则不译。
+#
+# 注：B 与 G 的部分键与手册表现有 manual_zh.tsv 重复（后者优先级更高），译文已与 manual_zh.tsv 对齐。
+# 注：C 的 New World Computing 在 manual_zh.tsv 里有一条英文原样条目（优先级更高），最终仍显示英文；
+#     若要让「新世界电脑公司」生效，需删掉 manual_zh.tsv 中那条 `New World Computing<TAB>New World Computing`。
+#     `NWC`（d50.blv 开发组彩蛋地图）沿用缩写并补「公司」，避免玩家看到纯英文地图名。
+# 注：house_data.txt 另有 85 个 `House NNN` 开发占位显示名仍是英文（共 86 行，其中 49 行在表里有 Map 值），
+#     属于关卡测试命名；本次按 Lead 指定的 5 条范围未纳入，如需可再补 `House NNN → 房屋 NNN`。
+
+# ---- A 装饰物 Hint：源 125 条，本次新增 125 条 ----
+A Sword in a Stone	石中剑
+ancient rune stone	远古符文石
+bag	袋子
+barrel	木桶
+basket	篮子
+beacon fire	烽火
+Bear Statuette	熊像
+bone cage	骨笼
+bones	骨骸
+bottle	瓶子
+boulder	巨石
+bowl	碗
+brazier	火盆
+bucket	水桶
+buoy	浮标
+burned out fire	燃尽的火堆
+burning rock	燃烧的岩石
+bush	灌木
+cactus	仙人掌
+cage	笼子
+campfire	营火
+candelabra of skulls	骷髅烛台
+candle	蜡烛
+candle stick	烛台
+carrion	腐肉
+cask	酒桶
+cauldron	大锅
+chandelier	吊灯
+column	石柱
+Coral	珊瑚
+corn	玉米
+corpse	尸体
+crockery	陶器
+crystal	水晶
+Crystal Disk	水晶圆盘
+dead tree	枯树
+dec03	装饰物
+dirt	泥土
+Dragon Statuette	龙像
+Eagle Statuette	鹰像
+Elf Statue	精灵雕像
+empty cage	空笼子
+Empty Food Tree	空的食物树
+fern	蕨类
+fire	火
+flag	旗帜
+flambeaux	火炬
+flower	花
+flowering cactus	开花的仙人掌
+flowers	花丛
+Food Tree	食物树
+fossil	化石
+fountain	喷泉
+fruit bowl	水果碗
+glass	玻璃杯
+goblet	高脚杯
+grass	草
+hanging cage	悬挂的笼子
+Hay	干草
+Hint	提示
+keg	小酒桶
+lantern	提灯
+large fire	大火堆
+leafs	树叶
+lily pad	睡莲叶
+lily pads	睡莲叶丛
+log	原木
+magic pedastal	魔法基座
+Memory Crystal	记忆水晶
+metal bowl	金属碗
+metal bowls	金属碗
+metal plate	金属盘
+metal plates	金属盘
+mile market	里程碑
+mushroom	蘑菇
+noose	绞索
+null	无
+palm tree	棕榈树
+path marker	路标
+Pedastal	基座
+pending	待定
+pile of straw	稻草堆
+pillow	枕头
+pine tree	松树
+plant	植物
+plants	植物
+plate	盘子
+pltepeas	豌豆盘
+rune post	符文柱
+sack	麻袋
+sconce	壁灯
+Seaweed	海草
+shrub	灌木丛
+skeleton	骷髅
+skull	头骨
+skull pile	头骨堆
+skulls	头骨
+stack of bowls	一叠碗
+stack of plates	一叠盘子
+stake	木桩
+stalagmite	石笋
+stalagtite	钟乳石
+statue	雕像
+stump	树桩
+tar rock	沥青岩
+test	测试
+Tiger Statuette	虎像
+torch	火把
+trash	垃圾
+trash heap	垃圾堆
+tree	树
+tree stump	树桩
+tree69	树
+tumbleweed	风滚草
+Uneasy origin matter	不安的源质
+Urn	骨灰瓮
+vase	花瓶
+weeds	杂草
+willow tree	柳树
+Wolf Statuette	狼像
+wood	木材
+wood bowl	木碗
+wood bowls	木碗
+wood plate	木盘
+wood plates	木盘
+
+# ---- B 表内占位文本：源 51 条，本次新增 30 条 ----
+Placeholder	占位符
+MMExt Placeholder	MMExt 占位符
+Missing Text 20	缺失文本 20
+Missing Text 23	缺失文本 23
+Put Text Here 44	此处填写文本 44
+Put Text Here 50	此处填写文本 50
+Put Text Here 57	此处填写文本 57
+Put Text Here 63	此处填写文本 63
+Put Text Here 75	此处填写文本 75
+Put Text Here 307	此处填写文本 307
+Put Text Here 343	此处填写文本 343
+Put Text Here 344	此处填写文本 344
+Put Text Here 345	此处填写文本 345
+Put Text Here 346	此处填写文本 346
+Put Text Here 361	此处填写文本 361
+Put Text Here 367	此处填写文本 367
+Put Text Here 368	此处填写文本 368
+Put Text Here 369	此处填写文本 369
+Put Text Here 370	此处填写文本 370
+Put Text Here 371	此处填写文本 371
+Put Text Here 372	此处填写文本 372
+Put Text Here 373	此处填写文本 373
+Put Text Here 374	此处填写文本 374
+Dimensional travel	跨位面传送
+Path of Light	光明之路
+Path of Dark	黑暗之路
+Missing Text 133	缺失文本 133
+missing text 38	缺失文本 38
+missing text 42	缺失文本 42
+yes	是
+
+# ---- C 地图名：源 48 条，本次新增 48 条 ----
+NWC	NWC 公司
+New World Computing	新世界电脑公司
+The Strange Temple	奇异神庙
+Thjorgard City	索加德城
+Thjorgard	索加德
+Sturmford City	斯特姆福德城
+Sturmford	斯特姆福德
+Drangheim City	德朗海姆城
+Drangheim	德朗海姆
+Guberland City	古伯兰城
+Guberland	古伯兰
+Frosgard City	弗罗斯加德城
+Frosgard	弗罗斯加德
+Thronheim City	索恩海姆城
+Thronheim	索恩海姆
+Lindisfarne	林迪斯法恩
+Yorwick	约威克
+Arslegard City	阿瑟加德城
+Isle of Ashes	灰烬岛
+Verhoffin Ruins	维霍芬遗迹
+Connecting Tunnel	连接隧道
+Mountain Pass	山口
+Great Gate	巨门
+Thjorad Mine	索拉德矿场
+Training Hall	训练场
+The Arena	竞技场
+Ruined Temple	废墟神庙
+Anskram Keep	安斯克拉姆要塞
+Beet Hoven	贝特霍文
+Kluso's House	克鲁索的屋子
+Drangheim Prison	德朗海姆监狱
+Chasm of the Dead	亡者裂谷
+Temple of Honk	霍恩克神庙
+Dook's Castle	杜克城堡
+Yanmir's Fort	扬米尔堡垒
+Dungeon of Secrets	秘密地牢
+Inventa Storca	因文塔·斯托卡
+Lindisfarne Monastery	林迪斯法恩修道院
+Ta'Sar Academy	塔萨尔学院
+Lich Lab	巫妖实验室
+Wizard's Lab	巫师实验室
+The Afterworld	冥界
+Thousand Terrors	千恐之地
+Dark Passageway	黑暗通道
+The Bathhouse	浴场
+Hall of the Gods	众神之殿
+Dragon's Lair	龙穴
+Ravensford	雷文斯福德
+
+# ---- D 怪物名：源 7 条，本次新增 7 条 ----
+Reactor	反应器
+Crusader (Green)	十字军（绿）
+Crusader (Blue)	十字军（蓝）
+Crusader (Red)	十字军（红）
+Apprentice Mage	学徒法师
+Journeyman Mage	熟练法师
+Mage	法师
+
+# ---- E 任务日志：源 9 条，本次新增 9 条 ----
+Price fixing: King's Highway in Kriegspire has not yet agreed to raise its prices.	价格操纵：克里格斯的「王者快道」尚未同意涨价。
+Price fixing: Blackshire Coach and Buggy in Blackshire has not yet agreed to raise its prices.	价格操纵：布莱克郡的「布莱克郡的马车」尚未同意涨价。
+Price fixing: White Cap Transport Co. in the Frozen Highlands has not yet agreed to raise its prices.	价格操纵：冰冻高原的「白帽运输站」尚未同意涨价。
+Price fixing: Free Haven Travel East in Free Haven has not yet agreed to raise its prices.	价格操纵：自由天堂的「自由天堂东部之旅」尚未同意涨价。
+Price fixing: Free Haven Travel West in Free Haven has not yet agreed to raise its prices.	价格操纵：自由天堂的「自由天堂西部之旅」尚未同意涨价。
+Price fixing: Darkmoor Travel in the Mire of the Damned has not yet agreed to raise its prices.	价格操纵：幽灵沼泽的「黑摩尔之旅」尚未同意涨价。
+Price fixing: Abdul's Discount Travel in Silver Cove has not yet agreed to raise its prices.	价格操纵：银湾镇的「阿卜杜的廉价旅行」尚未同意涨价。
+Price fixing: Royal Lines in Castle Ironfist has not yet agreed to raise its prices.	价格操纵：铁拳城堡的「御道」尚未同意涨价。
+Price fixing: New Sorpigal Coach Company in New Sorpigal has not yet agreed to raise its prices.	价格操纵：新索匹格镇的「新索匹格驿站」尚未同意涨价。
+
+# ---- F 传闻/消息话题：源 79 条，本次新增 68 条 ----
+Ooops text	出错了的文本
+Peasants on main island of Dagger Wound before the pirate outpost is defeated	匕伤群岛主岛上的农夫（海盗前哨被击败前）
+Peasants on main island of Dagger Wound after the pirate outpost is defeated (Questbit 6)	匕伤群岛主岛上的农夫（海盗前哨被击败后，任务位 6）
+Peasants on smaller islands before teleporters are fixed	小岛上的农夫（传送门修复前）
+Peasants on smaller islands after teleporters are fixed (questbit 2)	小岛上的农夫（传送门修复后，任务位 2）
+Pirates on Dagger Wound Island	匕伤岛上的海盗
+Wolves	狼
+Peasants in Ravenshore city	渡鸦海滨城里的农夫
+Wererats	半鼠人
+Were-rats in Smugglers Cove after Fellmoon's letter has been delivered (Questbit 4).  Rats in Dungeo	走私者聚集处的半鼠人（费尔蒙的信送达后，任务位 4）。地牢中的鼠类
+All Peasants after end game	结局后的所有农夫
+Lizardman Lookouts/cannons	蜥蜴人哨兵/火炮
+Lizardmen Warriors	蜥蜴人战士
+Lzardmen Warriors after Questbit 6	蜥蜴人战士（任务位 6 后）
+Ogres	食人妖
+Wasps	黄蜂
+News	消息
+Peasants in Ironsand/Rust	铁沙漠/铁锈镇的农夫
+Dragon Hunters in Fort	要塞里的猎龙人
+Dragon Hunters at Training Camp	训练营的猎龙人
+Peasants in Shadowspire	阴影塔的农夫
+Peasants in Murmurwoods	低语森林的农夫
+Ogres in Ravage Roaming by Zog's fort	残破镇索格要塞旁的食人妖
+Ogres in Ravage Roaming by boat dock	残破镇船坞旁的食人妖
+Peasant Pirates of Regna	雷格那的农夫海盗
+Peasant Minotaurs in Balzathar Lair	巴尔萨煞巢穴的牛头人平民
+Water	水
+Masul	马苏尔
+Clerics(area 7)	牧师（区域 7）
+Nercros in guild	公会里的死灵法师
+Necros in guild	公会里的死灵法师
+Rogues inside Dragon Hunter's Fort	猎龙人堡垒里的盗贼
+dragons when allied	结盟后的飞龙
+Used for the non-talkative friendly monsters	用于不会说话的中立怪物
+Default change me text	默认的“请修改我”文本
+Peasant	农夫
+Adventurer	冒险者
+Ambusher	伏击者
+Guard	守卫
+Peasant message 2, Emerald Island	农夫消息 2，翡翠岛
+Adventurer message 2, Emerald Island	冒险者消息 2，翡翠岛
+Southern Village Group in Harmondale	哈蒙代尔南部村落群
+Lords	领主
+Tent camp in Erathia	埃拉西亚的帐篷营地
+Steadwick	斯特德威克
+Elven capitol	精灵首都
+Pierpont	匹尔邦特
+Walking dead	亡灵
+Deyja	迪雅
+Stable and Tele dwellers in Bracada	布拉卡达的马厩与传送门居民
+Eastern village and boat dwellers in Bracada	布拉卡达东部村庄与船上的居民
+Ridge walkers in Bracada	布拉卡达的山脊行者
+Celeste	塞莱斯特
+Welcome	欢迎
+Peasents in first area of the pit	地狱城第一区域的农夫
+Peasents in the second area of the pit	地狱城第二区域的农夫
+Peasents in the third area of the pit	地狱城第三区域的农夫
+Peasents in main town of nighon	尼根主城的农夫
+Peasents in western town of Nighon	尼根西部城镇的农夫
+Peasents in Eastern village of Nighon	尼根东部村庄的农夫
+Peasents in the Mercenary guild village	雇佣兵行会村落的农夫
+Peasents in the wharf town	码头镇的农夫
+Peasents in the village area	村庄区域的农夫
+Peasents in the Dock area	码头区域的农夫
+Peasents good endgame	好结局中的农夫
+Peasents evil endgame	坏结局中的农夫
+Peasants in 6/7 endgame	6/7 结局中的农夫
+Peasants in 5/8 endgame	5/8 结局中的农夫
+
+# ---- G 房屋显示名缺口：源 5 条，本次新增 5 条 ----
+Nighon tunnels	尼根隧道
+Tunnels to Eeofol	通往伊欧弗的隧道
+Tell James you see this 353	（测试占位文本 353）
+Tell James you see this 354	（测试占位文本 354）
+PLACEHOLDER	占位符

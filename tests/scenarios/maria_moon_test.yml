@@ -1,0 +1,15 @@
+id: test.maria_howling_moon_zh
+title: "汉化检查：玛利亚·吉普赛人的「鸣月」话题（多行正文不再夹英文）"
+world: mm7
+mode: faithful
+tags: [zh_cn, dialogue, npc]
+steps:
+  - new_game_flow: {start_map: 7out01.odm}
+  - speak_npc: {source_id: 787}
+  - select_topic: {action_id: 1321}
+  - advance_runtime: {seconds: 1}
+  - assert:
+      dialog:
+        active: true
+        title: "玛利亚·吉普赛人"
+        text_contains: "乔治·坎尼斯"

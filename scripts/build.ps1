@@ -1,4 +1,4 @@
-﻿# 一键构建简体中文补丁的 mods 部分（可选：连 exe 一起打包）。
+# 一键构建简体中文补丁的 mods 部分（可选：连 exe 一起打包）。
 #
 # 用法：
 #   scripts\build.ps1                                     # 用自动探测到的源码树
@@ -57,7 +57,7 @@ Write-Host ""
 Write-Host "mods 已生成：$OutDir" -ForegroundColor Green
 
 if ($Exe) {
-    if (-not $Dist) { $Dist = "dist/OpenYAMM-117-zh_cn.zip" }
+    if (-not $Dist) { $Dist = "dist/OpenYAMM-119-zh_cn.zip" }
     Invoke-Step "打包" @("tools/package.py", "--mod", $OutDir, "--exe", $Exe, "--out", $Dist)
     Write-Host "已打包：$Dist" -ForegroundColor Green
 } else {

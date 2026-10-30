@@ -10,8 +10,13 @@ ASCII and Latin-1 always come from the face's own CP1252 block, so only text abo
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 from typing import Iterable
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+import paths
 
 TEXT_SUFFIXES = {".txt", ".lua", ".yml", ".yaml", ".ini", ".json", ".csv"}
 FIRST_SUBSET_CODE_POINT = 0x0300
@@ -29,11 +34,13 @@ def code_points_of(path: Path) -> Iterable[int]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--patch", type=Path, required=True, help="patch asset root (mod directory)")
-    parser.add_argument("--openyamm", type=Path, required=True, help="OpenYAMM checkout")
+    parser.add_argument("--openyamm", type=Path, default=None,
+                        help="OpenYAMM checkout（默认按 tools/paths.py 探测，可用 OPENYAMM_SRC 覆盖）")
     parser.add_argument("--out", type=Path, required=True, help="fonts/truetype directory to write the subset into")
     arguments = parser.parse_args()
 
-    roots = [arguments.patch / "engine/data_tables", arguments.openyamm / "assets_dev"]
+    openyamm = paths.engine_source(arguments.openyamm)
+    roots = [arguments.patch / "engine/data_tables", openyamm / "assets_dev"]
     found: set[int] = set()
 
     for root in roots:

@@ -1,30 +1,18 @@
-# 引擎侧改动
 
-补丁能生效的前提是引擎改过。改的是 OpenYAMM **1.17** 的源码树，本仓库只放译文与工具，不放 C++。
-这一页说明改了哪些文件、为什么改，照着做可以自己复现一份能跑中文的 exe。
+## 附：1.18 → 1.19 的增量（2026-10-30）
 
-整体分四层：
+上游 1.19 改了 87 个文件，与汉化重叠 11 个，三方合并后新增/保留的覆盖表接入点：
 
-```
-语料/覆盖表  →  UiText 覆盖层  →  绘制与排版（UTF-8 / 码点）  →  FontAsset 光栅化子集字形
-```
-
-## 一、文本基础设施
-
-### `engine/FontAsset.{h,cpp}`
-
-原来每个字体开 256 个「字节槽」，字形的索引就是字节值，本质上是 CP1252 专用。
-现在：
-
-- 字形表改成 `码点 → 字形` 的映射，`FontAtlas::glyph` 按 Unicode 码点查；
-- 图集按实际位图尺寸打包，不再假定 16×16 的等宽格子；
-- 字体描述文件新增三个键：`metrics: freetype`（用自己的轮廓度量，而不是硬编码基线）、
-  `glyphs:`（要烘焙的码点子集，见下）、`padding:`（图集间距，防止采样串色）；
-- 新增 `decodeUtf8`（把 UTF-8 解成码点序列）与 `faceUsesOutlineMetrics`；
-- 带 `glyphs:` 的面按**布局尺寸**烘焙一次，之后不再随显示尺寸重新光栅化——否则每个字号都要重烘一遍，
-  中文字形太多，启动就卡死了。
-
-### `engine/TextLayout.{h,cpp}`（新增）
+| 文件 | 1.19 的改动 / 汉化处理 |
+|---|---|
+| `game/ui/GameplayLootSummaryRenderer.cpp`（新） | 战利品汇总面板：`{satchels} satchels emptied, {items} items taken`、`{gold} gold`、`{gold} gold (followers took {share})` 改 `UiText::translateTemplate`；标题/表头走覆盖表 |
+| `game/gameplay/GameplayScreenController.cpp` | 多袋规则下旧背包放不下的提示改 `{count} items from the old bags did not fit and lie at your feet` 模板 |
+| `game/ui/GameplayMapProgressBar.cpp` | 地图进度“一键拾取”提示改 `{binding}: loot all` 模板；弹窗标题走覆盖表 |
+| `game/ui/screens/LoadGameScreen.cpp` | 存档列表重做：`formatDate`/`formatClock` 的月份、星期、AM/PM 先翻译；`Saved {date}`、`Save {number}` 改模板；删除/读取/替换/标准/自动存档/快速存档等走覆盖表 |
+| `game/ui/GameplayPartyOverlayRenderer.cpp` | 背包搜索框占位文本 “Search items (...)” 走覆盖表 |
+| `game/items/ItemSearch.*`（新） | 搜索逻辑，无界面文案 |
+| 设置 | `Minimap zoom`、`Quick save`/`Quick load` 标签补进覆盖表 |
+{h,cpp}`（新增）
 
 宽字符断行：按码点切分；行首不放避头标点（`，。、？！：；）》」』` 等），行尾不放避尾标点（`（《「『` 等）。
 没有这个，中文会把标点顶到行首、或者把整句塞进按钮里溢出。
@@ -141,6 +129,13 @@ game/ui/screens/NewGameScreen.cpp
 | `tests/*` | 字体测试改用码点接口；新增「CJK 字面烘焙」用例（设 `OPENYAMM_CJK_ASSETS` 才跑） |
 | `game/scenario/ScenarioRunner.cpp` | 无头场景：`report_items` 抽成独立断言，带 `mods/` 的场景要传 6 参数 `AssetFileSystem::initialize`（含 `installedContent`）才挂载 mod |
 
+## 五、Android 端（1.18 起）
+
+Android 版必须重编引擎，另外需要让 Android 也加载 `mods/`：上游在 `game/app/main.cpp` 用
+`#if !defined(__ANDROID__)` 排除了 `modsRoot`，且 `engine/AssetFileSystem.cpp` 的 Android APK 资产分支
+没有挂载点。改动共 4 处（`main.cpp`、`AssetFileSystem.cpp`、`android/app/src/main/cpp/openyamm_android_entry.cpp`、
+`MusicStream.cpp` 的无 FFmpeg 兜底），细节、构建流水线与产物见 **[android.md](android.md)**。
+
 ## 同步到新版本
 
 上游发新版时，改动集中在 `game/ui/` 与 `game/items/`，通常只需三方合并，重点看：
@@ -162,3 +157,17 @@ game/ui/screens/NewGameScreen.cpp
 | `game/ui/GameplayPartyOverlayRenderer.cpp` | 电影化调色开关、`(off)` 后缀、笔记搜索无结果提示 |
 
 升级全过程见 [upgrading.md](upgrading.md)。
+
+## 附：2026-10-30 补缺轮的引擎改动
+
+这一轮补的是「对话里夹英文、选项还是英文、树显示 tree」的根因，C++ 侧新增的接入点：
+
+| 文件 | 改动 |
+|---|---|
+| `game/events/EventDialogContent.cpp` | 贿赂按钮改 `translateTemplate("{topic} {cost} Gold")`；公会加入兜底改 `"Join guild for {cost} gold"` 模板；`formatNpcProfessionText` 的 `%05/%06/%07/%08/%11/%12` 先 `UiText::translate` 再注入（时段、职业、声誉等级原先会插英文），并补了 `%03/%09/%10` 三个原先未处理的占位符 |
+| `game/gameplay/GameplayDialogController.cpp` | 佣兵自荐长句改 `{name}/{impression}/{class}` 模板，印象词与职业名先翻译 |
+| `game/gameplay/GameplayInteractionController.cpp` | 世界对象/角色交互提示统一过覆盖表；`{verb} ({name})`、`Get {item}`、`You found an item ({item})!` 改模板 |
+| `game/gameplay/GameplayHeldItemController.cpp` | 事件给物品的提示改 `You found something ({item})!` 模板 |
+
+配套的覆盖表条目在 `corpus/overrides/templates_zh.tsv` 与 `manual_zh.tsv`（交互动词、`Drop *` 前缀等）。
+这些文案在渲染层本来也会查覆盖表，改在生成处是为了让**动态拼出来的整句**也能命中模板（渲染层只能整串匹配）。

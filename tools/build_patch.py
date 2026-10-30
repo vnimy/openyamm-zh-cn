@@ -66,7 +66,8 @@ TABLES: Sequence[ColumnMapping] = (
     ColumnMapping("NPCGreet.txt", "npc_greet.txt", ((1, 1), (2, 2))),
     ColumnMapping("mYNPCTopic.txt", "npc_topic.txt", ((1, 1),)),
     ColumnMapping("NPCText.txt", "npc_topic_text.txt", ((1, 1),)),
-    ColumnMapping("NPCNews.txt", "npc_news.txt", ((1, 1),)),
+    # 第 2 列是「Notes / Topic」，NPC 对话里作为新闻话题按钮显示（如「Begging」），必须一起翻。
+    ColumnMapping("NPCNews.txt", "npc_news.txt", ((1, 1), (2, 2))),
     ColumnMapping("history.txt", "english/history.txt", ((1, 1),)),
     ColumnMapping("MM7history.txt", "english/mm7_history.txt", ((1, 1),)),
     ColumnMapping("Class.txt", "english/class.txt", ((1, 1),), key=None),
@@ -104,6 +105,14 @@ CONTINUATION_TABLES = {
     "npc_news.txt",
     "english/scroll.txt",
     "english/quests.txt",
+}
+
+# 引擎按「第一列是数字开新记录，否则把本行首列接到上一条记录最后一个单元格后面」来读的表格。
+# 译文是把整段折成一行写进第一条物理行的，如果只替换第一行，后面那些英文续行会被引擎接在中文后面，
+# 画面上就变成「中文……\nEnglish tail」——这是「对话里夹英文」的根因。这类表必须按记录折叠后再写。
+FOLDED_TABLES = {
+    "npc_topic_text.txt",
+    "npc_greet.txt",
 }
 
 
@@ -231,8 +240,81 @@ def read_simple_names(path: Path) -> Dict[str, List[str]]:
 
 
 def clean_translation(value: str) -> str:
-    """Every translated cell is padded with a leading space by the GBK export."""
-    return value.replace("\r", "").lstrip(" ")
+    """Every translated cell is padded with a leading space by the GBK export.
+
+    译文单元格还常带导出残留的换行（`corpus/mmmerge/Scroll.txt` 的正文以换行开头，会让引用单元格从空行开始），
+    这些都不是正文，一律去掉首尾空白。
+    """
+    return value.replace("\r", "").strip()
+
+
+def fold_engine_records(rows: List[List[str]]) -> Tuple[List[List[str]], List[List[str]]]:
+    """把物理行折成引擎加载器看到的逻辑记录。
+
+    规则与 `NpcDialogTable::loadTextsFromRows` / `loadGreetingsFromRows` 一致：首列是数字的行开新记录，
+    否则把本行首列用换行接到上一条记录最后一个单元格后面，并把本行其余单元格追加进记录。
+    """
+    header: List[List[str]] = []
+    records: List[List[str]] = []
+    pending: Optional[List[str]] = None
+
+    for row in rows:
+        first = row[0].strip() if row else ""
+
+        if first.isdigit():
+            if pending is not None:
+                records.append(pending)
+            pending = list(row)
+        elif pending is None:
+            header.append(list(row))
+        else:
+            if pending[-1]:
+                pending[-1] += "\n"
+            pending[-1] += row[0] if row else ""
+            pending.extend(row[1:])
+
+    if pending is not None:
+        records.append(pending)
+
+    return header, records
+
+
+def merge_folded_records(
+    target_rows: List[List[str]],
+    mapping: ColumnMapping,
+    source_path: Path,
+) -> Tuple[List[List[str]], int, int]:
+    """按记录合并译文，并输出「一条记录一行」的规范表。
+
+    合并后每条记录只留一行（多行正文用引号包住），英文续行一并消失，引擎加载时不会再拼出英文尾巴。
+    """
+    header, records = fold_engine_records(target_rows)
+    source = {} if mapping.key is None else read_records(source_path)
+    translated = 0
+
+    for record in records:
+        record_id = record[mapping.key].strip() if mapping.key < len(record) else ""
+        source_row = source.get(record_id)
+
+        if source_row is None:
+            continue
+
+        changed = False
+
+        for target_column, source_column in mapping.columns:
+            if target_column >= len(record) or source_column >= len(source_row):
+                continue
+
+            value = clean_translation(source_row[source_column])
+
+            if value and value != record[target_column]:
+                record[target_column] = value
+                changed = True
+
+        if changed:
+            translated += 1
+
+    return header + records, translated, len(records) - translated
 
 
 CJK_TEXT = re.compile(r"[\u4e00-\u9fff]")
@@ -363,11 +445,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--corpus", type=Path, default=paths.MMMERGE,
                         help="MMMerge 中文表目录（默认 corpus/mmmerge）")
-    parser.add_argument("--openyamm", type=Path, required=True, help="OpenYAMM checkout")
+    parser.add_argument("--openyamm", type=Path, default=None,
+                        help="OpenYAMM checkout（默认按 tools/paths.py 探测，可用 OPENYAMM_SRC 覆盖）")
     parser.add_argument("--out", type=Path, required=True, help="patch asset root (becomes the mod directory)")
     arguments = parser.parse_args()
 
-    target_root = arguments.openyamm / "assets_dev/engine/data_tables"
+    openyamm = paths.engine_source(arguments.openyamm)
+    target_root = openyamm / "assets_dev/engine/data_tables"
     output_root = arguments.out / "engine/data_tables"
     report: List[str] = []
 
@@ -385,8 +469,14 @@ def main() -> int:
             continue
 
         rows = read_target_rows(target_root / mapping.target)
-        translated, untouched = merge_rows(rows, mapping, source_path)
-        dropped = drop_translated_continuations(rows) if mapping.target in CONTINUATION_TABLES else 0
+
+        if mapping.target in FOLDED_TABLES:
+            rows, translated, untouched = merge_folded_records(rows, mapping, source_path)
+            dropped = 0
+        else:
+            translated, untouched = merge_rows(rows, mapping, source_path)
+            dropped = drop_translated_continuations(rows) if mapping.target in CONTINUATION_TABLES else 0
+
         output_path = output_root / mapping.target
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(texttable.serialize(rows), encoding="utf-8", newline="")

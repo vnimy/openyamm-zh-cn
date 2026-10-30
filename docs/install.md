@@ -3,10 +3,12 @@
 ## 适用版本
 
 - Windows 10／11 x64
-- OpenYAMM **官方 1.17**（即 `OpenYAMM-1.17-windows-x64.zip` 解压后的那份安装）
-- 已经至少完整启动过一次，内容包（约 5.8 GB）下载完毕
+- OpenYAMM **官方 1.19**（即 `OpenYAMM-1.19-windows-x64.zip` 解压后的那份安装）
+- 已经至少完整启动过一次，内容包（约 5.4 GB）下载完毕
 
-版本对不上会出问题：启动器升级到 `app/1.18/` 之后，1.17 的 `openyamm.exe` 与 mods 都不再被加载。
+包名里的版本必须和安装里的 `app/<版本>/` 目录一致：`OpenYAMM-1.19-zh_cn.zip` 只能装在
+`app/1.19/` 上，旧版本的补丁只能装在对应目录上。
+版本对不上会出问题：启动器升级到 `app/1.19/` 之后，旧版的 `openyamm.exe` 与 mods 都不再被加载。
 
 ## 步骤
 
@@ -29,13 +31,15 @@
    OpenYAMM/mods/engine/fonts/truetype/openyamm_cjk.ttf
    ```
 
-   > 注意是 `OpenYAMM/mods/`，不是 `OpenYAMM/app/1.17/mods/`。
+   > 注意是 `OpenYAMM/mods/`，不是 `OpenYAMM/app/<版本>/mods/`。
 
-4. 备份原引擎，再把 `openyamm.exe` 覆盖到 `OpenYAMM/app/1.17/openyamm.exe`：
+4. 备份原引擎，再把 `openyamm.exe` 覆盖到 `OpenYAMM/app/<版本>/openyamm.exe`
+   （`<版本>` 就是包名里的版本号，例如 1.19）：
 
    ```bat
-   ren "OpenYAMM\app\1.17\openyamm.exe" openyamm.exe.orig
-   copy openyamm.exe "OpenYAMM\app\1.17\openyamm.exe"
+   set VER=1.19
+   ren "OpenYAMM\app\%VER%\openyamm.exe" openyamm.exe.orig
+   copy openyamm.exe "OpenYAMM\app\%VER%\openyamm.exe"
    ```
 
 5. 照常双击 `OpenYAMM.exe` 启动。
@@ -57,7 +61,7 @@ Development assets: assets
 
 | 现象 | 原因 | 处理 |
 |---|---|---|
-| 中文变成方块或问号 | exe 没换，或换成了别的版本 | 确认 `app/1.17/openyamm.exe` 是补丁里的那份（约 56 MB） |
+| 中文变成方块或问号 | exe 没换，或换成了别的版本 | 确认 `app/<版本>/openyamm.exe` 是补丁里的那份（约 56 MB） |
 | 中文变成「æ­¦å™¨」这类乱码 | 同上；也可能是补丁表被编辑器存成了 GBK | 重装一次，别用记事本改表 |
 | 部分文字仍是英文 | 该条还没译 | 跑 `python tools/check_literals.py` 看缺口，或提 issue |
 | 文字溢出按钮、标点跑到行首 | 用了原版 exe（不按中文断行） | 换 exe |
@@ -70,4 +74,4 @@ Development assets: assets
 rmdir /s /q "OpenYAMM\mods"
 ```
 
-再把 `app\1.17\openyamm.exe.orig` 改名回 `openyamm.exe` 即可。存档在 `saves/`，补丁不会动它。
+再把 `app\<版本>\openyamm.exe.orig` 改名回 `openyamm.exe` 即可。存档在 `saves/`，补丁不会动它。

@@ -1,42 +1,22 @@
-# 升级到新的引擎版本
 
-引擎每出一个新版本，就要做一次移植。这一篇记的是 **1.17 → 1.18** 的实际过程与踩到的坑，
-换别的版本时步骤通用。
+## 附：1.18 → 1.19 的实际记录（2026-10-30）
 
-## 一句话流程
-
-以旧的工作区为底复制出新目录 → 用上游新版本覆盖「上游自己改过的文件」 → 把我们对新版本也改过的
-那部分做三方对比打回去 → 补新界面的译文 → 编译、无头验证、出包。
-
-关键点：**不能直接把旧工作区改名当成新版本**。这样会丢掉上游的新功能，也容易带着旧 bug。
-反过来，**也不能整份替换成新版本**，那样汉化全没了。
-
-## 第一步：拿到上游改了哪些文件
-
-```bash
-cd /path/to/openyamm-1.17
-git fetch --depth 1 origin tag v1.18
-git diff-tree -r --name-status v1.17 v1.18 > v118-changes.txt
-wc -l v118-changes.txt
-```
-
-1.17 → 1.18 是 75 个文件（其中 1 个 `assets_source` 是子模块指针，忽略）。
-
-本地这台机器上 `.git/index` 有可能不存在（源码树是手工拼的浅克隆），这时 `git status` 会把整棵树
-报成已删除、`git diff` 又要联网拉 promisor 对象。别指望它，改用仓库里的工具按内容哈希比对：
-
-```bash
-python tools/dev/detect_engine_changes.py --tree ../openyamm-1.17 --tag v1.17
-```
-
-它只做两件事：`git ls-tree -r <tag>` 拿上游清单，然后本地算每个文件的 blob sha1 跟它比，
-全程不下载对象。跑出来是我们改过的 37 个 + 新增的 5 个（`game/ui/UiText.*`、
-`engine/TextLayout.*`、`cmake/RewriteMsysPaths.cmake`）。
-
-## 第二步：铺新目录
-
-```bash
-mkdir openyamm-1.18
+- 上游 1.18 → 1.19 共 **87 个文件**（`github.com/pjasicek/openyamm/compare/v1.18...v1.19.diff`，
+  纯文本 diff 291 KB，无二进制改动）。
+- 本机没有完整上游仓库（仓库 11.7 GB，含大量美术源文件），所以**没下整包源码**，而是：
+  1. `curl`（走本机 SOCKS5，`git` 自带的 curl 可用）拉 `.diff`，解析出 87 个路径与 added/modified 状态；
+  2. 对每个文件用 `raw.githubusercontent.com/.../v1.19/<path>` 取新内容、`.../v1.18/<path>` 取 base；
+  3. 本地 `openyamm-1.18` 树逐文件比 hash：只被上游改过的直接覆盖，两边都改过的用
+     `git merge-file -p --diff3 本地 base 上游` 三方合并。
+- 结果：67 个直接覆盖、6 个新增（`game/items/ItemSearch.*`、`game/ui/GameplayLootSummaryRenderer.*`、
+  `tests/ItemSearchTests.cpp`、`assets_dev/engine/ui/gameplay/loot_summary.yml`）、11 个三方合并，
+  仅 `game/ui/screens/LoadGameScreen.cpp` 有 1 处冲突（旧汉化把 “(not installed)” 包成模板，
+  上游把 `saveData->ruleset` 改成 `summary.ruleset`），手工合成。
+- 本地 1.18 树里缺的 3 个上游文本文件（`assets_dev/.../character.yml`、两个 mm7 lua）从 v1.19 补回。
+- 构建：新建 `openyamm-1.19/build-mingw`；`zstd`/`etcpak`/`etc2comp` 预解压到 `toolchains/deps/` 并用
+  `-DFETCHCONTENT_SOURCE_DIR_OPENYAMM_*` 指过去，配置期不联网；FFmpeg 装头文件时仍要手工补一次（见 build.md）。
+- 新界面译文：见 [engine-changes.md](engine-changes.md) 的 1.19 附录与 `CHANGELOG.md`。
+8
 cd openyamm-1.17 && tar cf - --exclude=.git --exclude=build-mingw . | (cd ../openyamm-1.18 && tar xf -)
 ```
 
@@ -151,7 +131,7 @@ python tools/package.py --mod build/mods \
 无头场景别忘了跑（不用开游戏窗口）：
 
 ```bash
-E:/Games/OpenYAMM-1.18/OpenYAMM/app/1.18/openyamm.exe \
+<安装目录>/app/1.18/openyamm.exe \
     --headless-run-scenario tests/scenarios/item_inspect_test.yml
 ```
 

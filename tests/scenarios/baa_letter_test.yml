@@ -1,0 +1,15 @@
+id: test.baa_letter_zh
+title: "汉化检查：孤独骑士的巴阿信徒「信件」话题"
+world: mm7
+mode: faithful
+tags: [zh_cn, dialogue, npc]
+steps:
+  - new_game_flow: {start_map: 7out01.odm}
+  - speak_npc: {source_id: 786}
+  - select_topic: {action_id: 1314}
+  - advance_runtime: {seconds: 1}
+  - assert:
+      dialog:
+        active: true
+        title: "安多弗·波特皮洛·巴阿信徒"
+        text_contains: "蜡封的信"

@@ -1,0 +1,13 @@
+id: test.isaac_shop_zh
+title: "汉化检查：艾萨克的炼金术店（房屋标题与选项）"
+world: mm6
+mode: faithful
+tags: [zh_cn, house, npc]
+steps:
+  - new_game_flow: {start_map: outc2.odm}
+  - execute_event: {id: 10}
+  - advance_runtime: {seconds: 1}
+  - assert:
+      dialog:
+        active: true
+        title: "艾萨克·炼金术士"

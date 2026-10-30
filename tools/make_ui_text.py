@@ -47,6 +47,11 @@ def load_tsv_pairs(file_name: str) -> list:
 			continue
 
 		source, target = line.split("\t", 1)
+
+		# 待译表（工作清单）里译文列可能还空着：空译文不能进覆盖表，否则会把原文替换成空串。
+		if not target.strip():
+			continue
+
 		pairs.append((source, target))
 
 	return pairs
@@ -81,6 +86,28 @@ def load_manual() -> list:
 	return load_tsv_pairs("manual_zh.tsv")
 
 
+# 汉化补缺轮的补充表（手写）。分开存是为了多人并行补译时互不覆盖：
+#   world_objects_zh.tsv   装饰物（树/石头……）Hint 等世界对象提示
+#   lua_extra_mm6_zh.tsv   mm6 内容包 lua 里非 SetMessage 的消息（SimpleMessage/StatusText）
+#   lua_extra_rest_zh.tsv  mm7/mm8/engine 内容包同一类消息
+#   templates_zh.tsv       代码动态拼接文案的 {占位符} 模板
+EXTRA_TABLES = (
+	"world_objects_zh.tsv",
+	"lua_extra_mm6_zh.tsv",
+	"lua_extra_rest_zh.tsv",
+	"templates_zh.tsv",
+)
+
+
+def load_extras() -> list:
+	pairs = []
+
+	for file_name in EXTRA_TABLES:
+		pairs.extend(load_tsv_pairs(file_name))
+
+	return pairs
+
+
 def escape_newlines(text: str) -> str:
 	"""表是「一行一条」，原文/译文里的真换行一律写成 \\n，引擎读表时会还原（见 UiText.cpp）。"""
 	return text.replace("\r\n", "\n").replace("\r", "\n").replace("\n", "\\n")
@@ -94,6 +121,7 @@ def main() -> None:
 		load_enchant_names()
 		+ load_event_names()
 		+ load_house_names()
+		+ load_extras()
 		+ load_lua_dialog()
 		+ load_manual()
 	)

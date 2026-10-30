@@ -2,6 +2,64 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 1.19.0 — 2026-10-30
+
+跟进 OpenYAMM 1.19。
+
+### 引擎
+
+- 上游 1.18 → 1.19 变更 87 个文件（无二进制），按 [docs/upgrading.md](docs/upgrading.md) 的做法逐文件三方合并：
+  67 个文件直接换成上游版本、6 个新增文件、11 个两边都改过的文件 `git merge-file` 合并（仅 `LoadGameScreen.cpp`
+  一处冲突，手工合成）。汉化新增的 `UiText` / `TextLayout` 与全部覆盖表接入点保留。
+- 1.19 新界面接入覆盖表：清空地图后的战利品汇总（标题、袋子/物品计数、金币与随从分成、留在袋子里的提示）、
+  背包搜索框占位文本、地图进度“一键拾取”提示、PrintScreen 截图提示、重做后的读档/存档列表（日期、星期、
+  “保存于”、删除/读取/替换/标准/自动存档/快速存档等）。
+- 存档列表的日期与时间不再拼英文：`formatDate`/`formatClock` 的月份、星期、AM/PM 走覆盖表，
+  `Saved <date>`、`Save <n>` 改模板。
+
+### 构建
+
+- 新增 `openyamm-1.19` 构建树与构建脚本；`zstd`/`etcpak`/`etc2comp` 预解压到 `toolchains/deps/` 后用
+  `FETCHCONTENT_SOURCE_DIR_*` 指向本地，配置期不再联网。
+- 修掉 FFmpeg `make install` 在 cmd 进程树里把头文件列表截断的问题（手动 `make install` + 补头文件）。
+
+### 译文
+
+- 覆盖表 5476 条（+37）。1.19 新增/漏译的界面文案补进 `manual_zh.tsv`。
+
+## 1.18.1 — 2026-10-30
+
+补对话与世界对象的漏译。线上反馈集中在「NPC 对话里夹英文」「选项还是英文」「树显示 tree」，
+根因都在生成流程与覆盖表，不在个别译文。
+
+### 修复
+
+- **多行表单元格没折叠**（最大根因）：`npc_topic_text` / `npc_greet` 的译文只写进第一条物理行，
+  引擎把后面的英文续行接在中文后面，出现「中文……\nEnglish tail」。`build_patch.py` 现在按引擎加载
+  规则把物理行折成逻辑记录再合并，一次清掉 717 条英文尾巴与 79 条夹英文招呼语。
+- **`npc_news` 第 2 列没翻译**：它会被当成新闻话题按钮显示（「Begging」等），现已随正文一起翻。
+- **lua 的 `SimpleMessage` / `StatusText` 整类漏掉**：陷阱、神龛祝福、任务提示、学识之骨等 506 条已手译。
+- **世界对象提示没进覆盖表**：装饰物 `Hint` 130 条（树、岩石、花草……）、世界对象交互提示
+  （开门／拾取／搜刮／使用拉杆……）已补。
+- **动态拼接文案**：贿赂价格、公会会费、佣兵自荐、`%01`～`%17` 台词占位符（含 `%03/%09/%10`）
+  改为 `UiText` 模板；NPC 台词里的时段、职业名、声誉等级先翻译再注入。
+- **残留占位/表项**：`Placeholder`、`Missing Text N`、`Put Text Here N`、`House NNN`、MM9 地图名、
+  部分怪物名、`Price fixing` 任务文本已补中文。
+
+### 译文与工具
+
+- 覆盖表 5439 条（+1122）：新增 `lua_extra_mm6_zh.tsv`（322）、`lua_extra_rest_zh.tsv`（184）、
+  `world_objects_zh.tsv`（292）、`templates_zh.tsv`（8），`manual_zh.tsv` 1649 条。
+- 新增 `tools/dev/audit_visible_text.py`：按 `UiText::translate` 规则扫屏幕文本（lua 消息、装饰物提示、
+  事件名、NPC/房屋/地图/怪物/物品名），返回 0 才算通过。
+- 新增无头回归场景：`tests/scenarios/baa_letter_test.yml`、`maria_moon_test.yml`、`isaac_shop_test.yml`。
+
+### 已知问题
+
+- 引擎源码硬编码 UI 仍有约 495 条候选（含误报/日志串），集中在灵气说明、掉落过滤说明、新角色向导等长文案，
+  见 [docs/progress.md](docs/progress.md)。
+- 方尖碑密文按原样保留（拼字谜题）；MM9 地名按音译处理。
+
 ## 1.18.0 — 2026-10-29
 
 跟进 OpenYAMM 1.18。升级流程沉淀成 [docs/upgrading.md](docs/upgrading.md)，新工具

@@ -87,7 +87,7 @@ Continue	继续
 Load Game	读档
 Universe of Might and Magic	魔法门的世界
 Back	返回
-New World Computing	New World Computing
+New World Computing	新世界电脑公司
 OpenEnroth	OpenEnroth
 Rodril & the MMMerge contributors	Rodril 与 MMMerge 的贡献者们
 The MAW team	MAW 团队
@@ -1309,3 +1309,385 @@ Autosave	自动存档
 Automatic	自动存档
 Quick	快速存档
 Manual	手动存档
+You already have enough followers.	你的随从已经够多了。
+You're already a member of this guild.	你已经是本行会成员了。
+I will join you.	我愿意加入你们。
+This house refuses service because of your reputation.	由于你的声望，本店拒绝为你服务。
+This house refuses service after the theft.	因为盗窃事件，本店拒绝为你服务。
+Page	侍童
+Squire	侍从
+Lord	领主
+Nighon tunnels	尼根隧道
+Tunnels to Eeofol	通往伊欧弗的隧道
+Tell James you see this 353	（测试占位文本 353）
+Tell James you see this 354	（测试占位文本 354）
+PLACEHOLDER	占位符
+Placeholder Text	占位文本
+Placeholder	占位符
+MMExt Placeholder	MMExt 占位符
+Missing Text 133	缺失文本 133
+missing text 38	缺失文本 38
+missing text 42	缺失文本 42
+yes	是
+Blaster Shotgun	爆能霰弹枪
+Lich Jar Placeholder	巫妖命匣占位物
+Elixir Placeholder	灵药占位物
+Final Part Placeholder	最终部件占位物
+Level Design Placeholder	关卡设计占位物
+Artifact Placeholder (Elf vs. Human)	神器占位物（精灵/人类）
+Riverstride Plans Placeholder	河渡计划占位物
+False Plans Placeholder	伪造计划占位物
+Neutral Bow Placeholder	中立弓占位物
+Elf/Human Artifact Placeholder	精灵/人类神器占位物
+quest item 600	任务物品 600
+quest item 601	任务物品 601
+quest item 622	任务物品 622
+quest item 667	任务物品 667
+quest item 668	任务物品 668
+quest item 669	任务物品 669
+quest item 670	任务物品 670
+quest item 671	任务物品 671
+quest item 672	任务物品 672
+quest item 673	任务物品 673
+quest item 674	任务物品 674
+quest item 675	任务物品 675
+quest item 676	任务物品 676
+quest item 677	任务物品 677
+quest item 678	任务物品 678
+quest item 679	任务物品 679
+quest item 680	任务物品 680
+quest item 681	任务物品 681
+quest item 682	任务物品 682
+quest item 683	任务物品 683
+quest item 684	任务物品 684
+quest item 685	任务物品 685
+quest item 692	任务物品 692
+quest item 693	任务物品 693
+quest item 694	任务物品 694
+quest item 695	任务物品 695
+quest item 696	任务物品 696
+quest item 697	任务物品 697
+quest item 698	任务物品 698
+quest item 699	任务物品 699
+message scroll 773	信息卷轴 773
+message scroll 775	信息卷轴 775
+message scroll 776	信息卷轴 776
+message scroll 777	信息卷轴 777
+message scroll 778	信息卷轴 778
+message scroll 779	信息卷轴 779
+message scroll 780	信息卷轴 780
+message scroll 781	信息卷轴 781
+message scroll 782	信息卷轴 782
+message scroll 783	信息卷轴 783
+message scroll 784	信息卷轴 784
+message scroll 785	信息卷轴 785
+message scroll 786	信息卷轴 786
+message scroll 787	信息卷轴 787
+message scroll 788	信息卷轴 788
+message scroll 789	信息卷轴 789
+message scroll 790	信息卷轴 790
+message scroll 791	信息卷轴 791
+message scroll 792	信息卷轴 792
+message scroll 793	信息卷轴 793
+message scroll 794	信息卷轴 794
+message scroll 795	信息卷轴 795
+message scroll 796	信息卷轴 796
+message scroll 797	信息卷轴 797
+message scroll 798	信息卷轴 798
+message scroll 799	信息卷轴 799
+Talk	交谈
+Pick Up	拾取
+Open Chest	打开箱子
+Enter	进入
+Open Door	开门
+Press	按下
+Use Lever	使用拉杆
+Drop Item	放下物品
+Travel	旅行
+Passage	通道
+Teleport	传送
+Use Switch	使用开关
+Use Elevator	使用升降机
+Use Pedestal	使用基座
+Fountain	喷泉
+Well	水井
+Shrine	神龛
+Obelisk	方尖碑
+Boost	强化
+Read	阅读
+{verb} ({name})	{verb}（{name}）
+Get {item}	拾取{item}
+You found something ({item})!	你找到了{item}！
+Drop *	放下 
+You have already claimed this bounty.	你已领取本月悬赏。
+You lost the Arcomage match.	你输掉了骨牌比赛。
+Select the Item to Identify	选择要鉴定的物品
+No room for the empty bottle.	没有空间放空瓶。
+You feel high magic presence here.	你感到这里有强大的魔法气息。
+All inventories have been sorted	所有物品栏已整理。
+All bags of the party sorted	队伍的所有背包已整理。
+Saintly	圣洁
+Friendly	友善
+Unfriendly	不友善
+Notorious	声名狼藉
+morning	早上
+afternoon	下午
+evening	晚上
+traveler	旅人
+Warrior	战士
+Mage	法师
+%03	你的
+%09	你的
+%10	大人
+Trap!	陷阱！
+Empty	空的
+Rats!	老鼠！
+Zap!	触电！
+Ouch!	哎哟！
+Ok!	好！
+WOW!	哇！
+Hic!	嗝！
+House 322	房屋 322
+House 324	房屋 324
+House 487	房屋 487
+House 488	房屋 488
+House 489	房屋 489
+House 490	房屋 490
+House 491	房屋 491
+House 492	房屋 492
+House 493	房屋 493
+House 494	房屋 494
+House 495	房屋 495
+House 496	房屋 496
+House 497	房屋 497
+House 498	房屋 498
+House 501	房屋 501
+House 502	房屋 502
+House 503	房屋 503
+House 504	房屋 504
+House 505	房屋 505
+House 506	房屋 506
+House 507	房屋 507
+House 508	房屋 508
+House 509	房屋 509
+House 510	房屋 510
+House 511	房屋 511
+House 512	房屋 512
+House 513	房屋 513
+House 514	房屋 514
+House 515	房屋 515
+House 516	房屋 516
+House 517	房屋 517
+House 518	房屋 518
+House 519	房屋 519
+House 520	房屋 520
+House 521	房屋 521
+House 522	房屋 522
+House 523	房屋 523
+House 524	房屋 524
+House 525	房屋 525
+House 271	房屋 271
+House 272	房屋 272
+House 273	房屋 273
+House 282	房屋 282
+House 325	房屋 325
+House 326	房屋 326
+House 473	房屋 473
+House 227	房屋 227
+House 228	房屋 228
+House 229	房屋 229
+House 230	房屋 230
+House 231	房屋 231
+House 232	房屋 232
+House 233	房屋 233
+House 234	房屋 234
+House 235	房屋 235
+House 236	房屋 236
+House 237	房屋 237
+House 241	房屋 241
+House 242	房屋 242
+House 243	房屋 243
+House 244	房屋 244
+House 245	房屋 245
+House 246	房屋 246
+House 247	房屋 247
+House 248	房屋 248
+House 249	房屋 249
+House 250	房屋 250
+House 251	房屋 251
+House 252	房屋 252
+House 253	房屋 253
+House 254	房屋 254
+House 255	房屋 255
+House 256	房屋 256
+House 257	房屋 257
+House 258	房屋 258
+House 259	房屋 259
+House 260	房屋 260
+House 261	房屋 261
+House 262	房屋 262
+House 263	房屋 263
+House 264	房屋 264
+House 265	房屋 265
+House 266	房屋 266
+House 267	房屋 267
+House 268	房屋 268
+If you see this text tell James.	如果看到这段文字，请告诉 James。
+Group 0	群体 0
+Group 1	群体 1
+Group 2	群体 2
+Group 3	群体 3
+Group 4	群体 4
+Group 5	群体 5
+Group 6	群体 6
+Group 7	群体 7
+Group 8	群体 8
+Group 9	群体 9
+Group 10	群体 10
+Group 11	群体 11
+Group 12	群体 12
+Group 13	群体 13
+Group 14	群体 14
+Group 15	群体 15
+Group 16	群体 16
+Group 17	群体 17
+Group 18	群体 18
+Group 19	群体 19
+Group 20	群体 20
+Group 21	群体 21
+Group 22	群体 22
+Group 23	群体 23
+Group 24	群体 24
+Group 25	群体 25
+Group 26	群体 26
+Group 27	群体 27
+Group 28	群体 28
+Group 29	群体 29
+Group 30	群体 30
+Group 31	群体 31
+Group 32	群体 32
+Group 33	群体 33
+Group 34	群体 34
+Group 35	群体 35
+Group 36	群体 36
+Group 37	群体 37
+Group 38	群体 38
+Group 39	群体 39
+Group 40	群体 40
+Group 41	群体 41
+Group 42	群体 42
+Group 43	群体 43
+Group 44	群体 44
+Group 45	群体 45
+Group 46	群体 46
+Group 47	群体 47
+Group 48	群体 48
+Group 49	群体 49
+Group 50	群体 50
+Group 51	群体 51
+Group 52	群体 52
+Group 53	群体 53
+Group 54	群体 54
+Group 55	群体 55
+Group 56	群体 56
+Group 57	群体 57
+Group 58	群体 58
+Group 59	群体 59
+Group 60	群体 60
+Group 61	群体 61
+Group 62	群体 62
+Group 63	群体 63
+Group 64	群体 64
+Group 65	群体 65
+Group 66	群体 66
+Group 67	群体 67
+Group 68	群体 68
+Group 69	群体 69
+Group 70	群体 70
+Group 71	群体 71
+Group 72	群体 72
+Group 73	群体 73
+Group 74	群体 74
+Group 75	群体 75
+Group 76	群体 76
+Group 77	群体 77
+Group 78	群体 78
+Group 79	群体 79
+Group 80	群体 80
+Group 81	群体 81
+Group 82	群体 82
+Group 83	群体 83
+Group 84	群体 84
+Group 85	群体 85
+Group 86	群体 86
+Group 87	群体 87
+Group 88	群体 88
+Group 89	群体 89
+Group 90	群体 90
+Group 91	群体 91
+Group 92	群体 92
+Group 93	群体 93
+Group 94	群体 94
+Group 95	群体 95
+Group 96	群体 96
+Group 97	群体 97
+Group 98	群体 98
+Group 99	群体 99
+Group 100	群体 100
+Group 101	群体 101
+Group 102	群体 102
+Group 103	群体 103
+Group 104	群体 104
+Group 105	群体 105
+Group 106	群体 106
+Group 107	群体 107
+Group 108	群体 108
+Group 109	群体 109
+Group 110	群体 110
+Group 111	群体 111
+Group 112	群体 112
+Group 113	群体 113
+Group 114	群体 114
+Group 115	群体 115
+Group 116	群体 116
+Group 117	群体 117
+Group 118	群体 118
+Group 119	群体 119
+Map Looted	地图已清空
+Left in satchels: no room in the bags	留在袋子里的（背包放不下）
+The satchels held only gold.	袋子里只有金币。
+{satchels} satchels emptied, {items} items taken	{satchels} 个袋子已清空，取得 {items} 件物品
+{gold} gold (followers took {share})	{gold} 金币（随从取走 {share}）
+{count} items from the old bags did not fit and lie at your feet	{count} 件旧背包物品没装下，掉在你脚边
+Search items (ring might luck|speed)	搜索物品（如 戒指 力量 幸运|速度）
+Map progress	地图进度
+Endless Arena	无尽竞技场
+{binding}: loot all	{binding}：一键拾取
+Screenshot saved	截图已保存
+Screenshot failed	截图失败
+Delete	删除
+Load	读取
+Replace	替换
+Standard	标准
+Save {number}	存档 {number}
+Saved {date}	保存于 {date}
+{day} {month} {year}	{year}年{month}月{day}日
+AM	上午
+PM	下午
+Minimap zoom	小地图缩放
+Quick save	快速保存
+Quick load	快速读取
+Recovery time: *	恢复时间：
+Recovery time: N/A	恢复时间：不适用
+Select the Item to Repair	选择要修理的物品
+Select the Item to Sell	选择要出售的物品
+You can't do that yet	你现在还不能那样做
+The weapon backfires	武器走火了
+Inventory sorted	物品栏已整理
+New stock: *	新货：
+Can't hire adventurer.	无法雇佣冒险者。
+3 pts	3 点
+Dimension Door to *	次元门 → 
+Town Portal to *	城镇传送 → 
+current location	当前位置
+Map progress	地图进度

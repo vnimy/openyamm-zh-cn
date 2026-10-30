@@ -1,6 +1,6 @@
 """仓库内的路径约定。
 
-各工具算默认位置的地方集中在这一个模块，免得每个脚本各写一份 `D:/projects/...`。
+各工具算默认位置的地方集中在这一个模块，免得每个脚本各写一份硬编码的绝对路径。
 所有默认值都可以用命令行参数或环境变量覆盖：
 
 - `OPENYAMM_SRC`      OpenYAMM 源码树（要有 `assets_dev/engine/data_tables/`）
@@ -39,11 +39,13 @@ def _first_existing(candidates) -> Path | None:
 
 
 def engine_source(explicit=None) -> Path:
-	"""OpenYAMM 源码树。默认找仓库的同级目录 `../openyamm`、`../openyamm-1.17`。"""
+	"""OpenYAMM 源码树。默认找仓库的同级目录 `../openyamm-1.19`、`../openyamm-1.18`、`../openyamm`。"""
 	path = _first_existing(
 		[
 			explicit,
 			os.environ.get("OPENYAMM_SRC"),
+			REPO.parent / "openyamm-1.19",
+			REPO.parent / "openyamm-1.18",
 			REPO.parent / "openyamm",
 			REPO.parent / "openyamm-1.17",
 		]
@@ -56,11 +58,16 @@ def engine_source(explicit=None) -> Path:
 
 
 def asset_packs(explicit=None) -> Path:
-	"""原版安装的资产包目录（`assets/packs`）。默认找仓库同级的 OpenYAMM-1.17 安装。"""
+	"""原版安装的资产包目录（`assets/packs`）。
+
+	默认依次找：仓库同级 `game/assets/packs`（本项目自带的 1.18 正式安装）、
+	旧布局 `OpenYAMM-1.17/OpenYAMM/assets/packs`、以及 1.17 构建树下的 `build-mingw/game/assets/packs`。
+	"""
 	path = _first_existing(
 		[
 			explicit,
 			os.environ.get("OPENYAMM_PACKS"),
+			REPO.parent / "game" / "assets" / "packs",
 			REPO.parent / "OpenYAMM-1.17" / "OpenYAMM" / "assets" / "packs",
 			REPO.parent / "openyamm-1.17" / "build-mingw" / "game" / "assets" / "packs",
 		]
