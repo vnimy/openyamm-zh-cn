@@ -194,6 +194,36 @@ def check_half_split(files: List[Path]) -> List[Tuple[str, str]]:
     return gaps
 
 
+
+# ---------------------------------------------------------------- F：引号形态不匹配
+def check_quoted_keys() -> List[Tuple[str, str]]:
+    """引擎的 TextTable 会把整体被双引号包裹的单元格剥成不带引号的串。
+    覆盖表的键若写成带引号的样子，运行时永远匹配不上——译文静默失效，
+    典型症状是「装备特殊效果里的属性缩写仍是英文」。"""
+    import glob
+    import zipfile
+
+    overlay = load_overlay()
+    packs = sorted(paths.asset_packs(None).glob("engine.core-*.zip"))
+    gaps: List[Tuple[str, str]] = []
+    for pack in packs:
+        with zipfile.ZipFile(pack) as archive:
+            for name in archive.namelist():
+                if not name.startswith("data_tables/") or not name.endswith(".txt"):
+                    continue
+                text = archive.read(name).decode("utf-8", "replace")
+                for line in text.splitlines():
+                    for cell in line.split("\t"):
+                        cell = cell.strip()
+                        if len(cell) < 8 or not cell.startswith('"') or not cell.endswith('"'):
+                            continue
+                        inner = cell[1:-1].strip()
+                        # 键写成带引号、剥引号的形态却没有 -> 这条译文永远命中不了
+                        if cell in overlay and inner not in overlay:
+                            gaps.append((cell[:100], name))
+            break  # engine.core 已含全部相关表
+    return gaps
+
 # ---------------------------------------------------------------- E：术语一致性
 def check_terminology(overlay: Dict[str, str]) -> List[Tuple[str, str]]:
     gaps: List[Tuple[str, str]] = []
@@ -229,6 +259,7 @@ def main() -> int:
         "C 覆盖表缺条目": check_missing_overrides(files, overlay),
         "D 半拼接（前缀已译、后半英文）": check_half_split(files),
         "E 术语不一致": check_terminology(overlay),
+        "F 引号形态不匹配": check_quoted_keys(),
     }
 
     blocking = 0

@@ -8,6 +8,7 @@
 ```bash
 python tools/dev/check_translation_rules.py  # 机制检查：占位符/裸拼/缺条目/半拼接/术语；返回 0 = 无阻断项
 python tools/dev/audit_visible_text.py      # 屏幕文本（对话/世界对象/NPC/表项）残留英文；返回 0 = 无缺口
+python tools/dev/check_table_residue.py     # 数据表正文残留英文（区分玩家可见/编辑器备注）
 python tools/check_literals.py --show 60    # 源码硬编码 UI 文案缺口（含误报）
 ```
 

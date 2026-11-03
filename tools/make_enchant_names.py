@@ -34,16 +34,16 @@ STANDARD_STAT = {
     "Endurance": "耐力",
     "Accuracy": "精准",
     "Speed": "速度",
-    "Luck": "幸运",
+    "Luck": "运气",
     "Hit Points": "生命值",
     "Spell Points": "法术值",
-    "Armor Class": "护甲等级",
+    "Armor Class": "防御等级",
     "Fire Resistance": "火系抗性",
-    "Air Resistance": "气系抗性",
+    "Air Resistance": "风系抗性",
     "Water Resistance": "水系抗性",
     "Earth Resistance": "土系抗性",
-    "Mind Resistance": "心智抗性",
-    "Body Resistance": "肢体抗性",
+    "Mind Resistance": "心系抗性",
+    "Body Resistance": "体系抗性",
     "Alchemy skill": "炼金术",
     "Stealing skill": "偷窃术",
     "Disarm skill": "解除陷阱",
@@ -99,7 +99,7 @@ SPECIAL_STAT = {
     "+15 Endurance and +5 Armor.": "耐力 +15，护甲 +5。",
     "+15 Endurance and Regenerate Hit points over time.": "耐力 +15，并持续回复生命。",
     "+15 Luck and Regenerate Spell points over time.": "幸运 +15，并持续回复法术。",
-    "+20 Air Resistance and Shielding.": "气系抗性 +20，并获得护盾。",
+    "+20 Air Resistance and Shielding.": "风系抗性 +20，并获得护盾。",
     "+3 ID Item and ID Monster skills.": "物品鉴定、怪物鉴定 +3。",
     "+3 Stealing and Disarm skills.": "偷窃术、解除陷阱 +3。",
     "+3 Unarmed and Dodging skills.": "徒手格斗、闪避 +3。",
@@ -119,7 +119,7 @@ SPECIAL_STAT = {
     "Adds 5 points of Body damage and +2 Disarm skill.": "附加 5 点肢体伤害，解除陷阱 +2。",
     "Adds 5 points of Body damage.": "附加 5 点肢体伤害。",
     "Adds 6-15 points of Electrical damage.": "附加 6-15 点电击伤害。",
-    "Adds 6-8 points of Cold damage and +5 Armor Class.": "附加 6-8 点寒冷伤害，护甲等级 +5。",
+    "Adds 6-8 points of Cold damage and +5 Armor Class.": "附加 6-8 点寒冷伤害，防御等级 +5。",
     "Adds 6-8 points of Cold damage.": "附加 6-8 点寒冷伤害。",
     "Adds 8 points of Body damage.": "附加 8 点肢体伤害。",
     "Adds 9-12 points of Cold damage.": "附加 9-12 点寒冷伤害。",
@@ -136,7 +136,7 @@ SPECIAL_STAT = {
     "Increased Value.": "价值提升。",
     "Increased Weapon speed.": "武器速度提升。",
     "Increases chance of Disarming.": "提高解除陷阱的成功率。",
-    "Increases effect of all Air spells.": "增强所有气系法术的效果。",
+    "Increases effect of all Air spells.": "增强所有风系法术的效果。",
     "Increases effect of all Body spells.": "增强所有肢体法术的效果。",
     "Increases effect of all Dark spells.": "增强所有黑暗法术的效果。",
     "Increases effect of all Earth spells.": "增强所有土系法术的效果。",
@@ -158,6 +158,23 @@ SPECIAL_STAT = {
     "Wearer resistant to Poison.": "佩戴者免疫中毒。",
     "Wearer resistant to Sleep.": "佩戴者免疫睡眠。",
     "Wearer resistant to Stone.": "佩戴者免疫石化。",
+}
+
+# 属性缩写：特殊词缀的描述列用了大量缩写（Luck / Int / Spd / SP / Per / End / Acc / AC / Res）。
+# 整句模板已在 SPECIAL_DESCRIPTION 里译好；这里再补单词级条目，兜住将来新增的、或漏进整句表的写法。
+STAT_ABBREVIATIONS = {
+	"Luck": "运气",
+	"Int": "智力",
+	"Intelect": "智力",
+	"Per": "个性",
+	"Spd": "速度",
+	"SP": "魔法值",
+	"End": "耐力",
+	"Acc": "精确",
+	"Might": "力量",
+	"AC": "防御等级",
+	"HP": "生命值",
+	"Res": "抗性",
 }
 
 SPECIAL_SUFFIX = {
@@ -280,13 +297,13 @@ SPECIAL_DESCRIPTION = {
     '"(10-20) Fire damage, Might (+25)"': "（10-20）火焰伤害，力量（+25）",
     '"SP (+10), Regen spts"': "法术（+10），持续回复法术",
     '"End (+15), AC (+5)"': "耐力（+15），护甲（+5）",
-    '"Luck (+10), Int (+10)"': "幸运（+10），智力（+10）",
+    '"Luck (+10), Int (+10)"': "运气（+10），智力（+10）",
     '"Fire Res (+30), Regen hpts"': "火系抗性（+30），持续回复生命",
     '"Int (+10), Spd (+10), SP (+10)"': "智力（+10），速度（+10），法术（+10）",
     '"End (+10), Acc (+10)"': "耐力（+10），精准（+10）",
     '"Might(+10), Per (+10)"': "力量（+10），个性（+10）",
     '"End (+15), Regen hpts"': "耐力（+15），持续回复生命",
-    '"Luck (+15), Regen spts"': "幸运（+15），持续回复法术",
+    '"Luck (+15), Regen spts"': "运气（+15），持续回复法术",
     '"Might (+5), End (+5)"': "力量（+5），耐力（+5）",
     '"Intelect (+5), Per (+5)"': "智力（+5），个性（+5）",
     "Gold value increased": "金币价值提升",
@@ -301,7 +318,7 @@ SPECIAL_DESCRIPTION = {
     '"Regenerate 1 hp/x and 1 sp/x while walking, etc."': "行走时每单位时间回复 1 点生命与 1 点法术，等等",
     "(5) pois damage and +2 Disarm skill": "（5）毒素伤害，解除陷阱 +2",
     "(6-8) cold damage and +5 AC": "（6-8）寒冷伤害，护甲 +5",
-    "+20 Air Resistance and 1/2 damage from missile attacks": "气系抗性 +20，远程攻击伤害减半",
+    "+20 Air Resistance and 1/2 damage from missile attacks": "风系抗性 +20，远程攻击伤害减半",
     "+10 Water Resistance and +2 Alchemy skill": "水系抗性 +10，炼金术 +2",
     "Character with item takes no damage from drowning": "携带者免疫溺水伤害",
     "Character with item takes no damage from falling": "携带者免疫坠落伤害",
@@ -354,6 +371,10 @@ def collect() -> tuple[dict[str, str], list[str]]:
 
 	def put(original: str, translated: str) -> None:
 		original = original.strip()
+		# 引擎的 TextTable 会把「整体被引号包裹」的单元格剥成不带引号的串（见 engine/TextTable.cpp
+		# parseTabSeparated），覆盖表按整串匹配，所以键也必须写成剥掉引号的形态，否则永远命中不了。
+		if len(original) >= 2 and original[0] == '"' and original[-1] == '"':
+			original = original[1:-1].strip()
 		if original and original not in pairs:
 			pairs[original] = translated
 
@@ -367,20 +388,29 @@ def collect() -> tuple[dict[str, str], list[str]]:
 		put(key, value)
 	for key, value in SPECIAL_DESCRIPTION.items():
 		put(key, value)
+	for key, value in STAT_ABBREVIATIONS.items():
+		put(key, value)
 
-	# 抽查引擎表里还有哪些词缀没被上面的映射覆盖。
+	# 抽查引擎表里还有哪些词缀没被上面的映射覆盖。查的必须是 put() 归一后的形态，
+	# 否则「整串被引号包裹」的单元格会误报成缺失（引擎读表时这些引号已经剥掉了）。
+	def normalized(cell: str) -> str:
+		cell = cell.strip()
+		if len(cell) >= 2 and cell[0] == '"' and cell[-1] == '"':
+			cell = cell[1:-1].strip()
+		return cell
+
 	missing: list[str] = []
 	for row in read_rows("standard_item_enchants.txt"):
-		stat = row[0].strip()
-		suffix = row[1].strip() if len(row) > 1 else ""
+		stat = normalized(row[0])
+		suffix = normalized(row[1]) if len(row) > 1 else ""
 		if stat and stat not in pairs:
 			missing.append("standard stat: " + stat)
 		if suffix and suffix not in pairs:
 			missing.append("standard suffix: " + suffix)
 	for row in read_rows("special_item_enchants.txt"):
-		stat = row[0].strip()
-		suffix = row[1].strip() if len(row) > 1 else ""
-		description = row[16].strip() if len(row) > 16 else ""
+		stat = normalized(row[0])
+		suffix = normalized(row[1]) if len(row) > 1 else ""
+		description = normalized(row[16]) if len(row) > 16 else ""
 		if stat and stat not in pairs:
 			missing.append("special stat: " + stat)
 		if suffix and suffix not in pairs:

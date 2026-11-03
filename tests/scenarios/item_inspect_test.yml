@@ -1,12 +1,14 @@
 id: test.item_inspect_zh
-title: "汉化检查：物品详情（词缀名 / Special 行）"
+title: "汉化检查：物品详情（词缀名 / Special 行 / 属性缩写）"
 world: mm7
 mode: faithful
 steps:
   - new_game_flow: {start_map: 7out01.odm}
-  # 137 = Bronze Ring；标准词缀 14 = 土系抗性（earth resistance）
-  - grant_item: {item_id: 137, member_index: 0}
+  # 137 = Bronze Ring
+  # special 49 = of The Moon（明月）：描述列 "Luck (+10), Int (+10)"，属性缩写必须译出
+  - grant_item: {item_id: 137, member_index: 0, special: 49}
+  # special 51 = of The Sky（苍穹）：描述列 "Int (+10), Spd (+10), SP (+10)"
+  - grant_item: {item_id: 137, member_index: 0, special: 51}
+  # 标准词缀 14 = Earth Resistance（土系抗性）
   - grant_item: {item_id: 137, member_index: 0, enchant: [14, 4]}
-  # 特殊词缀 4 = of Carnage（Explosive Impact!）
-  - grant_item: {item_id: 137, member_index: 0, special: 4}
   - assert: {ruleset: {report_items: true}}
