@@ -39,14 +39,14 @@ def _first_existing(candidates) -> Path | None:
 
 
 def engine_source(explicit=None) -> Path:
-	"""OpenYAMM 源码树。默认找仓库的同级目录 `../openyamm-1.19`、`../openyamm-1.18`、`../openyamm`。"""
+	"""OpenYAMM 源码树。默认找仓库的同级目录 `../openyamm`（当前版），再退回按版本号命名的旧树。"""
 	path = _first_existing(
 		[
 			explicit,
 			os.environ.get("OPENYAMM_SRC"),
+			REPO.parent / "openyamm",
 			REPO.parent / "openyamm-1.19",
 			REPO.parent / "openyamm-1.18",
-			REPO.parent / "openyamm",
 			REPO.parent / "openyamm-1.17",
 		]
 	)

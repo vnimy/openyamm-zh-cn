@@ -127,16 +127,17 @@ UiText::translateTemplate("{item} {suffix}", {{"{item}", baseName}, {"{suffix}",
 
 ```bash
 python tools/make_ui_text.py                      # 合成 corpus/overrides/ui_text.txt
-python tools/build_patch.py --openyamm ../openyamm-1.19 --out build/mods
-python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.19 \
+python tools/build_patch.py --openyamm ../openyamm --out build/mods
+python tools/font_subset.py --patch build/mods --openyamm ../openyamm \
        --out build/mods/engine/fonts/truetype
 python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf \
        --license assets/fonts/OFL.txt --out build/mods
 ```
 
-或者一行：`scripts/build.sh --openyamm ../openyamm-1.19`（Windows 用 `scripts\build.ps1`）。
+或者一行：`scripts/build.sh --openyamm ../openyamm`（Windows 用 `scripts\build.ps1`）。
 
-exe 要用「打包资产」方式构建（`-DOPENYAMM_DEV_ASSETS_DIR:STRING=assets`），否则运行时不会挂载 `mods/`。
+`mods/` 只在**打包资产**布局下挂载：把 exe 放进 release 安装的 `app/<版本>/`，与 `assets/`、`mods/` 同级运行即可；
+`-DOPENYAMM_DEV_ASSETS_DIR` 与这件事无关（它只决定开发期的资产根）。
 完整步骤、依赖与踩坑见 **[docs/build.md](docs/build.md)**；引擎侧改了哪些文件见
 **[docs/engine-changes.md](docs/engine-changes.md)**。
 

@@ -19,8 +19,8 @@
 | MMMerge 整合版 | 只在重建 `corpus/mmmerge/` 时才需要 |
 
 路径可以用参数指定，也可以设环境变量：`OPENYAMM_SRC`、`OPENYAMM_PACKS`、`MMMERGE_DIR`。
-不指定时 `tools/paths.py` 按仓库同级目录自动探测：源码树依次找 `openyamm-1.19/`、`openyamm-1.18/`、
-`openyamm/`、`openyamm-1.17/`；资产包依次找 `game/assets/packs`（本项目自带的 1.19 正式安装）、
+不指定时 `tools/paths.py` 按仓库同级目录自动探测：源码树先找 `openyamm/`（当前版），
+再退回 `openyamm-1.19/`、`openyamm-1.18/`、`openyamm-1.17/`；资产包依次找 `game/assets/packs`（本项目自带的 1.19 正式安装）、
 `OpenYAMM-1.17/OpenYAMM/assets/packs`、`openyamm-1.17/build-mingw/game/assets/packs`。
 
 ### 引擎改动
@@ -35,10 +35,10 @@
 python tools/make_ui_text.py
 
 # 译文数据表
-python tools/build_patch.py --openyamm ../openyamm-1.19 --out build/mods
+python tools/build_patch.py --openyamm ../openyamm --out build/mods
 
 # 字体：先收集译文用到的码点，再烘焙成引擎要的描述文件 + 子集 TTF
-python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.19 \
+python tools/font_subset.py --patch build/mods --openyamm ../openyamm \
        --out build/mods/engine/fonts/truetype
 python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf \
        --license assets/fonts/OFL.txt --out build/mods
@@ -55,19 +55,23 @@ english/pc_names.txt: 480 names in 8 columns
 
 ## 2. 编 exe
 
-CMake 配置时**必须**带 `-DOPENYAMM_DEV_ASSETS_DIR:STRING=assets`。
-不带这个开关，编出来的 exe 会去读源码目录下的 `assets_dev/`，永远不会挂载 `mods/`——补丁看起来「完全没生效」。
+`mods/` 挂不挂载取决于**资产根是不是打包资产**，跟 CMake 开关无关：`engine/AssetFileSystem.cpp` 只在两条
+packaged 分支里调用 `mountMods()`（APK 内的 pack，或资产根下的 `packs/*.zip`），而 `modsRoot` 取的是
+**当前工作目录**下的 `mods`（release 安装会把工作目录切到安装根）。所以把 exe 放进 release 安装的
+`app/<版本>/`、与 `assets/`、`mods/` 同级运行，就一定能挂载上——本项目的发布包正是这么做的，它的
+`-DOPENYAMM_DEV_ASSETS_DIR` 还指着源码树的绝对路径。
+
+`-DOPENYAMM_DEV_ASSETS_DIR` 只影响 `AssetPaths` 的开发资产根（`Data`/`Anims`/`Music`）和烘焙输出位置。
 
 ```bash
-cmake -S ../openyamm-1.19 -B ../openyamm-1.19/build-mingw -G "MinGW Makefiles" \
+cmake -S ../openyamm -B ../openyamm/build-mingw -G "MinGW Makefiles" \
       -DCMAKE_BUILD_TYPE=Release \
-      -DOPENYAMM_DEV_ASSETS_DIR:STRING=assets \
       -DOPENYAMM_COOK_ON_BUILD=OFF \
       -DOPENYAMM_HOUSE_VIDEOS=ON
-cmake --build ../openyamm-1.19/build-mingw -j 6
+cmake --build ../openyamm/build-mingw -j 6
 ```
 
-产物：`../openyamm-1.19/build-mingw/game/openyamm.exe`（约 56 MB）。
+产物：`../openyamm/build-mingw/game/openyamm.exe`（约 56 MB）。
 
 > 注意别和根目录那个 2.99 MB 的 `OpenYAMM.exe` 搞混——那个是启动器，不是引擎。
 
@@ -75,7 +79,7 @@ cmake --build ../openyamm-1.19/build-mingw -j 6
 
 ```bash
 python tools/package.py --mod build/mods \
-       --exe ../openyamm-1.19/build-mingw/game/openyamm.exe \
+       --exe ../openyamm/build-mingw/game/openyamm.exe \
        --out dist/OpenYAMM-1.19-zh_cn.zip
 ```
 

@@ -1,6 +1,6 @@
 
 > **2026-10-30 状态**：仓库已升级到 OpenYAMM 1.19（桌面），本页写的 Android 重打包流程仍是 1.18 时代；
-> 1.19 的 Android 包还没有重出。重出时按 [upgrading.md](upgrading.md) 把引擎改动迁到 `openyamm-1.19`，
+> 1.19 的 Android 包还没有重出。重出时按 [upgrading.md](upgrading.md) 把引擎改动迁到 `openyamm`，
 > 内容包换成 1.19 的即可，流程不变。
 �，
   只把 `mods/` 放进 APK 或设备不会生效——官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。
