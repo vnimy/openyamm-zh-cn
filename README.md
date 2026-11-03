@@ -11,8 +11,23 @@
 > layer. Coverage is broad but not complete — see the status table below. Documentation is in Chinese;
 > the code comments are too.
 
-**当前适配 OpenYAMM 1.19**。引擎每次换版本都要重新移植一次（通常改动不大），做法见
-[docs/upgrading.md](docs/upgrading.md)；旧版本 1.17 的补丁包仍留在 [Releases](../../releases)。
+## 两个仓库
+
+| | 仓库 | 内容 | 许可 |
+|---|---|---|---|
+| 引擎 | [vnimy/openyamm](https://github.com/vnimy/openyamm) | 让引擎能显示中文的 C++ 改动，每个版本一个 tag | GPL-3.0 |
+| 补丁 | 就是本仓库 | 译文语料、字体子集、打包与审计工具 | MIT |
+
+本仓库**不含 C++ 源码**，也不直接改引擎：引擎侧的一切改动都在 `vnimy/openyamm` 里以 commit 固定，
+跟上游合并后不会丢。所以「换一个上游新版本」不是重新移植，而是在 fork 里 `git merge upstream/vX.Y`，
+见 [docs/upgrading.md](docs/upgrading.md)。
+
+| 补丁版本（本仓库） | 引擎 tag |
+|---|---|
+| 1.19.3 | `v1.19.3-zh_cn` |
+
+**当前适配 OpenYAMM 1.19**，引擎与补丁必须成对使用：只换 `mods/` 不换 `openyamm.exe`，
+官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。旧版本 1.17 的补丁包仍留在 [Releases](../../releases)。
 
 **Android 端**（arm64 APK）必须重新编译 Android 引擎；做法、本机构建环境与当前验证结果见
 [docs/android.md](docs/android.md)。
@@ -51,8 +66,8 @@ python tools/check_literals.py --show 60  # 源码硬编码 UI 文案缺口（�
 补丁由两部分组成：
 
 - `mods/engine/` —— 译文数据表与中文字体，引擎启动时叠加在自带资产之上；
-- `openyamm.exe` —— 按对应版本的源码重编的引擎，能光栅化 UTF-8、按码点排版、按中文规则断行。
-  exe 与 mods 必须同版本。
+- `openyamm.exe` —— 由 [vnimy/openyamm](https://github.com/vnimy/openyamm) 按对应 tag 重编的引擎，
+  能光栅化 UTF-8、按码点排版、按中文规则断行。exe 与 mods 必须同版本。
 
 **只换 mods 不换 exe 是没用的**：原版引擎拿到 UTF-8 字节会当成 CP1252 乱码渲染。
 
@@ -79,6 +94,9 @@ docs/            安装、构建、引擎改动、开发笔记、术语表、进
 ```
 
 ## 实现要点
+
+下面讲的是**为什么这么改**；代码本身在 fork 里，用 `git -C ../openyamm log -p -- <文件>` 能看到
+每一处改动和它的理由。
 
 ### 1. 字形：从「256 个字节槽」到「码点 → 字形」
 
@@ -123,7 +141,12 @@ UiText::translateTemplate("{item} {suffix}", {{"{item}", baseName}, {"{suffix}",
 
 ## 自己构建
 
-需要 Python 3.10+、CMake、MinGW 或 MSVC，以及一份 OpenYAMM 源码树（当前用 1.19）。
+需要 Python 3.10+、CMake、MinGW 或 MSVC，以及 [vnimy/openyamm](https://github.com/vnimy/openyamm) 的源码树：
+
+```bash
+git clone https://github.com/vnimy/openyamm.git ../openyamm
+git -C ../openyamm checkout v1.19.3-zh_cn     # 与本仓库 CHANGELOG 的版本对应
+```
 
 ```bash
 python tools/make_ui_text.py                      # 合成 corpus/overrides/ui_text.txt
@@ -164,6 +187,7 @@ python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf \
 ## 致谢
 
 - [OpenYAMM](https://github.com/pjasicek/openyamm) —— 引擎本体（GPL-3.0-or-later）
+- [vnimy/openyamm](https://github.com/vnimy/openyamm) —— 本项目的引擎分支，上面所有 C++ 改动都在这里
 - MMMerge 与其官方简体中文语言包 —— 译文主体来源
 - [mm678-i18n](https://github.com/might-and-magic/mm678-i18n) —— 术语参考
 - [思源黑体 / Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) —— 中文字形（SIL OFL 1.1）

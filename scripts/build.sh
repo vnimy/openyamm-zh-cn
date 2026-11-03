@@ -2,7 +2,9 @@
 # 一键生成 mods（Linux / macOS 上不编 exe，只出数据与字体）。
 #
 #   scripts/build.sh                        # 自动探测源码树
-#   scripts/build.sh --openyamm ../openyamm-1.17 --exe /path/to/openyamm.exe --dist dist/x.zip
+#   scripts/build.sh --openyamm ../openyamm --exe ../openyamm/build-mingw/game/openyamm.exe --dist dist/x.zip
+#
+# 源码树用 https://github.com/vnimy/openyamm （tag 与本仓库版本对应）。
 #
 # 需要：Python 3.10+。
 

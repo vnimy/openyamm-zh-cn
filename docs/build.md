@@ -25,8 +25,20 @@
 
 ### 引擎改动
 
-本仓库不含 C++ 源码——引擎改动是在 OpenYAMM 源码树上做的，改了哪些文件、为什么改，
-见 **[engine-changes.md](engine-changes.md)**。要编 exe 就得先把这些改动应用到你的源码树。
+本仓库不含 C++ 源码。引擎侧改动全部在 [vnimy/openyamm](https://github.com/vnimy/openyamm)，
+按版本打 tag，直接用它编 exe：
+
+```bash
+git clone https://github.com/vnimy/openyamm.git ../openyamm
+git -C ../openyamm checkout v1.19.3-zh_cn
+```
+
+| 补丁版本（本仓库） | 引擎 tag |
+|---|---|
+| 1.19.3 | `v1.19.3-zh_cn` |
+
+改了哪些文件、为什么改，见 **[engine-changes.md](engine-changes.md)**；跟进上游新版本见
+**[upgrading.md](upgrading.md)**。
 
 ## 1. 生成 mods
 

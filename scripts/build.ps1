@@ -2,8 +2,10 @@
 #
 # 用法：
 #   scripts\build.ps1                                     # 用自动探测到的源码树
-#   scripts\build.ps1 -OpenYamm D:\src\openyamm-1.17
-#   scripts\build.ps1 -Exe D:\src\openyamm-1.17\build-mingw\game\openyamm.exe   # 顺带打包 zip
+#   scripts\build.ps1 -OpenYamm D:\src\openyamm
+#   scripts\build.ps1 -Exe D:\src\openyamm\build-mingw\game\openyamm.exe   # 顺带打包 zip
+#
+# 源码树用 https://github.com/vnimy/openyamm （tag 与本仓库版本对应）。
 #
 # 需要：Python 3.10+；编 exe 另需 CMake 与编译器（见 docs/build.md）。
 
