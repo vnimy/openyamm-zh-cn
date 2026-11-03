@@ -1,18 +1,20 @@
+# 引擎改动
 
-## 附：1.18 → 1.19 的增量（2026-10-30）
+本仓库不含 C++ 源码。下面是汉化对引擎的改动**索引**：改了哪个文件、为什么改。
+**代码的权威版本在 [vnimy/openyamm](https://github.com/vnimy/openyamm) 的提交历史里**——
+那边一条提交覆盖一整轮改动，`git log -p -- <文件>` 就能看到每处改动的由来，
+所以这里只解释「为什么」，不复制代码。
 
-上游 1.19 改了 87 个文件，与汉化重叠 11 个，三方合并后新增/保留的覆盖表接入点：
+按主题分五块，版本增量表放在文末的附录区。
 
-| 文件 | 1.19 的改动 / 汉化处理 |
-|---|---|
-| `game/ui/GameplayLootSummaryRenderer.cpp`（新） | 战利品汇总面板：`{satchels} satchels emptied, {items} items taken`、`{gold} gold`、`{gold} gold (followers took {share})` 改 `UiText::translateTemplate`；标题/表头走覆盖表 |
-| `game/gameplay/GameplayScreenController.cpp` | 多袋规则下旧背包放不下的提示改 `{count} items from the old bags did not fit and lie at your feet` 模板 |
-| `game/ui/GameplayMapProgressBar.cpp` | 地图进度“一键拾取”提示改 `{binding}: loot all` 模板；弹窗标题走覆盖表 |
-| `game/ui/screens/LoadGameScreen.cpp` | 存档列表重做：`formatDate`/`formatClock` 的月份、星期、AM/PM 先翻译；`Saved {date}`、`Save {number}` 改模板；删除/读取/替换/标准/自动存档/快速存档等走覆盖表 |
-| `game/ui/GameplayPartyOverlayRenderer.cpp` | 背包搜索框占位文本 “Search items (...)” 走覆盖表 |
-| `game/items/ItemSearch.*`（新） | 搜索逻辑，无界面文案 |
-| 设置 | `Minimap zoom`、`Quick save`/`Quick load` 标签补进覆盖表 |
-{h,cpp}`（新增）
+## 一、文本层
+
+这一层解决「引擎能不能画出中文」：字形表从 256 个字节槽换成按 Unicode 码点查表，
+文本读写统一走 UTF-8，中文按标点规则断行。`engine/FontAsset` 的字形接口改动与
+`game/ui/MenuScreenBase` 的绘制/测宽改动直接在 fork 的提交里看，
+下面只记与译文、排版直接相关的三处。
+
+### `engine/TextLayout.{h,cpp}`（新增）
 
 宽字符断行：按码点切分；行首不放避头标点（`，。、？！：；）》」』` 等），行尾不放避尾标点（`（《「『` 等）。
 没有这个，中文会把标点顶到行首、或者把整句塞进按钮里溢出。
@@ -138,13 +140,15 @@ Android 版必须重编引擎，另外需要让 Android 也加载 `mods/`：上�
 
 ## 同步到新版本
 
-上游发新版时，改动集中在 `game/ui/` 与 `game/items/`，通常只需三方合并，重点看：
+上游发新版时不用重新移植：在 fork 里 `git merge upstream/vX.Y`（做法见 [upgrading.md](upgrading.md)）。合并后重点看：
 
 - `FontAsset` 与 `MenuScreenBase` 的字形接口有没有再变；
 - 新增的 `game/ui/*.cpp` 里有没有新的硬编码文案 → 跑 `tools/check_literals.py` 就能知道；
 - `english/global.txt` 这类表名在新版本里可能改名（1.17 就从 `global.txt` 变成了 `Global.txt`）。
 
-## 附：1.17 → 1.18 的增量
+## 附录
+
+### 附：1.17 → 1.18 的增量
 
 上游 1.18 改了 75 个文件，与汉化重叠 6 个，三方合并后新增接入覆盖表的面：
 
@@ -158,7 +162,7 @@ Android 版必须重编引擎，另外需要让 Android 也加载 `mods/`：上�
 
 升级全过程见 [upgrading.md](upgrading.md)。
 
-## 附：2026-10-30 补缺轮的引擎改动
+### 附：2026-10-30 补缺轮的引擎改动
 
 这一轮补的是「对话里夹英文、选项还是英文、树显示 tree」的根因，C++ 侧新增的接入点：
 
@@ -172,7 +176,7 @@ Android 版必须重编引擎，另外需要让 Android 也加载 `mods/`：上�
 配套的覆盖表条目在 `corpus/overrides/templates_zh.tsv` 与 `manual_zh.tsv`（交互动词、`Drop *` 前缀等）。
 这些文案在渲染层本来也会查覆盖表，改在生成处是为了让**动态拼出来的整句**也能命中模板（渲染层只能整串匹配）。
 
-## 附：调试控制台的 ImGui 动态图集契约（2026-11-03 恢复）
+### 附：调试控制台的 ImGui 动态图集契约（2026-11-03 恢复）
 
 这一节记录的是**丢失后恢复**的设计，不是新设计。2026-11-03 的误覆盖事故里，
 `game/debug/GameImGuiBgfxRenderer.{h,cpp}` 与 `game/app/GameApplication.cpp` 的相关改动整段消失
@@ -215,3 +219,16 @@ ImGui 1.92 的字形是**懒加载**的：某个字号第一次用到某个码�
 本机 shell 无法启动游戏窗口（原始 exe 同样 `exit=1`，缺交互桌面会话），
 所以这部分只能靠「桌面 + 安卓双目标编译链接通过」+ 真机目视。真机上若中文重新变成 `?`，
 就是 `RendererHasTextures` 那条路没生效。
+
+### 附：1.18 → 1.19 的增量（2026-10-30）
+上游 1.19 改了 87 个文件，与汉化重叠 11 个，三方合并后新增/保留的覆盖表接入点：
+
+| 文件 | 1.19 的改动 / 汉化处理 |
+|---|---|
+| `game/ui/GameplayLootSummaryRenderer.cpp`（新） | 战利品汇总面板：`{satchels} satchels emptied, {items} items taken`、`{gold} gold`、`{gold} gold (followers took {share})` 改 `UiText::translateTemplate`；标题/表头走覆盖表 |
+| `game/gameplay/GameplayScreenController.cpp` | 多袋规则下旧背包放不下的提示改 `{count} items from the old bags did not fit and lie at your feet` 模板 |
+| `game/ui/GameplayMapProgressBar.cpp` | 地图进度“一键拾取”提示改 `{binding}: loot all` 模板；弹窗标题走覆盖表 |
+| `game/ui/screens/LoadGameScreen.cpp` | 存档列表重做：`formatDate`/`formatClock` 的月份、星期、AM/PM 先翻译；`Saved {date}`、`Save {number}` 改模板；删除/读取/替换/标准/自动存档/快速存档等走覆盖表 |
+| `game/ui/GameplayPartyOverlayRenderer.cpp` | 背包搜索框占位文本 “Search items (...)” 走覆盖表 |
+| `game/items/ItemSearch.*`（新） | 搜索逻辑，无界面文案 |
+| 设置 | `Minimap zoom`、`Quick save`/`Quick load` 标签补进覆盖表 |

@@ -1,144 +1,139 @@
+# 跟随上游升级
 
-## 附：1.18 → 1.19 的实际记录（2026-10-30）
+引擎侧的绘制、排版与接入点在每个上游版本都会变。本仓库不保存 C++ 源码——所有引擎改动都以 commit 的
+形式放在 [vnimy/openyamm](https://github.com/vnimy/openyamm) 里，所以升级不是「重新移植」，
+而是一次普通的 `git merge`。
 
-- 上游 1.18 → 1.19 共 **87 个文件**（`github.com/pjasicek/openyamm/compare/v1.18...v1.19.diff`，
-  纯文本 diff 291 KB，无二进制改动）。
-- 本机没有完整上游仓库（仓库 11.7 GB，含大量美术源文件），所以**没下整包源码**，而是：
-  1. `curl`（走本机 SOCKS5，`git` 自带的 curl 可用）拉 `.diff`，解析出 87 个路径与 added/modified 状态；
-  2. 对每个文件用 `raw.githubusercontent.com/.../v1.19/<path>` 取新内容、`.../v1.18/<path>` 取 base；
-  3. 本地 `openyamm-1.18` 树逐文件比 hash：只被上游改过的直接覆盖，两边都改过的用
-     `git merge-file -p --diff3 本地 base 上游` 三方合并。
-- 结果：67 个直接覆盖、6 个新增（`game/items/ItemSearch.*`、`game/ui/GameplayLootSummaryRenderer.*`、
-  `tests/ItemSearchTests.cpp`、`assets_dev/engine/ui/gameplay/loot_summary.yml`）、11 个三方合并，
-  仅 `game/ui/screens/LoadGameScreen.cpp` 有 1 处冲突（旧汉化把 “(not installed)” 包成模板，
-  上游把 `saveData->ruleset` 改成 `summary.ruleset`），手工合成。
-- 本地 1.18 树里缺的 3 个上游文本文件（`assets_dev/.../character.yml`、两个 mm7 lua）从 v1.19 补回。
-- 构建：新建 `openyamm-1.19/build-mingw`；`zstd`/`etcpak`/`etc2comp` 预解压到 `toolchains/deps/` 并用
-  `-DFETCHCONTENT_SOURCE_DIR_OPENYAMM_*` 指过去，配置期不联网；FFmpeg 装头文件时仍要手工补一次（见 build.md）。
-- 新界面译文：见 [engine-changes.md](engine-changes.md) 的 1.19 附录与 `CHANGELOG.md`。
-8
-cd openyamm-1.17 && tar cf - --exclude=.git --exclude=build-mingw . | (cd ../openyamm-1.18 && tar xf -)
-```
+## 版本对应
 
-然后按 `v118-changes.txt` 把上游的新版本逐个覆盖回来。`git archive` / `git show` 在这台机器上
-拉 blob 会卡死在 SSH/git 协议上，**用 GitHub API 单文件取更快也更稳**：
+| 补丁版本（本仓库） | 引擎 tag（vnimy/openyamm） | 上游基线 |
+|---|---|---|
+| 1.19.3 | `v1.19.3-zh_cn` | `v1.19` |
+
+两边必须成对使用：只换 `mods/` 不换 `openyamm.exe`，官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。
+
+## 第一步：准备两个仓库
 
 ```bash
-gh api -H "Accept: application/vnd.github.raw" \
-    "repos/pjasicek/openyamm/contents/<path>?ref=v1.18" > openyamm-1.18/<path>
+git clone https://github.com/vnimy/openyamm.git           # 同级目录，即 ../openyamm
+git clone https://github.com/vnimy/openyamm-zh-cn.git
+cd openyamm && git remote add upstream https://github.com/pjasicek/openyamm.git   # 只需一次
 ```
 
-（删掉的文件（`A`/`D`）要真的 `rm`。）
+`tools/paths.py` 按 `../openyamm` → `../openyamm-1.19` → `../openyamm-1.18` → `../openyamm-1.17`
+的顺序探测源码树；也可以用 `--openyamm` 或环境变量 `OPENYAMM_SRC` 指定。
 
-## 第三步：处理「两边都改过」的文件
-
-取两份清单的交集。先备份我们改过的版本，再把它们的 **旧版原始内容** 也取下来当 base：
+## 第二步：把上游新版本合进 fork
 
 ```bash
-gh api -H "Accept: application/vnd.github.raw" \
-    "repos/pjasicek/openyamm/contents/<path>?ref=v1.17" > base17/<path>
+cd ../openyamm
+git fetch upstream --tags
+git switch -c fork/1.20 upstream/v1.20
+git merge fork/1.19          # 也可以在 fork/1.19 上直接 merge v1.20
 ```
 
-然后 `difflib` 生成 base→本地的 patch，`patch -p1 --fuzz=3` 打到新版本上：
+上游每个版本改 70～90 个文件，与汉化重叠通常 6～11 个。冲突热点见下一节。
 
-```bash
-cd openyamm-1.18
-patch -p1 --fuzz=3 --no-backup-if-mismatch -i <path>.patch
-```
+## 第三步：处理冲突
 
-1.17 → 1.18 有 6 个重叠文件：
-
-| 文件 | 结果 |
+| 文件 | 为什么爱冲突 |
 |---|---|
-| `game/CMakeLists.txt` | 干净打上（`UiText.cpp` / `TextLayout.cpp` 的注册） |
-| `tests/CMakeLists.txt` | 同上 |
-| `game/events/EventRuntime.cpp` | 同上 |
-| `game/ui/GameplayPartyOverlayRenderer.cpp` | 同上 |
-| `game/ui/screens/LoadGameScreen.cpp` | 同上 |
-| `game/ui/screens/MainMenuScreen.cpp` | **第 8 段冲突**，手工补的（见下） |
+| `game/ui/MenuScreenBase.cpp` / `.h` | 上游调绘制与测宽，我们整段换成按码点取字形 |
+| `game/ui/GameplayHudCommon.cpp` | HUD 的绘制、测宽、截断、折行四处都动过 |
+| `game/ui/screens/LoadGameScreen.cpp` | 存档列表几乎每个大版本都重做 |
+| `game/ui/screens/MainMenuScreen.cpp` | `confirm(...)` 的签名与「再按 Esc 取消」分支变过 |
+| `game/tables/MergedBaseTables.cpp` | 人名 + 头衔拼接走 `titleWithName` |
+| `engine/FontAsset.cpp` / `.h` | 字形接口（码点查表、freetype 描边、padding） |
+| `game/CMakeLists.txt` / `tests/CMakeLists.txt` | 新增源文件的注册行 |
+| `README.md` | fork 把它换成了中文；冲突时保留 fork 版本 |
 
-冲突那段是 `MainMenuScreen::captureBinding`：1.18 把它从 `confirm("Assign Key", body, ...)` 改成
-`confirm(title, body, ...)` 并加了「再按 Esc 取消」的分支。由于附近的行被上游改动，patch 的上下文对不上，
-`patch` 拒绝，手工把两处 `confirm` 的标题和正文都包成 `UiText::translate(...)` 才对齐。
-
-打完务必检查有没有 `.rej`：
+合完先扫残留标记：
 
 ```bash
-find . -name "*.rej" -o -name "*.orig"
+find . -name '*.rej' -o -name '*.orig' -o -name '*.orig.*'
+git diff --check
 ```
 
-## 第四步：补新版本的界面译文
-
-这是真正的工作量。1.18 的更新说明里提到存档更快、**快速存档/快速读取可以重绑键**、日志多了
-**魔幻牌（Arcomage）标签页**、读档／存档界面**可以按名称或时间排序**。每一条都会带来新文案。
-
-做法：
-
-```bash
-cd ../../openyamm-zh-cn
-python tools/check_literals.py --openyamm ../openyamm-1.18 --write build/lit118.txt
-```
-
-再把缺口清单与 `v118-changes.txt` 求交集，**只看出现在「本次改动过的文件」里的条目**——
-其它的是历史遗留，本次不必处理。1.18 这次交集是 39 条，其中真界面文案十来条，其余是
-日志字符串（`save_migration name=...`、`turn_based_frame reason=` 这类）、switch 分支里的
-内部比较值、以及注释。
-
-值得说的是：**比较用的内部字符串不能译**。比如
+**必须守住的一点**：用来比较的内部字符串不能译。比如
 
 ```cpp
 if (lowerName == "day of protection") { return "Day of Protection"; }
 ```
 
-前半句是内部比较键，译成中文会直接失效；只有返回值那是展示层，才需要覆盖表兜住。
+前半句是查表键，译成中文逻辑直接失效；只有返回值是展示层，才由覆盖表兜住。
 
-这次补进 `corpus/overrides/manual_zh.tsv` 的条目大致是：`Quick Save`/`Quick Load`（新的键位标签）、
-`Automatic`/`Quick`/`Manual`（存档类型）、`Newest`（排序按钮）、`Arcomage`、`Elsewhere`、
-`{continent}: {won} of {total} taverns won.`（魔幻牌进度模板）、`Cinematic grading: On`、
-`Turn-based mode`/`Realtime mode`、`You can't rest here!`、`There are hostile enemies near!`、
-`Spell failed`、` (off)`、`Reverting in {seconds} seconds.`、`{done} of {total} MB` 等。
+## 第四步：编引擎
 
-改完记得：
+见 [build.md](build.md)。升级后通常要新建构建目录（旧 cache 记的是旧路径）并重跑一次配置；
+带 `CMAKE_SUPPRESS_REGENERATION=ON` 的构建目录在新增源文件后必须手动重跑 `cmake -B`。
+
+## 第五步：找新版本的界面文案
+
+上游每加一个面板就带一批硬编码文案，钩子（`UiText::translate`）也要跟着补。
+
+```bash
+cd ../openyamm-zh-cn
+python tools/check_literals.py --openyamm ../openyamm --write build/lit-new.txt    # 全量缺口
+git -C ../openyamm diff --name-only v1.19..v1.20 > build/changed.txt              # 本次改动过的文件
+```
+
+两份清单求交集，**只看本次改动过的文件里的条目**，其余是历史遗留。交集中还要剔掉日志字符串
+（`save_migration name=...`、`turn_based_frame reason=` 这类）、switch 分支里的内部比较值、注释。
+1.18→1.19 那次交集是 39 条，其中真界面文案十来条。
+
+钩子补完后在 `corpus/overrides/` 里加译文，然后：
 
 ```bash
 python tools/make_ui_text.py
 python tools/check_tables.py
+python tools/dev/check_translation_rules.py
 ```
-
-## 第五步：编译
-
-MinGW 工具链的注意事项记在 **[build.md](build.md)** 里，这次新踩到一个：
-
-> **PortableGit 的 `bin\` 目录是坏的。** 里面 358 个条目的元数据全是 `?????????`（读不到内容），
-> bash 偏偏会先从这里解析 `cat`/`sed`/`head`。于是 FFmpeg 的 `version.sh`、`pkgconfig_generate.sh`
-> 全炸：`cat: cannot execute: required file not found`，连带 `version.c` 里
-> `FFMPEG_VERSION` 宏没生成出来 → 编译失败。
->
-> 构建脚本里已经把这条 PATH 去掉了，只留 `<git>\usr\bin`（那份是好的）。如果你自己写脚本，
-> 照上面这条来。
 
 ## 第六步：验证与出包
 
 ```bash
-python tools/build_patch.py --openyamm ../openyamm-1.18 --out build/mods
-python tools/font_subset.py --patch build/mods --openyamm ../openyamm-1.18 --out build/mods/engine/fonts/truetype
+python tools/build_patch.py --openyamm ../openyamm --out build/mods
+python tools/font_subset.py --patch build/mods --openyamm ../openyamm --out build/mods/engine/fonts/truetype
 python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf --license assets/fonts/OFL.txt --out build/mods
 python tools/package.py --mod build/mods \
-       --exe ../openyamm-1.18/build-mingw/game/openyamm.exe \
-       --out dist/OpenYAMM-1.18-zh_cn.zip
+       --exe ../openyamm/build-mingw/game/openyamm.exe \
+       --out dist/OpenYAMM-<版本>-zh_cn.zip
 ```
 
-无头场景别忘了跑（不用开游戏窗口）：
+无头场景（不开窗口，`tests/scenarios/` 下七个）：
 
 ```bash
-<安装目录>/app/1.18/openyamm.exe \
-    --headless-run-scenario tests/scenarios/item_inspect_test.yml
+cd <安装目录>
+./app/<版本>/openyamm.exe --headless-run-scenario <绝对路径>.yml --scenario-no-color
 ```
+
+判定：退出码 0 且没有 `ASSERT fail`。**这些场景不绘制 HUD**，字体、字号、清晰度这类纯像素问题验不出来。
 
 ## 检查清单
 
-- [ ] `find . -name "*.rej"` 为空
-- [ ] 编译通过，`openyamm.exe` 生成
-- [ ] `python tools/check_tables.py` 无警告
-- [ ] 两个无头场景都 `passed`
-- [ ] 改动列表、新术语同步进 `docs/engine-changes.md` 与 `CHANGELOG.md`
+- [ ] `find . -name '*.rej'` 为空，`git diff --check` 无空白错误
+- [ ] 引擎编译通过，`openyamm.exe` 生成
+- [ ] `python tools/check_tables.py` 无 error
+- [ ] `python tools/dev/check_translation_rules.py` 为 0
+- [ ] 无头场景全 `passed`
+- [ ] 新术语进 [glossary.md](glossary.md)，引擎改动进 [engine-changes.md](engine-changes.md)，版本进 `CHANGELOG.md`
+- [ ] fork 打新 tag（`v<版本>-zh_cn`），本仓库打对应 tag，两边 Release 挂同一份产物
+
+## 附录：fork 之前的手工迁移记录
+
+1.17 → 1.18 与 1.18 → 1.19 是在**还没有 git fork** 的时候做的：用 `curl` 拉上游 `.diff`、
+从 `raw.githubusercontent.com` 逐文件取新旧内容，再用 `git merge-file -p --diff3 本地 base 上游`
+三方合并。当时的约束和踩到的坑留着备查，**有 fork 之后这些做法全部作废**：
+
+- 本机没有完整上游仓库（11.7 GB，含大量美术源文件），所以没下整包；`git archive`/`git show`
+  在当时的网络下会卡住，改用 GitHub API（`gh api` 或 `raw.githubusercontent.com`）单文件取。
+- 1.17 → 1.18：上游改 75 个文件，与汉化重叠 6 个。`MainMenuScreen::captureBinding` 从
+  `confirm("Assign Key", body, ...)` 改成 `confirm(title, body, ...)` 并加了「再按 Esc 取消」，
+  附近上下文被上游挪动，patch 拒绝，手工把两处标题与正文包成 `UiText::translate(...)` 才对齐。
+- 1.18 → 1.19：上游改 87 个文件，重叠 11 个；67 个直接覆盖、6 个新增、11 个三方合并，仅 1 处冲突
+  （`LoadGameScreen.cpp`：旧汉化把 "(not installed)" 包成模板，上游把 `saveData->ruleset` 改成
+  `summary.ruleset`）。
+- PortableGit 的 `bin` 目录元数据损坏（358 个条目读不到），bash 会优先从那里解析
+  `cat`/`sed`/`head`，导致 FFmpeg 的 `version.sh` 全炸（`cat: cannot execute`），
+  `version.c` 里 `FFMPEG_VERSION` 没生成出来。构建脚本里把这条 PATH 去掉了，只留 `<git>\usr\bin`。
+  **这条对 Windows 构建仍然适用。**
