@@ -1,12 +1,16 @@
 
-> **2026-11-03 状态**：Android arm64 包已随 1.19.3 发布，重打包流程与 1.19 一致。
-> 引擎改动在 [vnimy/openyamm](https://github.com/vnimy/openyamm)（tag `v1.19.3-zh_cn`），
+> **2026-11-04 状态**：Android arm64 包已随 1.20.0 发布，重打包流程与 1.19 相同，只是**基底 APK 换成官方
+> `OpenYAMM-1.20-android-arm64.apk`**（1.19 的壳会让应用按 1.19 的清单去下内容，引擎与内容版本对不上）。
+> 引擎改动在 [vnimy/openyamm](https://github.com/vnimy/openyamm)（tag `v1.20.0-zh_cn`），
 > 本页只讲 Android 端的打包与 mods 挂载。
 - 只把 `mods/` 放进 APK 或设备不会生效——官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。
 - 重编量很小：汉化引擎改动本来就在 `openyamm` 源码树里，Android 构建工程（`android/`）也是上游现成的。
   本次新增的只是「让 Android 也能加载 mods」的 4 处改动（见下）。
-- 产物：`build-android/artifacts/OpenYAMM-1.19-android-arm64-zh.apk`（48.5 MB，自签名 v1/v2/v3，
-  zipalign 4 KB / 16 KB 页对齐校验均通过；1.19.3 那份的 SHA256 是 `EA4E839A9477E584FF2D24BA9845C45A4ED02B41515BC04769331E7BFDB9E535`）。
+- 产物：`build-android/artifacts/OpenYAMM-1.20-android-arm64-zh.apk`（51,180,710 B，versionName 1.20，
+  versionCode 26166819，自签名 v1/v2/v3，zipalign 4 KB / 16 KB 页对齐校验均通过；
+  1.20.0 那份的 SHA256 是 `3210AECD0DD9BC93A275694388800DC953E3DB05C907B0B5C1032F05710EB2FA`）。
+- 内容包：首次启动由应用按 `android-arm64.json` 下到 `Android/data/org.openyamm.android/files/content/`；
+  1.19 → 1.20 只有 13 个包变化（0.141 GiB），已下过 1.19 内容的手机换这 13 个包与 `index.json` 即可。
 
 ### 打包必须遵守的两条压缩规则
 

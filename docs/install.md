@@ -3,12 +3,12 @@
 ## 适用版本
 
 - Windows 10／11 x64
-- OpenYAMM **官方 1.19**（即 `OpenYAMM-1.19-windows-x64.zip` 解压后的那份安装）
-- 已经至少完整启动过一次，内容包（约 5.4 GB）下载完毕
+- OpenYAMM **官方 1.20**（即 `OpenYAMM-1.20-windows-x64.zip` 解压后的那份安装）
+- 已经至少完整启动过一次，内容包（约 5.4 GB）下载完毕（资源包怎么来见 README 的「资源包（游戏内容）怎么下载、怎么用」）
 
-包名里的版本必须和安装里的 `app/<版本>/` 目录一致：`OpenYAMM-1.19-zh_cn.zip` 只能装在
-`app/1.19/` 上，旧版本的补丁只能装在对应目录上。
-版本对不上会出问题：启动器升级到 `app/1.19/` 之后，旧版的 `openyamm.exe` 与 mods 都不再被加载。
+包名里的版本必须和安装里的 `app/<版本>/` 目录一致：`OpenYAMM-1.20-zh_cn.zip` 只能装在
+`app/1.20/` 上，旧版本的补丁只能装在对应目录上。
+版本对不上会出问题：启动器升级到 `app/1.20/` 之后，旧版的 `openyamm.exe` 与 mods 都不再被加载。
 
 ## 步骤
 
@@ -34,10 +34,10 @@
    > 注意是 `OpenYAMM/mods/`，不是 `OpenYAMM/app/<版本>/mods/`。
 
 4. 备份原引擎，再把 `openyamm.exe` 覆盖到 `OpenYAMM/app/<版本>/openyamm.exe`
-   （`<版本>` 就是包名里的版本号，例如 1.19）：
+   （`<版本>` 就是包名里的版本号，例如 1.20）：
 
    ```bat
-   set VER=1.19
+   set VER=1.20
    ren "OpenYAMM\app\%VER%\openyamm.exe" openyamm.exe.orig
    copy openyamm.exe "OpenYAMM\app\%VER%\openyamm.exe"
    ```

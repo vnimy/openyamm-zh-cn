@@ -2,6 +2,21 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 1.20.0 — 2026-11-04
+
+跟进上游 OpenYAMM 1.20（tag `v1.20`，commit `1add1d3`，18 个提交）。引擎与译文同步升级，PC 与 Android 两套产物都基于 1.20 重出。
+
+- 引擎：`v1.20.0-zh_cn` 由 [vnimy/openyamm](https://github.com/vnimy/openyamm) 合并上游后的提交重编（Windows `openyamm.exe` + Android `libmain.so`）。
+- 合并冲突只有 2 个文件 3 处（`game/rules/maw/MawItemRules.cpp`、`game/gameplay/GameplayPartyOverlayInputController.cpp`），解法一致：取上游新逻辑，再把用户可见文案重新包回 `UiText::translate`。汉化文本层（`game/ui/UiText.*`、`engine/FontAsset.*`、`engine/TextLayout.*`、`game/ui/MenuScreenBase.cpp`、`game/ui/MenuDesignScreen.cpp`、`game/ui/GameplayHudCommon.cpp`、`game/debug/ImGuiCjkFont.*`）上游一个字节都没碰，合并后与 1.19 版逐字节相同。
+- `map_stats.txt` 按 1.20 基表重建：上游 1.20 把 MM9 怪物 id 改成带命名空间的名字（`Ogre Warrior` → `MM9 Icky` 等 32 行），整表替换的补丁会把这一改动回退。现在以 1.20 基表为准、只搬回 201 条地图译名，其余列与上游逐字节一致（`tools/dev/merge_map_stats_120.py`）。
+- Android APK 改在官方 `OpenYAMM-1.20-android-arm64.apk` 上重打包（之前用 1.19 壳的包作废），签名与 1.19 包相同，可直接覆盖升级。
+- 文档：两个仓库的 README 都补了「资源包（游戏内容）怎么下载、怎么用」——频道清单 URL、`packs/<sha256>.zip` 规则、PC 的自动／命令行／手动离线四种用法、安卓首次下载与 1.19→1.20 的 13 个包增量；`docs/install.md`、`docs/android.md` 的版本与产物信息同步到 1.20。
+
+### 已知问题
+
+- 1.20 新增的界面文案还没进覆盖表：`GameMechanics::equipRefusalReason`（`Requires the X skill`／`Requires N Might`／`Requires N Accuracy`）与 `ItemRuntime::wearRequirementText`（`Knights only`／`Men only` 等）由上游直出英文、未接 `UiText::translate`，运行时显示英文。
+- 本轮只做「引擎跟到 1.20 + 数据表按 1.20 重建」，没有全量重扫 1.20 的新文案；缺口清单待下一轮用 `tools/dev/audit_visible_text.py` 与 `tools/check_literals.py` 重测。
+
 ## 未发布
 
 - 文档：把「引擎源码」这条依赖写实。引擎改动全部在 [vnimy/openyamm](https://github.com/vnimy/openyamm)，
