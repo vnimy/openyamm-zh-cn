@@ -73,7 +73,7 @@ app/1.19/openyamm.exe --headless-run-scenario <仓库>/tests/scenarios/isaac_sho
 
 ## 还没动的部分
 
-- **源码硬编码 UI 文案**：`check_literals.py` 仍报约 495 条候选（含误报与日志串）。玩家可见的集中在
+- **源码硬编码 UI 文案**：`scripts/check.sh` 当前的统计是候选 1200 条、未收录约 470 条（含误报与日志串）。玩家可见的集中在
   灵气／光环说明、掉落过滤说明、新角色向导、调试面板帮助等长文案，不属于「房屋/NPC 对话/世界对象」范围；
   按文件挑着补即可。
 - **方尖碑密文**（`Itotecthothesaip` 这类）：拼字谜题的一部分，按原样保留，只翻了提示句。
