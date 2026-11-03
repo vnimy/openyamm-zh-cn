@@ -16,7 +16,7 @@ python tools/check_literals.py --show 60    # 源码硬编码 UI 文案缺口（
 
 | 表 | 条目 | 作用 |
 |---|---:|---|
-| `ui_text.txt` | 5740 | 最终覆盖表（下面这些源表 + MMMerge 语料合成，勿手改） |
+| `ui_text.txt` | 5747 | 最终覆盖表（下面这些源表 + MMMerge 语料合成，勿手改） |
 | `manual_zh.tsv` | 1901 | 手写界面文案、世界对象交互提示、占位文本 |
 | `lua_dialog_zh.tsv` | 1512 | lua `evt.SetMessage` 对话正文（由 `tools/make_lua_dialog.py` 从语料生成） |
 | `lua_extra_mm6_zh.tsv` | 322 | mm6 内容包里非 `SetMessage` 的 lua 消息（`SimpleMessage`/`StatusText`）手译 |
@@ -25,7 +25,7 @@ python tools/check_literals.py --show 60    # 源码硬编码 UI 文案缺口（
 | `templates_zh.tsv` | 8 | 代码动态拼接文案的 `{占位符}` 模板（贿赂价格、公会会费、佣兵自荐） |
 | `event_names_zh.tsv` | 546 | 世界对象名：门、箱子、水池、神龛、传送点…… |
 | `house_names.tsv` | 887 | 屋名／店名（源码拿英文名做逻辑判断，只能展示层替换） |
-| `enchant_names_zh.tsv` | 260 | 物品词缀 |
+| `enchant_names_zh.tsv` | 270 | 物品词缀 |
 | `npc_professions_zh.tsv` | 77 | NPC 职业名 |
 
 数据表侧的译文来自 MMMerge 官方简中包，按记录 ID 对齐。当前 `build_patch.py` 的合并结果：
