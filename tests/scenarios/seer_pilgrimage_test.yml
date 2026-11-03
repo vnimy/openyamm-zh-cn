@@ -1,0 +1,15 @@
+id: test.seer_pilgrimage_zh
+title: "汉化检查：铁拳城堡 先知「探险历程」（Pilgrimage，Lua string.format 动态正文）"
+world: mm6
+mode: faithful
+steps:
+  # 铁拳城堡 = outd3.odm；NPC 794 = The Seer（先知）
+  - new_game_flow: {start_map: outd3.odm}
+  - speak_npc: {source_id: 794}
+  # 话题 1354 = Pilgrimage；正文由 lua 的 string.format 拼出，覆盖表按月份逐条枚举
+  - select_topic: {action_id: 1354}
+  - advance_runtime: {seconds: 1}
+  - assert:
+      dialog:
+        active: true
+        text_contains: "之月"

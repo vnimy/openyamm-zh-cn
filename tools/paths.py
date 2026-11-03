@@ -38,8 +38,17 @@ def _first_existing(candidates) -> Path | None:
 	return None
 
 
+def _has_data_tables(path: Path) -> bool:
+	"""源码树里是否真的有 `assets_dev/engine/data_tables/english/` 的英文表。
+
+	1.19 的源码树是「1.18 树 + 上游 87 个源码文件三方合并」拼出来的，**不带 assets_dev 数据表**
+	（那些表只存在于内容包里）。所以「查源码」和「取数据表骨架」要找的不是同一棵树。
+	"""
+	return (path / "assets_dev/engine/data_tables/english/autonote.txt").exists()
+
+
 def engine_source(explicit=None) -> Path:
-	"""OpenYAMM 源码树。默认找仓库的同级目录 `../openyamm`（当前版），再退回按版本号命名的旧树。"""
+	"""OpenYAMM 源码树（用于读/改 C++ 源码与做源码类检查）。优先当前版本。"""
 	path = _first_existing(
 		[
 			explicit,
@@ -55,6 +64,32 @@ def engine_source(explicit=None) -> Path:
 			"找不到 OpenYAMM 源码树，请用 --openyamm 指定，或设环境变量 OPENYAMM_SRC。"
 		)
 	return path
+
+
+def data_table_source(explicit=None) -> Path:
+	"""带数据表骨架的那棵树（build_patch 从这里读英文原表再打补丁）。
+
+	优先当前版本；当前版本的树若不含 `assets_dev` 数据表，退回上一个含表的版本。
+	实测 1.18 源表与 1.19 内容包内的 98 张表**逐字节相同**，退回 1.18 不会引入版本漂移。
+	"""
+	candidates = [
+		explicit,
+		os.environ.get("OPENYAMM_SRC"),
+		REPO.parent / "openyamm",
+		REPO.parent / "openyamm-1.19",
+		REPO.parent / "openyamm-1.18",
+		REPO.parent / "openyamm-1.17",
+	]
+	for candidate in candidates:
+		if candidate is None:
+			continue
+		path = Path(candidate)
+		if path.exists() and _has_data_tables(path):
+			return path
+	raise SystemExit(
+		"找不到带 assets_dev/engine/data_tables 的 OpenYAMM 源码树，"
+		"请用 --openyamm 指定，或设环境变量 OPENYAMM_SRC。"
+	)
 
 
 def asset_packs(explicit=None) -> Path:

@@ -111,7 +111,9 @@ def check_untranslated_placeholders(files: List[Path], overlay: Dict[str, str]) 
     且没过 UiText，就会显示「把 Bow 提升为 Expert」。"""
     gaps: List[Tuple[str, str]] = []
     suspicious = re.compile(r'"\{(?:[a-z_0-9]+)\}",\s*([A-Za-z_][A-Za-z0-9_:<>()\[\].,\s]*)')
-    display_call = re.compile(r"\b(displaySkillName|masteryDisplayName|displayClassName|localizedMasteryName)\s*\(")
+    # displaySkillName / localizedMasteryName 在引擎侧内部就过 UiText，安全；
+    # masteryDisplayName / displayClassName 只返回英文原文，塞进模板才会漏译。
+    display_call = re.compile(r"\b(masteryDisplayName|displayClassName)\s*\(")
     for path in files:
         text = path.read_text(encoding="utf-8", errors="replace")
         for lineno, line in enumerate(text.splitlines(), 1):
@@ -121,9 +123,6 @@ def check_untranslated_placeholders(files: List[Path], overlay: Dict[str, str]) 
                 argument = match.group(1)
                 call = display_call.search(argument)
                 if call is None:
-                    continue
-                # localizedMasteryName 内部已走 UiText，是安全的
-                if call.group(1) == "localizedMasteryName":
                     continue
                 gaps.append((line.strip()[:130], f"{path.name}:{lineno}"))
     return gaps
@@ -185,12 +184,18 @@ def check_missing_overrides(files: List[Path], overlay: Dict[str, str]) -> List[
 # ---------------------------------------------------------------- D：半拼接
 def check_half_split(files: List[Path]) -> List[Tuple[str, str]]:
     gaps: List[Tuple[str, str]] = []
-    pattern = re.compile(r'UiText::translate\(\s*"(?:[^"\\]|\\.)*"\s*\)\s*\+')
+    pattern = re.compile(r'UiText::translate\(\s*"((?:[^"\\]|\\.)*)"\s*\)\s*\+')
     for path in files:
         text = path.read_text(encoding="utf-8", errors="replace")
         for lineno, line in enumerate(text.splitlines(), 1):
-            if pattern.search(line):
-                gaps.append((line.strip()[:120], f"{path.name}:{lineno}"))
+            match = pattern.search(line)
+            if match is None:
+                continue
+            key = match.group(1).strip()
+            # 单词级片段（「击杀」「对」「掷出」）是有意拆成彩色段落拼的，不是"只翻了前缀"
+            if " " not in key and "\n" not in key and len(key) <= 16:
+                continue
+            gaps.append((line.strip()[:120], f"{path.name}:{lineno}"))
     return gaps
 
 

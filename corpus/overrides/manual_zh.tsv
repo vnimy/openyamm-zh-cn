@@ -1911,3 +1911,335 @@ potion	药水
 "Lock, Stock, and Barrel"	锁、贮存物和木桶
 Unknown skill or invalid level.	未知技能或等级无效。
 Mastery must be B, E, M or G.	专精级别必须是 B、E、M 或 G。
+
+# ---- 先知「朝圣」Lua 事件（string.format 拼出的动态句，逐月枚举） ----
+This is January, the month of Might.\nJourney to the Shrine of Bootleg Bay and pray there to be rewarded.	现在正是一月，力量之月。\n前往布特雷格湾的神殿朝圣，必得回报。
+This is February, the month of Intellect.\nJourney to the Shrine of Misty Islands and pray there to be rewarded.	现在正是二月，智力之月。\n前往浓雾岛的神殿朝圣，必得回报。
+This is March, the month of Personality.\nJourney to the Shrine of Silver Cove and pray there to be rewarded.	现在正是三月，个性之月。\n前往银湾镇的神殿朝圣，必得回报。
+This is April, the month of Endurance.\nJourney to the Shrine of Frozen Highlands and pray there to be rewarded.	现在正是四月，耐力之月。\n前往冰冻高原的神殿朝圣，必得回报。
+This is May, the month of Accuracy.\nJourney to the Shrine of Free Haven and pray there to be rewarded.	现在正是五月，精确之月。\n前往自由天堂的神殿朝圣，必得回报。
+This is June, the month of Speed.\nJourney to the Shrine of Mire of the Damned and pray there to be rewarded.	现在正是六月，速度之月。\n前往幽灵沼泽的神殿朝圣，必得回报。
+This is July, the month of Luck.\nJourney to the Shrine of New Sorpigal and pray there to be rewarded.	现在正是七月，运气之月。\n前往新索匹格镇的神殿朝圣，必得回报。
+This is August, the month of Fire.\nJourney to the Shrine of Kriegspire and pray there to be rewarded.	现在正是八月，火之月。\n前往克里格斯的神殿朝圣，必得回报。
+This is September, the month of Air.\nJourney to the Shrine of Castle Ironfist and pray there to be rewarded.	现在正是九月，风之月。\n前往铁拳城堡的神殿朝圣，必得回报。
+This is October, the month of Water.\nJourney to the Shrine of Kriegspire and pray there to be rewarded.	现在正是十月，水之月。\n前往克里格斯的神殿朝圣，必得回报。
+This is November, the month of Earth.\nJourney to the Shrine of Eel Infested Waters and pray there to be rewarded.	现在正是十一月，土之月。\n前往魔鬼水域的神殿朝圣，必得回报。
+This is December, the month of Magic.\nJourney to the Shrine of Blackshire and pray there to be rewarded.	现在正是十二月，魔法之月。\n前往布莱克郡的神殿朝圣，必得回报。
+You must wait until the new month to undergo a pilgrimage.	你要等到下个月才能再去朝圣。
+
+# ---- v1.20 界面新增/遗留文案（按根因清扫后补齐） ----
+ left	 个
+Brewed 	炼制了 
+ (power 	（强度 
+(off)	（关闭）
+a crafting bag (Shift+B)	工艺背包（Shift+B）
+an alchemy bag	炼金背包
+Bag {bag} is	第 {bag} 号背包
+Make bag {bag}	把第 {bag} 号背包设为
+: click to untag	：点击取消标记
+{skill} {level} to {next}: {cost} {points}	{skill} {level} → {next}：{cost} {points}
+skill point	技能点
+skill points	技能点
+and	和
+ ({full}, shared with {shared})	（{full}，与{shared}共用）
+, you have {points}	，你有 {points}
+Recall to {target}	召回至{target}
+Set {current} over {target}	把{current}覆盖到{target}
+Set beacon to {target}	把道标设在{target}
+Spell {id}	法术 {id}
+Quick spell {slot}	备用魔法 {slot}
+Quick spell {slot}: {spell}	备用魔法 {slot}：{spell}
+none	无
+Bag {bag}	背包 {bag}
+a crafting bag	工艺背包
+Only an implant fits there	那里只能放植入体
+Cybernetics has not opened that socket	控制论还没有开启那个插槽
+ item	 件物品
+ items	 件物品
+{select} for {spell}	为{spell}{select}
+Drag target  Spell button cast  Pause cancel	拖到目标　法术键施放　暂停取消
+Tap portrait  Pause cancel	点角色头像　暂停取消
+Tap target  Pause cancel	点目标　暂停取消
+LMB cast  Esc cancel	左键施放　Esc 取消
+Cast {spell}	施放{spell}
+ Tech Points!	 点科技点数！
+EMP!	电磁脉冲！
+Broken   {detail}	损坏　{detail}
+No valid target exists!	没有有效的目标！
+Item is not of high enough quality	物品品质不够
+Can not cast Fly indoors!	室内不能施展飞行术！
+SkillMastery: 	技能等级：
+gold	金币
+gold if {levels}+ levels below	金币（若低于 {levels} 级以上）
+keep	保留
+No recipes known yet.	还没有已知配方。
+Nothing to brew yet.	还没有可炼制的。
+New recipe!	新配方！
+Brewed x{count}	炼制了 {count} 份
+Brewed	炼制了
+{label} ({count})	{label}（{count}）
+Filtered:	已过滤：
+kills	击杀
+on	对
+Rolled	掷出
+Answer: _	回答：_
+Type amount  Enter accept  E/Esc cancel	输入数量　回车确认　E/Esc 取消
+New stock: {cost} gold	新货：{cost} 金币
+LMB buy  RMB inspect  Esc close	左键购买　右键查看　Esc 关闭
+Recovery time: {ticks}	恢复时间：{ticks}
+Constant	恒定
+0 Seconds	0 秒
+{hours}h {minutes}m	{hours} 小时 {minutes} 分
+{hours}h	{hours} 小时
+{minutes}m {seconds}s	{minutes} 分 {seconds} 秒
+{minutes}m	{minutes} 分
+{seconds}s	{seconds} 秒
+satchel	袋子
+satchels	袋子
+items	物品
+Power: {power}   Uses: {uses}	强度：{power}　次数：{uses}
+{value}:yr	{value}:年
+{value}:mo	{value}:月
+{value}:dy	{value}:天
+{value}:hr	{value}:时
+{value}:mn	{value}:分
+ready	就绪
+recovering	恢复中
+next fed by {name}	下次由{name}喂食
+Slot {slot}	槽位 {slot}
+x{count}	×{count}
+strength {power}	强度 {power}
+Clear slot	清空槽位
+ and 	 和 
+Ultimate {name}	终极{name}
+Elder {name}	长老{name}
+{name} - Combo points	{name}——连击点
+{points} of 5 combo points	{points} / 5 连击点
++1 per paying blow or kill, +0.5 per arrow	每次命中或击杀 +1，每支箭 +0.5
+{name} - Elemental stacks	{name}——元素层数
+Damage {damage}, cast delay {delay}	伤害 {damage}，施法延迟 {delay}
++1 per offensive cast; halves when idle	每次攻击性施法 +1；闲置时减半
++3 to {skills}, and +1 more per 10 skill levels.	{skills} +3，每 10 级技能再加 1。
+Immune to {elements} magic.	免疫{elements}魔法。
+{elements} resistance +{base}, and +{per} per level.	{elements}抗性 +{base}，每级再 +{per}。
+Preservation at night and in dungeons.	夜间与地城中获得「保存」。
+Charge has {seconds} seconds of cooldown	冲锋有 {seconds} 秒冷却
+Out of range	超出范围
+{name} casts Charge stunning the enemy	{name}施展冲锋，击晕敌人
+Following you would be foolish	跟着你们太蠢了
+a special enchantment	特殊附魔
+the item	该物品
+Gem: raise the weaker enchantment	宝石：提升较弱的附魔
+Add a special enchantment	添加特殊附魔
+Add a second enchantment	添加第二条附魔
+Refine damage or armour	精炼伤害或防御
+Copy the item	复制该物品
+Upgrade to a stronger base item	升级为更强的基础物品
+Remove an enchantment	移除一条附魔
+Move a legendary power	转移传奇能力
+Move Celestial status	转移天界状态
+Add drinks to a potion	给药水增加份量
+Raise item power	提升物品强度
+Add a first enchantment	添加第一条附魔
+{stat} +{power}, gems raise it to {cap}	{stat} +{power}，用宝石可提升到 {cap}
+{item}: {summary}	{item}：{summary}
+Needs level {required}; its owner is level {owner}	需要 {required} 级；其主人是 {owner} 级
+Nothing to craft	没有可制作的东西
+Does not work on maps	对地图无效
+{item} does not work on artifacts	{item}对神器无效
+Works on weapons, armour and jewellery only	只对武器、防具和首饰有效
+Identify the item first	请先鉴定该物品
+Every affix of this map is already active	这张地图的所有词缀都已激活
+Activates: {affix}	激活：{affix}
+Opens an empty slot	开启一个空槽位
+Power {power}: monsters 50 levels stronger	强度 {power}：怪物强化 50 级
+You have cleared no other place of this kind	你还没有清空过同类的其它地方
+Moves the map to another cleared place	把地图移到另一个已清空的地方
+The map now opens {place}	地图现在通往{place}
+another place	另一个地方
+Celestial items grow with their wearer; gems cannot raise them	天界物品随佩戴者成长，宝石无法提升
+No enchantments to raise	没有可提升的附魔
+{stat} +{gain} (cap {cap})	{stat} +{gain}（上限 {cap}）
+This potion has not enough power ({power} needed)	这瓶药水强度不足（需要 {power}）
+Only weapons take this potion	只有武器能用这种药水
+Already has a special enchantment	已经有特殊附魔了
+Adds one at random: 	随机添加一条：
+This item cannot take a special enchantment	该物品无法附加特殊附魔
+Adds {special}	添加{special}
+Needs a first enchantment to copy	需要先有一条附魔才能复制
+Already has a second enchantment	已经有第二条附魔了
+Adds {stat} +{strength}	添加 {stat} +{strength}
+Only weapons and armour can be refined	只有武器和防具可以精炼
+Item quality reached its limit	物品品质已达上限
+Quality {quality} %	品质 {quality} %
+Becomes a copy	变成复制品
+Already the strongest of its kind	已经是同类中最强的了
+Becomes {item}	变成{item}
+Its owner will be too low in level to use the {item}	其主人等级太低，无法使用{item}
+No enchantments to remove	没有可移除的附魔
+Removes one at random: {list}	随机移除一条：{list}
+Removes {enchantment}	移除{enchantment}
+Removed {enchantment}	已移除{enchantment}
+Remove one enchantment at random?	随机移除一条附魔？
+Remove {enchantment}?	要移除{enchantment}吗？
+The orb is empty: choose a legendary item to draw its power from	宝珠是空的：选择一件传奇物品抽取其能力
+The orb takes the legendary power	宝珠已吸取传奇能力
+Move the legendary power into the orb?	要把传奇能力移入宝珠吗？
+Becomes Celestial	变成天界物品
+The orb takes the Celestial status	宝珠已吸取天界状态
+Move the Celestial status into the orb?	要把天界状态移入宝珠吗？
++{drinks} drinks	+{drinks} 份
+Celestial items grow with their wearer	天界物品随佩戴者成长
+Item power {power} (cap {cap})	物品强度 {power}（上限 {cap}）
+Enchant Item works on items without enchantments	附魔术只对没有附魔的物品生效
+counts for the Dimensional Maps quest	计入「次元地图」任务
+{affix} {name}	{affix}{name}
+Resurrected {name}	{name}已复活
+You need to clear the area COMPLETELY first.	你需要先彻底清空该区域。
+Bounty	赏金
+You have cleared this dungeon. Resetting it brings every monster back 	你已清空这个地城。重置会让所有怪物复活
+Fly is allowed without restrictions here	此处飞行不受限制
+Monsters are weakened and can no longer resurrect	怪物已被削弱，无法再复活
+Madness is not a place for cowards	疯狂之地不是懦夫该来的地方
+Your packs are too full to take the map.	背包太满，拿不了这张地图。
+{skill} learned	学会了{skill}
+Chance to paralyse vs level {level}: {percent} %	对 {level} 级目标的麻痹几率：{percent} %
+Damage per second of weapon blows against monsters of level {level}: the average 	对 {level} 级怪物每次武器攻击的每秒伤害：平均值
+Damage per second of the attack or quick spell against monsters of level {level}, 	对 {level} 级怪物的攻击或备用魔法每秒伤害，
+\nMagical Leech also includes damage done with weapon enchantments.\n	\n魔法吸取也计入武器附魔造成的伤害。\n
+Damage per second of bow or blaster shots against monsters of level {level}: the 	对 {level} 级怪物的弓或榴弹枪射击每秒伤害：
+\nLeech done with bow is halved.\n	\n用弓造成的吸取效果减半。\n
+How much damage it takes to fell this character, against monsters of level {level}: 	击倒该角色所需的伤害，对 {level} 级怪物：
+\n\nCurrently Active Legendary effects:	\n\n当前生效的传奇效果：
+\n\nYou need at least {level} skill and {price} gold.	\n\n你需要至少 {level} 级技能和 {price} 金币。
+Spell Power:	法术强度：
+Spell Power	法术强度
+Needs {combo} combo points.	需要 {combo} 点连击点。
+Holding it reserves no spell points.	保持时不占用魔法值。
+<bad>Not held:</> cast it to hold it, again to let it go.	<bad>未保持：</>施放一次保持，再施放一次解除。
+Not enough combo points	连击点不足
+Held by {name}	由{name}保持
+All buffs have been removed	所有增益已被移除
+All of {owner}'s bags sorted	{owner}的所有背包已整理
+This character can't summon any more monsters!	该角色无法再召唤更多怪物了！
+Can't cast Armageddon indoors!	室内不能施展末日审判！
+Can't cast Inferno outdoors!	室外不能施展地狱火！
+Can't cast Prismatic Light outdoors!	室外不能施展七彩光！
+I wouldn't join in your reckless adventure, not even for all the wealth in the world.	我才不会加入你们这种玩命的冒险，就算给我全世界的财富也不干。
+The map's power is at its limit	地图强度已达上限
+At this gem's cap; a higher tier raises it further	已达到该宝石的上限；更高等级的宝石才能再提升
+Gains the orb's legendary power	获得宝珠的传奇能力
+Replace the item's legendary power?	要替换该物品的传奇能力吗？
+Refills Protection, Meditation, Regeneration, Magic Protection, Champion's, 	补满护体神盾、冥想、再生、魔法防护、勇士之
+# ---- 法术名的语境键：增益/光环面板与法术书保持同一官方译名 ----
+SpellName: Torch Light	光明之火
+SpellName: Fire Bolt	霹雳火焰
+SpellName: Fire Resistance	御火奇术
+SpellName: Fire Aura	赤焰光环
+SpellName: Haste	攻击加速
+SpellName: Fireball	连珠火球
+SpellName: Fire Spike	烈火爆雷
+SpellName: Immolation	怒火焚身
+SpellName: Meteor Shower	流星火雨
+SpellName: Inferno	地狱烈焰
+SpellName: Incinerate	烈火威弹
+SpellName: Wizard Eye	魔力神眼
+SpellName: Feather Fall	凌空飞降
+SpellName: Air Resistance	御风奇术
+SpellName: Sparks	遍地开花
+SpellName: Jump	神奇跳跃
+SpellName: Shield	护体神盾
+SpellName: Lightning Bolt	霹雳闪电
+SpellName: Invisibility	隐身奇术
+SpellName: Implosion	雷鸣爆弹
+SpellName: Fly	飞行奇术
+SpellName: Starburst	群星飞落
+SpellName: Awaken	催醒奇术
+SpellName: Poison Spray	毒液喷发
+SpellName: Water Resistance	御水奇术
+SpellName: Ice Bolt	霹雳寒冰
+SpellName: Water Walk	凌波微步
+SpellName: Recharge Item	魔力填充
+SpellName: Acid Burst	酸弹飞射
+SpellName: Enchant Item	天赋魔力
+SpellName: Town Portal	时空之门
+SpellName: Ice Blast	寒冰爆裂
+SpellName: Lloyd's Beacon	时空道标
+SpellName: Stun	晕眩重击
+SpellName: Slow	迟缓大法
+SpellName: Earth Resistance	御土奇术
+SpellName: Deadly Swarm	致命毒蜂
+SpellName: Stone Skin	护体石肤
+SpellName: Blades	旋转飞镖
+SpellName: Stone to Flesh	解除石化
+SpellName: Rock Blast	巨石轰击
+SpellName: Telekinesis	隔空取物
+SpellName: Death Blossom	死亡之花
+SpellName: Mass Distortion	力压千钧
+SpellName: Detect Life	探知生命
+SpellName: Bless	圣灵佑佐
+SpellName: Fate	天赐神运
+SpellName: Turn Undead	驱散亡灵
+SpellName: Remove Curse	驱魔除咒
+SpellName: Preservation	天神护体
+SpellName: Heroism	天赐神力
+SpellName: Spirit Lash	灵魂移位
+SpellName: Raise Dead	死而复生
+SpellName: Shared Life	分享生命
+SpellName: Resurrection	转世重生
+SpellName: Telepathy	心灵感应
+SpellName: Remove Fear	驱逐恐惧
+SpellName: Mind Resistance	御心奇术
+SpellName: Mind Blast	惊心动魄
+SpellName: Charm	消除敌意
+SpellName: Cure Paralysis	治愈麻痹
+SpellName: Berserk	狂性大发
+SpellName: Mass Fear	凶神恶煞
+SpellName: Cure Insanity	治愈痴狂
+SpellName: Psychic Shock	魂飞魄散
+SpellName: Enslave	夺魂大法
+SpellName: Cure Weakness	治愈虚弱
+SpellName: Heal	疗伤大法
+SpellName: Body Resistance	御体奇术
+SpellName: Harm	魔法伤害
+SpellName: Regeneration	浴火重生
+SpellName: Cure Poison	疗毒妙方
+SpellName: Hammerhands	重拳出击
+SpellName: Cure Disease	治愈疾病
+SpellName: Protection from Magic	御魔奇术
+SpellName: Flying Fist	神拳出击
+SpellName: Power Cure	疗伤圣法
+SpellName: Light Bolt	光明之焰
+SpellName: Destroy Undead	亡灵杀手
+SpellName: Dispel Magic	驱散魔法
+SpellName: Paralyze	定身大法
+SpellName: Summon Wisp	光影召唤
+SpellName: Day of the Gods	天佑一日
+SpellName: Prismatic Light	死亡之光
+SpellName: Day of Protection	护身一日
+SpellName: Hour of Power	神佑一时
+SpellName: Sunray	聚光魔球
+SpellName: Divine Intervention	普渡众生
+SpellName: Reanimate	起死回生
+SpellName: Toxic Cloud	毒云笼罩
+SpellName: Vampiric Weapon	嗜血武器
+SpellName: Shrinking Ray	缩身大法
+SpellName: Shrapmetal	钢镖齐射
+SpellName: Control Undead	操纵亡灵
+SpellName: Pain Reflection	同生共死
+SpellName: Dark Grasp	黑暗魔爪
+SpellName: Dragon Breath	神龙吐珠
+SpellName: Armageddon	末日审判
+SpellName: Souldrinker	惊魂夺魄
+SpellName: Glamour	魅力
+SpellName: Travelers' Boon	宝囊
+SpellName: Blind	盲目
+SpellName: Darkfire Bolt	暗火
+SpellName: Lifedrain	吸血
+SpellName: Levitate	飘浮
+SpellName: Charm	魅惑
+SpellName: Mistform	雾化
+SpellName: Fear	龙威
+SpellName: Flame Blast	焰爆
+SpellName: Flight	飞行
+SpellName: Wing Buffet	翼击

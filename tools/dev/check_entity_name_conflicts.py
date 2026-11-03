@@ -91,11 +91,15 @@ def main() -> int:
         print("找不到官方英文数据表（安装包的 engine.core），无法比对")
         return 2
 
-    # 参与比对的实体：表名 -> 名称所在列
+    # 参与比对的实体：表名 -> 名称所在列。
+    # 只收「显示时会走 UiText」的表：
+    #   * 法术名、职业名在界面里通过覆盖表翻译，裸键写错会串台；
+    #   * 怪物名/物品名直接来自数据表（MonsterTable / ItemTable 不经过 UiText），
+    #     表里已经是官方译名，覆盖表里的同名裸键服务的是别的语境（种族/职业），
+    #     这类「跨表同名不同义」是正常现象，不参与本项比对。
     entities = {
         "data_tables/english/spells.txt": 2,
         "data_tables/spells.txt": 2,
-        "data_tables/monster_data.txt": 1,
         "data_tables/english/class.txt": 1,
     }
 
@@ -105,6 +109,11 @@ def main() -> int:
             continue
         mapping = english_to_chinese(packs[name], patched(name), column)
         for english_name, official in mapping.items():
+            # 引擎已有「带语境」的键：SpellName: <英文> 表示该英文名在法术语境下的官方译名。
+            # 只要语境键与数据表一致，裸键就留给其它语境（属性/物品/职业），不算冲突。
+            contextual = overlay.get("SpellName: " + english_name)
+            if contextual == official:
+                continue
             override = overlay.get(english_name)
             if override is None:
                 continue

@@ -450,7 +450,7 @@ def main() -> int:
     parser.add_argument("--out", type=Path, required=True, help="patch asset root (becomes the mod directory)")
     arguments = parser.parse_args()
 
-    openyamm = paths.engine_source(arguments.openyamm)
+    openyamm = paths.data_table_source(arguments.openyamm)
     target_root = openyamm / "assets_dev/engine/data_tables"
     output_root = arguments.out / "engine/data_tables"
     report: List[str] = []
