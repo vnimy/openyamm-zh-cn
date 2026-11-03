@@ -1,13 +1,12 @@
 
-> **2026-10-30 状态**：仓库已升级到 OpenYAMM 1.19（桌面），本页写的 Android 重打包流程仍是 1.18 时代；
-> 1.19 的 Android 包还没有重出。重出时按 [upgrading.md](upgrading.md) 把引擎改动迁到 `openyamm`，
-> 内容包换成 1.19 的即可，流程不变。
-�，
-  只把 `mods/` 放进 APK 或设备不会生效——官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。
-- 重编量很小：汉化引擎改动本来就在 `openyamm-1.18` 源码树里，Android 构建工程（`android/`）也是上游现成的。
+> **2026-11-03 状态**：Android arm64 包已随 1.19.3 发布，重打包流程与 1.19 一致。
+> 引擎改动在 [vnimy/openyamm](https://github.com/vnimy/openyamm)（tag `v1.19.3-zh_cn`），
+> 本页只讲 Android 端的打包与 mods 挂载。
+- 只把 `mods/` 放进 APK 或设备不会生效——官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。
+- 重编量很小：汉化引擎改动本来就在 `openyamm` 源码树里，Android 构建工程（`android/`）也是上游现成的。
   本次新增的只是「让 Android 也能加载 mods」的 4 处改动（见下）。
-- 产物：`build-android/artifacts/OpenYAMM-1.18-android-arm64-zh.apk`（38.4 MB，自签名，v1/v2/v3 签名，
-  zipalign 4 KB / 16 KB 页对齐校验均通过）。**尚未在真机验证**，安装与首启步骤见后文。
+- 产物：`build-android/artifacts/OpenYAMM-1.19-android-arm64-zh.apk`（48.5 MB，自签名 v1/v2/v3，
+  zipalign 4 KB / 16 KB 页对齐校验均通过；1.19.3 那份的 SHA256 是 `EA4E839A9477E584FF2D24BA9845C45A4ED02B41515BC04769331E7BFDB9E535`）。
 
 ### 打包必须遵守的两条压缩规则
 
@@ -23,7 +22,7 @@
 `zipalign -c -p 4` 与 `apksigner verify`。**别用 PowerShell 的 `ZipArchive` 直接改官方 APK**——它的
 `CompressionLevel.NoCompression` 在本机实测并没有真正写成 STORED。
 
-## 引擎侧新增改动（相对 `openyamm-1.18` 树）
+## 引擎侧新增改动（相对 `openyamm` 树）
 
 | 文件 | 改动 | 原因 |
 |---|---|---|
@@ -38,7 +37,7 @@
 
 ### 想保留已下载的内容包，就把 APK 签成官方签名
 
-官方 1.18 APK 是 thin 包，内容包（约 2.8 GB）在首次启动时下到
+官方 APK 是 thin 包，内容包在首次启动时下到
 `Android/data/org.openyamm.android/files/content/`。而「卸载官方版 → 装自签名汉化包」会把这份内容一起删掉。
 
 要避免重下，唯一正规做法是**用与官方相同的签名密钥重签**（`apksigner sign --ks <官方 keystore>`）：
@@ -55,8 +54,8 @@ Android 只校验签名一致，不关心谁签的。官方 `android-release.jks
 | build-tools 35（zipalign/apksigner） | `build-android/android-sdk/build-tools/android-15` |
 | JDK 17 | `build-android/tools/jdk-17.0.20.1+1`（Adoptium） |
 | C/C++ 依赖源码 | `toolchains/deps/`（SDL3、fmt、spdlog、freetype、physfs、yaml-cpp、imgui、bx、bimg、bgfx、monocypher、lua、ffmpeg） |
-| zstd/etcpak/etc2comp 源码 | 复用桌面构建缓存 `openyamm-1.18/build-mingw/_deps` |
-| host shaderc | `openyamm-1.18/build-mingw/openyamm_shaderc.exe`（桌面构建产物） |
+| zstd/etcpak/etc2comp 源码 | 复用桌面构建缓存 `openyamm/build-mingw/_deps` |
+| host shaderc | `openyamm/build-mingw/openyamm_shaderc.exe`（桌面构建产物） |
 
 下载走 `build-android/fetch.js`（Node.js 自实现 TLS，可直连或 `127.0.0.1:10808` SOCKS5）。
 本机 `curl`/`Invoke-WebRequest` 因 schannel 不可用而失败。
@@ -64,23 +63,23 @@ Android 只校验签名一致，不关心谁签的。官方 `android-release.jks
 ### 步骤
 
 ```bat
-:: 1. 配置（MinGW Makefiles，不是 Ninja）
-build-android\configure-android.bat
+:: 1. 配置（MinGW Makefiles，不是 Ninja；脚本名里的版本跟引擎版本走）
+build-android\configure-android-1.19.bat
 
 :: 2. 构建 arm64 目标
-cd build-android\native
+cd build-android\native-1.19
 D:\Projects\MM678\toolchains\mingw64\bin\make.exe -j 8
 
-:: 3. 去掉调试符号（430 MB → 22.7 MB）
+:: 3. 去掉调试符号（1.19 未 strip 时 libmain.so 约 460 MB）
 <ndk>\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-strip.exe --strip-unneeded ^
     android\app\src\main\cpp\libmain.so sdl3\libSDL3.so
 
 :: 4. 准备 mods（从汉化发布包解出）
-::    openyamm-zh-cn\dist\OpenYAMM-1.18-zh_cn.zip → build-android\artifacts\mods
+::    openyamm-zh-cn\dist\OpenYAMM-<版本>-zh_cn.zip → build-android\artifacts\mods
 
-:: 5. 重打包 + 对齐 + 签名（基于官方 1.18 arm64 APK）
+:: 5. 重打包 + 对齐 + 签名（基于官方同版本 arm64 APK）
 ::    内部顺序：repack_apk.py（按规则选压缩方式）→ zipalign -p 4 → apksigner sign → 三项自检
-powershell -NoProfile -ExecutionPolicy Bypass -File build-android\pack_zh_apk.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File build-android\pack_zh_apk.ps1 -Version 1.19
 ```
 
 ### 环境限制（本机 DSH 沙箱，踩过的坑）
@@ -95,17 +94,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File build-android\pack_zh_apk.ps
 - FFmpeg 的 `libav*` 头文件在 `HouseVideoPlayer`/`MusicStream`/`main` 里由 `OPENYAMM_HOUSE_VIDEOS` 控制；
   关掉后必须三处都有兜底实现，缺一处就是 `fatal error: 'libavutil/log.h' file not found`。
 
-## 安装（待真机验证）
+## 安装
 
 1. **卸载官方版**。自签名与官方签名不同，不能覆盖安装；卸载会删掉 `Android/data/org.openyamm.android/files/`
    （已下载的内容包与存档，可先备份 `saves/`）。
-   > 如果卸载后不想重下 2.8 GB 内容包：先只装官方版下载内容，再用**同签名**的汉化包覆盖；或者直接用
+   > 如果卸载后不想重下内容包：先只装官方版下载内容，再用**同签名**的汉化包覆盖；或者直接用
    > bundled 构建（内容包打进 APK）。
-2. 安装 `OpenYAMM-1.18-android-arm64-zh.apk`（`adb install -r` 或手机直接点安装）。
+2. 安装 `OpenYAMM-<版本>-android-arm64-zh.apk`（`adb install -r` 或手机直接点安装）。
    装不上时先看 `adb install` 的原始报错：`INSTALL_PARSE_FAILED_*` 多为打包/压缩问题，
    `INSTALL_FAILED_UPDATE_INCOMPATIBLE` 是签名冲突（卸载官方版即可）。
-3. 首次启动：官方 1.18 是 **thin APK**，按屏幕提示下载内容包（约 2.8 GB，官方服务器）。
-   若官方已停止提供 1.18 内容，需要改成 bundled 构建（见下）。
+3. 首次启动：官方是 **thin APK**，按屏幕提示下载内容包（体积随版本变动，从官方服务器下）。
+   若官方已停止提供该版本内容，需要改成 bundled 构建（见下）。
 4. 确认汉化生效：
 
 ```sh
@@ -119,11 +118,12 @@ adb logcat -s OpenYAMM | grep -E 'Android mods|Mods:'
 
 ## 已知限制
 
-- **无音乐、无房屋视频**：本次构建 `OPENYAMM_HOUSE_VIDEOS=OFF`（FFmpeg 未编）。文本与界面汉化不受影响。
+- **音乐与房屋视频**：1.19 的配置带 `-DOPENYAMM_HOUSE_VIDEOS=ON`（FFmpeg 一起编），两者都有；
+  1.18 时代那份是 `OFF`，只有文本与界面。
 - **thin APK 依赖官方内容包**：内容未下完进不了游戏。要离线安装需用 bundled 模式重编（APK 带上 ~2.8 GB
   Android 内容包，参考 `android/repack_runtime_assets.sh` 与 `-Popenyamm.android.content=bundled`）。
-- **版本绑定**：本 APK 对应 1.18；上游已发布 1.19，将来升级要按 [upgrading.md](upgrading.md) 把引擎改动
-  重新打到 1.19 再编 Android 版。
+- **版本绑定**：APK 与引擎 tag 一一对应（1.19.3 ↔ `v1.19.3-zh_cn`）。升级不用「重新打」，先按 [upgrading.md](upgrading.md)
+  在 fork 里 merge 上游新版，再重编 Android 版。
 - 用户自己放进 `Android/data/org.openyamm.android/files/mods/` 的文件仍可用：启动解压只写清单里的 44 个文件，
   不覆盖其它文件。
 

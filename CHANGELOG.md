@@ -2,6 +2,15 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 未发布
+
+- 文档：把「引擎源码」这条依赖写实。引擎改动全部在 [vnimy/openyamm](https://github.com/vnimy/openyamm)，
+  按版本打 tag；本仓库只出译文、字体与工具，不再声称自己保存 C++ 源码。
+- `docs/upgrading.md` 重写：从「没有上游仓库，手工三方合并」改成 `git merge upstream/vX.Y` 的流程，原来的手工迁移记录降级为附录。
+- `docs/engine-changes.md` 补回被吃掉的开头（一级标题与「一、文本层」），并把 1.18→1.19 的增量表挪到附录区。
+- `docs/android.md` 去掉 2026-10-30 的过时状态行（1.19 的 APK 已经出了），并修掉一处非法字节。
+- README 增加「两个仓库」一节与版本对应表；`docs/build.md`、CONTRIBUTING、构建脚本的示例路径同步更新。
+
 ## 1.19.3 — 2026-11-03
 
 恢复调试控制台的 ImGui 动态字体图集，并把这一轮补完的译文接上钩子。
