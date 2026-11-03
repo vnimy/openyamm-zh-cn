@@ -1,0 +1,14 @@
+id: test.zh_text_coverage
+title: "汉化检查：关键界面文案在本机实际加载后都是中文"
+world: mm7
+mode: faithful
+steps:
+  - new_game_flow: {start_map: 7out01.odm}
+  # 技能名（第 2 条）：控制台回显与技能页共用 displaySkillName
+  - console: {line: "skill set Bow 12 G", expect_contains: "弓箭"}
+  - console: {line: "skill set BodyMagic 12 M", expect_contains: "肢体魔法"}
+  - console: {line: "skill set Armsmaster 12 E", expect_contains: "武器使用术"}
+  # 等级名（第 2、3 条）：大师 vs 宗师，且 Master 不再被译成职业名「智者」
+  - console: {line: "skill set Sword 12 M", expect_contains: "大师"}
+  - console: {line: "skill set Axe 12 G", expect_contains: "宗师"}
+  - console: {line: "skill set Spear 12 E", expect_contains: "专家"}

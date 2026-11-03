@@ -1,0 +1,13 @@
+id: test.skill_ui_zh
+title: "汉化检查：技能名与技能等级名（反馈 #2）"
+world: mm7
+mode: faithful
+steps:
+  - new_game_flow: {start_map: 7out01.odm}
+  # 技能页/角色页显示的技能名与等级名都应是中文；这里通过控制台回显验证同一条显示链路。
+  - console: {line: "skill set Bow 12 G", expect_contains: "弓箭"}
+  - console: {line: "skill set BodyMagic 12 M", expect_contains: "肢体魔法"}
+  - console: {line: "skill set Armsmaster 12 E", expect_contains: "武器使用术"}
+  # 等级名走 SkillMastery 前缀键：大师（不是僧侣职业名「智者」）
+  - console: {line: "skill set Sword 12 M", expect_contains: "大师"}
+  - console: {line: "skill set Axe 12 G", expect_contains: "宗师"}

@@ -1,0 +1,59 @@
+# OpenYAMM 调试控制台（Android 顶部手势唤出的 ImGui 窗口及其日志）的界面文案。
+# 格式：原文<TAB>译文；# 开头为注释；以 * 结尾的原文按前缀匹配；换行写作字面 \n。
+# 由 tools/make_ui_text.py 的 EXTRA_TABLES 合并进 corpus/overrides/ui_text.txt。
+OpenYAMM Console	OpenYAMM 控制台
+Freeze	冻结
+Tools	工具
+Help	帮助
+Clear	清除
+Close	关闭
+Copy All	全部复制
+Send	发送
+Run	运行
+Quick Actions	快捷操作
+Maps	地图
+Items	物品
+Outdoor	野外
+Dungeon	地城
+Map Jump	地图跳转
+Give Item	给予物品
+Search	搜索
+Search by item id, name, unidentified name, icon, skill group, or notes.	按物品 ID、名称、未鉴定名称、图标、技能组或备注搜索。
+Qty	数量
+Give Selected	给予所选物品
+Unidentified:	未鉴定：
+Group:	技能组：
+Icon:	图标：
+No matching items.	没有匹配的物品。
+No matching maps.	没有匹配的地图。
+No item selected.	尚未选中物品。
+QBits	任务位
+Set QBit	置位任务位
+Clear QBit	清除任务位
+Set QBit needs an id.	置位任务位需要 ID。
+Clear QBit needs an id.	清除任务位需要 ID。
+Dump QBits	导出任务位
+Dump Active QBits	导出已置位任务位
+Dump All QBits	导出全部任务位
+Awards	荣誉
+Set Award	授予荣誉
+Clear Award	清除荣誉
+Set Award needs an id.	授予荣誉需要 ID。
+Clear Award needs an id.	清除荣誉需要 ID。
+Dump Awards	导出荣誉
+Dump Active Awards	导出已获得荣誉
+Dump All Awards	导出全部荣誉
+Immortal	不死
+Unlimited Mana	无限法力
+Invisible	隐形
+ [On]	 [开]
+ [Off]	 [关]
+Map Info	地图信息
+Full Heal	全员治疗
+Next Day	次日
+Clear Log	清空日志
+Common commands	常用命令
+Unknown command: 	未知命令：
+Cannot open 	无法打开 
+Ran {count} commands from {path}	已从 {path} 运行 {count} 条命令
+, {count} failed	，{count} 条失败

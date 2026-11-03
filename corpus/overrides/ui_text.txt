@@ -8,16 +8,16 @@ Personality	个性
 Endurance	耐力
 Accuracy	精确
 Speed	速度
-Luck	幸运
+Luck	运气
 Hit Points	生命值
 Spell Points	魔法值
-Armor Class	护甲等级
+Armor Class	防御等级
 Fire Resistance	火系抗性
-Air Resistance	气系抗性
+Air Resistance	风系抗性
 Water Resistance	水系抗性
 Earth Resistance	土系抗性
-Mind Resistance	心智抗性
-Body Resistance	肢体抗性
+Mind Resistance	心系抗性
+Body Resistance	体系抗性
 Alchemy skill	炼金术
 Stealing skill	偷窃术
 Disarm skill	解除陷阱
@@ -38,11 +38,11 @@ of Health	生命
 of Magic	魔力
 of Defense	防护
 of Fire Resistance	御火
-of Air Resistance	御风
+of Air Resistance	御风类
 of Water Resistance	御水
 of Earth Resistance	御土
-of Mind Resistance	御心
-of Body Resistance	御体
+of Mind Resistance	御心类
+of Body Resistance	御体类
 of Alchemy	炼金
 of Stealing	盗窃
 of Disarming	解陷
@@ -66,7 +66,7 @@ of great Might	巨力
 +15 Endurance and +5 Armor.	耐力 +15，护甲 +5。
 +15 Endurance and Regenerate Hit points over time.	耐力 +15，并持续回复生命。
 +15 Luck and Regenerate Spell points over time.	幸运 +15，并持续回复法术。
-+20 Air Resistance and Shielding.	气系抗性 +20，并获得护盾。
++20 Air Resistance and Shielding.	风系抗性 +20，并获得护盾。
 +3 ID Item and ID Monster skills.	物品鉴定、怪物鉴定 +3。
 +3 Stealing and Disarm skills.	偷窃术、解除陷阱 +3。
 +3 Unarmed and Dodging skills.	徒手格斗、闪避 +3。
@@ -86,7 +86,7 @@ Adds 4-10 points of Electrical damage.	附加 4-10 点电击伤害。
 Adds 5 points of Body damage and +2 Disarm skill.	附加 5 点肢体伤害，解除陷阱 +2。
 Adds 5 points of Body damage.	附加 5 点肢体伤害。
 Adds 6-15 points of Electrical damage.	附加 6-15 点电击伤害。
-Adds 6-8 points of Cold damage and +5 Armor Class.	附加 6-8 点寒冷伤害，护甲等级 +5。
+Adds 6-8 points of Cold damage and +5 Armor Class.	附加 6-8 点寒冷伤害，防御等级 +5。
 Adds 6-8 points of Cold damage.	附加 6-8 点寒冷伤害。
 Adds 8 points of Body damage.	附加 8 点肢体伤害。
 Adds 9-12 points of Cold damage.	附加 9-12 点寒冷伤害。
@@ -258,7 +258,7 @@ UNUSED x2 damage on all Titans	（未启用）对所有泰坦造成 2 倍伤害
 "Regenerate 1 hp/x and 1 sp/x while walking, etc."	行走时每单位时间回复 1 点生命与 1 点法术，等等
 (5) pois damage and +2 Disarm skill	（5）毒素伤害，解除陷阱 +2
 (6-8) cold damage and +5 AC	（6-8）寒冷伤害，护甲 +5
-+20 Air Resistance and 1/2 damage from missile attacks	气系抗性 +20，远程攻击伤害减半
++20 Air Resistance and 1/2 damage from missile attacks	风系抗性 +20，远程攻击伤害减半
 +10 Water Resistance and +2 Alchemy skill	水系抗性 +10，炼金术 +2
 Character with item takes no damage from drowning	携带者免疫溺水伤害
 Character with item takes no damage from falling	携带者免疫坠落伤害
@@ -1944,7 +1944,7 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +3 Cold resistance permanent	寒冷抗性永久 +3
 +3 Fire permanent	火焰永久 +3
 +30 Level temporary.  Look Out!	等级临时 +30。当心！
-+40 Armor class temporary.	护甲等级临时 +40。
++40 Armor class temporary.	防御等级临时 +40。
 +5 Elemental resistance permanent.	元素抗性永久 +5。
 The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            t_haat_lt__en_lc	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nt_haat_lt__en_lc
 You are not a follower of Baa.  Begone!	你不是巴阿的信徒。滚开！
@@ -1968,7 +1968,7 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +10 Endurance permanent	耐力永久 +10
 +10 Level temporary.	等级临时 +10。
 +20 Accuracy and Speed temporary.	精确与速度临时 +20。
-+20 Armor class temporary.	护甲等级临时 +20。
++20 Armor class temporary.	防御等级临时 +20。
 +3 Endurance permanent	耐力永久 +3
 +30 Might temporary.	力量临时 +30。
 +5 Endurance permanent.	耐力永久 +5。
@@ -2127,7 +2127,7 @@ You found something!	你找到了些东西！
 +1 Magic resistance permanent	+1 魔法抗性（永久）
 +1 Poison resistance permanent	+1 毒素抗性（永久）
 +2 Accuracy permanent	+2 精确（永久）
-+2 Air Resistance permanent	+2 气系抗性（永久）
++2 Air Resistance permanent	+2 风系抗性（永久）
 +2 Earth Resistance permanent	+2 土系抗性（永久）
 +2 Endurance permanent	+2 耐力（永久）
 +2 Fire Resistance permanent	+2 火系抗性（永久）
@@ -2207,16 +2207,16 @@ pohuwwba	方尖碑铭文「种把子海」
 +10 Accuracy (Temporary)	精确 +10（临时）
 +10 Luck(Permanent)	幸运 +10（永久）
 +2 Might (Permanent)	力量 +2（永久）
-+20 Body Resistance (Temporary)	肢体抗性 +20（临时）
++20 Body Resistance (Temporary)	体系抗性 +20（临时）
 +5 Personality (Temporary)	个性 +5（临时）
 +50 Might (Temporary)	力量 +50（临时）
 Disease Cured	疾病已治愈
 ininhil_	方尖碑铭文「上宝。盗」
-+10 Water, Fire, and Air Resistance(Permanent)	水系、火系与气系抗性 +10（永久）
++10 Water, Fire, and Air Resistance(Permanent)	水系、火系与风系抗性 +10（永久）
 +50 Earth Resistance (Temporary)	土系抗性 +50（临时）
 redditoh	方尖碑铭文「白搁为五」
 +10 Fire Resistance (Temporary)	火系抗性 +10（临时）
-+10 Mind, Earth, and Body Resistance(Permanent)	心智、土系与肢体抗性 +10（永久）
++10 Mind, Earth, and Body Resistance(Permanent)	心智、土系与体系抗性 +10（永久）
 +10 Personality (Temporary)	个性 +10（临时）
 +2 Intellect (Permanent)	智力 +2（永久）
 +5 Fire Resistance (Permanent)	火系抗性 +5（永久）
@@ -2231,7 +2231,7 @@ hmmm, You decide against it.	嗯……你决定算了。
 ts_rehmu	方尖碑铭文「朵填避死」
 +2 Speed (Permanent)	速度 +2（永久）
 +20 AC (Temporary)	护甲 +20（临时）
-+20 Air Resistance (Temporary)	气系抗性 +20（临时）
++20 Air Resistance (Temporary)	风系抗性 +20（临时）
 You decide it would be a bad idea to try that again.	你觉得再试一次不是个好主意。
 You do not feel well.	你感觉不太舒服。
 e_laru_a	方尖碑铭文「时。鬼个」
@@ -2251,7 +2251,7 @@ The ship begins to sink	船开始下沉
 You found nothing of interest	你没找到任何感兴趣的东西
 You have Killed all of the Basilisks in this Ancient Troll Home	你杀死了这座巨魔古居里所有的石化蜥蜴
 You found nothing useful	你没找到任何有用的东西
-Air Resistance +10 (Permanent)	气系抗性 +10（永久）
+Air Resistance +10 (Permanent)	风系抗性 +10（永久）
 Earth Resistance +10 (Permanent)	土系抗性 +10（永久）
 Fire Resistance +25 (Temporary)	火系抗性 +25（临时）
 Water Resistance +10 (Permanent)	水系抗性 +10（永久）
@@ -2311,6 +2311,62 @@ skilled	熟练
 well known	远近闻名
 masterful	大师级
 great	杰出
+OpenYAMM Console	OpenYAMM 控制台
+Freeze	冻结
+Tools	工具
+Help	帮助
+Clear	清除
+Close	关闭
+Copy All	全部复制
+Send	发送
+Run	运行
+Quick Actions	快捷操作
+Maps	地图
+Items	物品
+Outdoor	野外
+Dungeon	地城
+Map Jump	地图跳转
+Give Item	给予物品
+Search	搜索
+Search by item id, name, unidentified name, icon, skill group, or notes.	按物品 ID、名称、未鉴定名称、图标、技能组或备注搜索。
+Qty	数量
+Give Selected	给予所选物品
+Unidentified:	未鉴定：
+Group:	技能组：
+Icon:	图标：
+No matching items.	没有匹配的物品。
+No matching maps.	没有匹配的地图。
+No item selected.	尚未选中物品。
+QBits	任务位
+Set QBit	置位任务位
+Clear QBit	清除任务位
+Set QBit needs an id.	置位任务位需要 ID。
+Clear QBit needs an id.	清除任务位需要 ID。
+Dump QBits	导出任务位
+Dump Active QBits	导出已置位任务位
+Dump All QBits	导出全部任务位
+Awards	荣誉
+Set Award	授予荣誉
+Clear Award	清除荣誉
+Set Award needs an id.	授予荣誉需要 ID。
+Clear Award needs an id.	清除荣誉需要 ID。
+Dump Awards	导出荣誉
+Dump Active Awards	导出已获得荣誉
+Dump All Awards	导出全部荣誉
+Immortal	不死
+Unlimited Mana	无限法力
+Invisible	隐形
+ [On]	 [开]
+ [Off]	 [关]
+Map Info	地图信息
+Full Heal	全员治疗
+Next Day	次日
+Clear Log	清空日志
+Common commands	常用命令
+Unknown command: 	未知命令：
+Cannot open 	无法打开 
+Ran {count} commands from {path}	已从 {path} 运行 {count} 条命令
+, {count} failed	，{count} 条失败
 My fellow Journeyman, we face grave times.\nHopefully our Master will find a way for us to leave this troubled region and return safely to Alvar.\nI would not wish to end my life here, even though it is the place of my birth.	同志们，我们现在遇到的是非常危险的状况。很幸运的，我们的主人会找到方法让我们离开这个要命的地方，安全的回到阿尔瓦。虽然这是我出生的地方，但我可不想要在这边把命给送掉。
 Dadeross led us here to trade with the Lizardman Clan of Onefang for their tobersk fruit.\nHe has gone to talk with Brekish Onefang, the village leader.\nPerhaps you should look for him?	达德洛斯带领我们来到这边，准备让我们和蜥蜴人的部落首领单牙交易他们的托伯斯克果。他刚去找布拉克许·单牙谈话。也许你们可以去找他？
 The Regnan Pirates are a threat to the economy and free travel in Jadame.\nVery few boats ply the sea, for fear of being sunk…or worse!\nWhen in Ravenshore, I did hear rumors of a small band of smugglers who have been working beneath the notice of the pirates.\nI wonder how they do that!	雷格那的海盗是贾丹姆大陆上贸易和四处旅行的最大威胁。海上只有极少的船只愿意四处旅行，因为担心被这些恐怖的家伙给弄沉……或是遇到更糟糕的命运！当你在渡鸦海滨的时候，我听说过有一小群走私者在海盗的肆虐之下依旧照旧工作。不知道他们是怎么办到的！
@@ -3826,7 +3882,6 @@ Followers of Baa and a band of cutpurses have been raiding Mist from the islands
 Cancel	取消
 Apply	应用
 Change	更改
-Clear	清除
 Discard	放弃
 Keep	保留
 Later	稍后
@@ -3836,7 +3891,6 @@ Restart	重启
 Restart Now	立即重启
 Restore	恢复
 Revert	还原
-Search	搜索
 Stay	留下
 Swap	交换
 Update	更新
@@ -4178,10 +4232,10 @@ Staff	手杖
 Sword	长剑
 Dagger	匕首
 Axe	战斧
-Spear	矛
-Bow	弓
+Spear	长矛
+Bow	弓箭
 Mace	钉锤
-Blaster	迷你榴弹枪
+Blaster	榴弹枪
 Shield	盾牌
 Leather Armor	皮甲
 Chain Armor	锁甲
@@ -4372,7 +4426,6 @@ Skills	技能
 Skill Points:	技能点：
 Starting skills	初始技能
 Strength	力量
-Awards	荣誉
 Effects	效果
 HP	生命
 SP	魔法
@@ -4429,7 +4482,6 @@ Crafting	合成
 Gems	宝石
 Ingredients	原料
 Inventory	物品栏
-Items	物品
 Materials	材料
 Mix	调制
 Mix All	全部调制
@@ -4445,7 +4497,6 @@ Worn	已穿戴
 Weapons	武器
 Type: {item_type}	类型：{item_type}
 Value: {item_value}	价值：{item_value}
-Close	关闭
 Delete Save	删除存档
 Import Saves…	导入存档…
 Load Adventure	载入冒险
@@ -5478,3 +5529,216 @@ Can't hire adventurer.	无法雇佣冒险者。
 Dimension Door to *	次元门 → 
 Town Portal to *	城镇传送 → 
 current location	当前位置
+LeatherArmor	皮甲
+ChainArmor	锁甲
+PlateArmor	钢甲
+FireMagic	火系魔法
+AirMagic	空气魔法
+WaterMagic	水系魔法
+EarthMagic	土系魔法
+SpiritMagic	灵魂魔法
+MindMagic	心智魔法
+BodyMagic	肢体魔法
+LightMagic	光明魔法
+DarkMagic	暗黑魔法
+DarkElfAbility	黑暗精灵能力
+VampireAbility	吸血鬼能力
+DragonAbility	飞龙能力
+IdentifyItem	物品鉴定术
+RepairItem	修补术
+Bodybuilding	健身术
+DisarmTraps	陷阱拆卸术
+IdentifyMonster	怪物鉴定术
+EnergyGuns	能量枪
+EnergyBlades	能量刀
+ShieldTech	护盾技术
+ManaShield	法术护盾
+SkillMastery: Normal	普通
+SkillMastery: Expert	专家
+SkillMastery: Master	大师
+SkillMastery: Grandmaster	宗师
+SkillMastery: Grand	宗师
+SkillMastery: None	无
+SkillMastery: Novice	新手
+SkillMastery: Legendary	传奇
+{mastery} {skill} learned	学会了{mastery}{skill}
+{mastery} {skill} regained	恢复了{mastery}{skill}
+Learned {skill}	学会了{skill}
+Learned the skills in {item}	学会了{item}中的技能
+{skill} - {mastery}	{skill}——{mastery}
+{skill} disabled	{skill}已关闭
+{skill} enabled	{skill}已开启
+{mastery}: {skills}	{mastery}：{skills}
+{count} day	{count} 天
+{count} days	{count} 天
+Do you wish to leave {place}?	你要离开{place}吗？
+Do you wish to enter {place}?	你要进入{place}吗？
+Do you wish to leave this area?	你要离开这个区域吗？
+It will take {days} to travel to {destination}	前往{destination}需要 {days}
+You found {gold} gold!	你找到了 {gold} 枚金币！
+You found {gold} gold (followers take {share})!	你找到了 {gold} 枚金币（随从拿走 {share} 枚）！
+picked up {item}	拾取了{item}
+picked up {item} into hand	把{item}拾到手中
+picked up {gold} gold	拾取了 {gold} 枚金币
+item picked up	拾取物品
+{stat} +{value}	{stat} +{value}
+Attack: +{bonus}   Damage: {damage}	攻击：+{bonus}　伤害：{damage}
+Shoot: +{bonus}   Damage: {damage}	射击：+{bonus}　伤害：{damage}
+Attack: +{bonus}   Damage: {min}-{max}	攻击：+{bonus}　伤害：{min}-{max}
+Shoot: +{bonus}   Damage: {min}-{max}	射击：+{bonus}　伤害：{min}-{max}
+Armor: +{armor}	护甲：+{armor}
+Charges: {current}/{max}	充能：{current}/{max}
+Power: {power}	能量：{power}
+Uses: {uses}	次数：{uses}
+Broken	损坏
+Duration:	持续时间：
+{years}{suffix}	{years}{suffix}
+{months}{suffix}	{months}{suffix}
+{days}{suffix}	{days}{suffix}
+{hours}{suffix}	{hours}{suffix}
+{minutes}{suffix}	{minutes}{suffix}
+:yr	年
+:mo	月
+:dy	天
+:hr	时
+:mn	分
+Wave level: {level}	波次等级：{level}
+This wave: {percent}	本波进度：{percent}
+Dimension run: power {power}, {affixes}	次元模式：强度 {power}，{affixes}
+{count} affix	{count} 个词缀
+{count} affixes	{count} 个词缀
+Slain: {slain} of {counted}	已击杀：{slain} / {counted}
+Needed to complete: {needed} ({share})	完成所需：{needed}（{share}）
+Alive: {alive}	存活：{alive}
+, {hidden} hidden, not counted	，另有 {hidden} 个隐藏未计入
+Dead rise again on leaving: {revival}	离开后亡灵复活：{revival}
+no longer	不再复活
+until {count} slain	直到再击杀 {count} 个
+Reward: {reward}	奖励：{reward}
+paid	已领取
++{points} Tech Points!	+{points} 科技点数！
+Congratulations! You have won {gold} gold.	恭喜！你赢得了 {gold} 枚金币。
+{slot} cleared	{slot}已清空
+Quick spell set to {spell}	备用魔法设为{spell}
+Attack spell set to {spell}	攻击魔法设为{spell}
+{name} dismissed.	{name}已解散。
+Identified {item}.	已鉴定{item}。
+Repaired {item}.	已修理{item}。
+Drop {item}	放下{item}
+Dropped {item}	已放下{item}
+Can't drop {item}	无法放下{item}
+Select item for {spell}	为{spell}选择物品
+Balance: {gold}	余额：{gold}
+Spell cast failed: {reason}	施法失败：{reason}
+Answer: {answer}_	回答：{answer}_
+Discovered: {item}!	发现了{item}！
+Brewed {count} x {item}	炼制了 {count} 份{item}
+Brewing stopped after {steps}.	炼制在 {steps} 步后停止。
+{state}   {detail}	{state}　{detail}
+Immune to {effects}	免疫{effects}
+Armour {armor}	防御 {armor}
+Uses {uses}	次数 {uses}
+Quality +{percent} %	品质 +{percent} %
+Damage {min}-{max}	伤害 {min}-{max}
+Value {value}	价值 {value}
++50% skill in {school}	{school}技能 +50%
+Artifact level: {level}	神器等级：{level}
+Current bonus Damage: {percent}%	当前伤害加成：{percent}%
+Attack speed: {speed}	攻击速度：{speed}
+Quality bonus: +{percent}%	品质加成：+{percent}%
+Item level: {level}	物品等级：{level}
+Level required: {level}	需求等级：{level}
+Duration: {text}	持续时间：{text}
+Done!	完成！
+Already identified.	已经鉴定过了。
+Nothing to repair.	没有需要修理的东西。
+Unavailable.	不可用。
+Identify Failed	鉴定失败
+Repair Failed	修理失败
+No shields to charge	没有可充能的护盾
+Shield charged	护盾已充能
+Shields charged	护盾已充能
+The charge blows!	充能爆掉了！
++2 Skill Points!	+2 技能点！
+Item already hardened!	物品已经强化过了！
+Wand already charged!	魔杖已经充能过了！
+Mixed potion	调制好的药水
+Ooops	糟糕
+You need Stealing skill.	你需要偷窃术技能。
+You need Stealing skill to steal that.	你需要偷窃术技能才能偷那个东西。
+Quick save failed!	快速保存失败！
+You can't save here!	这里不能保存！
+ Press again to load.	 再按一次读取。
+NPC interaction UI is not implemented yet.	NPC 交互界面尚未实现。
+No saves were found in that folder or in a \"saves\" folder inside it.	那个文件夹里、以及其中的 \"saves\" 文件夹里都没有找到存档。
+Permanently delete \"{name}\"?	要彻底删除「{name}」吗？
+No notes match \"{search}\".	没有与「{search}」匹配的笔记。
+With your skills, you should be working here as a teacher\n\n	以你的本领，本该在这里当老师\n\n
+Skill	技能
+Implant	植入体
+Elementalist rotation disabled	元素使轮换已关闭
+ released	已释放
+Reset	重置
+Serve Sentence	服刑
+MM9 dialogue action 0 is unresolved.	MM9 对话动作 0 未解析。
+MM9 dialogue row is no longer valid.	MM9 对话行已失效。
+MM9 skill trainer topic is no longer valid.	MM9 技能导师话题已失效。
+needs {mastery}	需要{mastery}
+power {power}	能量 {power}
+power ~{power}	能量 ~{power}
+brewed first	先炼制的
+missing	缺少
+{skill} +{amount} (potion)	{skill} +{amount}（药水）
+{name} (potion)	{name}（药水）
+Normally, I do my best to buy a {item} for {listed} gold. 	通常我会尽力用 {listed} 枚金币收下{item}。
+This {item} is nearly beyond repair. It will take a superhuman effort to fix it! 	这件{item}几乎修不了了，得费超人的力气才行！
+Hmmm. Nothing a little glue and polish won't fix, I warrant. 	嗯，我保证，一点胶水加点打磨就好了。
+This {item} is in bad shape, but it can be fixed. I usually want {listed} gold, 	这件{item}状况不好，但能修。通常我要 {listed} 枚金币，
+An excellent choice! This {item} is of the finest quality. 	好眼光！这件{item}品质一流。
+I try to sell things like this {item} for {listed} gold. 	这种{item}我一般卖 {listed} 枚金币。
+Ordinarily I sell things like this {item} for {listed} gold. 	通常这种{item}我卖 {listed} 枚金币。
+Stole 	偷到了
+Stone Skin, armour	石肤，防御
+Armour class	防御等级
+Attack, melee and ranged	攻击，近战与远程
+Chance to hit	命中率
+Haste, recovery	加速，恢复
+Faster recovery	恢复更快
+Shield, magic damage taken	护盾，承受的法术伤害
+Magic damage taken	承受的法术伤害
+Fate, critical chance	命运，暴击率
+Critical chance	暴击率
+Melee damage	近战伤害
+Unarmed damage	空手伤害
+Damage spells	伤害法术
+Light around the party	队伍周围的光
+Weapons and arrows burn	武器与箭矢燃烧
+Burns nearby monsters	灼烧附近怪物
+Minimap	小地图
+Walking on water	水面行走
+Death	死亡
+Spell points	魔法值
+Hit points	生命值
+Immune to	免疫
+Attacks heal	攻击回血
+Monsters that hit	击中队伍的怪物
+Map Level: 	地图等级：
+% craft items drop chances	% 工艺物品掉落率
+% item quality	% 物品品质
+% monster density	% 怪物密度
+ damage on hit	 击中时造成的伤害
+, slows	，减速
+Grows with its wearer up to level 	随佩戴者成长至等级
+Vampiric Aura: damage done will restore player HP.	吸血光环：造成的伤害会回复玩家生命。
+ Aura: adds 	 光环：附加 
+Item Bonus Power: 	物品加成强度：
+No {item} left	没有{item}了
+Learned recipe: {recipe}	学会了配方：{recipe}
+Brewed {item} (power {power})	炼制了{item}（能量 {power}）
+Brewed {count} x {item} ({steps})	炼制了 {count} 份{item}（{steps}）
+Brewed {item} (power {power}, {steps})	炼制了{item}（能量 {power}，{steps}）
+potion	药水
+"Apples, Thorns, and Potions"	苹果、荆棘和魔药
+"Lock, Stock, and Barrel"	锁、贮存物和木桶
+Unknown skill or invalid level.	未知技能或等级无效。
+Mastery must be B, E, M or G.	专精级别必须是 B、E、M 或 G。

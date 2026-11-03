@@ -9,13 +9,13 @@ Speed	速度
 Luck	幸运
 Hit Points	生命值
 Spell Points	法术值
-Armor Class	护甲等级
+Armor Class	防御等级
 Fire Resistance	火系抗性
-Air Resistance	气系抗性
+Air Resistance	风系抗性
 Water Resistance	水系抗性
 Earth Resistance	土系抗性
-Mind Resistance	心智抗性
-Body Resistance	肢体抗性
+Mind Resistance	心系抗性
+Body Resistance	体系抗性
 Alchemy skill	炼金术
 Stealing skill	偷窃术
 Disarm skill	解除陷阱
@@ -36,11 +36,11 @@ of Health	生命
 of Magic	魔力
 of Defense	防护
 of Fire Resistance	御火
-of Air Resistance	御风
+of Air Resistance	御风类
 of Water Resistance	御水
 of Earth Resistance	御土
-of Mind Resistance	御心
-of Body Resistance	御体
+of Mind Resistance	御心类
+of Body Resistance	御体类
 of Alchemy	炼金
 of Stealing	盗窃
 of Disarming	解陷
@@ -64,7 +64,7 @@ of great Might	巨力
 +15 Endurance and +5 Armor.	耐力 +15，护甲 +5。
 +15 Endurance and Regenerate Hit points over time.	耐力 +15，并持续回复生命。
 +15 Luck and Regenerate Spell points over time.	幸运 +15，并持续回复法术。
-+20 Air Resistance and Shielding.	气系抗性 +20，并获得护盾。
++20 Air Resistance and Shielding.	风系抗性 +20，并获得护盾。
 +3 ID Item and ID Monster skills.	物品鉴定、怪物鉴定 +3。
 +3 Stealing and Disarm skills.	偷窃术、解除陷阱 +3。
 +3 Unarmed and Dodging skills.	徒手格斗、闪避 +3。
@@ -84,7 +84,7 @@ Adds 4-10 points of Electrical damage.	附加 4-10 点电击伤害。
 Adds 5 points of Body damage and +2 Disarm skill.	附加 5 点肢体伤害，解除陷阱 +2。
 Adds 5 points of Body damage.	附加 5 点肢体伤害。
 Adds 6-15 points of Electrical damage.	附加 6-15 点电击伤害。
-Adds 6-8 points of Cold damage and +5 Armor Class.	附加 6-8 点寒冷伤害，护甲等级 +5。
+Adds 6-8 points of Cold damage and +5 Armor Class.	附加 6-8 点寒冷伤害，防御等级 +5。
 Adds 6-8 points of Cold damage.	附加 6-8 点寒冷伤害。
 Adds 8 points of Body damage.	附加 8 点肢体伤害。
 Adds 9-12 points of Cold damage.	附加 9-12 点寒冷伤害。
@@ -256,7 +256,7 @@ UNUSED x2 damage on all Titans	（未启用）对所有泰坦造成 2 倍伤害
 "Regenerate 1 hp/x and 1 sp/x while walking, etc."	行走时每单位时间回复 1 点生命与 1 点法术，等等
 (5) pois damage and +2 Disarm skill	（5）毒素伤害，解除陷阱 +2
 (6-8) cold damage and +5 AC	（6-8）寒冷伤害，护甲 +5
-+20 Air Resistance and 1/2 damage from missile attacks	气系抗性 +20，远程攻击伤害减半
++20 Air Resistance and 1/2 damage from missile attacks	风系抗性 +20，远程攻击伤害减半
 +10 Water Resistance and +2 Alchemy skill	水系抗性 +10，炼金术 +2
 Character with item takes no damage from drowning	携带者免疫溺水伤害
 Character with item takes no damage from falling	携带者免疫坠落伤害

@@ -2,6 +2,46 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 1.19.1 — 2026-11-03
+
+修「逐个反馈点补译」的老路：这次按**结构性根因**归类，每类都做全量清扫并固化成可阻断的验收项。
+报告见 [docs/translation-principles.md](docs/translation-principles.md)。
+
+### 引擎（机制修复）
+
+- **等级名不再当职业名翻**：`SkillMastery` 的 Master 与僧侣最终职业「Master（智者）」同形，共用一个键会把
+  职业名也翻错。新增 `localizedMasteryName()` / `localizedMasteryEntry()`，等级名查 `SkillMastery: <名>` 前缀键，
+  取不到才退回裸写法。技能页、角色页、炼金台、新游戏、MAW 技能、训练对话共 8 处接入。
+- **显示名函数内部走 UiText**：`displaySkillName()` 自己就翻译，调用方不必再包一层；
+  `masteryDisplayName()` 保留英文原文供代码判断（`Grandmaster`→`Grand` 的缩写依赖它）。
+- **拾取提示**：`formatWorldItemPickupStatusText()`、新增 `formatFoundGoldStatusText()` 走模板；
+  室内/室外/统一交互三条拾取路径与「随从分成」金币提示全部接入。
+- **旅行确认框**：`EventDialogContent` 的 `It will take N days to travel to …` /
+  `Do you wish to leave|enter {place}?` / `Do you wish to leave this area?` 由裸拼改成模板，天数单独成句
+  （中文写「5 天」而不是「5 days」）。对话框所有按钮 label 统一过 `UiText`。
+- **物品详情**：`Attack/Shoot/Armor/Charges/Power/Uses/Duration/Broken` 等拼接改成模板；
+  时长单位 `:yr/:mo/:dy/:hr/:mn` 也进覆盖表。
+- **房屋选项标签**：`makeOption()` 统一在入口翻一次，覆盖 `Buy Standard`、`Learn Skills` 等全部调用点。
+- **330 处裸英文字面量**批量包进 `UiText::translate()`（幂等：查不到原样返回），
+  并把「只翻了前缀」的半拼接（`translate("Identified ") + 名字`）逐条改成完整模板。
+
+### 译文
+
+- 覆盖表 5740 条（+264）。新增技能名/等级名/职业名、训练与升级对话、旅行与进出场所、拾取与金币、
+  附魔与物品详情、地图进度（竞技场/次元模式）、商店买卖修理、MAW 光环与物品等模板。
+- **按官方标准校正术语**（来源 `github.com/might-and-magic/mm678-i18n` `references/notes/zh/customlist.list`）：
+  `Bow` 弓→**弓箭**、`Spear` 矛→**长矛**、`Blaster`→**榴弹枪**、`Armor Class`→**防御等级**、
+  `Luck` 幸运→**运气**、`Air Resistance`→**风系抗性**、`Mind Resistance`→**心系抗性**、
+  `Body Resistance`→**体系抗性**；`Body Magic` 统一为**肢体魔法**（原先「身体魔法/肢体魔法」混用）。
+  九大学派、技能、属性全部对齐官方表。
+
+### 验收
+
+- 新增 [tools/dev/check_translation_rules.py](tools/dev/check_translation_rules.py)，把五类根因做成阻断检查：
+  A 占位符未译、B 裸拼英文、C 覆盖表缺条目、D 半拼接、E 术语不一致。当前**全部 0 命中**。
+- 新增两个无头场景：`skill_name_test.yml`（技能名与等级名）、`zh_text_coverage.yml`（关键文案）。
+- 全部 7 个场景在 1.19 + 1.19 内容包 + 汉化 mods 下通过。
+
 ## 1.19.0 — 2026-10-30
 
 跟进 OpenYAMM 1.19。

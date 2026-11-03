@@ -4,7 +4,7 @@
 +1 Magic resistance permanent	+1 魔法抗性（永久）
 +1 Poison resistance permanent	+1 毒素抗性（永久）
 +2 Accuracy permanent	+2 精确（永久）
-+2 Air Resistance permanent	+2 气系抗性（永久）
++2 Air Resistance permanent	+2 风系抗性（永久）
 +2 Earth Resistance permanent	+2 土系抗性（永久）
 +2 Endurance permanent	+2 耐力（永久）
 +2 Fire Resistance permanent	+2 火系抗性（永久）
@@ -86,16 +86,16 @@ pohuwwba	方尖碑铭文「种把子海」
 +10 Accuracy (Temporary)	精确 +10（临时）
 +10 Luck(Permanent)	幸运 +10（永久）
 +2 Might (Permanent)	力量 +2（永久）
-+20 Body Resistance (Temporary)	肢体抗性 +20（临时）
++20 Body Resistance (Temporary)	体系抗性 +20（临时）
 +5 Personality (Temporary)	个性 +5（临时）
 +50 Might (Temporary)	力量 +50（临时）
 Disease Cured	疾病已治愈
 ininhil_	方尖碑铭文「上宝。盗」
-+10 Water, Fire, and Air Resistance(Permanent)	水系、火系与气系抗性 +10（永久）
++10 Water, Fire, and Air Resistance(Permanent)	水系、火系与风系抗性 +10（永久）
 +50 Earth Resistance (Temporary)	土系抗性 +50（临时）
 redditoh	方尖碑铭文「白搁为五」
 +10 Fire Resistance (Temporary)	火系抗性 +10（临时）
-+10 Mind, Earth, and Body Resistance(Permanent)	心智、土系与肢体抗性 +10（永久）
++10 Mind, Earth, and Body Resistance(Permanent)	心智、土系与体系抗性 +10（永久）
 +10 Personality (Temporary)	个性 +10（临时）
 +2 Intellect (Permanent)	智力 +2（永久）
 +5 Fire Resistance (Permanent)	火系抗性 +5（永久）
@@ -110,7 +110,7 @@ hmmm, You decide against it.	嗯……你决定算了。
 ts_rehmu	方尖碑铭文「朵填避死」
 +2 Speed (Permanent)	速度 +2（永久）
 +20 AC (Temporary)	护甲 +20（临时）
-+20 Air Resistance (Temporary)	气系抗性 +20（临时）
++20 Air Resistance (Temporary)	风系抗性 +20（临时）
 You decide it would be a bad idea to try that again.	你觉得再试一次不是个好主意。
 You do not feel well.	你感觉不太舒服。
 e_laru_a	方尖碑铭文「时。鬼个」
@@ -130,7 +130,7 @@ The ship begins to sink	船开始下沉
 You found nothing of interest	你没找到任何感兴趣的东西
 You have Killed all of the Basilisks in this Ancient Troll Home	你杀死了这座巨魔古居里所有的石化蜥蜴
 You found nothing useful	你没找到任何有用的东西
-Air Resistance +10 (Permanent)	气系抗性 +10（永久）
+Air Resistance +10 (Permanent)	风系抗性 +10（永久）
 Earth Resistance +10 (Permanent)	土系抗性 +10（永久）
 Fire Resistance +25 (Temporary)	火系抗性 +25（临时）
 Water Resistance +10 (Permanent)	水系抗性 +10（永久）

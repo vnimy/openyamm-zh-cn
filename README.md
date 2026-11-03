@@ -37,6 +37,7 @@
 想自己扫一遍，不用进游戏截图：
 
 ```bash
+python tools/dev/check_translation_rules.py  # 机制性检查：占位符/裸拼/缺条目/半拼接/术语（必须 0）
 python tools/dev/audit_visible_text.py    # 屏幕文本残留英文验收（对话/世界对象/NPC/表项）
 python tools/check_literals.py --show 60  # 源码硬编码 UI 文案缺口（含误报）
 ```
@@ -69,11 +70,11 @@ corpus/
                   ui_text.txt（上面这些合成出来的最终覆盖表，勿手改）
   reports/       缺口清单等中间稿
 tools/           语料生成、覆盖表合成、字体烘焙、打包、审计
-  dev/           排查/验收脚本（audit_visible_text.py、按文件细查、提取布局文案）
+  dev/           排查/验收脚本（check_translation_rules.py 机制检查、audit_visible_text.py 屏幕文本、按文件细查）
 scripts/         一键构建（build.ps1 / build.sh）
 tests/scenarios/ 无头回归场景（不开窗口验证译文）
 assets/fonts/    思源黑体（Noto Sans SC）与其 OFL 许可证
-docs/            安装、构建、引擎改动、开发笔记、术语表、进度
+docs/            安装、构建、引擎改动、开发笔记、术语表、进度、[汉化原则](docs/translation-principles.md)
 ```
 
 ## 实现要点

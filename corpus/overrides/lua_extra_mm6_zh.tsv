@@ -143,7 +143,7 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +3 Cold resistance permanent	寒冷抗性永久 +3
 +3 Fire permanent	火焰永久 +3
 +30 Level temporary.  Look Out!	等级临时 +30。当心！
-+40 Armor class temporary.	护甲等级临时 +40。
++40 Armor class temporary.	防御等级临时 +40。
 +5 Elemental resistance permanent.	元素抗性永久 +5。
 The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            t_haat_lt__en_lc	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nt_haat_lt__en_lc
 You are not a follower of Baa.  Begone!	你不是巴阿的信徒。滚开！
@@ -167,7 +167,7 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +10 Endurance permanent	耐力永久 +10
 +10 Level temporary.	等级临时 +10。
 +20 Accuracy and Speed temporary.	精确与速度临时 +20。
-+20 Armor class temporary.	护甲等级临时 +20。
++20 Armor class temporary.	防御等级临时 +20。
 +3 Endurance permanent	耐力永久 +3
 +30 Might temporary.	力量临时 +30。
 +5 Endurance permanent.	耐力永久 +5。

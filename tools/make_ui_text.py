@@ -91,11 +91,13 @@ def load_manual() -> list:
 #   lua_extra_mm6_zh.tsv   mm6 内容包 lua 里非 SetMessage 的消息（SimpleMessage/StatusText）
 #   lua_extra_rest_zh.tsv  mm7/mm8/engine 内容包同一类消息
 #   templates_zh.tsv       代码动态拼接文案的 {占位符} 模板
+#   console_zh.tsv         调试控制台（Android 顶部手势唤出的 ImGui 窗口与日志）
 EXTRA_TABLES = (
 	"world_objects_zh.tsv",
 	"lua_extra_mm6_zh.tsv",
 	"lua_extra_rest_zh.tsv",
 	"templates_zh.tsv",
+	"console_zh.tsv",
 )
 
 

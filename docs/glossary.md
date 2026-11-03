@@ -1,5 +1,7 @@
 # 术语表
 
+> 术语的核对方法、五类根因与验收流程见 [汉化原则](translation-principles.md)。
+
 统一译名是汉化最容易散架的地方。这一页记录核心术语的定译与取舍理由，便于新译文对齐。
 完整对照（4000+ 条）直接在 `corpus/overrides/ui_text.txt` 里搜。
 
@@ -13,23 +15,42 @@
 | Endurance | 耐力 | |
 | Accuracy | 精确 | |
 | Speed | 速度 | |
-| Luck | 幸运 | |
-| Hit Points | 生命值 | |
-| Spell Points | 法术值 | |
+| Luck | 运气 | |
+| Hit Points | 生命值 |
+| Armor Class | 防御等级 |
+| Skill Points | 技能点数 | |
+| Spell Points | 魔法值 | |
 
 ## 抗性
 
 | 原文 | 定译 |
 |---|---|
 | Fire Resistance | 火系抗性 |
-| Air Resistance | 气系抗性 |
+| Air Resistance | 风系抗性 |
 | Water Resistance | 水系抗性 |
 | Earth Resistance | 土系抗性 |
-| Mind Resistance | 心智抗性 |
-| Body Resistance | 肢体抗性 |
+| Mind Resistance | 心系抗性 |
+| Body Resistance | 体系抗性 |
 
-元素名单独出现时用单字：`Fire` 火、`Air` 气、`Water` 水、`Earth` 土、`Mind` 心智、`Body` 身体、
-`Light` 光、`Dark` 暗。带 `Resistance` 时统一加「系」和「抗性」，避免界面里出现「火抗性」这种半截词。
+抗性名以官方表为准：按**古典四元素+心/体**的固定说法，风、心、体三项不是「气系/心智/肢体」。
+注意 `Body` 的两义：作为**技能**是「肢体魔法」，作为**抗性**是「体系抗性」——不要混。
+
+## 魔法学派
+
+| 原文 | 定译 |
+|---|---|
+| Fire Magic | 火系魔法 |
+| Air Magic | 空气魔法 |
+| Water Magic | 水系魔法 |
+| Earth Magic | 土系魔法 |
+| Spirit Magic | 灵魂魔法 |
+| Mind Magic | 心智魔法 |
+| **Body Magic** | **肢体魔法** |
+| Light Magic | 光明魔法 |
+| Dark Magic | 暗黑魔法 |
+
+`Body Magic` 只能叫「肢体魔法」。曾出现「身体魔法」的混用，已统一；
+验收脚本 E 项会拦住这类回潮。
 
 ## 职业与种族
 
@@ -46,15 +67,18 @@
 
 ## 技能等级
 
-| 原文 | 定译 |
-|---|---|
-| Basic | 基础 |
-| Expert | 专家 |
-| Master | 智者 |
-| Grandmaster | 宗师 |
+| 原文 | 定译 | 覆盖表键 |
+|---|---|---|
+| Normal | 普通 | `SkillMastery: Normal` |
+| Expert | 专家 | `SkillMastery: Expert` |
+| Master | **大师** | `SkillMastery: Master` |
+| Grandmaster | 宗师（技能页缩写为「宗师」） | `SkillMastery: Grandmaster` |
 
-`Master` 译「智者」是 MMMerge 的既有译法，虽然单看容易和 NPC 头衔的「大师」混淆，
-但技能界面里它总是与另外三级并列出现，歧义不大；NPC 头衔那半句走 `titleWithName`，另有对照。
+**`Master` 必须分两个键。** 它同时是僧侣最终职业名（官方译「智者」）和技能等级名（官方译「大师」）。
+共用一个键会把职业名也翻成「大师」，或把等级翻成「智者」——这正是 2026-11-03 反馈里的问题。
+
+所以源码里显示等级名一律走 `localizedMasteryName()` / `localizedMasteryEntry()`，
+它们查 `SkillMastery: <英文名>` 前缀键；`masteryDisplayName()` 保留英文原文，只给代码做判断用。
 
 ## 常见界面词
 
@@ -87,7 +111,8 @@
    否则玩家对照攻略会找不到地方。译文主体就是按记录 ID 从那份包里取的。
 2. **界面文案要短。** 按钮只有那么宽，宁可省字也不要溢出。测量与截断由引擎按中文字形宽度做，
    但译文本身太长时仍然会被截掉尾部。
-3. **同一英文在不同语境可以有不同译法，但不能在同一条目里摇摆。** 例如 `Master` 在技能等级里是「智者」，
-   在 NPC 头衔里是「大师」——两条独立条目，互不影响。
+3. **同一英文在不同语境可以有不同译法，但不能在同一条目里摇摆。** 例如 `Master` 在技能等级里是「大师」，
+   在僧侣职业名里是「智者」——用两个独立的键（`SkillMastery: Master` 与裸 `Master`），互不影响。
+   新出现的多义词照此办理，不要让一个键承担两种含义。
 4. **不译保持英文的**：技能专名（`Arms Master`、`Disarm Trap` 等作为查表键的列）、
    表头第一列、内部占位名（`_misc191`、`quest item 600`）。

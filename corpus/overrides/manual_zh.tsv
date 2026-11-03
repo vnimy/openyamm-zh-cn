@@ -360,10 +360,10 @@ Staff	手杖
 Sword	长剑
 Dagger	匕首
 Axe	战斧
-Spear	矛
-Bow	弓
+Spear	长矛
+Bow	弓箭
 Mace	钉锤
-Blaster	迷你榴弹枪
+Blaster	榴弹枪
 Shield	盾牌
 Leather Armor	皮甲
 Chain Armor	锁甲
@@ -539,7 +539,7 @@ Drops you would rather not carry turn into gold. Opens the filter with its prese
 A companion slain far past death leaves the party for the Adventurer's Inn.	队友倒下超过极限后离队，前往冒险者旅店。
 Accuracy	精确
 Armor	护甲
-Armor Class	护甲等级
+Armor Class	防御等级
 Attributes	属性
 Age	年龄
 Class	职业
@@ -552,7 +552,7 @@ Hit Points	生命值
 Intellect	智力
 Level	等级
 LEVEL	等级
-Luck	幸运
+Luck	运气
 Might	力量
 Name	名称
 Personality	个性
@@ -1691,3 +1691,223 @@ Dimension Door to *	次元门 →
 Town Portal to *	城镇传送 → 
 current location	当前位置
 Map progress	地图进度
+
+# ---- 1.19 反馈修复轮：技能名/等级名/训练对话/旅行确认/拾取提示/附魔与物品详情 ----
+LeatherArmor	皮甲
+ChainArmor	锁甲
+PlateArmor	钢甲
+FireMagic	火系魔法
+AirMagic	空气魔法
+WaterMagic	水系魔法
+EarthMagic	土系魔法
+SpiritMagic	灵魂魔法
+MindMagic	心智魔法
+BodyMagic	肢体魔法
+LightMagic	光明魔法
+DarkMagic	暗黑魔法
+DarkElfAbility	黑暗精灵能力
+VampireAbility	吸血鬼能力
+DragonAbility	飞龙能力
+IdentifyItem	物品鉴定术
+RepairItem	修补术
+Bodybuilding	健身术
+DisarmTraps	陷阱拆卸术
+IdentifyMonster	怪物鉴定术
+EnergyGuns	能量枪
+EnergyBlades	能量刀
+ShieldTech	护盾技术
+ManaShield	法术护盾
+SkillMastery: Normal	普通
+SkillMastery: Expert	专家
+SkillMastery: Master	大师
+SkillMastery: Grandmaster	宗师
+SkillMastery: Grand	宗师
+SkillMastery: None	无
+SkillMastery: Novice	新手
+SkillMastery: Legendary	传奇
+{mastery} {skill} learned	学会了{mastery}{skill}
+{mastery} {skill} regained	恢复了{mastery}{skill}
+Learned {skill}	学会了{skill}
+Learned the skills in {item}	学会了{item}中的技能
+{skill} - {mastery}	{skill}——{mastery}
+{skill} disabled	{skill}已关闭
+{skill} enabled	{skill}已开启
+{mastery}: {skills}	{mastery}：{skills}
+{count} day	{count} 天
+{count} days	{count} 天
+Do you wish to leave {place}?	你要离开{place}吗？
+Do you wish to enter {place}?	你要进入{place}吗？
+Do you wish to leave this area?	你要离开这个区域吗？
+It will take {days} to travel to {destination}	前往{destination}需要 {days}
+You found {gold} gold!	你找到了 {gold} 枚金币！
+You found {gold} gold (followers take {share})!	你找到了 {gold} 枚金币（随从拿走 {share} 枚）！
+picked up {item}	拾取了{item}
+picked up {item} into hand	把{item}拾到手中
+picked up {gold} gold	拾取了 {gold} 枚金币
+item picked up	拾取物品
+{stat} +{value}	{stat} +{value}
+Attack: +{bonus}   Damage: {damage}	攻击：+{bonus}　伤害：{damage}
+Shoot: +{bonus}   Damage: {damage}	射击：+{bonus}　伤害：{damage}
+Attack: +{bonus}   Damage: {min}-{max}	攻击：+{bonus}　伤害：{min}-{max}
+Shoot: +{bonus}   Damage: {min}-{max}	射击：+{bonus}　伤害：{min}-{max}
+Armor: +{armor}	护甲：+{armor}
+Charges: {current}/{max}	充能：{current}/{max}
+Power: {power}	能量：{power}
+Uses: {uses}	次数：{uses}
+Broken	损坏
+Duration:	持续时间：
+{years}{suffix}	{years}{suffix}
+{months}{suffix}	{months}{suffix}
+{days}{suffix}	{days}{suffix}
+{hours}{suffix}	{hours}{suffix}
+{minutes}{suffix}	{minutes}{suffix}
+:yr	年
+:mo	月
+:dy	天
+:hr	时
+:mn	分
+
+# ---- 1.19 反馈修复轮（动态模板） ----
+Wave level: {level}	波次等级：{level}
+This wave: {percent}	本波进度：{percent}
+Dimension run: power {power}, {affixes}	次元模式：强度 {power}，{affixes}
+{count} affix	{count} 个词缀
+{count} affixes	{count} 个词缀
+Slain: {slain} of {counted}	已击杀：{slain} / {counted}
+Needed to complete: {needed} ({share})	完成所需：{needed}（{share}）
+Alive: {alive}	存活：{alive}
+, {hidden} hidden, not counted	，另有 {hidden} 个隐藏未计入
+Dead rise again on leaving: {revival}	离开后亡灵复活：{revival}
+no longer	不再复活
+until {count} slain	直到再击杀 {count} 个
+Reward: {reward}	奖励：{reward}
+paid	已领取
++{points} Tech Points!	+{points} 科技点数！
+Congratulations! You have won {gold} gold.	恭喜！你赢得了 {gold} 枚金币。
+{slot} cleared	{slot}已清空
+Quick spell set to {spell}	备用魔法设为{spell}
+Attack spell set to {spell}	攻击魔法设为{spell}
+{name} dismissed.	{name}已解散。
+Identified {item}.	已鉴定{item}。
+Repaired {item}.	已修理{item}。
+Drop {item}	放下{item}
+Dropped {item}	已放下{item}
+Can't drop {item}	无法放下{item}
+Select item for {spell}	为{spell}选择物品
+Balance: {gold}	余额：{gold}
+Spell cast failed: {reason}	施法失败：{reason}
+Answer: {answer}_	回答：{answer}_
+Discovered: {item}!	发现了{item}！
+Brewed {count} x {item}	炼制了 {count} 份{item}
+Brewing stopped after {steps}.	炼制在 {steps} 步后停止。
+{state}   {detail}	{state}　{detail}
+Immune to {effects}	免疫{effects}
+Armour {armor}	防御 {armor}
+Uses {uses}	次数 {uses}
+Quality +{percent} %	品质 +{percent} %
+Damage {min}-{max}	伤害 {min}-{max}
+Value {value}	价值 {value}
++50% skill in {school}	{school}技能 +50%
+Artifact level: {level}	神器等级：{level}
+Current bonus Damage: {percent}%	当前伤害加成：{percent}%
+Attack speed: {speed}	攻击速度：{speed}
+Quality bonus: +{percent}%	品质加成：+{percent}%
+Item level: {level}	物品等级：{level}
+Level required: {level}	需求等级：{level}
+Duration: {text}	持续时间：{text}
+
+# ---- 1.19 反馈修复轮（剩余界面文案） ----
+Done!	完成！
+Already identified.	已经鉴定过了。
+Nothing to repair.	没有需要修理的东西。
+Unavailable.	不可用。
+Identify Failed	鉴定失败
+Repair Failed	修理失败
+No shields to charge	没有可充能的护盾
+Shield charged	护盾已充能
+Shields charged	护盾已充能
+The charge blows!	充能爆掉了！
++2 Skill Points!	+2 技能点！
+Item already hardened!	物品已经强化过了！
+Wand already charged!	魔杖已经充能过了！
+Mixed potion	调制好的药水
+Ooops	糟糕
+You need Stealing skill.	你需要偷窃术技能。
+You need Stealing skill to steal that.	你需要偷窃术技能才能偷那个东西。
+Quick save failed!	快速保存失败！
+You can't save here!	这里不能保存！
+ Press again to load.	 再按一次读取。
+NPC interaction UI is not implemented yet.	NPC 交互界面尚未实现。
+No saves were found in that folder or in a \"saves\" folder inside it.	那个文件夹里、以及其中的 \"saves\" 文件夹里都没有找到存档。
+Permanently delete \"{name}\"?	要彻底删除「{name}」吗？
+No notes match \"{search}\".	没有与「{search}」匹配的笔记。
+With your skills, you should be working here as a teacher\n\n	以你的本领，本该在这里当老师\n\n
+Skill	技能
+Implant	植入体
+Elementalist rotation disabled	元素使轮换已关闭
+ released	已释放
+Reset	重置
+Serve Sentence	服刑
+Good tidings. I am {name}, {impression} {class}. I'd love to see the world and taste the adventure, but it'd be foolish to go alone. Perhaps I could come with you?	你好，我是{name}，{impression}{class}。我很想出去闯荡、见识冒险，但一个人上路太蠢了。也许我可以跟你们一起走？
+MM9 dialogue action 0 is unresolved.	MM9 对话动作 0 未解析。
+MM9 dialogue row is no longer valid.	MM9 对话行已失效。
+MM9 skill trainer topic is no longer valid.	MM9 技能导师话题已失效。
+needs {mastery}	需要{mastery}
+power {power}	能量 {power}
+power ~{power}	能量 ~{power}
+brewed first	先炼制的
+missing	缺少
+{skill} +{amount} (potion)	{skill} +{amount}（药水）
+{name} (potion)	{name}（药水）
+Normally, I do my best to buy a {item} for {listed} gold. 	通常我会尽力用 {listed} 枚金币收下{item}。
+This {item} is nearly beyond repair. It will take a superhuman effort to fix it! 	这件{item}几乎修不了了，得费超人的力气才行！
+Hmmm. Nothing a little glue and polish won't fix, I warrant. 	嗯，我保证，一点胶水加点打磨就好了。
+This {item} is in bad shape, but it can be fixed. I usually want {listed} gold, 	这件{item}状况不好，但能修。通常我要 {listed} 枚金币，
+An excellent choice! This {item} is of the finest quality. 	好眼光！这件{item}品质一流。
+I try to sell things like this {item} for {listed} gold. 	这种{item}我一般卖 {listed} 枚金币。
+Ordinarily I sell things like this {item} for {listed} gold. 	通常这种{item}我卖 {listed} 枚金币。
+Stole 	偷到了
+Stone Skin, armour	石肤，防御
+Armour class	防御等级
+Attack, melee and ranged	攻击，近战与远程
+Chance to hit	命中率
+Haste, recovery	加速，恢复
+Faster recovery	恢复更快
+Shield, magic damage taken	护盾，承受的法术伤害
+Magic damage taken	承受的法术伤害
+Fate, critical chance	命运，暴击率
+Critical chance	暴击率
+Melee damage	近战伤害
+Unarmed damage	空手伤害
+Damage spells	伤害法术
+Light around the party	队伍周围的光
+Weapons and arrows burn	武器与箭矢燃烧
+Burns nearby monsters	灼烧附近怪物
+Minimap	小地图
+Walking on water	水面行走
+Death	死亡
+Spell points	魔法值
+Hit points	生命值
+Immune to	免疫
+Attacks heal	攻击回血
+Monsters that hit	击中队伍的怪物
+Map Level: 	地图等级：
+% craft items drop chances	% 工艺物品掉落率
+% item quality	% 物品品质
+% monster density	% 怪物密度
+ damage on hit	 击中时造成的伤害
+, slows	，减速
+Grows with its wearer up to level 	随佩戴者成长至等级
+Vampiric Aura: damage done will restore player HP.	吸血光环：造成的伤害会回复玩家生命。
+ Aura: adds 	 光环：附加 
+Item Bonus Power: 	物品加成强度：
+No {item} left	没有{item}了
+Learned recipe: {recipe}	学会了配方：{recipe}
+Brewed {item} (power {power})	炼制了{item}（能量 {power}）
+Brewed {count} x {item} ({steps})	炼制了 {count} 份{item}（{steps}）
+Brewed {item} (power {power}, {steps})	炼制了{item}（能量 {power}，{steps}）
+potion	药水
+"Apples, Thorns, and Potions"	苹果、荆棘和魔药
+"Lock, Stock, and Barrel"	锁、贮存物和木桶
+Unknown skill or invalid level.	未知技能或等级无效。
+Mastery must be B, E, M or G.	专精级别必须是 B、E、M 或 G。

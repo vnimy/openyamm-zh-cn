@@ -1,21 +1,22 @@
 # 汉化进度
 
-数据截至 2026-10-30（OpenYAMM 1.19）。
+数据截至 2026-11-03（OpenYAMM 1.19）。
 
 这份文档记的是**已经译了什么、还差什么**，不是一张「已完成」清单。判断标准优先用脚本，
 其次才是进游戏转一圈：
 
 ```bash
+python tools/dev/check_translation_rules.py  # 机制检查：占位符/裸拼/缺条目/半拼接/术语；返回 0 = 无阻断项
 python tools/dev/audit_visible_text.py      # 屏幕文本（对话/世界对象/NPC/表项）残留英文；返回 0 = 无缺口
 python tools/check_literals.py --show 60    # 源码硬编码 UI 文案缺口（含误报）
 ```
 
-## 覆盖表规模（2026-10-30）
+## 覆盖表规模（2026-11-03）
 
 | 表 | 条目 | 作用 |
 |---|---:|---|
-| `ui_text.txt` | 5476 | 最终覆盖表（下面这些源表 + MMMerge 语料合成，勿手改） |
-| `manual_zh.tsv` | 1649 | 手写界面文案、世界对象交互提示、占位文本 |
+| `ui_text.txt` | 5740 | 最终覆盖表（下面这些源表 + MMMerge 语料合成，勿手改） |
+| `manual_zh.tsv` | 1901 | 手写界面文案、世界对象交互提示、占位文本 |
 | `lua_dialog_zh.tsv` | 1512 | lua `evt.SetMessage` 对话正文（由 `tools/make_lua_dialog.py` 从语料生成） |
 | `lua_extra_mm6_zh.tsv` | 322 | mm6 内容包里非 `SetMessage` 的 lua 消息（`SimpleMessage`/`StatusText`）手译 |
 | `lua_extra_rest_zh.tsv` | 184 | mm7／mm8／engine 内容包同类消息手译 |
