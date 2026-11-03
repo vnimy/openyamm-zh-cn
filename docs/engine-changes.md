@@ -171,3 +171,47 @@ Android 版必须重编引擎，另外需要让 Android 也加载 `mods/`：上�
 
 配套的覆盖表条目在 `corpus/overrides/templates_zh.tsv` 与 `manual_zh.tsv`（交互动词、`Drop *` 前缀等）。
 这些文案在渲染层本来也会查覆盖表，改在生成处是为了让**动态拼出来的整句**也能命中模板（渲染层只能整串匹配）。
+
+## 附：调试控制台的 ImGui 动态图集契约（2026-11-03 恢复）
+
+这一节记录的是**丢失后恢复**的设计，不是新设计。2026-11-03 的误覆盖事故里，
+`game/debug/GameImGuiBgfxRenderer.{h,cpp}` 与 `game/app/GameApplication.cpp` 的相关改动整段消失
+（这三个文件当时与上游 v1.19 逐字节相同，三方合并没有 base 可用）。丢失后的症状是控制台里的中文
+全部变成 `?`，因为 ImGui 退回内置 ASCII 字体。
+
+### 为什么必须声明 `ImGuiBackendFlags_RendererHasTextures`
+
+ImGui 1.92 的字形是**懒加载**的：某个字号第一次用到某个码位时才去栅格化，并把结果通过
+`ImTextureData` 交给后端增量上传。如果后端不声明 `RendererHasTextures`，
+`ImGui::UpdateFontsNewFrame()` 会在首帧后把 `atlas->Locked` 置真（imgui.cpp 里 `atlas->Locked = true`），
+之后所有字形请求被静默丢弃。ASCII 在第一帧就全加载过所以看不出来，中文则一个都进不来。
+
+### 三个必需件
+
+| 文件 | 必须做的事 |
+|---|---|
+| `game/debug/GameImGuiBgfxRenderer.cpp` `initialize()` | 置 `io.BackendFlags |= ImGuiBackendFlags_RendererHasTextures`；**不要**再调 `GetTexDataAsRGBA32()` 自建一张静态图集 |
+| 同上，新增 `updateTextures()` | 遍历 `ImGui::GetPlatformIO().Textures`，按 `ImTextureStatus` 处理：`WantCreate` → `bgfx::createTexture2D` + `SetTexID(handle.idx + 1)`；`WantUpdates` → 对每个 `ImTextureRect` 调 `bgfx::updateTexture2D`（pitch 用 `pTexture->GetPitch()`）；`WantDestroy` → `bgfx::destroy` + `SetTexID(ImTextureID_Invalid)` + `SetStatus(ImTextureStatus_Destroyed)` |
+| `game/app/GameApplication.cpp` | 建字体（`installImGuiCjkFont`，等价于旧文档里的 `loadDebugConsoleFont`），并在 `ImGui::Render()` 之后、`renderDrawData()` 之前调 `updateTextures()` |
+
+### 字体本身
+
+`game/debug/ImGuiCjkFont.{h,cpp}`：从 mod 读 `fonts/truetype/openyamm_cjk.ttf`，
+码位区间由 `fonts/truetype/cjk_glyphs.txt` 生成（与引擎字体共用同一份，两套图集覆盖的字符因此一致），
+区间做相邻合并后再交给 `AddFontFromMemoryTTF`。`FontDataOwnedByAtlas = false`，
+所以 TTF 字节存函数内 `static`，活得和进程一样久（1.92 要求字体数据在整个图集生命周期内有效）。
+
+### 不要做的事
+
+- **不要**为了让字大而"按最终像素预烘焙图集"。控制台在移动端用
+  `ImGui::SetWindowFontScale(activeMobileConsoleScale())`（1.55~2.45 倍）放大布局；
+  动态图集会按放大后的字号**重新栅格化**，所以放大反而清晰；预烘焙 + 放大只会糊。
+- **不要**删掉 `SetWindowFontScale` 那行。
+- 移动端还要置 `ImGuiConfigFlags_IsTouchScreen` 以及 `ScrollbarSize/GrabMinSize = 26`、
+  `TouchExtraPadding`，否则手指按不住滚动条、轻点会被判成拖动。
+
+### 验收
+
+本机 shell 无法启动游戏窗口（原始 exe 同样 `exit=1`，缺交互桌面会话），
+所以这部分只能靠「桌面 + 安卓双目标编译链接通过」+ 真机目视。真机上若中文重新变成 `?`，
+就是 `RendererHasTextures` 那条路没生效。

@@ -2,6 +2,30 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 1.19.3 — 2026-11-03
+
+恢复调试控制台的 ImGui 动态字体图集，并把这一轮补完的译文接上钩子。
+
+### 根因（G 类：丢失的改动没有出处）
+
+2026-11-03 的误覆盖事故里，`game/debug/GameImGuiBgfxRenderer.{h,cpp}` 与
+`game/app/GameApplication.cpp` 的定制整段消失 —— 当时它们与上游 v1.19 逐字节相同，
+三方合并没有 base 可依。症状是控制台中文全变 `?`（ImGui 退回内置 ASCII 字体）。
+
+恢复要点见 `docs/engine-changes.md` 的「调试控制台的 ImGui 动态图集契约」：必须声明
+`ImGuiBackendFlags_RendererHasTextures` 并在每帧处理 `ImTextureStatus` 的
+WantCreate/WantUpdates/WantDestroy，否则 1.92 的字形懒加载在首帧后就被锁死。
+
+### 同时补上
+
+| 项 | 内容 |
+|---|---|
+| 物品属性 | `resolveItemInspectDetailText` 两份副本（`GameplayPartyOverlayRenderer.cpp` / `OutdoorGameView.cpp`）的 Armor / Charges / Attack-Damage / Shoot-Damage / Power / Uses / Duration 全部改模板键 |
+| 法术与增益时长 | `formatCharacterDetailDuration`、`formatRemainingDuration`、`personalBuffName`、队伍增益名与标题接覆盖表 |
+| 房屋服务 | 动作标签（Sell/Repair/Deposit/Buy Standard/Buy Special/Bounty Hunt/Learn Skills）、房屋标题、洛蕾塔对白、无队员提示 |
+| 译文缺口 | 补齐 100 处「钩子已在、译文缺失」的键；这一批运行时一律返回英文，是最隐蔽的一类 |
+| 存档迁移 | `migrateLocalizeJournalTrainerNotes`：读档时按注记自记的「技能 - 等级」重算教师注记，老存档也变中文 |
+
 ## 1.19.2 — 2026-11-03
 
 修「装备特殊效果里的属性缩写仍是英文」（如明月头盔的「特殊：Luck (+10), Int (+10)」），
