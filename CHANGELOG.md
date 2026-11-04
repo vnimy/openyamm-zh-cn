@@ -33,8 +33,9 @@ MAW 的法术补丁按**英文法术名**（`keyColumn: 2`）定位行，而汉�
   缺了 1.20.2 的方尖碑修复与重建的 `map_stats.txt`——逐文件 SHA256 比对时 45 个文件有 2 个对不上，
   所以「沿用 1.20.2 的产物」会把已知修复挡在门外。包内 `openyamm.exe` 为含引擎改动的 1.20 构建。
 - 安卓包 `build-android/artifacts/OpenYAMM-1.20-android-arm64-zh.apk`（51,193,094 B，
-  SHA256 `16F0D98E…1428F6DDC`）**未重新构建**：它内置的 `assets/mods` 仍是 6:36 的快照，
-  因此安卓端暂时看不到 1.20.2 的方尖碑修复，等下一版重出 APK 才会带上。
+  SHA256 `1B8B8A57…4E61C9FA`）：用 `-ModsDir build/mods` 重打包并重签（不重编 native，`libmain.so` 为含引擎改动的构建）。
+  15:50 那一版打的是 `build-android/artifacts/mods` 里的旧快照（`ui_text.txt` 还停在 920,393 B），
+  方尖碑消息在手机上照样是密文；这一版 45 个内置文件与 `build/mods` 逐字节一致。
 
 ## 1.20.2 — 2026-11-04
 
