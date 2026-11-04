@@ -28,9 +28,12 @@ cd openyamm && git remote add upstream https://github.com/pjasicek/openyamm.git 
 ```bash
 cd ../openyamm
 git fetch upstream --tags
-git switch -c fork/1.20 upstream/v1.20
-git merge fork/1.19          # 也可以在 fork/1.19 上直接 merge v1.20
+git switch zh-cn
+git merge upstream/v1.21     # 分支名不带版本号，跨版本只做一次 merge
 ```
+
+`zh-cn` 是 `../openyamm` 里唯一的长期分支，远端对应 `origin/main`；跨大版本不新建
+`fork/<版本>` 分支，只把上游 tag merge 进来。
 
 上游每个版本改 70～90 个文件，与汉化重叠通常 6～11 个。冲突热点见下一节。
 

@@ -65,3 +65,6 @@ UI text report cleared.	界面英文报告已清空。
 usage: uireport on|off|dump|clear	用法：uireport on|off|dump|clear
 no untranslated UI text collected.	没有收集到未翻译的界面英文。
 {count} untranslated UI strings:	共 {count} 条未翻译的界面英文：
+AI Advice	AI建议
+AI advice copied to the clipboard.	已复制 AI 建议到剪贴板，粘贴给任意 AI 即可。
+No party yet: start a game before asking for advice.	还没有队伍：先开始游戏再生成 AI 建议。

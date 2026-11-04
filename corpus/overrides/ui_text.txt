@@ -6098,3 +6098,6 @@ SpellName: Fear	龙威
 SpellName: Flame Blast	焰爆
 SpellName: Flight	飞行
 SpellName: Wing Buffet	翼击
+AI Advice	AI建议
+AI advice copied to the clipboard.	已复制 AI 建议到剪贴板，粘贴给任意 AI 即可。
+No party yet: start a game before asking for advice.	还没有队伍：先开始游戏再生成 AI 建议。
