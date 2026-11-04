@@ -8,7 +8,7 @@
   本次新增的只是「让 Android 也能加载 mods」的 4 处改动（见下）。
 - 产物：`build-android/artifacts/OpenYAMM-1.20-android-arm64-zh.apk`（51,188,902 B，versionName 1.20，
   versionCode 26166819，自签名 v1/v2/v3，zipalign 4 KB / 16 KB 页对齐校验均通过）。
-  当前构建（含 1.20.1 译文修复）SHA256 `0D7F6F08D74EB914B12F853CC44048B2F04A28FBF2C13853ED34A3ADB64CBFEC`；
+  当前构建（含 1.20.1 译文修复）SHA256 `96ABD6B17A6B95502F4125EA34F366ADCB86A95BB90CAE6638E1C5B14D311062`；
   1.20.0 首发那版是 `3210AECD0DD9BC93A275694388800DC953E3DB05C907B0B5C1032F05710EB2FA`。
 - 内容包：首次启动由应用按 `android-arm64.json` 下到 `Android/data/org.openyamm.android/files/content/`；
   1.19 → 1.20 只有 13 个包变化（0.141 GiB），已下过 1.19 内容的手机换这 13 个包与 `index.json` 即可。

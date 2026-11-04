@@ -1943,11 +1943,11 @@ Power on.  Status:  All systems functional.	电源开启。状态：所有系统
 Stand by…	待机中……
 +50 Seven Statistic temporary.	七项属性临时 +50。
 Poison!	中毒！
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            Itotecthothesaip	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nItotecthothesaip
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            Itotecthothesaip	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n石运西在
 +100 Power temporary.	法力临时 +100。
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            nhrh_aherheatvdi	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nnhrh_aherheatvdi
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            nhrh_aherheatvdi	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n，转下龙
 Rejuvination!	返老还童！
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            _etecpe__ersoede	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n_etecpe__ersoede
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            _etecpe__ersoede	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n你的方的
 "+5000 Experience, -5000 Gold."	+5000 经验值，-5000 金币。
 +10 Cold resistance permanent	寒冷抗性永久 +10
 +10 Fire permanent	火焰永久 +10
@@ -1956,7 +1956,7 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +30 Level temporary.  Look Out!	等级临时 +30。当心！
 +40 Armor class temporary.	防御等级临时 +40。
 +5 Elemental resistance permanent.	元素抗性永久 +5。
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            t_haat_lt__en_lc	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nt_haat_lt__en_lc
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            t_haat_lt__en_lc	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n就太，故
 You are not a follower of Baa.  Begone!	你不是巴阿的信徒。滚开！
 You feel Strange.	你感觉古怪。
 You pray at the shrine.	你在神龛前祈祷。
@@ -1968,7 +1968,7 @@ You pray at the shrine.	你在神龛前祈祷。
 +50 Luck temporary.	幸运临时 +50。
 +50 Spell points restored.	+50 法术值已恢复。
 No one is here.  The Circus has moved.	这里空无一人。马戏团已经搬走了。
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            hd_scawehSfdewee	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nhd_scawehSfdewee
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            hd_scawehSfdewee	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n赢阳船乡
 "The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            erbthieaeuu,_o'd"	“方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nerbthieaeuu,_o'd”
 +10 Elemental resistance permanent.	元素抗性永久 +10。
 +10 Seven statistics permanent.	七项属性永久 +10。
@@ -1987,11 +1987,11 @@ Look Out!	当心！
 +10 Accuracy permanent	精确永久 +10
 +25 Hit points restored.	+25 生命值已恢复。
 +3 Accuracy permanent	精确永久 +3
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            lg____gtS_cln;__	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nlg____gtS_cln;__
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            lg____gtS_cln;__	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n破而贮部
 +10 Speed permanent	速度永久 +10
 +2 Endurance permenant.	耐力永久 +2。
 +3 Speed permanent	速度永久 +3
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            aoflo'h.hbtid_p_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\naoflo'h.hbtid_p_
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            aoflo'h.hbtid_p_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n解藏藏一
 +10 Personality permanent	个性永久 +10
 +2 Accuracy permanent.	精确永久 +2。
 +2 Speed permanent.	速度永久 +2。
@@ -1999,14 +1999,14 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +25 Spell points restored.	+25 法术值已恢复。
 +3 Personality permanent	个性永久 +3
 The Sword won't budge!	那把剑纹丝不动！
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            nnaifnt_ieif_tu_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nnnaifnt_ieif_tu_
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            nnaifnt_ieif_tu_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n谜。，个
 +10 Might permanent	力量永久 +10
 +2 Intellect permanent.	智力永久 +2。
 +2 Personality permanent.	个性永久 +2。
 +20 Might temporary.	力量临时 +20。
 +20 Spell points restored.	+20 法术值已恢复。
 +3 Might permanent	力量永久 +3
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            d_re_e_Hpfotyhz_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nd_re_e_Hpfotyhz_
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            d_re_e_Hpfotyhz_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n题抬为不
 "Well, thanks for sneaking me out of the Castle.  Sorry about the circus thing—I hope I wasn't too much trouble to find.  I'll go in myself so no one will see that it was you who kidnapped me.  Thanks again, and goodbye.  I'll remember this, and I owe you a favor! "	“好吧，谢谢你们把我偷偷带出城堡。马戏团那件事真是抱歉——希望没让你们找得太辛苦。我自己进去就行了，这样谁都不会看见是你们绑架了我。再次感谢，再见。我会记住这份情，我欠你们一个人情！”
 +10 Accuracy temporary.	精确临时 +10。
 +10 Electricity resistance permanent	电系抗性永久 +10
@@ -2015,23 +2015,23 @@ The surface of the obelisk is blood warm to the touch.  A message swims into vie
 +3 Electricity resistance permanent	电系抗性永久 +3
 All Hit points restored.	生命值全部恢复。
 The prince has been kidnapped!  No visitors will be admitted until this crisis has been resolved!	王子被绑架了！在危机解除之前，谢绝一切访客！
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            _t_staoi_on_oiz_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n_t_staoi_on_oiz_
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            _t_staoi_on_oiz_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n之起当起
 +10 Poison resistance permanent	毒素抗性永久 +10
 +20 Elemental resistance temporary.	元素抗性临时 +20。
 +20 Magic resistance temporary.	魔法抗性临时 +20。
 +3 Poison resistance permanent	毒素抗性永久 +3
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            oon_htfdorstusl_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\noon_htfdorstusl_
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            oon_htfdorstusl_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n荣那时眼
 +10 Intellect and Personality temporary.	智力与个性临时 +10。
 +10 Intellect permanent	智力永久 +10
 +20 Luck temporary.	幸运临时 +20。
 +3 Intellect permanent	智力永久 +3
 +5 Elemental resistance temporary.	元素抗性临时 +5。
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            f_oteh__fe_h__e_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\nf_oteh__fe_h__e_
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            f_oteh__fe_h__e_	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n光块尚的
 There doesn't seem to be anymore apples.	这里似乎再没有苹果了。
 +10 Luck permanent	幸运永久 +10
 +10 Might temporary.	力量临时 +10。
 +3 Luck permanent	幸运永久 +3
-The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            _nrh__tf__cehr__	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n_nrh__tf__cehr__
+The surface of the obelisk is blood warm to the touch.  A message swims into view as you remove your hand:                                                                                                                                                            _nrh__tf__cehr__	方尖碑的表面摸上去像血一样温热。你收回手时，一段文字浮现眼前：\n\n。大在东
 You pick an apple.	你摘下一个苹果。
 Your purse feels much lighter as you foolishly throw your money into the well.	你把钱傻乎乎地扔进井里，钱包顿时轻了不少。
 "In case of energy leak, bathe in one of the medicated pools placed for your safety and convenience."	“若发生能量泄漏，请到为您的安全与便利而设的药浴池中浸泡。”
@@ -2131,6 +2131,44 @@ You search the body and find some gold.	你搜查了尸体，找到了一些金�
 Bad Food!	食物坏了！
 Not enough gold	金币不足
 You found something!	你找到了些东西！
+theunicornkin	方尖碑铭文「握有古」
+gholdsold	方尖碑铭文「座之钥」
+thornskey	方尖碑铭文「的独角」
+amonghiss	方尖碑铭文「兽王，」
+ubjectsap	方尖碑铭文「随夏至」
+pearswhil	方尖碑铭文「午时的」
+ethesunsh	方尖碑铭文「阳光，」
+inesonmid	方尖碑铭文「出现在」
+summerday	方尖碑铭文「大陆上」
+pohuwwba	方尖碑铭文「种把子海」
+ininhil_	方尖碑铭文「上宝。盗」
+redditoh	方尖碑铭文「白搁为五」
+a_eetcoa	方尖碑铭文「花，了个」
+ts_rehmu	方尖碑铭文「朵填避死」
+eut__i_n	方尖碑铭文「，土开四」
+srhtfnut	方尖碑铭文「绽杂寻个」
+_vehlgpe	方尖碑铭文「放草宝，」
+fi_eo_od	方尖碑铭文「在石者活」
+ivg_whn_	方尖碑铭文「早头，的」
+veoseo_l	方尖碑铭文「子设闹那」
+e_laru_a	方尖碑铭文「时。鬼个」
+__dn_r_n	方尖碑铭文「刻上之藏」
+___d___d	【。面地金】
+Itotecthothesaip	石运西在
+nhrh_aherheatvdi	，转下龙
+_etecpe__ersoede	你的方的
+t_haat_lt__en_lc	就太，故
+hd_scawehSfdewee	赢阳船乡
+erbthieaeuu,_o'd	得之长，
+_ay,enis_nn_ans.	了船的北
+lg____gtS_cln;__	破而贮部
+aoflo'h.hbtid_p_	解藏藏一
+nnaifnt_ieif_tu_	谜。，个
+d_re_e_Hpfotyhz_	题抬为不
+_t_staoi_on_oiz_	之起当起
+oon_htfdorstusl_	荣那时眼
+f_oteh__fe_h__e_	光块尚的
+_nrh__tf__cehr__	。大在东
 +1 Cold resistance permanent	+1 寒冷抗性（永久）
 +1 Electric resistance permanent	+1 闪电抗性（永久）
 +1 Fire resistance permanent	+1 火系抗性（永久）
@@ -2204,8 +2242,6 @@ Power Restored	能量已恢复
 You must all be wearing your wetsuits to exit the ship	你们必须全都穿上潜水服才能离开这艘船
 +25 to all Stats(Temporary)	所有属性 +25（临时）
 This Door is Locked	这扇门锁着
-eut__i_n	方尖碑铭文「，土开四」
-srhtfnut	方尖碑铭文「绽杂寻个」
 The door is blocked	门被堵住了
 +50 Fire Resistance temporary.	火系抗性 +50（临时）。
 + 10 Might (Temporary)	力量 +10（临时）
@@ -2213,7 +2249,6 @@ The door is blocked	门被堵住了
 Maybe that wasn't such a good idea.	也许那不是个好主意。
 You Pray	你祈祷
 You probably shouldn't do that.	你最好别那么做。
-pohuwwba	方尖碑铭文「种把子海」
 +10 Accuracy (Temporary)	精确 +10（临时）
 +10 Luck(Permanent)	幸运 +10（永久）
 +2 Might (Permanent)	力量 +2（永久）
@@ -2221,10 +2256,8 @@ pohuwwba	方尖碑铭文「种把子海」
 +5 Personality (Temporary)	个性 +5（临时）
 +50 Might (Temporary)	力量 +50（临时）
 Disease Cured	疾病已治愈
-ininhil_	方尖碑铭文「上宝。盗」
 +10 Water, Fire, and Air Resistance(Permanent)	水系、火系与风系抗性 +10（永久）
 +50 Earth Resistance (Temporary)	土系抗性 +50（临时）
-redditoh	方尖碑铭文「白搁为五」
 +10 Fire Resistance (Temporary)	火系抗性 +10（临时）
 +10 Mind, Earth, and Body Resistance(Permanent)	心智、土系与体系抗性 +10（永久）
 +10 Personality (Temporary)	个性 +10（临时）
@@ -2233,18 +2266,15 @@ redditoh	方尖碑铭文「白搁为五」
 Do you think that's such a good idea ?	你觉得那是个好主意吗？
 Haven't you had enough ?	你还没喝够吗？
 You Feel Great!!	你感觉棒极了！！
-a_eetcoa	方尖碑铭文「花，了个」
 +25 Intellect and Personality (Temporary)	智力与个性 +25（临时）
 Suddenly, You Don't Feel too Well	突然间，你感觉不太对劲
 You make a wish	你许了个愿
 hmmm, You decide against it.	嗯……你决定算了。
-ts_rehmu	方尖碑铭文「朵填避死」
 +2 Speed (Permanent)	速度 +2（永久）
 +20 AC (Temporary)	护甲 +20（临时）
 +20 Air Resistance (Temporary)	风系抗性 +20（临时）
 You decide it would be a bad idea to try that again.	你觉得再试一次不是个好主意。
 You do not feel well.	你感觉不太舒服。
-e_laru_a	方尖碑铭文「时。鬼个」
 Nothing Seems to have happened	似乎什么也没发生
 The button will not move	按钮纹丝不动
 You don't have the Key	你没有钥匙
@@ -2268,28 +2298,19 @@ Water Resistance +10 (Permanent)	水系抗性 +10（永久）
 Intellect +15 (Temporary)	智力 +15（临时）
 Luck +2 (Permanent)	幸运 +2（永久）
 Your Wounds begin to Heal	你的伤口开始愈合
-summerday	方尖碑铭文「大陆上」
 Might +25 (Temporary)	力量 +25（临时）
 That was not so refreshing	这可不怎么提神
 The Invaders have been defeated!	入侵者已被击败！
-ethesunsh	方尖碑铭文「阳光，」
 Might +2 (Permanent)	力量 +2（永久）
 Personality +25 (Temporary)	个性 +25（临时）
 You have killed all of the Ogres	你杀死了所有的食人妖
 You mind clears, and you recover some Mana	你的头脑恢复清明，并回复了一些法力
-ubjectsap	方尖碑铭文「随夏至」
 Endurance +2 (Permanent)	耐力 +2（永久）
-thornskey	方尖碑铭文「的独角」
 Accuracy +2 (Permanent)	精确 +2（永久）
 Fire Resistance +2 (Permanent)	火系抗性 +2（永久）
-theunicornkin	方尖碑铭文「握有古」
 Intellect +2 (permanent)	智力 +2（永久）
-inesonmid	方尖碑铭文「出现在」
 Personality +2 (Permanent)	个性 +2（永久）
-pearswhil	方尖碑铭文「午时的」
-amonghiss	方尖碑铭文「兽王，」
 +10 Accuracy and Speed(Permanent)	精确与速度 +10（永久）
-_vehlgpe	方尖碑铭文「放草宝，」
 +10 Personality and Intellect(Permanent)	个性与智力 +10（永久）
 +2 Personality (Permanent)	个性 +2（永久）
 +2 Skill Points	+2 技能点
@@ -2297,20 +2318,15 @@ _vehlgpe	方尖碑铭文「放草宝，」
 +50 Hit Points	生命值 +50
 +50 Intellect and Personality (Temporary)	智力与个性 +50（临时）
 +50 Spell Points	法术值 +50
-fi_eo_od	方尖碑铭文「在石者活」
 +10 Endurance and Might(Permanent)	耐力与力量 +10（永久）
 +25 Fire Resistance (Temporary)	火系抗性 +25（临时）
 Paralysis Relieved	麻痹已解除
-ivg_whn_	方尖碑铭文「早头，的」
-veoseo_l	方尖碑铭文「子设闹那」
 Speed +2 (Permanent)	速度 +2（永久）
 You do not see the right kind of ammunition anywhere	你四处都找不到合适的弹药
 You hear a low rumbling noise	你听到一阵低沉的隆隆声
-gholdsold	方尖碑铭文「座之钥」
 +2 Endurance (Permanent)	耐力 +2（永久）
 +20 Water Resistance (Temporary)	水系抗性 +20（临时）
 +25 Hit Points	生命值 +25
-__dn_r_n	方尖碑铭文「刻上之藏」
 You have Desecrated the altar	你亵渎了祭坛
 You never had it!	你从来就没有过！
 {topic} {cost} Gold	{topic} {cost} 金币
@@ -2377,6 +2393,14 @@ Unknown command: 	未知命令：
 Cannot open 	无法打开 
 Ran {count} commands from {path}	已从 {path} 运行 {count} 条命令
 , {count} failed	，{count} 条失败
+UI Text Report	界面英文报告
+Dump UI Text	导出英文清单
+UI text report on; play, then 'uireport dump'.	界面英文报告已开启；玩一会儿后执行 uireport dump。
+UI text report off.	界面英文报告已关闭。
+UI text report cleared.	界面英文报告已清空。
+usage: uireport on|off|dump|clear	用法：uireport on|off|dump|clear
+no untranslated UI text collected.	没有收集到未翻译的界面英文。
+{count} untranslated UI strings:	共 {count} 条未翻译的界面英文：
 My fellow Journeyman, we face grave times.\nHopefully our Master will find a way for us to leave this troubled region and return safely to Alvar.\nI would not wish to end my life here, even though it is the place of my birth.	同志们，我们现在遇到的是非常危险的状况。很幸运的，我们的主人会找到方法让我们离开这个要命的地方，安全的回到阿尔瓦。虽然这是我出生的地方，但我可不想要在这边把命给送掉。
 Dadeross led us here to trade with the Lizardman Clan of Onefang for their tobersk fruit.\nHe has gone to talk with Brekish Onefang, the village leader.\nPerhaps you should look for him?	达德洛斯带领我们来到这边，准备让我们和蜥蜴人的部落首领单牙交易他们的托伯斯克果。他刚去找布拉克许·单牙谈话。也许你们可以去找他？
 The Regnan Pirates are a threat to the economy and free travel in Jadame.\nVery few boats ply the sea, for fear of being sunk…or worse!\nWhen in Ravenshore, I did hear rumors of a small band of smugglers who have been working beneath the notice of the pirates.\nI wonder how they do that!	雷格那的海盗是贾丹姆大陆上贸易和四处旅行的最大威胁。海上只有极少的船只愿意四处旅行，因为担心被这些恐怖的家伙给弄沉……或是遇到更糟糕的命运！当你在渡鸦海滨的时候，我听说过有一小群走私者在海盗的肆虐之下依旧照旧工作。不知道他们是怎么办到的！

@@ -57,3 +57,11 @@ Unknown command: 	未知命令：
 Cannot open 	无法打开 
 Ran {count} commands from {path}	已从 {path} 运行 {count} 条命令
 , {count} failed	，{count} 条失败
+UI Text Report	界面英文报告
+Dump UI Text	导出英文清单
+UI text report on; play, then 'uireport dump'.	界面英文报告已开启；玩一会儿后执行 uireport dump。
+UI text report off.	界面英文报告已关闭。
+UI text report cleared.	界面英文报告已清空。
+usage: uireport on|off|dump|clear	用法：uireport on|off|dump|clear
+no untranslated UI text collected.	没有收集到未翻译的界面英文。
+{count} untranslated UI strings:	共 {count} 条未翻译的界面英文：
