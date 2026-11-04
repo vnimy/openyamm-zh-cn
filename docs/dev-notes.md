@@ -124,3 +124,14 @@ lua 里的引号常是 CP1252 的孤立字节（`0x91`／`0x92`），跟表里�
   `Failed to apply ruleset table engine/rulesets/maw/patches/spells.txt`）。
   构建末尾用 `tools/ruleset_patch_keys.py --patch build/mods` 把键按「英文名 → 记录 id → 译名」重写一份到
   `mods/engine/rulesets/<id>/`；`--check` 按引擎口径（每个键恰好命中一行）复核，出包前跑一次。
+
+## 部署与出包：整目录覆盖，不做「挑文件」更新
+
+- **部署就是整目录覆盖**：把 `build/mods` 整个换掉安装里的 `mods`，不要逐个文件挑着拷。
+  只更新一部分会得到「新 exe + 旧表」这种半更新状态：exe 里的界面文案要走 `ui_text.txt` 查表，
+  旧表没有新键就退回英文；改了值的长句（方尖碑这类）也仍是旧译文。
+  症状很好认——按钮文案变英文、方尖碑显示 `Itotecthothesaip` 之类的字母串，而 `openyamm.exe` 却是新的。
+- **出包同理**：`pack_zh_apk.ps1` 默认打 `build-android/artifacts/mods`，`dist/staging/mods` 也只是拷贝的中间产物。
+  打包前确认这些目录与 `build/mods` 逐文件一致（比 SHA256），别把某个早上的快照当成新包发出去。
+- **核对口径**：`ui_text.txt` 的行数与 SHA256 要等于 `build/mods` 里的那份；日志里
+  `Mods: <N> files from <dir>` 的 N 应与该目录文件数一致。
