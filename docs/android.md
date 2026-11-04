@@ -6,9 +6,10 @@
 - 只把 `mods/` 放进 APK 或设备不会生效——官方引擎会把 UTF-8 字节按 CP1252 渲染成乱码。
 - 重编量很小：汉化引擎改动本来就在 `openyamm` 源码树里，Android 构建工程（`android/`）也是上游现成的。
   本次新增的只是「让 Android 也能加载 mods」的 4 处改动（见下）。
-- 产物：`build-android/artifacts/OpenYAMM-1.20-android-arm64-zh.apk`（51,180,710 B，versionName 1.20，
-  versionCode 26166819，自签名 v1/v2/v3，zipalign 4 KB / 16 KB 页对齐校验均通过；
-  1.20.0 那份的 SHA256 是 `3210AECD0DD9BC93A275694388800DC953E3DB05C907B0B5C1032F05710EB2FA`）。
+- 产物：`build-android/artifacts/OpenYAMM-1.20-android-arm64-zh.apk`（51,188,902 B，versionName 1.20，
+  versionCode 26166819，自签名 v1/v2/v3，zipalign 4 KB / 16 KB 页对齐校验均通过）。
+  当前构建（含 1.20.1 译文修复）SHA256 `0D7F6F08D74EB914B12F853CC44048B2F04A28FBF2C13853ED34A3ADB64CBFEC`；
+  1.20.0 首发那版是 `3210AECD0DD9BC93A275694388800DC953E3DB05C907B0B5C1032F05710EB2FA`。
 - 内容包：首次启动由应用按 `android-arm64.json` 下到 `Android/data/org.openyamm.android/files/content/`；
   1.19 → 1.20 只有 13 个包变化（0.141 GiB），已下过 1.19 内容的手机换这 13 个包与 `index.json` 即可。
 
@@ -68,13 +69,13 @@ Android 只校验签名一致，不关心谁签的。官方 `android-release.jks
 
 ```bat
 :: 1. 配置（MinGW Makefiles，不是 Ninja；脚本名里的版本跟引擎版本走）
-build-android\configure-android-1.19.bat
+build-android\configure-android-1.20.bat
 
 :: 2. 构建 arm64 目标
-cd build-android\native-1.19
+cd build-android\native-1.20
 D:\Projects\MM678\toolchains\mingw64\bin\make.exe -j 8
 
-:: 3. 去掉调试符号（1.19 未 strip 时 libmain.so 约 460 MB）
+:: 3. 去掉调试符号（未 strip 时 libmain.so 约 450-470 MB）
 <ndk>\toolchains\llvm\prebuilt\windows-x86_64\bin\llvm-strip.exe --strip-unneeded ^
     android\app\src\main\cpp\libmain.so sdl3\libSDL3.so
 
@@ -83,7 +84,7 @@ D:\Projects\MM678\toolchains\mingw64\bin\make.exe -j 8
 
 :: 5. 重打包 + 对齐 + 签名（基于官方同版本 arm64 APK）
 ::    内部顺序：repack_apk.py（按规则选压缩方式）→ zipalign -p 4 → apksigner sign → 三项自检
-powershell -NoProfile -ExecutionPolicy Bypass -File build-android\pack_zh_apk.ps1 -Version 1.19
+powershell -NoProfile -ExecutionPolicy Bypass -File build-android\pack_zh_apk.ps1 -Version 1.20
 ```
 
 ### 环境限制（本机 DSH 沙箱，踩过的坑）
@@ -122,7 +123,7 @@ adb logcat -s OpenYAMM | grep -E 'Android mods|Mods:'
 
 ## 已知限制
 
-- **音乐与房屋视频**：1.19 的配置带 `-DOPENYAMM_HOUSE_VIDEOS=ON`（FFmpeg 一起编），两者都有；
+- **音乐与房屋视频**：1.20 的配置带 `-DOPENYAMM_HOUSE_VIDEOS=ON`（FFmpeg 一起编），两者都有；
   1.18 时代那份是 `OFF`，只有文本与界面。
 - **thin APK 依赖官方内容包**：内容未下完进不了游戏。要离线安装需用 bundled 模式重编（APK 带上 ~2.8 GB
   Android 内容包，参考 `android/repack_runtime_assets.sh` 与 `-Popenyamm.android.content=bundled`）。
