@@ -118,3 +118,9 @@ lua 里的引号常是 CP1252 的孤立字节（`0x91`／`0x92`），跟表里�
   要调译法就写进 `corpus/overrides/`。
 - `stats.txt` / `skill_des.txt` / `class.txt` 第一列是引擎查表的英文键，**禁止翻译**。
 - 屋名、职业名、事件名这类被源码拿去做逻辑判断的字符串，一律走展示层覆盖，不改数据表。
+- **规则集补丁的键也属于「键」**：`ruleset.yml` 的 `keyColumn` 指到哪列，补丁就按哪列找行。法术名那一列
+  既是键又是显示名，翻译完 MAW 的 188 条法术补丁一条也匹配不到，引擎会放弃整份规则集——
+  表现就是新游戏选完 MAW、点起始大陆**没有任何反应**（日志里是
+  `Failed to apply ruleset table engine/rulesets/maw/patches/spells.txt`）。
+  构建末尾用 `tools/ruleset_patch_keys.py --patch build/mods` 把键按「英文名 → 记录 id → 译名」重写一份到
+  `mods/engine/rulesets/<id>/`；`--check` 按引擎口径（每个键恰好命中一行）复核，出包前跑一次。

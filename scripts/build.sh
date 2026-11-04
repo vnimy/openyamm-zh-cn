@@ -44,6 +44,14 @@ patch_args=(tools/build_patch.py --out "$OUT_DIR")
 step "生成译文数据表"
 python3 "${patch_args[@]}"
 
+# 规则集补丁按英文名找行，译文会让这些键失效（MAW 的起始大陆就点不动了）；键要跟着表一起本地化。
+if [[ -d ../game/assets/packs ]]; then
+	step "本地化规则集补丁键"
+	python3 tools/ruleset_patch_keys.py --patch "$OUT_DIR"
+else
+	echo "跳过规则集补丁键：找不到 ../game/assets/packs" >&2
+fi
+
 step "收集字形子集"
 subset_args=(tools/font_subset.py --patch "$OUT_DIR" --out "$OUT_DIR/engine/fonts/truetype")
 [[ -n "$OPENYAMM" ]] && subset_args+=(--openyamm "$OPENYAMM")

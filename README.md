@@ -98,6 +98,8 @@ python tools/check_literals.py --show 60  # 源码硬编码 UI 文案缺口（�
 从 [Releases](../../releases) 下载 `OpenYAMM-<版本>-zh_cn.zip`，解压覆盖到游戏目录即可。
 详细步骤和排错见 **[docs/install.md](docs/install.md)**。
 
+旧存档打不开？先跑 `python tools/dev/check_save.py <存档>` 自查，四条分支的排查与修法见 **[docs/saves.md](docs/saves.md)**。
+
 补丁由两部分组成：
 
 - `mods/engine/` —— 译文数据表与中文字体，引擎启动时叠加在自带资产之上；
@@ -186,6 +188,7 @@ git -C ../openyamm checkout v1.19.3-zh_cn     # 与本仓库 CHANGELOG 的版本
 ```bash
 python tools/make_ui_text.py                      # 合成 corpus/overrides/ui_text.txt
 python tools/build_patch.py --openyamm ../openyamm --out build/mods
+python tools/ruleset_patch_keys.py --patch build/mods   # 规则集补丁的键改成本地译名（需要 ../game 的安装内容）
 python tools/font_subset.py --patch build/mods --openyamm ../openyamm \
        --out build/mods/engine/fonts/truetype
 python tools/build_fonts.py --font assets/fonts/NotoSansSC.ttf \

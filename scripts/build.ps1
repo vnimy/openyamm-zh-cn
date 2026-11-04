@@ -40,6 +40,13 @@ $patchArgs = @("tools/build_patch.py", "--out", $OutDir)
 if ($OpenYamm) { $patchArgs += @("--openyamm", $OpenYamm) }
 Invoke-Step "生成译文数据表" $patchArgs
 
+# 规则集补丁按英文名找行，译文会让这些键失效（MAW 的起始大陆就点不动了）；键要跟着表一起本地化。
+if (Test-Path (Join-Path $Root "../game/assets/packs")) {
+    Invoke-Step "本地化规则集补丁键" @("tools/ruleset_patch_keys.py", "--patch", $OutDir)
+} else {
+    Write-Host "跳过规则集补丁键：找不到 ../game/assets/packs" -ForegroundColor Yellow
+}
+
 if (-not $SkipFonts) {
     $fontDir = Join-Path $OutDir "engine/fonts/truetype"
 

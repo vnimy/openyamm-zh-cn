@@ -2,6 +2,40 @@
 
 版本号跟随所对应的 OpenYAMM 版本；补丁自身的修订用第三位表示。
 
+## 1.20.3 — 2026-11-04
+
+### 修复：新游戏选 MAW 后点起始大陆没反应
+
+`NewGameScreen::selectContinent` 会先激活规则集；激活失败就 `return`，界面既不提示也不跳转，看起来像点击没响应。
+日志 `game/openyamm.log` 里每次点击都留了一行：
+
+```
+Failed to apply ruleset table engine/rulesets/maw/patches/spells.txt: override line 2: key 'Fire Spike' must match exactly one row
+New game: the MAW ruleset tables could not be loaded
+```
+
+MAW 的法术补丁按**英文法术名**（`keyColumn: 2`）定位行，而汉化把 `data_tables/spells.txt` 的名字列整体译成了中文，
+188 条键一条也匹配不上（引擎要求「恰好命中一行」）。这一次不是漏翻，是「被翻译的列同时是别人查表的键」。
+
+### 工具
+
+- 新增 `tools/ruleset_patch_keys.py`：从安装内容的 `engine.rulesets` 包里读规则集补丁，按
+  「英文名 → 记录 id → 译名」重写键列（值原样保留），产物写进 `mods/engine/rulesets/<id>/`；
+  `--check` 按引擎口径复核补丁键能否恰好命中一行，出包前跑一次。
+- `scripts/build.sh` / `scripts/build.ps1` 增加该步骤（找不到 `../game/assets/packs` 时跳过并提示）。
+- `docs/dev-notes.md` 记入这条边界：`keyColumn` 指到的列同样禁止「只顾着翻」。
+
+### 产物
+
+- 已部署到本机 `game/mods`（`engine/rulesets/maw/patches/spells.txt`，188 条键）。
+- 桌面包 `dist/OpenYAMM-1.20-zh_cn.zip`（33,454,188 B，SHA256 `573327AC…B116D94`）：
+  这次按 `build/mods` 重新打包。上一个包是拿 `dist/staging/mods`（6:36 的快照）压的，
+  缺了 1.20.2 的方尖碑修复与重建的 `map_stats.txt`——逐文件 SHA256 比对时 45 个文件有 2 个对不上，
+  所以「沿用 1.20.2 的产物」会把已知修复挡在门外。包内 `openyamm.exe` 为含引擎改动的 1.20 构建。
+- 安卓包 `build-android/artifacts/OpenYAMM-1.20-android-arm64-zh.apk`（51,193,094 B，
+  SHA256 `16F0D98E…1428F6DDC`）**未重新构建**：它内置的 `assets/mods` 仍是 6:36 的快照，
+  因此安卓端暂时看不到 1.20.2 的方尖碑修复，等下一版重出 APK 才会带上。
+
 ## 1.20.2 — 2026-11-04
 
 ### 修复：方尖碑消息显示成密文（`_t_staoi_on_oiz_`）
